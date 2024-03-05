@@ -1,0 +1,237 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 이재홍 - 2023.12 */
+
+/* 농업기술센터 폰트 */
+@font-face{
+    font-family: 'Play';
+    font-weight: 600;
+    src: url("../font/Play-Bold.woff2") format('woff2'),
+    url("../font/Play-Bold.woff") format('woff');
+}
+
+/* cts1613 - 센터소개 > 인사말 */
+.cts_town_hi{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.cts_town_hi .hi_box{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.cts_town_hi .hi_box *, .cts_town_hi .hi_box *:before, .cts_town_hi .hi_box *:after{border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.cts_town_hi .hi_box .hi_box_wrap{display:block;position:relative;width:100%;padding:3px;}
+.cts_town_hi .hi_box .hi_box_wrap:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:3px solid rgba(205, 158, 216, 0.4);border-radius:28px 115px 28px 28px;content:'';}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top{display:block;position:relative;width:100%;padding:66px 92px 60px 65px;}
+.cts1613_wrap .hi_box .hi_box_wrap .inner_top:before{content:'';display:block;position:absolute;right:112px;top:22px;z-index:1;width:290px;height:375px;background-image:url(../images/contents/oc_cts1613_box_img01.png);background-size:contain;background-repeat:no-repeat;background-position-y:bottom;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box{display:block;position:relative;z-index:1;width:100%;padding:0 150px 0 0;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top{display:block;position:relative;width:100%;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top .text{display:inline-block;position:relative;padding:0 3px 0 10px;font-size:36px;color:#89369c;line-height:50px;letter-spacing:-0.05em;font-weight:600;font-family:'Y';word-break:keep-all;vertical-align:top;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top .text:before{display:block;position:absolute;z-index:-1;bottom:0;left:0;width:100%;height:20px;background-color:#f0dff4;border-radius:10px;content:'';}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom{display:block;position:relative;width:100%;margin:41px 0 0;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text{display:inline-block;position:relative;font-size:30px;color:#89369c;line-height:50px;letter-spacing:-0.03em;font-weight:400;font-family:'Y';word-break:keep-all;vertical-align:top;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text em{display:inline-block;position:relative;padding:0 10px;font-size:inherit;color:#fff;line-height:inherit;letter-spacing:inherit;font-weight:inherit;font-family:inherit;vertical-align:top;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text em:before{display:block;position:absolute;z-index:-1;top:0;left:0;width:100%;height:100%;background-color:#89369c;border-radius:20px 0 20px 0;content:'';}
+.cts_town_hi .hi_box .hi_box_wrap .inner_bottom{display:block;position:relative;width:100%;padding:15px 75px 45px;background-color:#f4f0fa;border-radius:0 0 25px 25px;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_bottom .bottom_desc{display:block;position:relative;width:100%;margin:33px 0 0;font-size:18px;color:#363636;line-height:33px;letter-spacing:-0.03em;font-weight:400;font-family:'SUITE';word-break:keep-all;}
+.cts_town_hi .hi_box .hi_box_wrap .inner_bottom .line{width:100%;height:1px;margin:50px 0;background-color:#dbbbe4;}
+@media screen and (max-width:1460px){
+    .cts_town_hi .hi_box .hi_box_wrap:before{border-radius:30px 60px 30px 30px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top{padding:60px 200px 60px 30px;}
+    .cts1613_wrap .hi_box .hi_box_wrap .inner_top:before{right:80px;top:15px;width:216px;height:280px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box{padding:0;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top .text{font-size:32px;line-height:42px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom{margin:20px 0 0;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text{font-size:22px;line-height:42px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom{padding:15px 30px 30px;border-radius:0 0 27px 27px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .bottom_desc{margin:15px 0 0;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .bottom_desc br{display:none;}
+}
+@media screen and (max-width:1000px){
+    .cts_town_hi .hi_box .hi_box_wrap:before{border-radius:30px;}
+    .cts1613_wrap .hi_box .hi_box_wrap .inner_top:before{right:20px;width:185px;height:240px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top .text{font-size:26px;line-height:32px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text{font-size:22px;line-height:30px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text em:before{border-radius:13px 0 13px 0;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .bottom_desc{font-size:17px;line-height:28px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .line{margin:35px 0;}
+}
+@media screen and (max-width:640px){
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top{padding:20px 10px 10px;text-align:center;}
+    .cts1613_wrap .hi_box .hi_box_wrap .inner_top:before{display:none;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_top .text{font-size:22px;line-height:30px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text{font-size:18px;line-height:28px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_top .text_box .text_bottom .text br{display:none;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom{padding:5px 20px 15px;text-align:center;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .bottom_desc{margin:10px 0 0;font-size:16px;line-height:26px;}
+    .cts_town_hi .hi_box .hi_box_wrap .inner_bottom .line{margin:20px 0;}
+}
+
+/* cts1616 - 센터소개 > 주요사업 */
+.text_box_wrap{font-size:0;line-height:0;}
+.text_box_wrap .oc_box{display:inline-block;width:calc((100% - 80px) / 3);margin-right:40px;vertical-align:top;}
+.text_box_wrap .oc_box:nth-child(-n + 3){margin-top:0;}
+.text_box_wrap .oc_box:nth-child(3n){margin-right:0;}
+.text_box_wrap .oc_box .oc_box_inner .title_box{height:92px;padding:20px 32px;text-align:center;}
+.text_box_wrap .oc_box .oc_box_inner .title_box .text{position:relative;top:50%;transform:translateY(-50%);}
+.text_box_wrap .oc_box .oc_box_inner .desc_box{height:307px;padding:20px 32px;}
+@media screen and (max-width:1460px){
+    .text_box_wrap .oc_box{width:calc(50% - 20px);}
+    .text_box_wrap .oc_box:nth-child(n + 3){margin-top:40px;}
+    .text_box_wrap .oc_box:nth-child(3n){margin-right:40px;}
+    .text_box_wrap .oc_box:nth-child(2n){margin-right:0;}
+    .text_box_wrap .oc_box .oc_box_inner .title_box{height:90px;padding:15px 30px;}
+    .text_box_wrap .oc_box .oc_box_inner .desc_box{height:290px;padding:15px 30px;}
+}
+@media screen and (max-width:1000px){
+    .text_box_wrap .oc_box .oc_box_inner .title_box{height:80px;}
+    .text_box_wrap .oc_box .oc_box_inner .desc_box{height:250px;}
+}
+@media screen and (max-width:640px){
+    .text_box_wrap .oc_box{display:block;width:100%;margin-right:0;}
+    .text_box_wrap .oc_box + .oc_box{margin-top:30px;}
+    .text_box_wrap .oc_box .oc_box_inner .title_box{height:auto;}
+    .text_box_wrap .oc_box .oc_box_inner .title_box .text{position:static;transform:none;}
+    .text_box_wrap .oc_box .oc_box_inner .desc_box{height:auto;}
+}
+
+/* 테이블 보더 커스텀 */
+.table thead tr:first-child th.cts_border:nth-child(2)[colspan]{border-right:solid 1px #111;border-left:solid 1px #111;}
+
+/* cts1628, 1629 - 내고장영농 > 농업인 단체 > 4-H 본부 */
+.cts1628_wrap .oc_img_box,
+.cts1629_wrap .oc_img_box{margin-top:45px;text-align:center;}
+.cts1628_wrap p,
+.cts1629_wrap p{letter-spacing:-0.03em;}
+@media screen and (max-width:1000px){
+    .cts1628_wrap .oc_img_box,
+    .cts1629_wrap .oc_img_box{margin-top:25px;}
+}
+
+/* cts539 - 귀농/귀촌 > 귀농ㆍ귀촌가이드 > 준비사항 */
+.cts539_wrap .oc_box.icon_type .oc_box_inner > .icon.cts_icon.type1{top:28px;}
+.cts539_wrap .oc_box.icon_type .oc_box_inner > .icon.cts_icon.type2{top:29px;}
+.cts539_wrap .oc_box.icon_type .oc_box_inner > .icon.cts_icon i{background-image:url(../images/contents/oc_cts539_icons.png);}
+.cts539_wrap .oc_box.icon_type .oc_box_inner > .icon.cts_icon.type1 i{width:61px;height:58px;}
+.cts539_wrap .oc_box.icon_type .oc_box_inner > .icon.cts_icon.type2 i{width:60px;height:59px;background-position-x:-90px;}
+
+/* cts3721 - 센터소개 > 조직 및 업무분장 > 조직도 */
+.cts3721_wrap *,
+.cts3721_wrap *:before,
+.cts3721_wrap *:after{border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.cts3721_wrap .agri_org1{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org1:before{display:block;position:absolute;z-index:-1;top:0;left:50%;width:1px;height:100%;background-color:#ccc;content:'';}
+.cts3721_wrap .agri_org1 .agri_org1_list{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item{display:block;position:relative;width:100%;text-align:center;}
+.cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner{display:inline-block;position:relative;vertical-align:top;}
+.cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1{display:inline-block;position:relative;width:308px;height:58px;background-color:#fff;border:4px solid #34bc5f;border-radius:29px;vertical-align:top;}
+.cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1 span{display:inline-block;position:relative;top:50%;transform:translateY(-50%);vertical-align:top;}
+.cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1 span em{display:inline-block;position:relative;font-size:32px;color:#333;line-height:36px;letter-spacing:-0.03em;font-weight:500;font-family:'SUITE';vertical-align:top;}
+.cts3721_wrap .agri_org2{display:block;position:relative;width:100%;margin-top:76px;}
+.cts3721_wrap .agri_org2 .agri_org2_list{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org2 .agri_org2_list:before{display:block;position:absolute;top:0;left:50%;transform:translateX(-50%);width:calc(100% - ((100% - 80px) / 3));height:1px;background-color:#ccc;content:'';}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item{display:inline-block;position:relative;width:calc((100% - 80px) / 3);margin-top:78px;margin-right:40px;background-color:#f6f6f6;border:1px solid #bbb;border-radius:20px;vertical-align:top;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:nth-child(3n){margin-right:0;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:before{display:block;position:absolute;bottom:100%;left:50%;width:1px;height:78px;background-color:#ccc;content:'';}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:nth-child(2):before{display:none;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2{display:block;position:relative;width:100%;height:92px;background-color:#fff;border-radius:20px 20px 0 0;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2 span{display:inline-block;position:relative;top:50%;transform:translateY(-50%);vertical-align:top;}
+.cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2 span em{display:inline-block;position:relative;font-size:24px;color:#303030;line-height:36px;letter-spacing:-0.03em;font-weight:600;font-family:'SUITE';vertical-align:top;}
+.cts3721_wrap .agri_org3{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org3 .agri_org3_list{display:block;position:relative;width:100%;min-height:256px;padding:25px 0;}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item{display:block;position:relative;width:100%;padding:0 32px;text-align:left;}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner{display:block;position:relative;width:100%;}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3{display:inline-block;position:relative;padding-left:11px;vertical-align:top;}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3:before{display:block;position:absolute;top:15px;left:0;width:8px;height:2px;background-color:#333;content:'';}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3 span{display:inline-block;position:relative;vertical-align:top;}
+.cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3 span em{display:inline-block;position:relative;font-size:17px;color:#333;line-height:32px;letter-spacing:-0.03em;font-weight:400;font-family:'SUITE';vertical-align:top;}
+@media screen and (max-width:1460px){
+    .cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1 span em{font-size:28px;line-height:30px;}
+    .cts3721_wrap .agri_org2{margin-top:30px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list:before{width:calc(100% - calc((100% - 60px) / 3));}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item{width:calc((100% - 60px) / 3);margin-top:30px;margin-right:30px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:before{height:30px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2{height:50px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2 span em{font-size:20px;line-height:26px;}
+    .cts3721_wrap .agri_org3 .agri_org3_list{min-height:180px;padding:15px 0;}
+    .cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item{padding:0 15px;}
+    .cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3:before{top:11px;width:6px;}
+    .cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item .org3_inner .text3 span em{font-size:17px;line-height:24px;}
+}
+@media screen and (max-width:640px){
+    .cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1{height:auto;padding:10px 0;}
+    .cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1 span{top:0;transform:none;}
+    .cts3721_wrap .agri_org1 .agri_org1_list .agri_org1_item .org1_inner .text1 span em{font-size:20px;line-height:26px;}
+    .cts3721_wrap .agri_org2{margin-top:20px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item{display:block;width:100%;margin-top:0;margin-bottom:20px;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:last-child{margin-bottom:0;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item:before{display:none;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2{height:auto;padding:10px 0;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2 span{top:0;transform:none;}
+    .cts3721_wrap .agri_org2 .agri_org2_list .agri_org2_item .org2_inner .text2 span em{font-size:18px;line-height:24px;}
+    .cts3721_wrap .agri_org3 .agri_org3_list{min-height:0;padding:15px;}
+    .cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item{display:inline-block;width:auto;margin-right:10px;padding:0;vertical-align:top;}
+    .cts3721_wrap .agri_org3 .agri_org3_list .agri_org3_item:last-child{margin-right:0;}
+}
+
+/* cts1618 - 센터소개 > 시설안내 > 시설안내 */
+.cts1618_wrap{}
+/* 시설안내 슬로건 박스 */
+.cts1618_wrap .slogan_box{margin-bottom:60px;padding-top:450px;border-bottom:solid 3px #d1d2d3;}
+.cts1618_wrap .slogan_box:before{left:0;width:100%;height:413px;background-image:url(../images/contents/oc_cts1618_box_img01.jpg);background-size:100%;}
+.cts1618_wrap .slogan_box .slogan{padding-right:120px;font-weight:600;font-size:43px;line-height:52px;color:#333;text-align:right;}
+.cts1618_wrap .slogan_box .text_box .title_list{display:inline-block;width:auto;}
+@media screen and (max-width:1460px){
+    .cts1618_wrap .slogan_box{margin-bottom:50px;padding-top:40%;}
+    .cts1618_wrap .slogan_box .slogan{padding-right:90px;font-size:36px;line-height:46px;}
+}
+@media screen and (max-width:1000px){
+    .cts1618_wrap .slogan_box{margin-bottom:40px;}
+    .cts1618_wrap .slogan_box .slogan{padding-right:60px;font-size:30px;line-height:40px;}
+}
+@media screen and (max-width:640px){
+    .cts1618_wrap .slogan_box{margin-bottom:30px;}
+    .cts1618_wrap .slogan_box .slogan{padding-right:30px;font-size:22px;line-height:32px;}
+}
+/* 시설안내 슬라이드 박스 */
+.facility_img_slide{font-size:0;line-height:0;}
+.facility_img_slide + .facility_img_slide{margin-top:135px;}
+.facility_img_slide .slide_box{display:inline-block;position:relative;width:510px;height:350px;vertical-align:top;}
+.facility_img_slide .slide_box:before{content:'';display:block;position:absolute;right:0;bottom:0;width:460px;height:300px;border-bottom-right-radius:40px;background-image:linear-gradient(90deg, #0283ea, #10ab95);}
+.facility_img_slide .slide_box .slide_list{overflow:hidden;position:absolute;left:0;top:0;width:460px;border-top-right-radius:40px;}
+.facility_img_slide .slide_box .slide_list .slide_item .skip_img{position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;}
+.facility_img_slide .slide_box .slide_list .slide_item .real_img{display:block;width:100%;height:300px;background-size:cover;background-position:center center;}
+.facility_img_slide .slide_box .slide_button_wrap{overflow:hidden;position:absolute;right:0;bottom:5px;width:220px;height:90px;padding-top:15px;padding-right:50px;border-top-left-radius:90px;text-align:right;}
+.facility_img_slide .slide_box .slide_button_wrap:before{content:'';display:block;position:absolute;right:0;top:0;width:460px;height:45px;background-image:linear-gradient(90deg, #0283ea, #10ab95);}
+.facility_img_slide .slide_box .slide_button_wrap .button_box{display:inline-block;position:relative;vertical-align:top;}
+.facility_img_slide .slide_box .slide_button_wrap .button_box .btn{display:block;width:30px;height:30px;border:0;background-image:url(../images/contents/oc_cts1618_slide_icon.png);background-size:100%;background-repeat:no-repeat;background-position:center center;}
+.facility_img_slide .slide_box .slide_button_wrap .button_box.next .btn{transform:rotate(180deg);}
+.facility_img_slide .slide_box .slide_button_wrap .number_box{display:inline-block;position:relative;width:63px;font-family:'Play', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;font-size:20px;line-height:30px;color:#fff;text-align:center;vertical-align:top;}
+.facility_img_slide .slide_box .slide_button_wrap .number_box .num{display:inline;}
+.facility_img_slide .content_box{display:inline-block;width:calc(100% - 545px);margin-left:35px;vertical-align:top;}
+@media screen and (max-width:1460px){
+    .facility_img_slide + .facility_img_slide{margin-top:120px;}
+    .facility_img_slide .slide_box{width:390px;height:270px;}
+    .facility_img_slide .slide_box:before{width:350px;height:230px;border-bottom-right-radius:30px;}
+    .facility_img_slide .slide_box .slide_list{width:350px;border-top-right-radius:30px;}
+    .facility_img_slide .slide_box .slide_list .slide_item .real_img{height:230px;}
+    .facility_img_slide .slide_box .slide_button_wrap{width:200px;height:75px;padding-right:40px;border-top-left-radius:75px;}
+    .facility_img_slide .slide_box .slide_button_wrap:before{width:350px;height:40px;}
+    .facility_img_slide .slide_box .slide_button_wrap .button_box .btn{width:28px;height:28px;}
+    .facility_img_slide .slide_box .slide_button_wrap .number_box{width:60px;font-size:19px;line-height:28px;}
+    .facility_img_slide .content_box{width:calc(100% - 430px);margin-left:30px;}
+}
+@media screen and (max-width:1000px){
+    .facility_img_slide + .facility_img_slide{margin-top:100px;}
+    .facility_img_slide .slide_box{width:310px;height:210px;}
+    .facility_img_slide .slide_box:before{width:280px;height:180px;border-bottom-right-radius:20px;}
+    .facility_img_slide .slide_box .slide_list{width:280px;border-top-right-radius:20px;}
+    .facility_img_slide .slide_box .slide_list .slide_item .real_img{height:180px;}
+    .facility_img_slide .slide_box .slide_button_wrap{width:160px;height:65px;padding-right:30px;border-top-left-radius:65px;}
+    .facility_img_slide .slide_box .slide_button_wrap:before{width:280px;}
+    .facility_img_slide .slide_box .slide_button_wrap .button_box .btn{width:25px;height:25px;}
+    .facility_img_slide .slide_box .slide_button_wrap .number_box{width:50px;font-size:18px;line-height:25px;}
+    .facility_img_slide .content_box{width:calc(100% - 340px);}
+}
+@media screen and (max-width:640px){
+    .facility_img_slide + .facility_img_slide{margin-top:80px;}
+    .facility_img_slide .slide_box{display:block;margin:0 auto;}
+    .facility_img_slide .slide_box .slide_button_wrap{width:160px;height:60px;padding-top:10px;border-top-left-radius:60px;}
+    .facility_img_slide .slide_box .slide_button_wrap .number_box{font-size:17px;}
+    .facility_img_slide .content_box{display:block;width:100%;margin-top:30px;margin-left:0;}
+}

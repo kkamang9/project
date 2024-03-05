@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 이재홍 - 2023.09 */
+
+/* 농업기술센터 전용 상단 깨기 시작 */
+#header{z-index:60;}
+.lnb .menu:before{background-color:transparent;}
+.lnb .menu .depth2 .depth2_list{text-align:left;}
+@media screen and (min-width:1001px){
+    .lnb_open .lnb .menu:before{background-color: #e7e7e7;}
+}
+@media screen and (min-width:1001px) and (max-width:1200px){
+    .lnb .menu .depth1 .depth1_list .depth1_item{padding:0 2%;}
+    .lnb .menu .depth1 .depth1_list .depth1_item .depth1_text span em{font-size:18px;letter-spacing:-0.05em;}
+    .lnb_open .lnb .menu:before{background-color:#e7e7e7;}
+}
+@media screen and (min-width:1201px) and (max-width:1460px){
+    .lnb .menu .depth1 .depth1_list .depth1_item{margin-left:0;padding:0 3%;}
+}
+@media screen and (min-width:1461px){
+    .lnb .menu .depth1{padding:0 98px 0 340px;text-align:center;}
+    .lnb .menu .depth1 .depth1_list .depth1_item{margin-left:65px;}
+}
+@media screen and (max-width:1000px){
+    .header_box{border-bottom:transparent;}
+}
+/* 농업기술센터 전용 상단 깨기 끝 */

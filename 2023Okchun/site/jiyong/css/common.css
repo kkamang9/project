@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/* ㈜한신정보기술 - 이재홍 2023.10.17 */
+@media screen and (min-width:1461px){
+    .lnb .menu .depth1{padding:0 98px 0 430px;}
+    .lnb .menu .depth2 .depth2_title_box .title_inner .title{word-break:keep-all;}
+}
+@media screen and (max-width:640px){
+    .oc_white .header_box .logo .logo_link .logo_site_name{font-size:20px;}
+}
