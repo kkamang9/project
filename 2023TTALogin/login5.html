@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+    <link rel="icon" href="../../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <script src="./js/login.js"></script>
+    <title>TTA 통합로그인 프로그램 - 로그인페이지</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="sub_visual">
+        <div class="login_wrap">
+            <div class="visual_title">
+                <h1 class="logo">
+                    <span class="logo_img"><img src="images/login_logo.png" alt="TTA 한국정보통신기술협회 Telecommunications Technology Association"></span>
+                    <span class="logo_text">통합 회원 로그인</span>
+                </h1>    <!--//logo-->
+                <p class="visual_desc">
+                    <span class="site_name">한국정보통신기술협회</span> 방문해주신 여러분을 환영합니다.<br>
+                    <strong class="bold">통합 회원 로그인</strong>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.
+                </p>    <!--//login_desc-->
+            </div>    <!--//visual_title-->
+            <div class="tab_wrap">
+                <ul class="tab_list">
+                    <li class="tab_item"><a href=""><span>로그인</span></a></li>
+                    <li class="tab_item"><a href=""><span>회원가입</span></a></li>
+                    <li class="tab_item"><a href=""><span>아이디 찾기</span></a></li>
+                    <li class="tab_item"><a href=""><span>비밀번호 찾기</span></a></li>
+                    <li class="tab_item active"><a href="" title="선택됨"><span>통합회원 전환</span></a></li>    <!-- 페이지 바뀌면 해당 메뉴인 .tab_item 에 .active 클래스와 title="선택됨" 속성 부여해 주세요 -->
+                </ul>    <!--//tab_list-->
+            </div>    <!--//tab_wrap-->
+        </div>    <!--//login_wrap-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div id="contents">
+            <div class="login_wrap">
+                <h2 class="skip">통합회원 전환 페이지</h2>
+
+
+                <div class="section_split">UI 설계서 15페이지 시작</div>
+                <div class="login_program conversion terms">
+                    <div class="intro_box">
+                        <h3 class="page_title">1. 약관동의</h3>
+                        <div class="step_wrap">
+                            <ol class="step_list">
+                                <li class="step_item active"><span class="skip">현재</span>1<span class="skip">단계</span></li>
+                                <li class="step_item">2<span class="skip">단계</span></li>
+                                <li class="step_item">3<span class="skip">단계</span></li>
+                                <li class="step_item">4<span class="skip">단계</span></li>
+                                <li class="step_item">5<span class="skip">단계</span></li>
+                                <!--//login2.html 의 step_list 와 같게 해주세요 -->
+                            </ol>    <!--//step_list-->
+                        </div>    <!--//step_wrap-->
+                    </div>    <!--//intro_box-->
+                    <form action="" class="terms_form">
+                        <fieldset>
+                            <legend>통합회원 전환 약관 폼 영역</legend>
+                            <div class="terms_wrap">
+                                <h4 class="section_title">홈페이지 이용약관</h4>
+                                <div class="terms_box" tabindex="0">    <!--//내용이 길어 스크롤이 생길 때에는 tabindex="0" 속성이 들어가게 해주세요-->
+                                    test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>test<br>
+                                </div>    <!--//terms_box-->
+                                <div class="check_wrap">
+                                    <div class="check_box terms_check">
+                                        <input type="checkbox" id="conversion_test01" class="check_box">
+                                        <label for="conversion_test01">한국정보통신기술협회 홈페이지 이용약관에 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </div>    <!--//terms_wrap-->
+                            <div class="terms_wrap">
+                                <h4 class="section_title">개인정보 수집 및 이용</h4>
+                                <div class="terms_box">
+                                </div>    <!--//terms_box-->
+                                <div class="check_wrap">
+                                    <div class="check_box terms_check">
+                                        <input type="checkbox" id="conversion_test02" class="check_box">
+                                        <label for="conversion_test02">개인정보 수집·이용에 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </div>    <!--//terms_wrap-->
+                            <div class="terms_wrap">
+                                <h4 class="section_title">제3자 정보제공</h4>
+                                <div class="terms_box">
+                                </div>    <!--//terms_box-->
+                                <div class="check_wrap">
+                                    <div class="check_box terms_check">
+                                        <input type="checkbox" id="conversion_test03" class="check_box">
+                                        <label for="conversion_test03">제3자 정보제공 및 이용에 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </div>    <!--//terms_wrap-->
+                            <div class="terms_wrap check_all_box">
+                                <div class="check_wrap">
+                                    <div class="check_box terms_check">
+                                        <input type="checkbox" id="conversion_test04" class="check_box all_check">
+                                        <label for="conversion_test04">위의 모든 약관에 동의합니다.</label>
+                                    </div>
+                                </div>
+                            </div>    <!--//terms_wrap-->
+                            <div class="submit_button_wrap">
+                                <span class="button_box"><button type="submit" class="button">다음단계</button></span>
+                                <span class="button_box"><a href="" class="button cancel">취소</a></span>
+                                <!--<span class="button_box"><a href="" class="button">다음단계</a></span>-->
+                                <!--<span class="button_box"><button type="button" class="button cancel">취소</button></span>-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                                <!--//스크립트 사용시 button 태그 사용해주세요-->
+                            </div>    <!--//submit_button_wrap-->
+                        </fieldset>
+                    </form>    <!--//terms_form-->
+                </div>    <!--//login_program conversion terms-->
+                <div class="section_split">UI 설계서 15페이지 끝</div>
+
+                <div class="section_split">UI 설계서 16페이지 시작</div>
+                <div class="login_program conversion">
+                    <h2 class="skip">통합회원 전환 페이지</h2>
+                    <div class="intro_box">
+                        <h3 class="page_title">2. 회원인증</h3>
+                        <div class="step_wrap">
+                            <ol class="step_list">
+                                <li class="step_item complete">1<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item active"><span class="skip">현재</span>2<span class="skip">단계</span></li>
+                                <li class="step_item">3<span class="skip">단계</span></li>
+                                <li class="step_item">4<span class="skip">단계</span></li>
+                                <li class="step_item">5<span class="skip">단계</span></li>
+                            </ol>    <!--//step_list-->
+                        </div>    <!--//step_wrap-->
+                    </div>    <!--//intro_box-->
+                    <div class="blue_box">
+                        <div class="title_box">
+                            <em class="title">※ 기존 회원 정보 확인</em>
+                            <p class="text small">TTA 대표 홈페이지, TTA 아카데미 회원정보를 확인하여 회원 통합을 진행합니다.</p>
+                        </div>    <!--//title_box-->
+                    </div>    <!--//blue_box-->
+                    <h4 class="section_title">TTA 대표 회원 정보를 확인해주세요.</h4>
+                    <div class="info_check tab01">    <!--//.tab_button 중 .button01 을 누르면 .info_check 에 .tab01 클래스, .button02 을 누르면 .tab02 클래스가 달리게 해주세요.-->
+                        <div class="tab_button_wrap">
+                            <button type="button" title="선택됨" class="tab_button button01">    <!--//버튼을 누르면 title="선택됨" 들어오게 해주세요-->
+                                <span class="fake_radio">회원입니다.</span>
+                            </button>    <!--//tab_button button01-->
+                            <!--<a href="" title="선택됨" class="tab_button button01">-->
+                            <!--    <span class="fake_radio">회원입니다.</span>-->
+                            <!--</a>-->
+                            <!--//링크 사용시 a 태그 사용해주세요-->
+                            <button type="button" class="tab_button button02">
+                                <span class="fake_radio">회원이 아닙니다.</span>
+                            </button>    <!--//tab_button button02-->
+                            <!--<a href="" class="tab_button button02">-->
+                            <!--    <span class="fake_radio">회원이 아닙니다.</span>-->
+                            <!--</a>    &lt;!&ndash;//tab_button button02&ndash;&gt;-->
+                            <!--//링크 사용시 a 태그 사용해주세요-->
+                        </div>    <!--//tab_button_wrap-->
+                        <div class="info_wrap">
+                            <div class="gray_box">
+                                <form action="">
+                                    <fieldset>
+                                        <legend>TTA 대표 회원 인증 폼 영역</legend>
+                                        <div class="info_box box01">
+                                            <em class="box_title"><strong class="bold">TTA 대표</strong> 회원정보 확인을 위해 아이디와 비밀번호 입력 후 <strong class="bold">인증하기</strong> 버튼을 클릭해주세요.</em>
+                                            <p class="text">아이디와 비밀번호를 잊으셨다면 <span class="regular">'회원정보 찾기'</span>를 진행하여 인증해주세요.</p>
+                                            <div class="form_login_wrap">
+                                                <div class="text_area">
+                                                    <input type="text" placeholder="아이디 입력" title="아이디 입력">
+                                                    <input type="password" placeholder="비밀번호 입력" title="비밀번호 입력">
+                                                </div>    <!--//text_area-->
+                                                <button type="submit" class="login_button"><span>인증하기</span></button>
+                                                <button type="button" class="login_button type2 certificate_btn01"><span>회원정보<br>찾기</span></button>
+                                            </div>    <!--//form_login_wrap-->
+                                            <script>
+                                            $(function(){
+                                                $('.certificate_btn01').on('click', function (){
+                                                    var $this = $(this),
+                                                        $certificate_popup = $('.popup_wrap.certificate_popup.certificate01');
+                                                    $certificate_popup.removeClass('hide');
+                                                });
+                                                $('.popup_wrap .close').on('click', function (){
+                                                    var $this = $(this),
+                                                        $Layer = $this.parents('.popup_wrap');
+                                                    $Layer.addClass('hide');
+                                                });
+                                                $('.popup_wrap.certificate_popup.certificate01 .tab_button_wrap .tab_button').on('click', function (){
+                                                    var $this = $(this),
+                                                        $popup_wrap = $this.parents('.popup_wrap'),
+                                                        $infocheck = $popup_wrap.find('.info_check'),
+                                                        ThisTitle = $this.attr('title'),
+                                                        ThisIndex = $this.index()+1,
+                                                        $OtherBtns = $this.siblings('.tab_button');
+                                                    if(ThisTitle!='선택됨'){
+                                                        $infocheck.attr('class', 'info_check popup_check tab0'+ThisIndex);
+                                                        $OtherBtns.removeAttr('title');
+                                                        $this.attr('title', '선택됨');
+                                                    }
+                                                });
+                                            });
+                                            </script>
+                                            <div class="popup_wrap certificate_popup certificate01 hide">    <!--// UI 설계서 16페이지 팝업-->
+                                                <div class="popup_box popup_certified">
+                                                    <div class="popup_title type2">아이디/비밀번호 찾기</div>
+                                                    <div class="popup_scroll">
+                                                        <div class="info_check popup_check tab01">
+                                                            <div class="tab_button_wrap">
+                                                                <button type="button" title="선택됨" class="tab_button button01">아이디 찾기</button>    <!--//tab_button button01-->
+                                                                <button type="button" class="tab_button button02">비밀번호 찾기</button>    <!--//tab_button button02-->
+                                                            </div>    <!--//tab_button_wrap-->
+                                                            <div class="info_wrap">
+                                                                <div class="info_box box01">
+                                                                    <div class="horiz_wrap clearfix">
+                                                                        <div class="horiz_box shadow_box cellphone">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <em class="horiz_title">휴대전화 인증</em>
+                                                                            <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                            <!--<span class="button_box"><button title="새창" class="button blank">인증하기</button></span>-->
+                                                                            <!--//스크립트 사용시  button 태그 사용해주세요-->
+                                                                        </div>    <!--//horiz_box cellphone-->
+                                                                        <div class="horiz_box shadow_box i_pin">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">아이핀 인증</h3>
+                                                                            <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                            <!--<span class="button_box"><button title="새창" class="button blank">인증하기</button></span>-->
+                                                                            <!--//스크립트 사용시  button 태그 사용해주세요-->
+                                                                        </div>    <!--//horiz_box i_pin-->
+                                                                    </div>    <!--//horiz_wrap-->
+                                                                </div>    <!--//info_box-->
+                                                                <div class="info_box box02">
+                                                                    <input type="text" title="ID 입력" placeholder="아이디를 입력하세요.">
+                                                                    <div class="horiz_wrap clearfix">
+                                                                        <div class="horiz_box shadow_box cellphone">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">휴대전화 인증</h3>
+                                                                            <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                            <!--<span class="button_box"><button title="새창" class="button blank">인증하기</button></span>-->
+                                                                            <!--//스크립트 사용시  button 태그 사용해주세요-->
+                                                                        </div>    <!--//horiz_box cellphone-->
+                                                                        <div class="horiz_box shadow_box i_pin">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">아이핀 인증</h3>
+                                                                            <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                            <!--<span class="button_box"><button title="새창" class="button blank">인증하기</button></span>-->
+                                                                            <!--//스크립트 사용시  button 태그 사용해주세요-->
+                                                                        </div>    <!--//horiz_box i_pin-->
+                                                                    </div>    <!--//horiz_wrap-->
+                                                                </div>    <!--//info_box-->
+                                                            </div>    <!--//info_box-->
+                                                        </div>    <!--//info_check tab01-->
+                                                    </div>    <!--//popup_scroll-->
+                                                    <button type="button" class="close">닫기 버튼</button>
+                                                </div>    <!--//popup_box-->
+                                                <div class="popup_curtain"></div>
+                                            </div>    <!--//popup_wrap-->
+                                        </div>    <!--//info_box box01-->
+                                        <div class="info_box box02">
+                                            <em class="box_title"><strong class="bold">TTA 대표</strong>에 회원가입이 되어있지 않음을 선택하셨습니다.</em>
+                                            <p class="box_text">
+                                                만약 TTA 아카데미 홈페이지 회원으로 가입되어 있으나<br>
+                                                해당 절차를 진행하지 않고 회원통합 시 <em class="red">기존 가입이력은 모두 삭제</em>됩니다.
+                                            </p>
+                                            <p class="text">TTA 아카데미에 가입 이력이 있는지 확인하시려면 <span class="regular">'회원입니다'</span> 탭의 <span class="regular">'회원정보찾기'</span>를 진행해주세요.</p>
+                                            <div class="check_wrap">
+                                                <div class="check_box">
+                                                    <input type="checkbox" id="conversion_test05">
+                                                    <label for="conversion_test05">본인은 TTA 대표 회원이 아니며, 위 내용에 동의합니다.</label>
+                                                </div>    <!--//check_box-->
+                                            </div>    <!--//check_wrap-->
+                                        </div>    <!--//info_box box02-->
+                                    </fieldset>
+                                </form>
+                            </div>    <!--//gray_box-->
+                        </div>    <!--//info_box-->
+                    </div>    <!--//info_check tab01-->
+                    <h4 class="section_title">TTA 아카데미 회원 정보를 확인해주세요.</h4>
+                    <div class="info_check tab02">    <!--//.tab_button 중 .button01 을 누르면 .info_check 에 .tab01 클래스, .button02 을 누르면 .tab02 클래스가 달리게 해주세요.-->
+                        <div class="tab_button_wrap">
+                            <button type="button" class="tab_button button01">
+                                <span class="fake_radio">회원입니다.</span>
+                            </button>    <!--//tab_button button01-->
+                            <!--<a href="" title="선택됨" class="tab_button button01">-->
+                            <!--    <span class="fake_radio">회원입니다.</span>-->
+                            <!--</a>    &lt;!&ndash;//tab_button button01&ndash;&gt;-->
+                            <!--//링크 사용시 a 태그 사용해주세요-->
+                            <button type="button" title="선택됨" class="tab_button button02">
+                                <span class="fake_radio">회원이 아닙니다.</span>
+                            </button>    <!--//tab_button button02-->
+                            <!--<a href="" class="tab_button button02">-->
+                            <!--    <span class="fake_radio">회원이 아닙니다.</span>-->
+                            <!--</a>    &lt;!&ndash;//tab_button button02&ndash;&gt;-->
+                            <!--//링크 사용시 a 태그 사용해주세요-->
+                        </div>    <!--//tab_button_wrap-->
+                        <div class="info_wrap">
+                            <div class="gray_box">
+                                <form action="">
+                                    <fieldset>
+                                        <legend>TTA 대표 회원 인증 폼 영역</legend>
+                                        <div class="info_box box01">
+                                            <em class="box_title"><strong class="bold">TTA 아카데미</strong> 회원정보 확인을 위해 아이디와 비밀번호 입력 후 <strong class="bold">인증하기</strong> 버튼을 클릭해주세요.</em>
+                                            <p class="text">아이디와 비밀번호를 잊으셨다면 <span class="regular">'회원정보 찾기'</span>를 진행하여 인증해주세요.</p>
+                                            <div class="form_login_wrap">
+                                                <div class="text_area">
+                                                    <input type="text" placeholder="아이디 입력" title="아이디 입력">
+                                                    <input type="password" placeholder="비밀번호 입력" title="비밀번호 입력">
+                                                </div>    <!--//text_area-->
+                                                <button type="submit" class="login_button"><span>인증하기</span></button>
+                                                <button type="button" class="login_button type2 certificate_btn02"><span>회원정보<br>찾기</span></button>
+                                            </div>    <!--//form_login_wrap-->
+                                            <script>
+                                                $(function(){
+                                                    $('.certificate_btn02').on('click', function (){
+                                                        var $this = $(this),
+                                                            $certificate_popup = $('.popup_wrap.certificate_popup.certificate02');
+                                                        $certificate_popup.removeClass('hide');
+                                                    });
+                                                    $('.popup_wrap .close').on('click', function (){
+                                                        var $this = $(this),
+                                                            $Layer = $this.parents('.popup_wrap');
+                                                        $Layer.addClass('hide');
+                                                    });
+                                                    $('.popup_wrap.certificate_popup.certificate02 .tab_button_wrap .tab_button').on('click', function (){
+                                                        var $this = $(this),
+                                                            $popup_wrap = $this.parents('.popup_wrap'),
+                                                            $infocheck = $popup_wrap.find('.info_check'),
+                                                            ThisTitle = $this.attr('title'),
+                                                            ThisIndex = $this.index()+1,
+                                                            $OtherBtns = $this.siblings('.tab_button');
+                                                        if(ThisTitle!='선택됨'){
+                                                            $infocheck.attr('class', 'info_check popup_check tab0'+ThisIndex);
+                                                            $OtherBtns.removeAttr('title');
+                                                            $this.attr('title', '선택됨');
+                                                        }
+                                                    });
+                                                });
+                                            </script>
+                                            <div class="popup_wrap certificate_popup certificate02 hide">    <!--// UI 설계서 16페이지 팝업-->
+                                                <div class="popup_box popup_certified">
+                                                    <div class="popup_title type2">아이디/비밀번호 찾기</div>
+                                                    <div class="popup_scroll">
+                                                        <div class="info_check popup_check tab01">    <!--//.tab_button 중 .button01 을 누르면 .info_check 에 .tab01 클래스, .button02 을 누르면 .tab02 클래스가 달리게 해주세요.-->
+                                                            <div class="tab_button_wrap">
+                                                                <button type="button" title="선택됨" class="tab_button button01">아이디 찾기</button>    <!--//tab_button button01-->
+                                                                <button type="button" class="tab_button button02">비밀번호 찾기</button>    <!--//tab_button button02-->
+                                                            </div>    <!--//tab_button_wrap-->
+                                                            <div class="info_wrap">
+                                                                <div class="info_box box01">
+                                                                    <div class="horiz_wrap clearfix">
+                                                                        <div class="horiz_box shadow_box cellphone">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <em class="horiz_title">휴대전화 인증</em>
+                                                                            <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                        </div>    <!--//horiz_box cellphone-->
+                                                                        <div class="horiz_box shadow_box i_pin">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">아이핀 인증</h3>
+                                                                            <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                        </div>    <!--//horiz_box i_pin-->
+                                                                    </div>    <!--//horiz_wrap-->
+                                                                </div>    <!--//info_box-->
+                                                                <div class="info_box box02">
+                                                                    <input type="text" title="ID 입력" placeholder="아이디를 입력하세요.">
+                                                                    <div class="horiz_wrap clearfix">
+                                                                        <div class="horiz_box shadow_box cellphone">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">휴대전화 인증</h3>
+                                                                            <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                        </div>    <!--//horiz_box cellphone-->
+                                                                        <div class="horiz_box shadow_box i_pin">
+                                                                            <i class="horiz_icon"></i>
+                                                                            <h3 class="horiz_title">아이핀 인증</h3>
+                                                                            <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                                                            <span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>
+                                                                        </div>    <!--//horiz_box i_pin-->
+                                                                    </div>    <!--//horiz_wrap-->
+                                                                </div>    <!--//info_box-->
+                                                            </div>    <!--//info_box-->
+                                                        </div>    <!--//info_check tab01-->
+                                                    </div>    <!--//popup_scroll-->
+                                                    <button type="button" class="close">닫기 버튼</button>
+                                                </div>    <!--//popup_box-->
+                                            </div>    <!--//popup_wrap-->
+                                        </div>    <!--//info_box box01-->
+                                        <div class="info_box box02">
+                                            <em class="box_title"><strong class="bold">TTA 아카데미</strong>에 회원가입이 되어있지 않음을 선택하셨습니다.</em>
+                                            <p class="box_text">
+                                                만약 TTA 아카데미 홈페이지 회원으로 가입되어 있으나<br>
+                                                해당 절차를 진행하지 않고 회원통합 시 <em class="red">기존 가입이력은 모두 삭제</em>됩니다.
+                                            </p>
+                                            <p class="text">TTA 대표에 가입 이력이 있는지 확인하시려면 <span class="regular">'회원입니다'</span> 탭의 <span class="regular">'회원정보찾기'</span>를 진행해주세요.</p>
+                                            <div class="check_wrap">
+                                                <div class="check_box">
+                                                    <input type="checkbox" id="conversion_test06">
+                                                    <label for="conversion_test06">본인은 TTA 대표 회원이 아니며, 위 내용에 동의합니다.</label>
+                                                </div>    <!--//check_box-->
+                                            </div>    <!--//check_wrap-->
+                                        </div>    <!--//info_box box02-->
+                                    </fieldset>
+                                </form>
+                            </div>    <!--//gray_box-->
+                        </div>    <!--//info_box-->
+                    </div>    <!--//info_check tab01-->
+                    <div class="submit_button_wrap">
+                        <div class="button_box"><a href="" class="button">다음단계</a></div>
+                        <div class="button_box"><a href="" class="button cancel">취소</a></div>
+                    </div>    <!--//submit_button_wrap-->
+                </div>    <!--//login_program conversion-->
+                <div class="section_split">UI 설계서 16페이지 끝</div>
+
+                <div class="section_split">UI 설계서 17페이지 시작</div>
+                <div class="login_program conversion select_id">
+                    <h2 class="skip">통합회원 전환 페이지</h2>
+                    <div class="intro_box">
+                        <h3 class="page_title">3. 통합 ID 선택</h3>
+                        <div class="step_wrap">
+                            <ol class="step_list">
+                                <li class="step_item complete">1<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">2<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item active"><span class="skip">현재</span>3<span class="skip">단계</span></li>
+                                <li class="step_item">4<span class="skip">단계</span></li>
+                                <li class="step_item">5<span class="skip">단계</span></li>
+                            </ol>    <!--//step_list-->
+                        </div>    <!--//step_wrap-->
+                    </div>    <!--//intro_box-->
+                    <div class="blue_box">
+                        <div class="title_box">
+                            <em class="title">※ 통합 기준이 될 사이트 ID를 선택해주세요. ID는 신규로 생성할 수 있습니다. </em>
+                            <ul class="bu">
+                                <li>기존 가입 정보 : 선택한 사이트 ID 및 회원정보를 기준으로 통합이 진행됩니다.</li>
+                                <li>신규 ID 생성 : 통합회원 ID를 신규 생성할 경우, 통합 기준이 될 사이트의 ID를 선택해 주세요.</li>
+                                <li><strong class="bold">ID 선택 완료 후 "다음단계"를 클릭하면 본인인증 절차를 진행하며, 본인 확인 후 통합전환가입이 완료됩니다.</strong></li>
+                            </ul>
+                        </div>    <!--//title_box-->
+                    </div>    <!--//blue_box-->
+                    <form action="">
+                        <fieldset>
+                            <legend>통합 ID 선택 폼 영역</legend>
+                            <div class="horiz_wrap clearfix">
+                                <div class="horiz_box shadow_box">
+                                    <div class="box_header">기존 가입된 ID</div>
+                                    <div class="box_body">
+                                        <em class="input_title">TTA 대표 ID</em>
+                                        <div class="input_wrap">
+                                            <input type="text" class="input_text" title="TTA 대표 기존 ID" value="abc123" readonly>
+                                            <span class="button_box"><button type="button" class="button form_button">선택</button></span>
+                                            <!--<span class="button_box"><button type="button" title="선택됨" class="button form_button active">선택</button></span>-->
+                                            <!--//class="red_button"이 없는 선택 버튼을 클릭하면 title="선택됨" class="active" 붙여주세요-->
+                                            <!--//선택버튼 중 하나를 누르면 다른 선택 버튼의 title="선택됨" class="active" 빠지게 해주세요-->
+                                        </div>    <!--//input_wrap-->
+                                        <em class="input_title">TTA 아카데미 ID</em>
+                                        <div class="input_wrap">
+                                            <input type="text" class="input_text" title="TTA 대표 기존 ID" value="abcd1234" readonly>
+                                            <span class="button_box"><button type="button" title="사용중인ID" class="button form_button red_button">사용중인ID</button></span>
+                                            <!--//이미 통합회원가입이 된 계정이 있을 때 버튼 안의 문구 "사용중인ID" 로 바꿔주시고 title="사용중인 ID" class="red_button" 붙여주세요-->
+
+                                            <!--<input type="text" class="input_text" title="가입된 정보 없음" value="가입된 정보가 없습니다." readonly>-->
+                                            <!--//가입된 ID가 없을 시 input 에 title="가입된 정보 없음" value="가입된 정보가 없습니다." 로 바꿔주시고 버튼은 없애주세요-->
+                                        </div>    <!--//input_wrap-->
+                                    </div>    <!--//box_body-->
+                                </div>    <!--//horiz_box-->
+                                <div class="horiz_box shadow_box">
+                                    <div class="box_header">신규 ID 생성</div>
+                                    <div class="box_body">
+                                        <em class="input_title">ID 는 6자리 이상(영문, 숫자 혼합) 만 가능합니다.</em>
+                                        <div class="input_wrap">
+                                            <input type="text" class="input_text" title="ID 입력" placeholder="아이디를 입력하세요.">
+                                            <span class="button_box"><a href="" title="ID 중복 확인" class="button form_button">중복확인</a></span>
+                                        </div>    <!--//input_wrap-->
+                                    </div>    <!--//box_body-->
+                                </div>    <!--//horiz_box-->
+                            </div>    <!--//horiz_wrap-->
+                            <div class="submit_button_wrap">
+                                <div class="button_box"><a href="" class="button">다음단계</a></div>
+                                <div class="button_box"><a href="" class="button cancel">취소</a></div>
+                                <!--<div class="button_box"><button type="submit" class="button">다음단계</button></div>-->
+                                <!--<div class="button_box"><button type="button" class="button cancel">취소</button></div>-->
+                                <!--//서브밋 사용시 button 태그 사용해주세요-->
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>    <!--//login_program conversion select_id-->
+                <div class="section_split">UI 설계서 17페이지 끝</div>
+
+                <div class="section_split">UI 설계서 18페이지 시작</div>
+                <div class="login_program conversion certified">
+                    <div class="intro_box">
+                        <h3 class="page_title">4. 본인인증</h3>
+                        <div class="step_wrap">
+                            <ol class="step_list">
+                                <li class="step_item complete">1<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">2<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">3<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item active"><span class="skip">현재</span>4<span class="skip">단계</span></li>
+                                <li class="step_item">5<span class="skip">단계</span></li>
+                            </ol>    <!--//step_list-->
+                        </div>    <!--//step_wrap-->
+                    </div>    <!--//intro_box-->
+                    <div class="horiz_wrap clearfix">
+                        <div class="horiz_wrap clearfix">
+                            <div class="horiz_box shadow_box cellphone">
+                                <i class="horiz_icon"></i>
+                                <h3 class="horiz_title">휴대전화 인증</h3>
+                                <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                <span class="button_box"><button type="button" title="새창" class="button blank certificate_btn">인증하기</button></span>
+                                <!--<span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                            </div>    <!--//horiz_box cellphone-->
+                            <div class="horiz_box shadow_box i_pin">
+                                <i class="horiz_icon"></i>
+                                <h3 class="horiz_title">아이핀 인증</h3>
+                                <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                <span class="button_box"><button type="button" title="새창" class="button blank certificate_btn">인증하기</button></span>
+                                <!--<span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                            </div>    <!--//horiz_box i_pin-->
+                        </div>    <!--//horiz_wrap-->
+                        <div class="popup_wrap hide already_exist">    <!--// UI 설계서 7페이지 팝업-->
+                            <div class="popup_box">
+                                <div class="popup_text">이미 등록된 사용자가 존재합니다.</div>
+                                <div class="popup_button">
+                                    <span class="button_box"><button type="button" class="button btn_ok">확인</button></span>
+                                    <!--<span class="button_box"><a href="" class="button btn_ok">확인</a></span>-->
+                                    <!--//링크 사용시 a 태그 사용해주세요-->
+                                </div>    <!--//popup_button-->
+                                <button type="button" class="close">닫기 버튼</button>
+                            </div>    <!--//popup_box-->
+                            <div class="popup_curtain"></div>
+                        </div>    <!--//popup_wrap-->
+                        <script>
+                            $(function (){
+                                $('.certificate_btn').on('click', function (){
+                                    var $this = $(this),
+                                        $Layer_exist = $('.popup_wrap.already_exist');
+                                    $Layer_exist.removeClass('hide');//이미 등록된 사용자가 있을때
+                                });
+                                $('.popup_wrap .close, .popup_wrap .btn_ok').on('click', function (){
+                                    var $this = $(this),
+                                        $Layer = $this.parents('.popup_wrap');
+                                    $Layer.addClass('hide');
+                                });
+                            });
+                        </script>
+                    </div>    <!--//horiz_wrap-->
+                </div>    <!--//login_program conversion certified-->
+                <div class="section_split">UI 설계서 18페이지 끝</div>
+                
+                <div class="section_split">UI 설계서 19페이지 시작</div>
+                <div class="login_program conversion complete">
+                    <div class="intro_box">
+                        <h3 class="page_title">5. 통합회원 전환 완료</h3>
+                        <div class="step_wrap">
+                            <ol class="step_list">
+                                <li class="step_item complete">1<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">2<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">3<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item complete">4<span class="skip">단계</span><span class="skip">완료됨</span></li>
+                                <li class="step_item active"><span class="skip">현재</span>5<span class="skip">단계</span></li>
+                            </ol>    <!--//step_list-->
+                        </div>    <!--//step_wrap-->
+                    </div>    <!--//intro_box-->
+                    <div class="shadow_box">
+                        <i class="complete_icon"></i>
+                        <h4 class="box_title">통합회원 전환 가입이 완료되었습니다.</h4>
+                        <p class="text">
+                            <em class="blue">user_ID</em>님, 한국정보통신기술협회 통합회원 가입이 정상적으로 완료되었습니다.<br/>
+                            로그인 후 서비스를 이용하실 수 있습니다.
+                        </p>
+                        <div class="submit_button_wrap">
+                            <span class="button_box"><a href="" class="button">로그인</a></span>
+                            <span class="button_box"><a href="" class="button cancel">메인으로</a></span>
+                            <!--<span class="button_box"><button type="" class="button">로그인</button></span>-->
+                            <!--<span class="button_box"><button type="" class="button cancel">메인으로</button></span>-->
+                            <!--/스크립트 사용시 button 태그 사용해주세요-->
+                        </div>    <!--//submit_button_wrap-->
+                    </div>    <!--//shadow_box-->
+                </div>    <!--//login_program conversion complete-->
+                <div class="section_split">UI 설계서 19페이지 끝</div>
+
+            </div>    <!--//login_wrap-->
+        </div>    <!--//#contents-->
+    </div>    <!--//#container-->
+</div>    <!--//#wrapper-->
+</body>
+</html>

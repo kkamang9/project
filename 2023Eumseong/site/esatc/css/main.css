@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/* Layout */
+@import url('../../common/css/default.css');
+@import url('../../common/css/layout.css');
+@import url('../public/css/common.css');
+@import url('common.css');    /* 농업기술센터 전용 상하단 */
+@import url('main_layout.css');    /* 농업기술센터 메인 */

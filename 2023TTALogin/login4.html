@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+    <link rel="icon" href="../../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <script src="./js/login.js"></script>
+    <title>TTA 통합로그인 프로그램 - 로그인페이지</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="sub_visual">
+        <div class="login_wrap">
+            <div class="visual_title">
+                <h1 class="logo">
+                    <span class="logo_img"><img src="images/login_logo.png" alt="TTA 한국정보통신기술협회 Telecommunications Technology Association"></span>
+                    <span class="logo_text">통합 회원 로그인</span>
+                </h1>    <!--//logo-->
+                <p class="visual_desc">
+                    <span class="site_name">한국정보통신기술협회</span> 방문해주신 여러분을 환영합니다.<br>
+                    <strong class="bold">통합 회원 로그인</strong>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.
+                </p>    <!--//login_desc-->
+            </div>    <!--//visual_title-->
+            <div class="tab_wrap">
+                <ul class="tab_list">
+                    <li class="tab_item"><a href=""><span>로그인</span></a></li>
+                    <li class="tab_item"><a href=""><span>회원가입</span></a></li>
+                    <li class="tab_item"><a href=""><span>아이디 찾기</span></a></li>
+                    <li class="tab_item active"><a href="" title="선택됨"><span>비밀번호 찾기</span></a></li>    <!-- 페이지 바뀌면 해당 메뉴인 .tab_item 에 .active 클래스와 title="선택됨" 속성 부여해 주세요 -->
+                    <li class="tab_item"><a href=""><span>통합회원 전환</span></a></li>
+                </ul>    <!--//tab_list-->
+            </div>    <!--//tab_wrap-->
+        </div>    <!--//login_wrap-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div id="contents">
+            <div class="login_wrap">
+                <h2 class="skip">비밀번호 찾기 페이지</h2>
+
+                <div class="section_split">UI 설계서 13 페이지 시작</div>
+                <div class="login_program find_password certified">
+                    <div class="blue_box">
+                        <div class="title_box">
+                            <em class="title">본인확인</em>
+                            <p class="text small">타인의 주민등록번호를 도용하여 온라인 회원가입을 하는 등 다른 사람의 주민등록번호를 부정 사용하는 자는 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.</p>
+                        </div>    <!--//title_box-->
+                        <div class="desc_box">
+                            <div class="warning_box"><p class="warning"><i>강조</i>관련법률 : 주민등록법 제37조(벌칙)</p></div>
+                        </div>    <!--//desc_box-->
+                    </div>    <!--//blue_box-->
+                    <div class="horiz_wrap clearfix">
+                        <div class="horiz_wrap clearfix">
+                            <div class="horiz_box shadow_box cellphone">
+                                <i class="horiz_icon"></i>
+                                <h3 class="horiz_title">휴대전화 인증</h3>
+                                <p class="horiz_desc">본인명의 휴대전화로 인증번호를 발송하여 본인인증을 합니다.</p>
+                                <span class="button_box"><button type="button" title="새창" class="button blank certificate_btn">인증하기</button></span>
+                                <!--<span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                            </div>    <!--//horiz_box cellphone-->
+                            <div class="horiz_box shadow_box i_pin">
+                                <i class="horiz_icon"></i>
+                                <h3 class="horiz_title">아이핀 인증</h3>
+                                <p class="horiz_desc">아이핀을 통한 본인인증 절차를 거쳐 로그인 합니다.</p>
+                                <span class="button_box"><button type="button" title="새창" class="button blank certificate_btn">인증하기</button></span>
+                                <!--<span class="button_box"><a href="" target="_blank" title="새창" rel="noreferrer noopener" class="button blank">인증하기</a></span>-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                            </div>    <!--//horiz_box i_pin-->
+                        </div>    <!--//horiz_wrap-->
+                        <div class="popup_wrap hide already_exist">    <!--// UI 설계서 7페이지 팝업-->
+                            <div class="popup_box">
+                                <div class="popup_text">이미 등록된 사용자가 존재합니다.</div>
+                                <div class="popup_button">
+                                    <span class="button_box"><button type="button" class="button btn_ok">확인</button></span>
+                                    <!--<span class="button_box"><a href="" class="button btn_ok">확인</a></span>-->
+                                    <!--//링크 사용시 a 태그 사용해주세요-->
+                                </div>    <!--//popup_button-->
+                                <button type="button" class="close">닫기 버튼</button>
+                            </div>    <!--//popup_box-->
+                            <div class="popup_curtain"></div>
+                        </div>    <!--//popup_wrap-->
+                        <script>
+                            $(function (){
+                                $('.certificate_btn').on('click', function (){
+                                    var $this = $(this),
+                                        $Layer_exist = $('.popup_wrap.already_exist');
+                                    $Layer_exist.removeClass('hide');//이미 등록된 사용자가 있을때
+                                });
+                                $('.popup_wrap .close, .popup_wrap .btn_ok').on('click', function (){
+                                    var $this = $(this),
+                                        $Layer = $this.parents('.popup_wrap');
+                                    $Layer.addClass('hide');
+                                });
+                            });
+                        </script>
+                    </div>    <!--//horiz_wrap-->
+                </div>    <!--//login_program find_password certified-->
+                <div class="section_split">UI 설계서 13 페이지 끝</div>
+
+                <div class="section_split">UI 설계서 14 페이지 시작</div>
+                <div class="login_program find_password change">
+                    <div class="blue_box">
+                        <div class="title_box">
+                            <em class="title">본인확인</em>
+                            <p class="text small">타인의 주민등록번호를 도용하여 온라인 회원가입을 하는 등 다른 사람의 주민등록번호를 부정 사용하는 자는 3년 이하의 징역 또는 1천만원 이하의 벌금이 부과될 수 있습니다.</p>
+                        </div>    <!--//title_box-->
+                        <div class="desc_box">
+                            <div class="warning_box"><p class="warning"><i>강조</i>관련법률 : 주민등록법 제37조(벌칙)</p></div>
+                        </div>    <!--//desc_box-->
+                    </div>    <!--//blue_box-->
+                    <div class="shadow_box">
+                        <h3 class="text big">비밀번호 변경</h3>
+                        <i class="password_icon"></i>
+                        <form action="">
+                            <fieldset>
+                                <legend>비밀번호 변경 폼 영역</legend>
+                                <div class="input_wrap">
+                                    <div class="input_box clearfix">
+                                        <label for="find_password_test01">아이디</label>
+                                        <input type="text" id="find_password_test01" class="id_check" value="abc123" readonly>
+                                    </div>
+                                    <div class="input_box clearfix">
+                                        <label for="find_password_test02">새로운 비밀번호</label>
+                                        <input type="password" id="find_password_test02" class="password">
+                                    </div>
+                                    <div class="warning">
+                                        <i></i>
+                                        <span>
+                                            비밀번호는 최소 10자 최대 20자이며, 반드시<br>
+                                            영문, 숫자, 특수문자를 조합하여 만드시기 바랍니다.
+                                        </span>
+                                    </div>
+                                </div>    <!--//input_wrap-->
+                                <div class="input_wrap">
+                                    <div class="input_box clearfix">
+                                        <label for="find_password_test03">변경된 비밀번호</label>
+                                        <input type="password" id="find_password_test03" class="password">
+                                    </div>
+                                    <div class="warning">
+                                        <i></i>
+                                        <span>
+                                            재확인을 위하여 입력하신 비밀번호를<br/>
+                                            다시 한번 입력해주세요.
+                                        </span>
+                                    </div>
+                                </div>    <!--//input_wrap-->
+                                <div class="submit_button_wrap">
+                                    <div class="button_box"><button type="submit" class="button">비밀번호 변경</button></div>
+                                    <div class="button_box"><a href="" class="button cancel">로그인</a></div>
+                                    <!--<div class="button_box"><button type="button" class="button cancel">로그인</button></div>-->
+                                    <!--//스크립트 사용시 button 태그 사용해주세요-->
+                                </div>    <!--//submit_button_wrap-->
+                            </fieldset>
+                        </form>
+                    </div>    <!--//shadow_box-->
+                </div>    <!--//login_program find_password change-->
+                <div class="section_split">UI 설계서 14페이지 끝</div>
+
+                <div class="section_split">UI 설계서 14 - a 페이지 시작</div>
+                <div class="login_program find_password complete">
+                    <div class="shadow_box">
+                        <i class="password_icon"></i>
+                        <p class="text big">비밀번호가 정상적으로 변경되었습니다.</p>
+                        <p class="text small light">변경하신 비밀번호로 로그인해주세요.</p>
+                        <div class="submit_button_wrap">
+                            <div class="button_box"><a href="" class="button">로그인</a></div>
+                            <!--<div class="button_box"><button type="button" class="button">로그인</button></div>-->
+                            <!--//스크립트 사용시 button 태그 사용해주세요-->
+                        </div>    <!--//submit_button_wrap-->
+                    </div>    <!--//shadow_box-->
+                </div>    <!--//login_program find_password complete-->
+                <div class="section_split">UI 설계서 14 - a 페이지 끝</div>
+
+            </div>    <!--//login_wrap-->
+        </div>    <!--//#contents-->
+    </div>    <!--//#container-->
+</div>    <!--//#wrapper-->
+</body>
+</html>

@@ -1,0 +1,738 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../common/favicon.ico">
+    <link rel="icon" href="../common/favicon.ico">
+    <link rel="stylesheet" href="..../../common/css/font.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="../common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="../common/js/jquery.screen.js"></script>
+    <script src="./js/common.js"></script>
+    <script src="./js/main.js"></script>
+    <title>행정포털 2023 메인 레이아웃</title>
+</head>
+<body id="main" class="main">
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_box birthday">    <!--//생일일때 birthday 클래스 부여 해 주세요-->
+            <div class="wrap clearfix">
+                <h1 class="header_title">
+                    <a href="" class="logo">
+                        <span class="logo_img"><img src="./images/common/logo.png" alt="수원시청 로고"></span>
+                        <span class="site_name">행정포털</span>
+                    </a>    <!--//logo-->
+                </h1>    <!--//header_title-->
+                <div class="birthday_box">
+                    <span class="birthday_text">
+                        <em class="name">이인미</em>님<br />
+                        생일 축하합니다<em class="italic">!</em>
+                    </span>
+                </div>    <!--//birthday_box-->
+                <div class="weather_wrap">
+                    <div class="weather_box">
+                        <i class="weather_icon type1">맑음</i>
+                        <!--<i class="weather_icon type2">구름</i>-->
+                        <!--<i class="weather_icon type3">흐림</i>-->
+                        <!--<i class="weather_icon type4">비</i>-->
+                        <!--<i class="weather_icon type5">눈</i>-->
+                        <!--<i class="weather_icon type6">번개</i>-->
+                        <span class="temperature"><em class="temperature_value">20.5</em><em class="celsius">℃</em></span>
+                    </div>    <!--//weather_box-->
+                    <div class="dust_box">
+                        <i class="warning_icon">알림</i>
+                        <span class="text">미세먼지</span>
+                        <span class="concentration"><em class="dust_value">25</em><em class="micro_gram">㎍/㎥</em></span>
+                        <span class="state good">좋음</span>
+                        <!--<span class="state normal">보통</span>-->
+                        <!--<span class="state bad">나쁨</span>-->
+                        <!--<span class="state very_bad">매우나쁨</span>-->
+                    </div>    <!--//dust_box-->
+                </div>    <!--//weather_wrap-->
+                <div class="info_wrap">
+                    <div class="info_box">
+                        <div class="population">수원시 인구 <em class="value">1,225,760</em>명</div>
+                        <div class="safety">음주운전 ZERO <em class="value">191</em>일째</div>
+                    </div>    <!--//info_box-->
+                    <div class="button_wrap">
+                        <div class="button_box report"><a href="" class="btn">신고센터</a></div>
+                        <div class="button_box admin"><a href="" class="btn">관리자</a></div>
+                    </div>    <!--//admin_wrap-->
+                </div>    <!--//info_wrap-->
+            </div>    <!--//section_inner-->
+        </div>    <!--//header_box-->
+        <div class="header_low">
+            <div class="wrap">
+                <div class="low_box">
+                    <div class="user_wrap">
+                        <div class="login_wrap clearfix">
+                            <div class="user_info">[<em class="affiliation">정보통신과</em>] <em class="name">강대희</em>님</div>
+                            <div class="login_box">
+                                <!--<div class="login_button"><a href="" class="btn">로그인</a></div>-->
+                                <div class="login_button"><a href="" class="btn">정보수정</a></div>
+                                <div class="login_button"><a href="" class="btn">로그아웃</a></div>
+                            </div>    <!--//login_box-->
+                        </div>    <!--//login_wrap-->
+                        <div class="tab_wrap user_tab">
+                            <ul class="tab_button_list">
+                                <li class="tab_button_item active"><button type="button" title="선택됨" class="btn">IP</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">교육</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">당직</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">출장</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">연가</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">초과</button></li>
+                                <li class="tab_button_item"><button type="button" class="btn">부재</button></li>
+                            </ul>    <!--//tab_button_wrap-->
+                            <div class="tab_contents_list">
+                                <div class="tab_contents_item active">
+                                    <div class="ip_box">
+                                        <span class="my_ip">나의 IP : <em class="ip blue">105.1.3.35</em></span>
+                                        <span class="access">
+                                            최종접속 : <em class="ip">105.1.3.35</em>
+                                            (<em class="date">2023.03.09</em>
+                                            <em class="time">08:54:51</em>)
+                                        </span>
+                                    </div>    <!--//ip_box-->
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="text education">e-HRD 교육 : <em class="state blue">충족</em></span>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="text">예정된 당직근무가 없습니다</span>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="skip">비어있음</span>
+                                    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어오게 해주세요-->
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="text vacation">
+                                        총 <em class="total">21</em>일
+                                        사용 <em class="used">0</em>일 /
+                                        잔여 : <em class="blue"><em class="remaining">21</em>일</em>
+                                    </span>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="text exceed">이달의 초과근무 : <em class="time blue">3시간 41분</em></span>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <span class="skip">비어있음</span>
+                                    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어오게 해주세요-->
+                                </div>    <!--//tab_contents_item-->
+                            </div>    <!--//tab_contents_wrap-->
+                        </div>    <!--//user_tab_wrap-->
+                    </div>    <!--//user_wrap-->
+                    <div class="search_wrap">
+                        <div class="sign"><a href="" class="link"><span><em class="blue">코로나19 대응 종합안내</em> 코로나19 대응체계, 예방접종, 현황 등</span></a></div>
+                        <div class="search_box">
+                            <form action="">
+                                <fieldset>
+                                    <legend>검색 폼 영역</legend>
+                                    <div class="select_box">
+                                        <select title="검색 조건 선택">
+                                            <option>통합검색</option>
+                                            <option>테스트01</option>
+                                            <option>테스트02</option>
+                                            <option>테스트03</option>
+                                        </select>
+                                    </div>    <!--//select_box-->
+                                    <div class="input_box">
+                                        <input type="text" title="검색어 입력" class="input_search" placeholder="검색어 입력">
+                                    </div>    <!--//input_box-->
+                                    <div class="button_box">
+                                        <button type="submit" title="검색버튼" class="btn_search">검색</button>
+                                        <!--<a href="" title="검색버튼" class="btn search">검색</a>-->
+                                    </div>    <!--//button_wrap-->
+                                </fieldset>
+                            </form>
+                        </div>    <!--//search_box-->
+                    </div>    <!--//search_wrap-->
+                </div>    <!--//low_box-->
+            </div>    <!--//section_inner-->
+        </div>    <!--//header_low-->
+    </header>    <!--//header-->
+    <div id="container">
+        <main>
+            <h2 class="skip">메인컨텐츠</h2>
+            <div class="wrap clearfix">
+                <div class="side left">
+                    <div class="menu_wrap">
+                        <h3 class="skip">사이드 메뉴1</h3>
+                        <div class="menu_box">
+                            <h4 class="title_btn"><button type="button" class="btn">온나라</button></h4>
+                            <ul class="menu_list divide5">
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type1"></i>
+                                        <span>결재</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type2"></i>
+                                        <span>메모</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type3"></i>
+                                        <span>공람</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type4"></i>
+                                        <span>발송</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type5"></i>
+                                        <span>연계</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                            </ul>    <!--//menu_list divide5-->
+                        </div>    <!--//menu_box-->
+                        <div class="menu_box">
+                            <h4 class="title_btn"><button type="button" class="btn">업무</button></h4>
+                            <ul class="menu_list divide5">
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type6"></i>
+                                        <span>새올</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type7"></i>
+                                        <span>인사랑</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type8"></i>
+                                        <span>e-호조</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type9"></i>
+                                        <span>지시<br />사항</span>
+                                        <em class="new"><em class="skip">알림</em>2</em>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type10"></i>
+                                        <span>틈새<br />업무</span>
+                                        <em class="new"><em class="skip">알림</em>234</em>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type11"></i>
+                                        <span>지시<br />사항</span>
+                                        <em class="new"><em class="skip">알림</em>25</em>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                            </ul>    <!--//menu_list divide5-->
+                        </div>    <!--//menu_box-->
+                    </div>    <!--//menu_wrap-->
+                    <div class="menu_wrap">
+                        <h3 class="skip">사이드 메뉴2</h3>
+                        <div class="menu_box">
+                            <h4 class="title_btn"><button type="button" class="btn">메일</button></h4>
+                            <ul class="menu_list divide5">
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type12"></i>
+                                        <span>온나라<br />메일</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type13"></i>
+                                        <span>소통<br />쪽지</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link blank">    <!--//target="_blank" 일때 (title="새창" rel="noopener noreferrer" class="link blank") 달아주세요-->
+                                        <i class="icon type14"></i>
+                                        <span>공직자<br />통합메일</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                            </ul>    <!--//menu_list divide5-->
+                        </div>    <!--//menu_box-->
+                        <div class="menu_box">
+                            <h4 class="title_btn"><button type="button" class="btn">민원</button></h4>
+                            <ul class="menu_list divide4">
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type15"></i>
+                                        <span>(구)시장<br />님보세요</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type16"></i>
+                                        <span>현장<br />민원</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type17"></i>
+                                        <span>새올<br />민원</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type18"></i>
+                                        <span>생활<br />불편</span>
+                                    </a>
+                                </li>    <!--//menu_item-->
+                            </ul>    <!--//menu_list divide5-->
+                        </div>    <!--//menu_box-->
+                    </div>    <!--//menu_wrap-->
+                </div>    <!--//side left-->
+                <div class="side right">
+                    <div class="menu_wrap">
+                        <h3 class="skip">사이드 바로가기 메뉴</h3>
+                        <div class="menu_box">
+                            <ul class="menu_list">
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type1"></i>
+                                        <span>조직도</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type2"></i>
+                                        <span>부서홈</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type3"></i>
+                                        <span>성과관리</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type4"></i>
+                                        <span>차량관리</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type5"></i>
+                                        <span>문자전송</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type6"></i>
+                                        <span>홍보의뢰</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type7"></i>
+                                        <span>우편모아</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type8"></i>
+                                        <span>자료실</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type9"></i>
+                                        <span>E-HRD</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type10"></i>
+                                        <span>영상방송</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link blank">    <!--//target="_blank" 일때-->
+                                        <i class="icon type1"></i>
+                                        <span>베네피아</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link blank">    <!--//target="_blank" 일때-->
+                                        <i class="icon type2"></i>
+                                        <span>경기포털</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" class="link">
+                                        <i class="icon type11"></i>
+                                        <span>행동강령</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link blank">    <!--//target="_blank" 일때-->
+                                        <i class="icon type3"></i>
+                                        <span>국가법령<br />정보센터</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                                <li class="menu_item">
+                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link blank">    <!--//target="_blank" 일때-->
+                                        <i class="icon type4"></i>
+                                        <span>새빛톡톡</span>
+                                    </a>    <!--//link-->
+                                </li>    <!--//menu_item-->
+                            </ul>    <!--//menu_list-->
+                        </div>    <!--//menu_box-->
+                    </div>    <!--//menu_wrap-->
+                    <div class="menu_wrap meal">
+                        <div class="menu_box">
+                            <h3 class="title">오늘의 식단</h3>
+                            <div class="content">
+                                <em class="content_title">[수원시청/중식]</em>
+                                <p class="content_text">취나물밥, 시금치된장국, 오삼불고기, 건파래볶음, 콩나물무침, 무채, 배추김치, 과일 샐러드</p>
+                            </div>    <!--//content-->
+                            <div class="more"><a href="">더보기</a></div>
+                        </div>    <!--//menu_box-->
+                    </div>    <!--//menu_wrap-->
+                </div>    <!--//side right-->
+                <div class="main_content">
+                    <div class="rowgroup rowgroup1">
+                        <div class="tab_wrap notice">
+                            <ul class="tab_button_list">
+                                <li class="tab_button_item active"><button type="button" title="선택됨" class="btn">최근게시물</button></li>    <!--//tab_button_item-->
+                                <li class="tab_button_item"><button type="button" class="btn">공지사항</button></li>    <!--//tab_button_item-->
+                                <li class="tab_button_item"><button type="button" class="btn">신문스크랩</button></li>    <!--//tab_button_item-->
+                                <li class="tab_button_item"><button type="button" class="btn">인사정보</button></li>    <!--//tab_button_item-->
+                                <li class="tab_button_item"><button type="button" class="btn">경조사</button></li>    <!--//tab_button_item-->
+                                <li class="tab_button_item"><button type="button" class="btn">행사일정</button></li>    <!--//tab_button_item-->
+                            </ul>    <!--//tab_button_list-->
+                            <div class="tab_contents_list">
+                                <div class="tab_contents_item active">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시립광교아이파크 어린이집 어린이집 어린이집 어린이집 어린이집 어린이집 원장님과 선생님들 최고!</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">N<em class="skip">새글</em></em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시청 가사홈서비스팀 감사합니다</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">새글</em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">10-2번 버스기사님 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[신영은]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">종무과 송숙영 팀장님을 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">세류3동 주무관님 감사합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">장안구 종합민원과 이상준 주무관 본인혼인 알림</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">종무과 송숙영 팀장님을 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">세류3동 주무관님 감사합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">장안구 종합민원과 이상준 주무관 본인혼인 알림</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시립광교아이파크 어린이집 원장님과 선생님들 최고!</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">N<em class="skip">새글</em></em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시청 가사홈서비스팀 감사합니다</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">새글</em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">10-2번 버스기사님 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[신영은]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">종무과 송숙영 팀장님을 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">세류3동 주무관님 감사합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시립광교아이파크 어린이집 원장님과 선생님들 최고!</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">N<em class="skip">새글</em></em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">시청 가사홈서비스팀 감사합니다</a><em class="new">N<em class="skip">새글</em></em></span>
+                                            <!--//새글에는 a.link 뒤에 <em class="new">새글</em> 붙여주세요-->
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.07</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">10-2번 버스기사님 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[신영은]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">종무과 송숙영 팀장님을 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                                <div class="tab_contents_item">
+                                    <ul class="notice_list">
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">종무과 송숙영 팀장님을 칭찬합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[정효원]</em>
+                                                <em class="date">2023.03.06</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">세류3동 주무관님 감사합니다</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                        <li class="notice_item clearfix">
+                                            <span class="title"><a href="" class="link">장안구 종합민원과 이상준 주무관 본인혼인 알림</a></span>
+                                            <span class="notice_info">
+                                                <em class="name">[박다훈]</em>
+                                                <em class="date">2023.03.04</em>
+                                            </span>
+                                        </li>    <!--//notice_item-->
+                                    </ul>    <!--//notice_list-->
+                                    <div class="more"><a href="">더보기</a></div>
+                                </div>    <!--//tab_contents_item-->
+                            </div>    <!--//tab_contents_list-->
+                        </div>    <!--//tab_wrap notice-->
+                    </div>    <!--//rowgroup1-->
+                    <div class="rowgroup rowgroup2">
+                        <div class="bookmark_wrap type1">
+                            <h3 class="title">게시판</h3>
+                            <ul class="bookmark_list">
+                                <li class="bookmark_item"><a href="" class="link">휴양소신청</a></li>
+                                <li class="bookmark_item"><a href="" class="link">주간행사계획</a></li>
+                                <li class="bookmark_item"><a href="" class="link">문서발간신청</a></li>
+                                <li class="bookmark_item"><a href="" class="link">유지보수요청</a></li>
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                            </ul>    <!--//bookmark_list-->
+                            <div class="setting"><a href="">설정</a></div>
+                        </div>    <!--//bookmark_wrap-->
+                        <div class="bookmark_wrap type2">
+                            <h3 class="title">틈새업무</h3>
+                            <ul class="bookmark_list">
+                                <li class="bookmark_item"><a href="" class="link">휴양소신청</a></li>
+                                <li class="bookmark_item"><a href="" class="link">전산자원관리</a></li>
+                                <li class="bookmark_item"><a href="" class="link">주간행사계획</a></li>
+                                <li class="bookmark_item"><a href="" class="link">청렴위반신고</a></li>
+                                <li class="bookmark_item"><a href="" class="link">문서발간신청</a></li>
+                                <li class="bookmark_item"><a href="" class="link">홍보물사전협의</a></li>
+                                <li class="bookmark_item"><a href="" class="link">유지보수요청</a></li>
+                                <li class="bookmark_item"><a href="" class="link">주간업무공고</a></li>
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                            </ul>    <!--//bookmark_list-->
+                            <div class="setting"><a href="">설정</a></div>
+                        </div>    <!--//bookmark_wrap-->
+                        <div class="bookmark_wrap type3">
+                            <h3 class="title">업무시스템</h3>
+                            <ul class="bookmark_list">
+                                <li class="bookmark_item"><a href="" class="link">정보공개</a></li>
+                                <li class="bookmark_item"><a href="" class="link">부엉이곳간</a></li>
+                                <li class="bookmark_item"><a href="" class="link">공간정보포털</a></li>
+                                <li class="bookmark_item"><a href="" class="link">행사공사정보</a></li>
+                                <li class="bookmark_item"><a href="" class="link">민원분석</a></li>
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                                <li class="bookmark_item"><span class="skip">비어있음</span></li>    <!--//내용이 없을 때에는 <span class="skip">비어있음</span> 들어가게 해주세요-->
+                            </ul>    <!--//bookmark_list-->
+                            <div class="setting"><a href="">설정</a></div>
+                        </div>    <!--//bookmark_wrap-->
+                    </div>    <!--//rowgroup2-->
+                    <div class="rowgroup rowgroup3">
+                        <div class="board_wrap">
+                            <h3 class="title">공모사업</h3>
+                            <ul class="board_list">
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                            </ul>    <!--//board_list-->
+                            <div class="more"><a href="">더보기</a></div>
+                        </div>    <!--//board_wrap-->
+                        <div class="board_wrap">
+                            <h3 class="title">칭찬합니다</h3>
+                            <ul class="board_list">
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                                <li class="board_item">
+                                    <span class="date">2022-11-16</span>
+                                    <span class="board_title"><a href="">2023년도 공공업무 프로세스</a></span>
+                                </li>    <!--//board_item-->
+                            </ul>    <!--//board_list-->
+                            <div class="more"><a href="">더보기</a></div>
+                        </div>    <!--//board_wrap-->
+                    </div>    <!--//rowgroup3-->
+                </div>    <!--//main_content-->
+            </div>    <!--//wrap-->
+        </main>
+    </div>    <!--//#container-->
+    <footer id="footer">
+        <div class="section_inner clearfix">
+            <h2 class="footer_logo"><img src="./images/common/footer_logo.png" alt="수원특례시 행정포털시스템 로고"></h2>
+            <div class="sns_wrap">
+                <ul class="sns_list">
+                    <li class="sns_item blog"><a href="">네이버 블로그</a></li>
+                    <li class="sns_item facebook"><a href="">페이스북</a></li>
+                    <li class="sns_item instagram"><a href="">인스타그램</a></li>
+                    <li class="sns_item naver_post"><a href="">네이버 포스트</a></li>
+                    <li class="sns_item youtube"><a href="">유튜브</a></li>
+                </ul>    <!--//sns_list-->
+            </div>    <!--//sns_wrap-->
+            <div class="footer_info">
+                <address class="address">(16490) 경기도 수원시 팔달구 효원로 241(인계동)</address>
+                <p class="copyright">COPYRIGHT SUWON CITY. ALL RIGHTS RESERVED.</p>
+            </div>    <!--//footer_info-->
+        </div>    <!--//section_inner-->
+    </footer>    <!--//footer-->
+</div>    <!--//#wrapper-->
+</body>
+</html>

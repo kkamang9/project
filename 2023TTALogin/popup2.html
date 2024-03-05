@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+    <link rel="icon" href="../../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <script src="./js/login.js"></script>
+    <title>TTA 통합로그인 프로그램 - 로그인페이지</title>
+</head>
+<body>
+<script>
+$(function(){
+    $('.popup_wrap .close').on('click', function (){
+        window.close();
+    });
+});
+</script>
+<div id="wrapper">
+
+    <div class="popup_wrap">    <!--// UI 설계서 8페이지 팝업-->
+        <div class="popup_box">
+            <div class="popup_title">소속 검색</div>
+            <div class="popup_search">
+                <form action="">
+                    <fieldset>
+                        <legend></legend>
+                        <input type="text" title="아이디 검색어 입력">
+                        <input type="text" title="성명 검색어 입력">
+                        <input type="text" title="전화번호 검색어 입력">
+                        <span class="button_box"><button type="button" class="button cancel">검색</button></span>
+                    </fieldset>
+                </form>
+            </div>    <!--//popup_search-->
+            <div class="popup_scroll">
+                <table class="table responsive">
+                    <caption>소속 검색 결과 - 아이디, 성명, 전화번호, 추가</caption>
+                    <colgroup>
+                        <col style="width:25%;"/>
+                        <col style="width:20%;"/>
+                        <col style="width:35%;"/>
+                        <col style="width:20%;"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col">아이디</th>
+                            <th scope="col">성명</th>
+                            <th scope="col">전화번호</th>
+                            <th scope="col">추가</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>test123</td>
+                            <td>홍*동</td>
+                            <td>010-****-**34</td>
+                            <td><span class="button_box"><button class="button form_button">추가 +</button></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>    <!--//popup_scroll-->
+            <button type="button" class="close">닫기 버튼</button>
+        </div>    <!--//popup_box-->
+    </div>    <!--//popup_wrap-->
+
+</div>    <!--//#wrapper-->
+</body>
+</html>

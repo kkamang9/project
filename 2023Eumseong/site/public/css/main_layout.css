@@ -1,0 +1,23 @@
+/* (주)한신정보기술 ○○○ - 201x.xx */
+
+#header:before{display: block;position: absolute;bottom:-2px;left:0;width: 100%;height: 1px;background-color: #e3e5e8;}
+.fixed #header:before{display: none;}
+
+#container{height: 900px;}
+
+/* web */
+@media all and (max-width:1200px){
+
+}
+
+/* tablet */
+@media all and (max-width:1000px){
+
+}
+
+/* mobile */
+@media all and (max-width:640px){
+
+}
+
+

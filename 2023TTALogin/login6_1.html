@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="../../common/images/favicon.png">
+    <link rel="icon" href="../../common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css"/>
+    <link rel="stylesheet" type="text/css" href="./css/login.css"/>
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <script src="./js/login.js"></script>
+    <title>TTA 통합로그인 프로그램 - 로그인페이지</title>
+</head>
+<body>
+<div id="wrapper">
+    <div class="sub_visual">
+        <div class="login_wrap">
+            <div class="visual_title">
+                <h1 class="logo">
+                    <span class="logo_img"><img src="images/login_logo.png" alt="TTA 한국정보통신기술협회 Telecommunications Technology Association"></span>
+                    <span class="logo_text">통합 회원 로그인</span>
+                </h1>    <!--//logo-->
+                <p class="visual_desc">
+                    <span class="site_name">한국정보통신기술협회</span> 방문해주신 여러분을 환영합니다.<br>
+                    <strong class="bold">통합 회원 로그인</strong>을 하시면 회원님들에게 제공되는 콘텐츠를 이용하실 수 있습니다.
+                </p>    <!--//login_desc-->
+            </div>    <!--//visual_title-->
+        </div>    <!--//login_wrap-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div id="contents">
+            <div class="login_wrap">
+                <script>
+                    $(function (){
+                        $('.popup_wrap .close, .popup_wrap .cancel_btn').on('click', function (){
+                            var $this = $(this),
+                                $Layer = $this.parents('.popup_wrap');
+                            $Layer.addClass('hide');
+                        });
+                    });
+                </script>
+                <div class="popup_wrap">    <!--// UI 설계서 20페이지 팝업-->    <!--//접금성 상 소스 맨 상단(현재위치)에 레이어 팝업 소스가 위치 해야 합니다-->
+                    <div class="popup_box">
+                        <div class="popup_text">회원탈퇴가 완료되었습니다.</div>    <!--//popup_text-->
+                        <div class="popup_button">
+                            <span class="button_box"><a href="" class="button">확인</a></span>
+                            <!--<span class="button_box"><button type="button" class="button">확인</button></span>-->
+                            <!--//스크립트 사용시 button 태그 사용해주세요-->
+                        </div>    <!--//popup_button-->
+                        <button type="button" class="close">닫기 버튼</button>
+                    </div>    <!--//popup_box-->
+                    <div class="popup_curtain"></div>
+                </div>    <!--//popup_wrap-->
+                <h2 class="skip">개인정보 수정 페이지</h2>
+
+                <div class="section_split">UI 설계서 20페이지 시작</div>
+                <div class="login_program signup input_inform">
+                    <h2 class="skip">회원가입 페이지</h2>
+                    <form action="" class="information_form_basic">
+                        <fieldset>
+                            <legend>회원가입 정보 입력 폼 영역</legend>
+                            <table class="table type2 responsive">
+                                <caption>개인정보 입력 - 회원ID, 비밀번호, 비밀번호 확인, 성명, 이메일, 업종, 업무분야, 소속(회사명/학교명), 위클리 뉴스레터 수신여부, 제 3자 정보제공 동의</caption>
+                                <colgroup>
+                                    <col style="width:20%;"/>
+                                    <col style="width:80%;"/>
+                                </colgroup>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>회원ID</th>
+                                    <td>test001</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>비밀번호</th>
+                                    <td>
+                                        <div class="input_wrap">
+                                            <input type="password" title="비밀번호 입력">
+                                        </div>
+                                        <span class="warning"><i>강조</i>최소 8자 이상 영문, 숫자, 특수문자 조합</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>비밀번호 확인</th>
+                                    <td>
+                                        <div class="input_wrap">
+                                            <input type="password" title="비밀번호 재입력">
+                                        </div>
+                                        <span class="warning"><i>강조</i>확인을 위하여 비밀번호를 한번 더 입력합니다.</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>성명</th>
+                                    <td><span class="text">홍길동</span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>이메일</th>
+                                    <td>
+                                        <div class="input_wrap type_long">
+                                            <input type="email" title="이메일 입력">
+                                        </div>
+                                        <span class="button_box"><button type="button" title="새창" class="button form_button">이메일 중복 확인</button></span>
+                                        <!--<span class="button_box"><a href="" title="새창" class="button form_button">이메일 중복 확인</a></span>-->
+                                        <!--/링크 사용시 a 태그 사용해주세요-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>업종</th>
+                                    <td>
+                                        <div class="select_box">
+                                            <select title="업종 선택" class="select_list">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>업무분야</th>
+                                    <td>
+                                        <div class="select_box">
+                                            <select title="업무분야 선택" class="select_list">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>소속(회사명/학교명)</th>
+                                    <td>
+                                        <div class="input_wrap type_long">
+                                            <input type="email" title="회사명/학교명 입력">
+                                        </div>
+                                        <span class="button_box"><button type="button" title="새창" class="button form_button">검색</button></span>
+                                        <!--<span class="button_box"><a href="" title="새창" class="button form_button search_company" rel="noopener noreferrer">검색</a></span>-->
+                                        <!--//링크 사용시 a 태그 사용해주세요-->
+                                        <!-- /tta_login_2023/popup2.html 에 팝업창 코딩 있음 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">위클리 뉴스레터 수신여부</th>
+                                    <td>
+                                        <div class="radio_wrap">
+                                        <span class="radio_box">
+                                            <input type="radio" id="signup_test05" name="news" class="radio">
+                                            <label for="signup_test05">수신</label>
+                                        </span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test06" name="news" class="radio">
+                                            <label for="signup_test06">수신하지 않음</label>
+                                        </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">제 3자 정보제공 동의</th>
+                                    <td>
+                                        <div class="radio_wrap">
+                                        <span class="radio_box">
+                                            <input type="radio" id="signup_test07" name="provision" class="radio">
+                                            <label for="signup_test07">네</label>
+                                        </span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test08" name="provision" class="radio">
+                                            <label for="signup_test08">아니오</label>
+                                        </span>
+                                        </div>
+                                        <span class="warning"><i>강조</i>표준, 시험인증 활용실태 등 설문조사</span>
+                                    </td>
+                                </tr>
+                            </table>    <!--//table-->
+                            <h4 class="section_title">추가 개인정보 입력</h4>
+                            <table class="table type2 responsive">
+                                <caption>추가 개인정보 입력 - 서비스 이용 선택, 생년월일, 성별, 휴대전화, 주소, 부서명/학과명, 직위직책, 알림수신여부</caption>
+                                <colgroup>
+                                    <col style="width:20%;"/>
+                                    <col style="width:80%;"/>
+                                </colgroup>
+                                <tr>
+                                    <th scope="row">서비스 이용 선택</th>
+                                    <td>
+                                        <div class="check_wrap">
+                                            <span class="check_box">
+                                                <input type="checkbox" id="signup_test09" checked>
+                                                <label for="signup_test09">전체</label>
+                                            </span>
+                                            <span class="check_box">
+                                                <input type="checkbox" id="signup_test10">
+                                                <label for="signup_test10">표준</label>
+                                            </span>
+                                            <span class="check_box">
+                                                <input type="checkbox" id="signup_test11">
+                                                <label for="signup_test11">아카데미</label>
+                                            </span>
+                                            <span class="check_box">
+                                                <input type="checkbox" id="signup_test12">
+                                                <label for="signup_test12">국제표준화전문가</label>
+                                            </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>생년월일</th>
+                                    <td>20001010</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>성별</th>
+                                    <td>남자</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>휴대전화</th>
+                                    <td>
+                                        <div class="select_box type_short">
+                                            <select title="전화번호 앞자리 선택" class="select_list">
+                                                <option>010</option>
+                                                <option>011</option>
+                                                <option>070</option>
+                                            </select>
+                                        </div>
+                                        <span class="hyphen">-</span>
+                                        <div class="input_wrap type_short">
+                                            <input type="text" title="전화번호 중간자리 입력" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+                                        </div>
+                                        <span class="hyphen">-</span>
+                                        <div class="input_wrap type_short">
+                                            <input type="tel" title="전화번호 끝자리 입력" maxlength="4" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">*<span class="skip">필수 입력</span>주소</th>
+                                    <td>
+                                        <div class="inline_wrap">
+                                            <div class="input_wrap search">
+                                                <input type="search" title="주소 검색">
+                                            </div>
+                                            <span class="button_box"><button type="button" class="button form_button">검색</button></span>
+                                            <div class="input_wrap address">
+                                                <input type="text" title="주소" readonly>
+                                                <input type="text" title="상세주소">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">부서명/학과명</th>
+                                    <td>
+                                        <div class="input_wrap">
+                                            <input type="text" title="부서명/학과명 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">직위직책</th>
+                                    <td>
+                                        <div class="input_wrap">
+                                            <input type="text" title="직위직책 입력">
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">알림수신여부</th>
+                                    <td>
+                                        <div class="radio_wrap">
+                                            <span class="text">SMS 수신 :</span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test13" name="receive_sms" class="radio">
+                                            <label for="signup_test13">수신</label>
+                                        </span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test14" name="receive_sms" class="radio">
+                                            <label for="signup_test14">수신하지 않음</label>
+                                        </span>
+                                        </div>
+                                        <div class="radio_wrap">
+                                            <span class="text">메일 수신 :</span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test15" name="receive_mail" class="radio">
+                                            <label for="signup_test15">수신</label>
+                                        </span>
+                                            <span class="radio_box">
+                                            <input type="radio" id="signup_test16" name="receive_mail" class="radio">
+                                            <label for="signup_test16">수신하지 않음</label>
+                                        </span>
+                                        </div>
+                                        <div class="warning">
+                                            <i></i>
+                                            <span>
+                                            신청하신 교육 및 자격시험, 회사의 주요 안내 메시지는 수신동의 여부와 관계없이 발송됩니다.<br>
+                                            개강 안내 등 메일로 안내 드리는 사항이 많으니 가급적 수신 동의 바랍니다.
+                                        </span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="submit_button_wrap">
+                                <span class="button_box"><button type="submit" class="button">수정</button></span>
+                                <span class="button_box"><a href="" class="button cancel">취소</a></span>
+                                <span class="button_box"><button type="button" class="button cancel quit_btn">탈퇴</button></span>
+                                <!--<span class="button_box"><a href="" class="button">수정</a></span>-->
+                                <!--<span class="button_box"><button type="button" class="button cancel">취소</button></span>-->
+                                <!--<span class="button_box"><a href="" class="button cancel quit_btn">탈퇴</a></span>-->
+                                <!--//스크립트 사용시 button 태그 사용해주세요-->
+                                <!--//링크 사용시 a 태그 사용해주세요-->
+                            </div>    <!--//submit_button_wrap-->
+                        </fieldset>
+                    </form>    <!--//information_form_basic-->
+
+                </div>    <!--//login_program signup input_inform-->
+                <div class="section_split">UI 설계서 20페이지 끝</div>
+
+            </div>    <!--//login_wrap-->
+        </div>    <!--//#contents-->
+    </div>    <!--//#container-->
+</div>    <!--//#wrapper-->
+</body>
+</html>

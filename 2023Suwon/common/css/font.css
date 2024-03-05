@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* S코어드림 */
+@font-face{
+    font-family : 'SCoreDream';
+    font-weight : 200;
+    src : url("../font/S-CoreDream-3Light.woff2") format('woff2'),
+    url("../font/S-CoreDream-3Light.woff") format('woff');
+}
+@font-face{
+    font-family : 'SCoreDream';
+    font-weight : 400;
+    src : url("../font/S-CoreDream-4Regular.woff2") format('woff2'),
+    url("../font/S-CoreDream-4Regular.woff") format('woff');
+}
+@font-face{
+    font-family : 'SCoreDream';
+    font-weight : 500;
+    src : url("../font/S-CoreDream-5Medium.woff2") format('woff2'),
+    url("../font/S-CoreDream-5Medium.woff") format('woff');
+}
+@font-face{
+    font-family : 'SCoreDream';
+    font-weight : 600;
+    src : url("../font/S-CoreDream-6Bold.woff2") format('woff2'),
+    url("../font/S-CoreDream-6Bold.woff") format('woff');
+}
+
+/* 경기천년제목체 */
+@font-face{
+    font-family : 'GyeonggiT';
+    font-weight : 400;
+    src : url("../font/Title_Medium.woff2") format('woff2'),
+    url("../font/Title_Medium.woff") format('woff');
+}
+
+/* Tenada */
+@font-face{
+    font-family : 'Tenada';
+    font-weight : 400;
+    src : url("../font/Tenada.woff2") format('woff2'),
+    url("../font/Tenada.woff") format('woff');
+}
+
+/* lato */
+@font-face{
+    font-family : 'lato';
+    font-weight : 400;
+    src : url("../font/Lato-Regular.woff2") format('woff2'),
+    url("../font/Lato-Regular.woff") format('woff');
+}

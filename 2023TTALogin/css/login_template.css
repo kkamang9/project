@@ -1,0 +1,179 @@
+@charset "UTF-8";
+/* ㈜한신정보기술 - 이재홍 2023.07.18 */
+
+/* 테이블 시작 */
+.table_unit{display:block;width:100%;font-size:0;line-height:0;box-sizing:border-box;text-align:right;}
+.table_unit .text{display:inline-block;font-size:16px;color:#121b38;line-height:28px;letter-spacing:-0.03em;font-weight:200;font-family:'CJK';vertical-align:top;box-sizing:border-box;}
+@media screen and (max-width:1000px){
+    .table_unit .text{font-size:15px;line-height:26px;}
+}
+.table{position:relative;width:100%;}
+.table:before{display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background-color:#999;content:'';box-sizing:border-box;}
+.table caption{font-size:0 !important;color:transparent !important;line-height:0 !important;}
+.table th, .table td{vertical-align:middle;}
+
+/* 테이블 */
+.section_title + .table{margin-top:15px;}
+.table.type2{border-top-color:#000;border-top-width:2px;}
+.table th, .table td{padding:15px 20px;border:solid 1px #e0e1e3;}
+.table th{background-color:#f3f8fe;font-weight:600;font-size:17px;line-height:22px;color:#0d1478;}
+.table td{background-color:#fff;font-size:0;line-height:0;}
+.table tr:first-child th, .table tr:first-child td{}
+.table th:first-child, .table td:first-child{border-left:0;}
+.table td:last-child{border-right:0;}
+.table td .text{font-weight:400;font-size:17px;line-height:22px;color:#000;}
+.table td .input_wrap + .button_box{margin-left:10px;}
+@media screen and (max-width:1000px){
+    .table td .input_wrap + .button_box{margin-left:5px;}
+}
+@media screen and (max-width:640px){
+    .table td .input_wrap + .button_box{display:block;margin-top:5px;margin-left:0;}
+}
+
+
+/* 가로형(기본) 테이블 */
+.table thead th, .table tbody th, .table tbody td, .table tfoot th, .table tfoot td,
+.table.type2 tbody th, .table.type2 tbody td{padding:12px 20px;font-size:17px;line-height:24px;word-break:break-all;}
+.table.type2 tbody td{text-align:left;}
+.table thead th, table.type2 tbody th{background-color:#f3f8fe;color:#0d1478;font-weight:600;}
+.table tbody th, .table tfoot th{background-color:#f8fafb;font-weight:200;}
+.table thead tr:nth-child(n+2) th, .table tbody th, .table tbody td, .table tfoot th, .table tfoot td{color:#000;font-weight:200;}
+.table thead tr th,
+.table tbody tr th,
+.table tbody tr td,
+.table tfoot tr th,
+.table tfoot tr td{border-left:1px solid #d3d3d3;border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;}
+.table thead tr th{border-top:1px solid #8c9db4;}
+.table thead tr th,
+.table thead tr td{border-bottom:none;}
+.table thead tr{border-bottom:1px solid #8c9db4;}
+.table thead tr:first-child th{border-top:2px solid #0d1478;}
+.table thead tr th:first-child,
+.table tbody tr th:first-child,
+.table tbody tr td:first-child,
+.table tfoot tr th:first-child,
+.table tfoot tr td:first-child{border-left:none;}
+.table thead tr th:last-child,
+.table tbody tr th:last-child,
+.table tbody tr td:last-child,
+.table tfoot tr th:last-child,
+.table tfoot tr td:last-child{border-right:none;}
+.table.type2 thead tr th:last-child,
+.table.type2 tbody tr th:last-child,
+.table.type2 tbody tr td:last-child,
+.table.type2 tfoot tr th:last-child,
+.table.type2 tfoot tr td:last-child{border-right:none;}
+.table tbody tr:last-child th,
+.table tbody tr:last-child td,
+.table tfoot tr:last-child th,
+.table tfoot tr:last-child td{border-bottom:1px solid #d3d3d3;}
+@media screen and (min-width:1201px){
+    .table thead th, .table tbody th, .table tbody td, .table tfoot th, .table tfoot td, .table.type2 tbody th, .table.type2 tbody td{word-break:keep-all;}
+}
+@media screen and (max-width:1200px){
+    .table tbody td .blt,
+    .table tbody td .bu > li,
+    .table tbody td .num > li,
+    .table tbody td .title_list > li{word-break:break-all;}
+}
+@media screen and (max-width:1000px){
+    .table thead th, .table tbody th, .table tbody td, .table tfoot th, .table tfoot td, .table.type2 tbody th, .table.type2 tbody td{padding:10px;font-size:16px;line-height:26px;}
+}
+@media screen and (max-width:640px){
+    .table thead th, .table tbody th, .table tbody td, .table tfoot th, .table tfoot td, .table.type2 tbody th, .table.type2 tbody td{font-size:15px;line-height:24px;}
+}
+/* 세로형 테이블 */
+.table.type2 tbody tr th{border-right:1px solid #d3d3d3;border-bottom:1px solid #d3d3d3;}
+.table.type2 tbody tr:first-child th,
+.table.type2 tbody tr:first-child td{border-top:2px solid #000;}
+.table.type2 tbody tr:last-child th{border-bottom:1px solid #999;}
+/* 반응형 테이블 */
+@media screen and (max-width:640px){
+    .table.responsive{border-top:2px solid #0d1478;}
+    .table.responsive:before{display:none;}
+    .table.responsive thead{display:none;}
+    .table.responsive colgroup{display:none;}
+    .table.responsive tbody tr,
+    .table.responsive tfoot tr{display:block;position:relative;padding:5px 0;}
+    .table.responsive tbody tr:after{display:block;clear:both;height:0;content:".";visibility:hidden;}
+    .table.responsive tbody tr:nth-child(2n-1){background:#f3f8fe;border-bottom:1px solid #8c9db4;}
+    .table.responsive tbody tr:nth-child(2n){background:#fff;border-bottom:1px solid #8c9db4;}
+    .table.responsive thead + tbody th:before,
+    .table.responsive tbody td:before{display:inline;margin-right:3px;color:#0d1478;font-weight:600;content:attr(data-content)' :';}/* thead의 내용을 tbody의 th, td에 각각 삽입 */
+    .table.responsive tfoot tr{display:block;position:relative;}
+    .table.responsive tfoot tr:after{display:block;clear:both;height:0;content:".";visibility:hidden;}
+    .table.responsive tfoot tr:last-child{border-bottom:1px solid #8c9db4;}
+    .table.responsive tfoot th:before,
+    .table.responsive tfoot td:before{display:inline;margin-right:3px;color:#0d1478;font-weight:600;content:attr(data-content)' :';}/* thead의 내용을 tbody의 th, td에 각각 삽입 */
+    .table.responsive tbody th,
+    .table.responsive tfoot th{display:block;padding:0 3%;background-color:transparent;border:none;font-weight:400;vertical-align:middle;text-align:left;}
+    .table.responsive tbody td,
+    .table.responsive tfoot td{display:block;padding:0 3%;background-color:transparent;border:none;box-sizing:border-box;text-align:left;}
+    .table.responsive tbody tr:first-child th,
+    .table.responsive tbody tr:first-child td,
+    .table.responsive tfoot tr:first-child th,
+    .table.responsive tfoot tr:first-child td{border-top:none;}
+    .table.responsive tbody tr:last-child th,
+    .table.responsive tbody tr:last-child td,
+    .table.responsive tfoot tr:last-child th,
+    .table.responsive tfoot tr:last-child td{border-bottom:none;}
+    .table.type2.responsive thead + tbody th:before,
+    .table.type2.responsive tbody td:before{display:none;margin-right:0;padding-left:0;font-size:0;color:transparent;content:'';}
+    .table.type2.responsive tbody tr th{background-color:transparent;border:none;font-weight:600;}
+}
+/* 스크롤 테이블 */
+@media screen and (max-width:640px){
+    .table_scroll{position:relative;width:100%;overflow-x:auto;}
+    .table_scroll .table{min-width:800px;}
+}
+/* 테이블 끝 */
+
+/* 폼요소 작성 시작 */
+.login_form{display:inline-block;position:relative;width:auto;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+/* 인풋박스 */
+.login_form .login_input{display:inline-block;width:240px;height:50px;padding:0 20px;background-color:#fff;border:1px solid #d3d3d3;border-radius:5px;font-size:16px;color:#888;line-height:50px;letter-spacing:-0.03em;font-weight:200;font-family:'CJK';vertical-align:top;box-sizing:border-box;}
+.login_form .login_input[disabled]{background-color:#fafafa;}
+/* 체크박스 */
+.login_form .login_checkbox{display:block;position:absolute;top:6px;left:6px;box-sizing:border-box;}
+.login_form .login_checkbox + label{display:inline-block;position:relative;padding-left:33px;padding-right:10px;font-size:16px;color:#5f5f5f;line-height:28px;letter-spacing:-0.04em;font-weight:200;font-family:'CJK';vertical-align:top;box-sizing:border-box;}
+.login_form .login_checkbox:disabled + label{color:#8a8d9b;}
+.login_form .login_checkbox + label:before{display:block;position:absolute;top:2px;left:0;width:25px;height:25px;background-color:#fff;border:1px solid #bcbec6;border-radius:3px;content:'';box-sizing:border-box;transition-property:background-color, border-color;transition-duration:250ms;transition-timing-function:linear;}
+.login_form .login_checkbox + label:after{display:block;position:absolute;top:1px;left:-1px;width:27px;height:27px;border:1px dashed #000;content:'';box-sizing:border-box;visibility:hidden;opacity:0;transition-property:visibility, opacity;transition-duration:200ms;transition-timing-function:linear;}
+.login_form .login_checkbox:checked + label:before{background-color:#0066cc;border-color:#0066cc;background-image:url(../images/template/login_form_checkbox_icon.png);background-repeat:no-repeat;background-position:center center;}
+.login_form .login_checkbox:focus + label:after{visibility:visible;opacity:1;}
+.login_form .login_checkbox:disabled + label:before{background-color:#fafafa;border:1px solid #d3d3d3;}
+/* 라디오박스 */
+.login_form .login_radio{display:block;position:absolute;top:14px;left:7px;width:0px;height:0px;box-sizing:border-box;}
+.login_form .login_radio:focus{color:transparent;}
+.login_form .login_radio + label{display:inline-block;position:relative;padding-left:28px;padding-right:10px;font-size:16px;color:#5f5f5f;line-height:28px;letter-spacing:-0.04em;font-weight:200;font-family:'CJK';vertical-align:top;box-sizing:border-box;}
+.login_form .login_radio:disabled + label{color:#8a8d9b;}
+.login_form .login_radio + label:before{content:'';display:block;position:absolute;top:3px;left:0;width:19px;height:19px;background-color:#fff;border:1px solid #d3d3d3;border-radius:50%;content:'';box-sizing:border-box;transition-property:border;transition-duration:250ms;transition-timing-function:linear;}
+.login_form .login_radio + label:after{content:'';display:block;position:absolute;top:2px;left:-2px;width:23px;height:23px;border:1px dashed #000;border-radius:50%;content:'';box-sizing:border-box;visibility:hidden;opacity:0;transition-property:visibility, opacity;transition-duration:200ms;transition-timing-function:linear;}
+.login_form .login_radio:checked + label:before{border:5px solid #0066cc;}
+.login_form .login_radio:focus + label:after{visibility:visible;opacity:1;}
+.login_form .login_radio:disabled + label:before{background-color:#f4f6f9;border:1px solid #e0e1e3;}
+/* 셀렉트박스 */
+.login_real_select_box{display:inline-block;position:relative;width:auto;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.login_real_select_box .login_select{display:inline-block;position:relative;min-width:240px;height:50px;padding-left:20px;padding-right:35px;background-image:url(../images/template/login_form_select_arrow01.png);background-repeat:no-repeat;background-position:right 21px top 21px ;background-color:#fff;border:1px solid #d3d3d3;border-radius:5px;font-size:16px;color:#333;line-height:48px;letter-spacing:-0.03em;font-weight:200;font-family:'CJK';vertical-align:top;box-sizing:border-box;appearance:none;-webkit-appearance:none;-moz-appearance:none;}
+/* 폼요소 반응형 */
+@media screen and (max-width:1500px){
+    .login_form .login_input{width:210px;height:45px;padding:0 15px;line-height:45px;}
+    .login_form .login_checkbox + label{padding-left:30px;}
+    .login_form .login_checkbox + label:before{top:3px;width:23px;height:23px;}
+    .login_form .login_checkbox + label:after{top:2px;width:25px;height:25px;}
+}
+@media screen and (max-width:1000px){
+    .login_form .login_input{width:180px;height:40px;line-height:40px;}
+    .login_real_select_box .login_select{min-width:180px;height:40px;background-position-y:16px;line-height:38px;}
+}
+@media screen and (max-width:640px){
+    .login_form .login_input{width:150px;height:30px;padding:0 10px;font-size:15px;line-height:30px;}
+    .login_form .login_checkbox + label{padding-left:25px;font-size:15px;line-height:26px;}
+    .login_form .login_checkbox + label:before{width:20px;height:20px;}
+    .login_form .login_checkbox + label:after{width:22px;height:22px;}
+    .login_form .login_radio + label{padding-left:24px;font-size:15px;line-height:26px;}
+    .login_form .login_radio + label:before{top:4px;width:18px;height:18px;}
+    .login_form .login_radio + label:after{top:2px;width:22px;height:22px;}
+    .login_real_select_box .login_select{min-width:150px;height:30px;background-position-y:11px;font-size:15px;line-height:28px;}
+}
+/* 폼요소 작성 끝 */

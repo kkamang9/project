@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+/* ㈜한신정보기술 이재홍 - 2023.06.14 */
+
+/* cts8330 - 양성평등 상담소 > 성희롱·성폭력이란 */
+.cts8330_wrap{letter-spacing:-0.03em;}
+.cts8330_wrap .box8330{border:0;background-color:#f8fbff;}
+.cts8330_wrap .box8330 .text_b_navy{color:#132a51;font-weight:600;}
+.cts8330_wrap .box8330 .text_b_navy .text_b_blue{color:#2460c6;font-weight:600;}
+.cts8330_wrap .box8330 .n_kor li{display:table;width:100%;height:95px;padding-right:140px;padding-left:140px;box-sizing:border-box;}
+.cts8330_wrap .box8330 .n_kor li:nth-child(2n+1){background-color:#fff;}
+.cts8330_wrap .box8330 .n_kor li span{display:table-cell;width:100%;font-weight:400;font-size:14px;line-height:25px;color:#333;}
+.cts8330_wrap .box8330 .n_kor li:before{content:"";display:inline-block;width:32px;height:32px;margin-top:31px;margin-right:20px;background-image:url(/site/HumanRightsCenter/images/contents/cts8330_ul_kor.png);background-repeat:no-repeat;}
+.cts8330_wrap .box8330 .n_kor li:nth-child(2):before{background-position-x:-32px;}
+.cts8330_wrap .box8330 .n_kor li:nth-child(3):before{background-position-x:-64px;}
+.cts8330_wrap .box8330 .n_kor li:nth-child(4):before{background-position-x:-96px;}
+.cts8330_wrap .inform{font-weight:400;font-size:14px;line-height:25px;color:#666;}
+.cts8330_wrap .inform:before{content:"";display:inline-block;width:18px;height:18px;margin-right:7px;margin-bottom:-3px;background-image:url(/site/HumanRightsCenter/images/contents/cts8330_inform.png);}
+.cts8330_wrap .blue_bu li{position:relative;padding-top:16px;padding-right:20px;padding-left:20px;}
+.cts8330_wrap .blue_bu li:before{content:"";display:block;position:absolute;left:0;top:36px;width:6px;height:6px;background-color:#2460c6;}
+.cts8330_wrap .blue_bu li .title{display:inline-block;padding-top:10px;padding-bottom:10px;;font-family:NanumS, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Gulim, 굴림, sans-serif;font-weight:600;font-size:18px;line-height:26px;color:#2460c6;}
+.cts8330_wrap .blue_bu li .text{padding-bottom:24px;border-bottom:dashed 1px #bcbcbc;font-weight:400;font-size:15px;line-height:26px;color:#555;}
+.cts8330_wrap .blue_bu li:last-child .text{border-bottom:0;}
+@media screen and (max-width:800px){
+    .cts8330_wrap br{display:none;}
+    .cts8330_wrap > p{padding-right:3%;padding-left:3%;}
+    .cts8330_wrap .box8330 .text_b_navy{padding-right:3%;padding-left:3%;}
+    .cts8330_wrap .box8330 .n_kor li{padding-right:3%;padding-left:3%;}
+}
+
+/* cts8327 - 인권상담소 > 인권침해 상담 및 신고 */
+.cts8327_wrap{letter-spacing:-0.03em;}
+.cts8327_wrap .cts_intro_box{width:100%;padding-top:47px;padding-bottom:40px;padding-left:210px;border-top:solid 1px #a9a9a9;border-bottom:solid 1px #a9a9a9;background-image:url(../images/contents/cts8327_illust.png);background-position:30px 18px;background-repeat:no-repeat;box-sizing:border-box;}
+.cts8327_wrap .cts_intro_box .text{margin-bottom:16px;font-family:NanumS, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Gulim, 굴림, sans-serif;font-weight:400;font-size:17px;line-height:35px;color:#222;}
+.cts8327_wrap .cts_intro_box .text .skip{display:inline-block;position:unset;width:124px;height:35px;margin-right:8px;margin-bottom:-13px;margin-left:8px;background-image:url(../images/contents/cts8327_text.png);background-repeat:no-repeat;}
+@media screen and (max-width:800px){
+    .cts8327_wrap .cts_intro_box{padding-left:3%;padding-right:3%;background-image:none;text-align:center;}
+    .cts8327_wrap .cts_intro_box .text .skip{display:block;margin:0 auto;}
+}
+
+/* cts8326 - 인권 상담소 > 인권이란 */
+.cts8326_wrap{letter-spacing:-0.03em;}
+.cts8326_wrap{position:relative;background-color:#e8f8ff;}
+.cts8326_wrap:before{content:"";display:block;position:absolute;left:0;bottom:0;width:100%;height:402px;background-image:url(../images/contents/cts8326_box_bg.png);background-position:bottom;background-repeat:no-repeat;background-size:contain;}
+.cts8326_wrap:after{content:"";display:block;position:absolute;left:30px;bottom:30px;width:calc(100% - 60px);height:550px;background-image:linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0.5));}
+.cts8326_wrap .bg_box{position:relative;z-index:5;width:100%;padding-top:50px;padding-right:calc(3% + 30px);padding-bottom:100px;padding-left:calc(3% + 30px);box-sizing:border-box;}
+.cts8326_wrap .bg_box:before{content:"";display:block;position:absolute;left:0;bottom:0;width:227px;height:148px;background-image:url(../images/contents/cts8326_box_illust01.png);background-repeat:no-repeat;}
+.cts8326_wrap .bg_box:after{content:"";display:block;position:absolute;right:0;bottom:0;width:198px;height:147px;background-image:url(../images/contents/cts8326_box_illust02.png);background-repeat:no-repeat;}
+.cts8326_wrap .bg_box .cts_title{width:162px;height:63px;margin:0 auto;}
+.cts8326_wrap .bg_box .desc{background-image:url(../images/contents/cts8326_text_bg.png);background-position-x:calc(50% + 230px);background-repeat:no-repeat;font-family:NanumS, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Gulim, 굴림, sans-serif;font-weight:600;font-size:18px;line-height:35px;color:#144391;}
+.cts8326_wrap .bg_box .desc .extrabold{font-weight:800;}
+.cts8326_wrap .bg_box .text{font-size:14px;line-height:25px;color:#333;}
+.cts8326_wrap .bg_box .sprout{padding-top:60px;background-image:url(../images/contents/cts8326_sprout_icon.png);background-position:center 0;background-repeat:no-repeat;}
+@media screen and (max-width:800px){
+    .cts8326_wrap br{display:none;}
+    .cts8326_wrap .bg_box .desc{background-image:unset;}
+    .cts8326_wrap .bg_box{padding-bottom:170px;}
+}
+@media screen and (max-width:460px){
+    .cts8326_wrap .bg_box:after{display:none;}
+}
+
+/* cts8323 - 상담 및 신고 > FAQ */
+.cts8323_wrap{letter-spacing:-0.03em;}
+.cts8323_wrap .cts_faq_list{border-top:solid 3px #132a51;}
+.cts8323_wrap .cts_faq_list .cts_faq_item{border-top:solid 1px #cdd5e3;border-bottom:solid 1px #cdd5e3;}
+.cts8323_wrap .cts_faq_list .cts_faq_item:nth-child(n+2){margin-top:-1px;}
+.cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_btn button.open_btn{overflow:hidden;position:relative;width:100%;padding:27px 40px;font-family:NanumS, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Gulim, 굴림, sans-serif;font-weight:400;font-size:16px;line-height:25px;color:#222;text-align:left;text-decoration:none;white-space:nowrap;text-overflow:ellipsis;}
+.cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_btn button.open_btn:after{content:"";display:block;position:absolute;right:40px;top:35px;border-top:solid 9px #132a51;border-left:solid 9px transparent;border-right:solid 9px transparent;}
+.cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_btn button.open_btn .question{margin-right:10px;font-weight:600;font-size:18px;color:#132a51;letter-spacing:0;text-decoration:none;}
+.cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_desc{display:none;position:relative;padding:27px 80px 27px 70px;border-top:solid 1px #cdd5e3;background-color:#f8fbff;font-weight:400;font-size:14px;line-height:25px;color:#506383;}
+.cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_desc .answer{position:absolute;left:40px;top:27px;margin-right:10px;font-family:NanumS, "Malgun Gothic", "맑은 고딕", Dotum, 돋움, Gulim, 굴림, sans-serif;font-weight:600;font-size:18px;letter-spacing:0;}
+@media screen and (max-width:800px){
+    .cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_btn button.open_btn{padding:20px calc(3% + 30px) 20px 3%;}
+    .cts8323_wrap .cts_faq_list .cts_faq_item .cts_faq_btn button.open_btn:after{position:absolute;right:3%;top:27px;}
+}
