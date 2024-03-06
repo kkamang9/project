@@ -1,20 +1,7 @@
 /* (주)한신정보기술 권정현 - 2017.05.22 */
 
-/* 1차메뉴 간격 고정타입(property = width : #px, padding-right : #px, padding-left : #px) */
-/*#header .lnb .lnb_wrap .depth1_menu .depth1_list {}
-#header .lnb .lnb_wrap .depth1_menu .depth1_list.rule1 {}
-#header .lnb .lnb_wrap .depth1_menu .depth1_list.rule2 {}
-#header .lnb .lnb_wrap .depth1_menu .depth1_list.rule3 {}
-#header .lnb .lnb_wrap .depth1_menu .depth1_list.rule4 {}
-#header .lnb .lnb_wrap .depth1_menu .depth1_list.rule5 {}*/
-
-/* 1차메뉴 간격 유동타입(property = padding-right : #px, padding-left : #px) */
-/* #header .lnb .lnb_wrap .depth1_menu .depth1_list .depth1_anchor {} */
 #header .lnb .lnb_wrap .depth1_menu .depth1_list.rule1 .depth1_anchor {padding-right:25px; padding-left:25px;}
 #header .lnb .lnb_wrap .depth1_menu .depth1_list.rule2 .depth1_anchor {padding-right:50px; padding-left:50px;}
 #header .lnb .lnb_wrap .depth1_menu .depth1_list.rule3 .depth1_anchor {padding-right:30px; padding-left:30px;}
 #header .lnb .lnb_wrap .depth1_menu .depth1_list.rule4 .depth1_anchor {padding-right:30px; padding-left:30px;}
 #header .lnb .lnb_wrap .depth1_menu .depth1_list.rule5 .depth1_anchor {padding-right:30px; padding-left:30px;}
-
-/* 2차메뉴 간격 조정(property = padding-bottom : #px) */
-/* #header.menu_active .lnb, #header.menu_active .lnb .lnb_wrap .wrap {} */
