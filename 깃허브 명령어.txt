@@ -1,4 +1,4 @@
-----------GIT BASH SETING----------
+----------GIT BASH SETING-----------
 git config --global user.name "" <유저의 네임을 설정>
 git config --global user.email "" <유저의 이메일을 등록>
 -------------------------------------------
