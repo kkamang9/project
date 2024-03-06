@@ -11,7 +11,6 @@ var http = require("http"),
 
 // 서버 생성
 http.createServer(function(req, res) {
-
     "use strict";
 
     // 요청된 URI 정보
