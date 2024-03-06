@@ -1,0 +1,143 @@
+/* 링크처리 */
+a:link {color:#636363; text-decoration:none;}
+a:visited {color:#636363; text-decoration:none;}
+a:hover {color:#0030ae; text-decoration:underline;}
+a:active {color:#0030ae; text-decoration:underline;}
+a:hover span {text-decoration:underline; cursor:pointer;}
+
+/* 입력 form */
+html.firefox fieldset {display:table-cell !important;}
+button, input[type='button'], input[type='reset'], input[type='submit'] {overflow:visible;} /* ie6 ~ ie7 버튼 길어짐 해결 css */
+button:hover, input[type='button']:hover, input[type='reset']:hover, input[type='submit']:hover {text-decoration:underline;}
+button:hover span {text-decoration:underline;}
+input {height:24px; margin-top:1px; margin-right:1px; margin-bottom:1px; margin-left:1px; padding-top:1px; padding-right:3px; padding-bottom:1px; padding-left:3px; border-top-width:1px; border-top-style:solid; border-top-color:#dedede; border-right-width:1px; border-right-style:solid; border-right-color:#dedede; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#dedede; border-left-width:1px; border-left-style:solid; border-left-color:#dedede; line-height:24px;}
+input[type='submit'] {height:28px; line-height:24px;}
+input[type='radio'], input[type='checkbox'] {width:14px; height:14px;}
+input[type='image'] {height:auto; margin-top:0; margin-right:0; margin-bottom:0; margin-left:0; padding-top:0; padding-right:0; padding-bottom:0; padding-left:0; border-top-width:0; border-right-width:0; border-bottom-width:0; border-left-width:0;}
+select {height:28px; padding-top:1px; padding-bottom:1px; padding-left:3px; border-top-width:1px; border-top-style:solid; border-top-color:#dedede; border-right-width:1px; border-right-style:solid; border-right-color:#dedede; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#dedede; border-left-width:1px; border-left-style:solid; border-left-color:#dedede; background-color:#fff; line-height:24px;}
+textarea {min-height:80px; padding-top:1px; padding-right:3px; padding-bottom:1px; padding-left:3px; border-top-width:1px; border-top-style:solid; border-top-color:#dedede; border-right-width:1px; border-right-style:solid; border-right-color:#dedede; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#dedede; border-left-width:1px; border-left-style:solid; border-left-color:#dedede; line-height:25px;}
+
+/* 기타 */
+img, div.root_daum_roughmap {max-width:100%;}
+iframe.pdf {width:100%; height:600px; margin-top:30px; margin-bottom:30px;}
+mark {background-color:transparent;}
+[data-style='list'] .target {display:none;}
+
+@media screen and (max-width:640px) {
+    iframe.pdf {height:300px;}
+}
+
+/* 레이아웃 공통 */
+html, body {position:relative; height:100%;}
+html.freeze, html.freeze body {overflow-x:hidden; overflow-y:hidden;}
+#wrapper {overflow-x:hidden; overflow-y:hidden; position:relative; width:100%; min-width:1200px;}
+#wrapper.dimmed #header, #wrapper.dimmed #footer {z-index:auto;}
+body {color:#555; font-size:15px; line-height:1.6em; font-family:'NanumS', 'Malgun Gothic', '맑은 고딕', 'Dotum', '돋움', 'Gulim', '굴림', sans-serif; word-break:break-all;}
+.wrap {position:relative; width:1200px; margin-right:auto; margin-left:auto;}
+
+@media screen and (max-width:800px) {
+    #wrapper {min-width:0;}
+    .wrap {width:auto; margin-left:0; margin-right:0;}
+}
+
+/* slick 플러그인 */
+.slick-slider .slick-list {display:block; overflow-x:hidden; overflow-y:hidden; position:relative;}
+.slick-slider .slick-list.dragging {cursor:pointer;}
+.slick-slider .slick-list .slick-track, .slick-slider .slick-list {transform:translate3d(0, 0, 0);}
+.slick-slider .slick-list .slick-track {display:block; position:relative; top:0; left:0;}
+.slick-slider .slick-list .slick-track:before, .slick-slider .slick-list .slick-track:after {display:table; content:'';}
+.slick-slider .slick-list .slick-track:after {clear:both;}
+.slick-slider .slick-list.slick-loading .slick-track {visibility:hidden;}
+.slick-slider .slick-list .slick-track .slick-slide {display:none; float:left;}
+.slick-slider[dir='rtl'] .slick-list .slick-track .slick-slide {float:right;}
+.slick-slider .slick-list .slick-track .slick-slide img {display:inline-block;}
+.slick-slider .slick-list .slick-track .slick-slide.slick-loading img {display:none;}
+.slick-slider.slick-initialized .slick-list .slick-track .slick-slide {display:block;}
+.slick-slider .slick-list .slick-track.slick-loading .slick-slide {visibility:hidden;}
+.slick-slider .slick-arrow.slick-hidden {display:none;}
+
+/* 상단 */
+#header {position:relative; z-index:30; width:100%;}
+html.header_sticky #header {position:fixed; top:0; right:0;}
+
+/* 본문바로가기 */
+#header .accessibility {position:absolute; top:0; left:0; z-index:90; width:100%;}
+#header .accessibility a {display:block; overflow-x:hidden; overflow-y:hidden; position:relative; width:100%; height:2px; text-align:center;}
+#header .accessibility a:focus, #header .accessibility a:hover, #header .accessibility a:active {height:auto; padding-top:5px; padding-bottom:5px; background-color:#000; color:#fff; font-size:14px; font-weight:600; line-height:inherit;}
+
+/* 로고 */
+#header .logo {position:absolute;}
+#header .logo a {display:inline-block;}
+#header .logo a:hover {text-decoration:none;}
+#header .logo a img {display:inline-block; vertical-align:middle;}
+
+/* gnb */
+#header .gnb .wrap {overflow-x:hidden; overflow-y:hidden;}
+#header .gnb .gnb_left {float:left;}
+#header .gnb .gnb_right {float:right;}
+#header .gnb > ul.clearfix > li, #header .gnb .wrap > ul.clearfix > li, #header .gnb .gnb_left > ul.clearfix > li, #header .gnb .gnb_right > ul.clearfix > li {float:left;}
+#header .gnb ul.clearfix li a, #header .gnb ul.clearfix li span {vertical-align:middle;}
+#header .gnb ul.clearfix li a, #header .gnb ul.clearfix li span, #header .gnb ul.clearfix li button {display:inline-block;}
+
+/* lnb */
+#header .lnb_m_open, #header .lnb .lnb_m_close {display:none;}
+#header .lnb .lnb_m_title {display:none;}
+#header .lnb_m_open button, #header .lnb .lnb_m_close button {display:block; width:100%; height:100%; font-size:0;}
+#header .lnb_m_open button:hover, #header .lnb .lnb_m_close button:hover {text-decoration:none;}
+
+/* 본문 */
+#container {position:relative; z-index:10; width:100%;}
+#container .tab_menu > .tab_menu_wrap {position:relative;}
+#container .tab_menu > .tab_menu_wrap > ul.clearfix > li {float:left;}
+#container .tab_menu > .tab_menu_wrap > ul.clearfix > li > .tab_content {display:none; position:absolute; top:100%; left:0; width:100%;}
+#container .tab_menu > .tab_menu_wrap > ul.clearfix > li.active > .tab_content {display:block;}
+
+/* 하단 */
+#footer {position:relative; z-index:20; width:100%;}
+#footer .footer_nav .footer_nav_left {float:left;}
+#footer .footer_nav .footer_nav_right {float:right;}
+#footer .footer_nav ul.clearfix li {float:left;}
+#footer .footer_nav ul.clearfix li a {display:inline-block; vertical-align:middle;}
+#footer .footer_info address mark {display:inline-block; margin-left:10px; vertical-align:middle;}
+#footer .footer_wa {position:absolute; line-height:0; font-size:0;}
+#footer .footer_wa a {display:block;}
+
+/* 한신 내부 컨텐츠 */
+#footer .hanshin {border-top-width:1px; border-top-style:solid; border-top-color:#dedede; border-bottom-width:1px; border-bottom-style:solid; border-bottom-color:#dedede; background-color:#fff;}
+#footer .hanshin ul {padding-top:10px; padding-bottom:10px; font-size:0;}
+#footer .hanshin ul li {margin-top:3px; font-size:14px; color:#000;}
+#footer .hanshin ul li:first-child {margin-top:0;}
+#footer .hanshin ul li a {vertical-align:middle;}
+#footer .hanshin ul li a, #footer .hanshin ul li button {margin-left:5px; font-size:14px; color:#000;}
+#footer .hanshin ul li a:first-child, #footer .hanshin ul li button:first-child {margin-left:0;}
+
+/* 레이어 팝업(대표레이어팝업 2018-03-29) */
+/* .layer_popup {position:relative; z-index:100; width:100%; height:0;} 2019-01-31 상단메뉴 마우스오버 시 레이어팝업 위로 보이게 수정요청 z-index 변경*/
+.layer_popup {position:relative; z-index:20; width:100%; height:0;}
+.layer_popup .wrap {height:100%;}
+.layer_popup .wrap > div[class^='popup'] {position:absolute;}
+.layer_popup .wrap > div[class^='popup'] a {display:block; overflow-x:hidden; overflow-y:auto; position:relative; line-height:0; font-size:0;}
+.layer_popup .wrap > div[class^='popup'] a img {max-width:none;}
+.layer_popup .wrap > div[class^='popup'] .popup_close {padding-top:5px; padding-right:10px; padding-bottom:4px; padding-left:10px; background-color:#303030;}
+.layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left {float:left; font-size:0;}
+.layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left input[type='checkbox'] {display:inline-block; margin-top:0; margin-right:10px; margin-bottom:0; margin-left:0; padding-top:0; padding-right:0; padding-bottom:0; padding-left:0; border-top-color:#696969; border-right-color:#696969; border-bottom-color:#696969; border-left-color:#696969;}
+.layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left label {display:inline-block; color:#fff; font-size:15px; line-height:16px; vertical-align:middle;}
+.layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_right {float:right; font-size:0;}
+.layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_right button {display:inline-block; height:27px; padding-right:12px; padding-left:30px; background-color:#fff; background-image:url('/common/images/layout/popup_close_icon.gif'); background-repeat:no-repeat; background-position:12px center; color:#000; font-size:14px;}
+@media screen and (max-width:800px) {
+    .layer_popup .wrap > div[class^='popup']{left:0 !important;}
+}
+
+/* 레이어 팝업(마크업은 accessibility아래 형제로 위치함) */
+#header .layer_popup {position:relative; z-index:-1; width:100%; height:0;}
+#header .layer_popup .wrap {height:100%;}
+#header .layer_popup .wrap > div[class^='popup'] {position:absolute;}
+#header .layer_popup .wrap > div[class^='popup'] a {display:block; overflow-x:hidden; overflow-y:auto; position:relative; line-height:0; font-size:0;}
+#header .layer_popup .wrap > div[class^='popup'] a img {max-width:none;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close {padding-top:5px; padding-right:10px; padding-bottom:4px; padding-left:10px; background-color:#303030;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left {float:left; font-size:0;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left input[type='checkbox'] {display:inline-block; margin-top:0; margin-right:10px; margin-bottom:0; margin-left:0; padding-top:0; padding-right:0; padding-bottom:0; padding-left:0; border-top-color:#696969; border-right-color:#696969; border-bottom-color:#696969; border-left-color:#696969;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_left label {display:inline-block; color:#fff; font-size:15px; line-height:16px; vertical-align:middle;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_right {float:right; font-size:0;}
+#header .layer_popup .wrap > div[class^='popup'] .popup_close .popup_close_right button {display:inline-block; height:27px; padding-right:12px; padding-left:30px; background-color:#fff; background-image:url('/common/images/layout/popup_close_icon.gif'); background-repeat:no-repeat; background-position:12px center; color:#000; font-size:14px;}
+
