@@ -2,7 +2,7 @@
 
 ### 2023 프로젝트
 + 옥천군청 메인 레이아웃
-  + [농업기술센터](https://kkamang9.github.io/project/2023Okchun/site/agri/main.html)
+  + [농업기술센터](https://kkamang9.github.io/project/2023Okchun/site/agri/main.html){:target="_blank}
   + [정지용문학관](https://kkamang9.github.io/project/2023Okchun/site/jiyong/main.html)
   + [청년포털](https://kkamang9.github.io/project/2023Okchun/site/young/main.html)
   + [도시재생지원센터](https://kkamang9.github.io/project/2023Okchun/site/urban/main.html)
