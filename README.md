@@ -12,10 +12,10 @@
     + [청년포털](https://kkamang9.github.io/project/2023Okchun/site/young/main.html)
     + [도시재생지원센터](https://kkamang9.github.io/project/2023Okchun/site/urban/main.html)
 + 성동문화재단 강좌관리시스템
-  + [서브 레이아웃](https://kkamang9.github.io/project/2023Sungdong/site/sdfc/sub.html)
-  + [컨텐츠 템플릿](https://kkamang9.github.io/project/2023Sungdong/site/sdfc/template.html)
-  + [프로그램](https://kkamang9.github.io/project/2023Sungdong/site/sdfc/program.html)
-    + [프로그램 프린트](https://kkamang9.github.io/project/2023Sungdong/site/sdfc/program_print.html)
+  + [서브 레이아웃](https://kkamang9.github.io/project/2023Sungdong/site/sdfac/sub.html)
+  + [컨텐츠 템플릿](https://kkamang9.github.io/project/2023Sungdong/site/sdfac/template.html)
+  + [프로그램](https://kkamang9.github.io/project/2023Sungdong/site/sdfac/program.html)
+    + [프로그램 프린트](https://kkamang9.github.io/project/2023Sungdong/site/sdfac/program_print.html)
 + 수원시청
   + 메인 레이아웃
     + [행정포털](https://kkamang9.github.io/project/2023Suwon/hangjung_2023/main.html)
