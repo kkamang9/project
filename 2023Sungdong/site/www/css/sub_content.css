@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* ㈜한신정보기술 - 이재홍 2023.08 */
+
+/* 소개 > 오시는길 */
+.cts34_wrap .map_wrap{display:block;position:relative;width:100%;border:2px solid rgba(76, 128, 189, 0.2);border-radius:25px;font-size:0;line-height:0;box-sizing:border-box;overflow:hidden;}
+.cts34_wrap .map_wrap .root_daum_roughmap{width:100%;}
+.cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:450px;}
+.cts34_wrap .map_wrap .root_daum_roughmap .wrap_map .map div:nth-child(2){right:unset !important;left:10px;}
+.cts34_wrap .map_wrap .fac_btn{position:absolute;z-index:1;bottom:15px;right:10px;}
+.cts34_wrap .fac_box.type_text{margin-top:20px;}
+.cts34_wrap .fac_box.type_text .fac_box_inner{min-height:0;}
+@media screen and (max-width:1600px){
+    .cts34_wrap .map_wrap{border-radius:20px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:400px;}
+}
+@media screen and (max-width:1000px){
+    .cts34_wrap .map_wrap{border-radius:15px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:350px;}
+    .cts34_wrap .map_wrap .fac_btn{bottom:10px;}
+    .cts34_wrap .fac_box.type_text{margin-top:15px;}
+}
+@media screen and (max-width:640px){
+    .cts34_wrap .map_wrap{border-radius:10px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:250px;}
+    .cts34_wrap .fac_box.type_text{margin-top:10px;}
+}
+
+/*  이용안내 > 접수방법, 취소방법 */
+.how_guide_box{display:block;width:100%;}
+.how_guide_box .how_guide_list{display:block;width:100%;font-size:0;line-height:0;text-align:center;}
+.how_guide_box .how_guide_list .how_guide_item{display:block;width:100%;margin-top:60px;}
+.how_guide_box .how_guide_list .how_guide_item:first-child{margin-top:0;}
+.how_guide_box .how_guide_list .how_guide_item h3{text-align:left;}
+.how_guide_box .how_guide_list .how_guide_item .img_box{display:block;overflow:hidden;position:relative;width:100%;height:auto;margin-top:40px;padding-top:51.09%;border:solid 13px #e0e0e0;border-radius:90px;box-sizing:border-box;}
+.how_guide_box .how_guide_list .how_guide_item .img_box .skip_img{display:block;position:absolute;left:0;top:0;width:0;height:0;font-size:0;line-height:0;}
+.how_guide_box .how_guide_list .how_guide_item .img_box .real_img{display:block;position:absolute;left:0;top:0;width:100%;height:100%;background-size:cover;background-position:center center;background-repeat:no-repeat;}
+.how_guide_box .how_guide_list .how_guide_item .img_box .img_zoom{display:none;z-index:1;position:absolute;right:10px;bottom:10px;width:30px;height:30px;background-color:rgba(0,0,0,0.5);box-sizing:border-box;}
+.how_guide_box .how_guide_list .how_guide_item .img_box .img_zoom a{display:block;position:relative;width:100%;height:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.how_guide_box .how_guide_list .how_guide_item .img_box .img_zoom a:before{content:'';display:block;position:absolute;left:calc(50% - 10px);top:calc(50% - 10px);width:20px;height:20px;background-image:url(../images/template/template_btn_icon_sprite.png);background-position-y:-20px;background-repeat:no-repeat;}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item{display:inline-block;width:380px;margin-right:calc((100% - 1140px) / 2);}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(-n + 3){margin-top:0;}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(3n){margin-right:0;}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item:last-child{margin-right:0;}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item h3{text-align:center;}
+.how_guide_box.type_mobile .how_guide_list .how_guide_item .img_box{padding-top:172%;}
+@media screen and (max-width:1600px){
+    .how_guide_box .how_guide_list .how_guide_item{margin-top:35px;}
+    .how_guide_box .how_guide_list .how_guide_item .img_box{border:solid 11px #e0e0e0;border-radius:5vw;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item{width:calc((100% - 40px) / 3);margin-right:20px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item .img_box{padding-top:168%;}
+}
+@media screen and (max-width:1000px){
+    .how_guide_box .how_guide_list .how_guide_item{margin-top:30px;}
+    .how_guide_box .how_guide_list .how_guide_item .img_box{border:solid 9px #e0e0e0;border-radius:4vw;}
+    .how_guide_box .how_guide_list .how_guide_item .img_box .img_zoom{display:block;}
+}
+@media screen and (max-width:640px){
+    .how_guide_box .how_guide_list .how_guide_item{margin-top:25px;}
+    .how_guide_box .how_guide_list .how_guide_item .img_box{border:solid 7px #e0e0e0;}
+    .how_guide_box .how_guide_list .how_guide_item .img_box .img_zoom{right:5px;bottom:5px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item{width:calc(50% - 20px);}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(-n + 3){margin-top:25px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(-n + 2){margin-top:0;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(3n){margin-right:20px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(2n){margin-right:0;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:last-child{margin-right:0;}
+}
+@media screen and (max-width:410px){
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item{width:100%;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(-n + 3){margin-top:25px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(-n + 2){margin-top:25px;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(1){margin-top:0;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(3n){margin-right:0;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:nth-child(2n){margin-right:0;}
+    .how_guide_box.type_mobile .how_guide_list .how_guide_item:last-child{margin-right:0;}
+}

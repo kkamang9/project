@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/2023Sungdong/common/images/favicon.png">
+    <link rel="icon" href="/2023Sungdong/common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/2023Sungdong/common/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/2023Sungdong/site/sdfac/css/sub.css" />
+    <script src="/2023Sungdong/common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="/2023Sungdong/common/js/jquery.screen.js"></script>
+    <script src="/2023Sungdong/site/sdfac/js/slick.min.custom.1.8.0.11.js"></script>
+    <script src="/2023Sungdong/site/sdfac/js/slick.extensions.min.js"></script>
+    <script src="/2023Sungdong/site/sdfac/js/common.js"></script>
+    <script src="/2023Sungdong/site/sdfac/js/sub.js"></script>
+    <script src="/2023Sungdong/common/js/program.min.js"></script>
+    <!--<link rel="stylesheet" type="text/css" href="//site/sdfac/prettify/skins/sons-of-obsidian.css">-->
+    <script src="/2023Sungdong/site/sdfac/prettify/run_prettify.js?lang=css&skin=sons-of-obsidian"></script>
+    <title>성동문화재단 강좌관리시스템 - 템플릿</title>
+</head>
+<body id="sub" class="sub">
+<div class="accessibility">
+    <a href="#contents">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_box">
+            <h1 class="header_title">
+                <a href="./index.do" class="logo">
+                    <img src="/2023Sungdong/site/sdfac/images/common/logo_wide.png" alt="성동문화재단" class="logo_img" />
+                    <span class="site_title">강좌</span>    <!--//site_title-->
+                </a>    <!--//logo-->
+            </h1>    <!--//header_title-->
+            <div class="gnb_box">
+                <ul class="gnb_list">
+                    <li class="gnb_item login">    <!--//로그인 되었을 시에 텍스트 로그아웃으로 변경 개발 요청-->
+                        <a href="" class="gnb_link"><span><em>로그인</em></span></a>
+                    </li>    <!--//gnb_item-->
+                    <li class="gnb_item join">
+                        <a href="" class="gnb_link"><span><em>회원가입</em></span></a>
+                    </li>    <!--//gnb_item-->
+                </ul>    <!--//gnb_list-->
+            </div>    <!--//gnb_box-->
+            <div class="menu_show">
+                <button type="button" class="menu_button">메뉴열기</button>    <!--//menu_button-->
+            </div>    <!--//menu_show-->
+        </div>    <!--//header_box-->
+        <div class="header_quick_box">
+            <a href="" class="sitemap_quick">사이트맵 바로가기</a>    <!--//sitemap_quick-->
+        </div>    <!--//header_quick_box-->
+        <div class="lnb">
+            <div class="lnb_top_box">
+                <div class="gnb_box">
+                    <ul class="gnb_list">
+                        <li class="gnb_item login">    <!--//로그인 되었을 시에 텍스트 로그아웃으로 변경 개발 요청-->
+                            <a href="" class="gnb_link"><span><em>로그인</em></span></a>
+                        </li>    <!--//gnb_item-->
+                        <li class="gnb_item join">
+                            <a href="" class="gnb_link"><span><em>회원가입</em></span></a>
+                        </li>    <!--//gnb_item-->
+                    </ul>    <!--//gnb_list-->
+                </div>    <!--//gnb_box-->
+            </div>    <!--//lnb_top_box-->
+            <div class="menu pulldown">  <!--//메뉴 선택해서 로딩시 가장 마지막 메뉴 차수 클레스( depth마지막차수_text )에 spy 클레스 달려서 나올 수 있게 개발 부탁드립니다 , 중복X-->
+                <h2 class="skip">메뉴</h2>
+                <div class="depth depth1">
+                    <ul class="depth_list depth1_list">
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>문화강좌</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 하위 샘플</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text spy"><span><em>4차메뉴 spy</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" target="_blank" title="새창" class="depth_text depth3_text"><span><em>3차메뉴 새창</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴 하위 샘플</em></span></a>    <!--//depth2_text-->
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 하위</em></span></a>    <!--//depth3_text-->
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth4_text-->
+                                                            </li>    <!--//depth4_item-->
+                                                        </ul>    <!--//depth4_list-->
+                                                    </div>    <!--//depth4-->
+                                                </li>    <!--//depth3_item-->
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" target="_blank" title="새창" class="depth_text depth3_text"><span><em>3차메뉴 새창</em></span></a>    <!--//depth3_text-->
+                                                </li>    <!--//depth3_item-->
+                                            </ul>    <!--//depth3_list-->
+                                        </div>    <!--//depth3-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>구민대학</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>성동구립도서관</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>금호도서관</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>용답도서관</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>청소년 문화의 집</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>알림·소식</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>공지사항</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>보도자료</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>구민대학 E카탈로그</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>소개</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>구민대학</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>평생학습기관</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>시설안내</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>오시는길</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>이용안내</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>질의응답</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>접수방법</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>취소방법</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>센터별 문의처</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>마이페이지</em></span></a>    <!--//depth1_text-->
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>수강신청확인</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>기존수강내역</em></span></a>    <!--//depth2_text-->
+                                    </li>    <!--//depth2_item-->
+                                </ul>    <!--//depth2_list-->
+                            </div>    <!--//depth2-->
+                        </li>    <!--//depth1_item-->
+                    </ul>    <!--//depth1_list-->
+                </div>    <!--//depth1-->
+            </div>    <!--//menu-->
+            <div class="menu_hide">
+                <button type="button" class="menu_button">메뉴 닫기</button>    <!--//menu_button-->
+            </div>    <!--//menu_hide-->
+        </div>    <!--//lnb-->
+        <div class="lnb_curtain">
+            <button type="button">메뉴 닫기</button>
+        </div>    <!--//lnb_curtain-->
+    </header>    <!--//#header-->
+    <div class="sub_visual">
+        <i class="hidden_bg"></i>
+        <div class="sub_visual_text_box">
+            <div class="visual_inner">
+                <h2 class="title">템플릿</h2>    <!--//title-->
+                <div class="visual_path_box">
+                    <ul class="path_list">
+                        <li class="path_item home"><a href="" class="path_link">홈</a></li>    <!--//path_item-->
+                        <li class="path_item"><a href="" class="path_link">1차 메뉴명</a></li>    <!--//path_item-->
+                        <li class="path_item"><a href="" class="path_link">2차 메뉴명</a></li>    <!--//path_item-->
+                        <li class="path_item"><a href="" class="path_link">3차 메뉴명</a></li>    <!--//path_item-->
+                        <li class="path_item"><a href="" class="path_link">4차 메뉴명</a></li>    <!--//path_item-->
+                    </ul>    <!--//path_list-->
+                    <div class="print_box">
+                        <button type="button" title="인쇄하기" class="print_btn">프린트</button>
+                    </div>    <!--//print_box-->
+                </div>    <!--//visual_path_box-->
+            </div>    <!--//visual_inner-->
+        </div>    <!--//sub_visual_text_box-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <div class="wrap clearfix">
+            <div class="side">
+                <div class="side_title">
+                    <div class="title_inner">
+                        <span class="title">1차 메뉴명</span>    <!--//title-->
+                    </div>  <!--//title_inner-->
+                </div>    <!--//side_title-->
+                <div class="side_menu">  <!--//메뉴 선택해서 로딩시 가장 마지막 메뉴 차수 클레스( depth마지막차수_text )에 spy 클레스 달려서 나올 수 있게 개발 부탁드립니다 , 중복X-->
+                    <h2 class="skip">서브메뉴</h2>
+                    <nav class="menu">
+                        <div class="depth depth1">
+                            <ul class="depth_list depth1_list">
+                                <li class="depth_item depth1_item">
+                                    <a href="" class="depth_text depth1_text"><span><em>2차메뉴 단일</em></span></a>    <!--//depth1_text-->
+                                </li>    <!--//depth1_item-->
+                                <li class="depth_item depth1_item">
+                                    <a href="" target="_blank" title="새창" class="depth_text depth1_text"><span><em>2차메뉴 새창</em></span></a>    <!--//depth1_text-->
+                                </li>    <!--//depth1_item-->
+                                <li class="depth_item depth1_item">
+                                    <a href="" class="depth_text depth1_text"><span><em>2차메뉴 하위</em></span></a>    <!--//depth1_text-->
+                                    <div class="depth depth2">
+                                        <ul class="depth_list depth2_list">
+                                            <li class="depth_item depth2_item">
+                                                <a href="" class="depth_text depth2_text"><span><em>3차메뉴 하위</em></span></a>    <!--//depth2_text-->
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" class="depth_text depth3_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                    </ul>    <!--//depth3_list-->
+                                                </div>    <!--//depth3-->
+                                            </li>    <!--//depth2_item-->
+                                        </ul>    <!--//depth2_list-->
+                                    </div>    <!--//depth2-->
+                                </li>    <!--//depth1_item-->
+                                <li class="depth_item depth1_item">
+                                    <a href="" class="depth_text depth1_text"><span><em>2차메뉴 하위</em></span></a>    <!--//depth1_text-->
+                                    <div class="depth depth2">
+                                        <ul class="depth_list depth2_list">
+                                            <li class="depth_item depth2_item">
+                                                <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>3차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                            </li>    <!--//depth2_item-->
+                                            <li class="depth_item depth2_item">
+                                                <a href="" class="depth_text depth2_text"><span><em>3차메뉴 하위</em></span></a>    <!--//depth2_text-->
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" class="depth_text depth3_text spy"><span><em>4차메뉴 spy</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" class="depth_text depth3_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" target="_blank" title="새창" class="depth_text depth3_text"><span><em>4차메뉴 새창</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" class="depth_text depth3_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                    </ul>    <!--//depth3_list-->
+                                                </div>    <!--//depth3-->
+                                            </li>    <!--//depth2_item-->
+                                            <li class="depth_item depth2_item">
+                                                <a href="" class="depth_text depth2_text"><span><em>3차메뉴 단일</em></span></a>    <!--//depth2_text-->
+                                            </li>    <!--//depth2_item-->
+                                            <li class="depth_item depth2_item">
+                                                <a href="" target="_blank" title="새창" class="depth_text depth2_text"><span><em>3차메뉴 새창</em></span></a>    <!--//depth2_text-->
+                                            </li>    <!--//depth2_item-->
+                                        </ul>    <!--//depth2_list-->
+                                    </div>    <!--//depth2-->
+                                </li>    <!--//depth1_item-->
+                                <li class="depth_item depth1_item">
+                                    <a href="" class="depth_text depth1_text"><span><em>2차메뉴 하위</em></span></a>    <!--//depth1_text-->
+                                    <div class="depth depth2">
+                                        <ul class="depth_list depth2_list">
+                                            <li class="depth_item depth2_item">
+                                                <a href="" class="depth_text depth2_text"><span><em>3차메뉴 하위</em></span></a>    <!--//depth2_text-->
+                                                <div class="depth depth3">
+                                                    <ul class="depth_list depth3_list">
+                                                        <li class="depth_item depth3_item">
+                                                            <a href="" class="depth_text depth3_text"><span><em>4차메뉴 단일</em></span></a>    <!--//depth3_text-->
+                                                        </li>    <!--//depth3_item-->
+                                                    </ul>    <!--//depth3_list-->
+                                                </div>    <!--//depth3-->
+                                            </li>    <!--//depth2_item-->
+                                        </ul>    <!--//depth2_list-->
+                                    </div>    <!--//depth2-->
+                                </li>    <!--//depth1_item-->
+                            </ul>    <!--//depth1_list-->
+                        </div>    <!--//depth1-->
+                    </nav>    <!--//menu-->
+                </div>    <!--//side_menu-->
+            </div>    <!--//side-->
+            <main>
+                <article>
+                    <header class="sub_head">
+                        <h2 class="skip">해당 메뉴명 개발 필요</h2>    <!--//skip-->
+                        <!--//하위메뉴 탭메뉴 사용시에만 표출될 수 있게 개발 필요-->
+                        <div class="tab_wrap type_cms">
+                            <ul class="tab_list">
+                                <li class="tab_item active">
+                                    <a href="" title="선택됨" class="tab_link"><span>cms 탭메뉴1</span></a>
+                                    <div class="tab_low">
+                                        <ul class="tab_low_list">
+                                            <li class="tab_low_item active"><a href="" title="선택됨" class="tab_low_link"><span>탭메뉴01</span></a></li>    <!--//tab_item-->
+                                            <li class="tab_low_item"><a href="" class="tab_low_link"><span>탭메뉴02</span></a></li>    <!--//tab_item-->
+                                            <li class="tab_low_item"><a href="" class="tab_low_link"><span>탭메뉴03</span></a></li>    <!--//tab_item-->
+                                            <li class="tab_low_item"><a href="" class="tab_low_link"><span>탭메뉴04</span></a></li>    <!--//tab_item-->
+                                            <li class="tab_low_item"><a href="" class="tab_low_link"><span>탭메뉴05</span></a></li>    <!--//tab_item-->
+                                        </ul>    <!--//tab_list-->
+                                    </div>    <!--//tab_low-->
+                                </li>    <!--//tab_item-->
+                                <li class="tab_item"><a href="" class="tab_link"><span>cms 탭메뉴2</span></a></li>    <!--//tab_item-->
+                                <li class="tab_item"><a href="" class="tab_link"><span>cms 탭메뉴3</span></a></li>    <!--//tab_item-->
+                                <li class="tab_item"><a href="" class="tab_link"><span>cms 탭메뉴4</span></a></li>    <!--//tab_item-->
+                                <li class="tab_item"><a href="" class="tab_link"><span>cms 탭메뉴5</span></a></li>    <!--//tab_item-->
+                            </ul>    <!--//tab_list-->
+                        </div>    <!--//tab_wrap-->
+                    </header>    <!--//sub_head-->
+                    <div id="contents">
+                        <div class="tab_wrap">
+                            <ul class="tab_list">
+                                <li class="tab_item active"><button type="button" title="선택됨" class="tab_link"><span>제목 &amp; 폰트, 강조</span></button></li>    <!--//tab_item-->
+                                <li class="tab_item"><button type="button" class="tab_link"><span>목록</span></button></li>    <!--//tab_item-->
+                                <li class="tab_item"><button type="button" class="tab_link"><span>테이블</span></button></li>    <!--//tab_item-->
+                                <li class="tab_item"><button type="button" class="tab_link"><span>박스</span></button></li>    <!--//tab_item-->
+                                <li class="tab_item"><button type="button" class="tab_link"><span>버튼, 링크, 폼, 기타</span></button></li>    <!--//tab_item-->
+                            </ul>    <!--//tab_list-->
+                            <div class="tab_con_list">
+                                <div class="tab_con_item active">
+                                    <h3>제목 (h3 ~ h6, .h3 ~ .h6)</h3>
+                                    <h3 class="h3">H3 타이틀 26pt, Noto Sans CJK KR, Bold #4c4949</h3>
+                                    <h4 class="h4">H4 타이틀 24pt, Noto Sans CJK KR, Medium #6279cc</h4>
+                                    <h5 class="h5">H5 타이틀 22pt, Noto Sans CJK KR, #109d6e</h5>
+                                    <h6 class="h6">H6 타이틀 20pt, Noto Sans CJK KR, #dea200</h6>
+
+<xmp class="prettyprint linenums xmp">
+    <h3 class="h3"></h3>
+    <h4 class="h4"></h4>
+    <h5 class="h5"></h5>
+    <h6 class="h6"></h6>
+</xmp>
+
+                                    <h3>본문 텍스트</h3>
+                                    <p>17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다. 17pt #474747 이 곳은 콘텐츠 내용이 들어갑니다.</p>
+<xmp class="prettyprint linenums xmp">
+    <p>콘텐츠 내용</p>
+</xmp>
+                                    <h3>강조</h3>
+                                    <em class="em_red">강조글자색상1#ea535d</em>
+                                    <em class="em_blue">강조글자색상2#17538c</em>
+                                    <em class="regular">강조글자두께 Regular</em>
+                                    <em class="medium">강조글자두께 Medium</em>
+                                    <em class="bold">강조글자두께 Bold</em>
+<xmp class="prettyprint linenums xmp">
+    <em class="em_red"></em>
+    <em class="em_blue"></em>
+    <em class="regular"></em>
+    <em class="medium"></em>
+    <em class="bold"></em>
+</xmp>
+                                    <h3>안내, 주의</h3>
+                                    <p class="warning"><span class="skip">강조</span>안내사항은 이렇게 들어갑니다. 16px #4c80bd</p>
+                                    <p class="warning type2"><span class="skip">강조</span>주의사항은 이렇게 들어갑니다. 16px #ea535d</p>
+<xmp class="prettyprint linenums xmp">
+    <p class="warning"><span class="skip">강조</span>안내사항</p>
+    <p class="warning type2"><span class="skip">강조</span>주의사항</p>
+</xmp>
+                                </div>    <!--//tab_con_item-->
+                                <div class="tab_con_item">
+                                    <h3>순서 없는 목록 ul.bu</h3>
+                                    <ul class="bu">
+                                        <li>순서가 없는 목록입니다.</li>
+                                        <li>순서가 없는 목록입니다.
+                                            <ul>
+                                                <li>순서가 없는 중첩 목록입니다.</li>
+                                                <li>순서가 없는 중첩 목록입니다.
+                                                    <ul>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>    <!--//bu-->
+<xmp class="prettyprint linenums xmp">
+    <ul class="bu">
+        <li></li>
+        <li></li>
+    </ul>    <!--//bu-->
+</xmp>
+                                    <h3>순서 없는 목록 ul.bu.type2</h3>
+                                    <ul class="bu type2">
+                                        <li>순서가 없는 목록.type2 입니다.</li>
+                                        <li>순서가 없는 목록.type2 입니다.
+                                            <ul>
+                                                <li>순서가 없는 중첩 목록입니다.</li>
+                                                <li>순서가 없는 중첩 목록입니다.
+                                                    <ul>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>    <!--//bu type2-->
+<xmp class="prettyprint linenums xmp">
+    <ul class="bu type2">
+        <li></li>
+        <li></li>
+    </ul>    <!--//bu type2-->
+</xmp>
+                                    <h3>순서없는 목록 ul.bu.type3</h3>
+                                    <ul class="bu type3">
+                                        <li>순서가 없는 목록.type3 입니다.</li>
+                                        <li>순서가 없는 목록.type3 입니다.
+                                            <ul>
+                                                <li>순서가 없는 중첩 목록입니다.</li>
+                                                <li>순서가 없는 중첩 목록입니다.
+                                                    <ul>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                        <li>순서가 없는 중첩 목록입니다.</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>    <!--//bu type3-->
+<xmp class="prettyprint linenums xmp">
+    <ul class="bu type3">
+        <li></li>
+        <li></li>
+    </ul>    <!--//bu type3-->
+</xmp>
+                                    <h3>목록없는 불릿 .blt</h3>
+                                    <p class="blt">리스트가 아닌 불릿 텍스트</p>
+                                    <p class="blt type2">리스트가 아닌 불릿 텍스트.type2</p>
+                                    <p class="blt type3">리스트가 아닌 불릿 텍스트.type3</p>
+<xmp class="prettyprint linenums xmp">
+    <p class="blt"></p>
+    <p class="blt type2"></p>
+    <p class="blt type3"></p>
+</xmp>
+                                    <h3>순차목록 ol.num</h3>
+                                    <ol class="num">
+                                        <li><i>1</i>순서가 있는 목록입니다.</li>
+                                        <li><i>2</i>순서가 있는 목록입니다.</li>
+                                        <li><i>3</i>순서가 있는 목록입니다.</li>
+                                    </ol>    <!--//num-->
+<xmp class="prettyprint linenums xmp">
+    <ol class="num">
+        <li><i>1</i></li>
+        <li><i>2</i></li>
+        <li><i>3</i></li>
+    </ol>    <!--//num-->
+</xmp>
+                                    <h3>순차목록 ol.num.type2</h3>
+                                    <ol class="num type2">
+                                        <li><i>1.</i>순서가 있는 목록입니다.</li>
+                                        <li><i>2.</i>순서가 있는 목록입니다.</li>
+                                        <li><i>3.</i>순서가 있는 목록입니다.</li>
+                                    </ol>    <!--//num type2-->
+<xmp class="prettyprint linenums xmp">
+    <ol class="num type2">
+        <li><i>1.</i></li>
+        <li><i>2.</i></li>
+        <li><i>3.</i></li>
+    </ol>    <!--//num type2-->
+</xmp>
+                                    <h3>목록 제목</h3>
+                                    <ul class="bu">
+                                        <li>
+                                            <div class="fac_flexbox">
+                                                <em class="title">타이틀 :</em>
+                                                <span class="desc">순서가 없는 목록입니다.</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fac_flexbox">
+                                                <em class="title">타이틀 :</em>
+                                                <span class="desc">순서가 없는 목록입니다.</span>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="fac_flexbox">
+                                                <em class="title">타이틀 :</em>
+                                                <span class="desc">순서가 없는 목록입니다.</span>
+                                            </div>
+                                        </li>
+                                    </ul>    <!--//bu-->
+                                    <p class="blt">
+                                        <span class="fac_flexbox">
+                                            <em class="title">타이틀 :</em>
+                                            <span class="desc">목록없는 불릿</span>
+                                        </span>
+                                    </p>
+<xmp class="prettyprint linenums xmp">
+    <ul class="bu">
+        <li>
+            <div class="fac_flexbox">
+                <em class="title">타이틀 :</em>
+                <span class="desc">내용</span>
+            </div>
+        </li>
+        <li>
+            <div class="fac_flexbox">
+                <em class="title">타이틀 :</em>
+                <span class="desc">내용</span>
+            </div>
+        </li>
+    </ul>    <!--//bu-->
+    <p class="blt">
+        <span class="fac_flexbox">
+            <em class="title">타이틀 :</em>
+            <span class="desc">목록없는 불릿</span>
+        </span>
+    </p>
+</xmp>
+                                    <h3>목록 교차 사용</h3>
+                                    <ul class="bu">
+                                        <li>불릿 타입1
+                                            <p class="blt">목록없는 불릿1</p>
+                                            <ul class="bu">
+                                                <li>불릿 타입1
+                                                    <p class="blt">목록없는 불릿1</p>
+                                                    <ul class="bu">
+                                                        <li>불릿 타입1</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ul class="bu">
+                                        <li>
+                                            <div class="fac_flexbox">
+                                                <em class="title">제목 :</em>
+                                                <span class="desc"> 내용</span>
+                                            </div>
+                                            <p class="blt">
+                                                <span class="fac_flexbox">
+                                                    <em class="title">제목 :</em>
+                                                    <span class="desc"> 내용</span>
+                                                </span>
+                                            </p>
+                                            <ol class="num">
+                                                <li><i>99</i><em class="title">제목 :</em><span class="desc"> 내용</span>
+                                                    <p class="blt type3"><em class="title">제목 :</em><span class="desc"> 내용</span></p>
+                                                    <ul class="bu type2">
+                                                        <li><em class="title">제목 :</em><span class="desc"> 내용</span>
+                                                            <p class="blt"><em class="title">제목 :</em><span class="desc"> 내용</span></p>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                    <ul class="bu type2">
+                                        <li>불릿 타입1
+                                            <p class="blt type2">목록없는 불릿2</p>
+                                            <ol class="num type2">
+                                                <li><i>43</i>불릿 타입1
+                                                    <p class="blt type2">목록없는 불릿2</p>
+                                                    <ol class="num">
+                                                        <li><i>68</i>불릿 타입1</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ul>
+                                    <ul class="bu type3">
+                                        <li>불릿 타입1
+                                            <p class="blt type3">목록없는 불릿3</p>
+                                            <ul class="bu type3">
+                                                <li>불릿 타입1
+                                                    <p class="blt type3">목록없는 불릿3</p>
+                                                    <ul class="bu type3">
+                                                        <li>불릿 타입1</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <ol class="num">
+                                        <li><i>1</i>넘버 타입1
+                                            <ol class="num">
+                                                <li><i>1</i>넘버 타입1
+                                                    <ol class="num">
+                                                        <li><i>1</i>넘버 타입1</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                    <ol class="num type2">
+                                        <li><i>1.</i>넘버 타입1
+                                            <ol class="num type2">
+                                                <li><i>1.</i>넘버 타입1
+                                                    <ol class="num type2">
+                                                        <li><i>1.</i>넘버 타입1</li>
+                                                    </ol>
+                                                </li>
+                                            </ol>
+                                        </li>
+                                    </ol>
+                                </div>    <!--//tab_con_item-->
+                                <div class="tab_con_item">
+                                    <h3>테이블 유닛 .table_unit</h3>
+                                    <div class="table_unit"><span class="skip">강조</span>테이블 상단의 내용</div>
+<xmp class="prettyprint linenums xmp">
+    <div class="table_unit"><span class="skip">강조</span>내용</div>
+</xmp>
+                                    <h3>기본 테이블</h3>
+                                    <div class="table_unit"><span class="skip">강조</span>테이블 상단의 내용</div>
+                                    <table class="table">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">기본 타이틀1</th>
+                                                <th scope="col">기본 타이틀2</th>
+                                                <th scope="col">기본 타이틀3</th>
+                                                <th scope="col">기본 타이틀4</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text_left">테이블 내용 작성</td>
+                                                <td class="text_left">테이블 내용 작성</td>
+                                                <td class="text_left">테이블 내용 작성</td>
+                                                <td class="text_left">테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text_center">테이블 내용 작성</td>
+                                                <td class="text_center">테이블 내용 작성</td>
+                                                <td class="text_center">테이블 내용 작성</td>
+                                                <td class="text_center">테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text_right">테이블 내용 작성</td>
+                                                <td class="text_right">테이블 내용 작성</td>
+                                                <td class="text_right">테이블 내용 작성</td>
+                                                <td class="text_right">테이블 내용 작성</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table-->
+<xmp class="prettyprint linenums xmp">
+    <table class="table">
+        <caption></caption>
+        <colgroup>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>    <!--//table-->
+</xmp>
+                                    <h3>세로 테이블</h3>
+                                    <table class="table type2">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:25%;"/>
+                                            <col style="width:37.5%;"/>
+                                            <col style="width:37.5%;"/>
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">타이틀</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">타이틀</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="">타이틀</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table-->
+<xmp class="prettyprint linenums xmp">
+    <table class="table type2">
+        <caption></caption>
+        <colgroup>
+            <col style="width:25%;"/>
+            <col style="width:37.5%;"/>
+            <col style="width:37.5%;"/>
+        </colgroup>
+        <tbody>
+            <tr>
+                <th SCOPE="row">타이틀</th>
+                <td>내용</td>
+                <td>내용</td>
+            </tr>
+        </tbody>
+    </table>    <!--//table type2-->
+</xmp>
+                                    <h3>병합 테이블</h3>
+                                    <table class="table">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">타이틀1</th>
+                                                <th scope="col">타이틀2</th>
+                                                <th scope="col">타이틀3</th>
+                                                <th scope="col">타이틀4</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="col">타이틀</th>
+                                                <th scope="col" colspan="2">타이틀</th>
+                                                <th scope="col">타이틀</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">세로 타이틀1</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">세로 타이틀2</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">세로 타이틀3</th>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table-->
+<xmp class="prettyprint linenums xmp">
+    <table class="table">
+        <caption></caption>
+        <colgroup>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col" colspan="2"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>    <!--//table-->
+</xmp>
+                                    <h3>반응형 테이블 .table.responsive</h3>
+                                    <table class="table responsive">
+                                        <caption></caption>
+                                        <colgroup>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                            <col style="width:25%;"/>
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">기본 타이틀1</th>
+                                                <th scope="col">기본 타이틀2</th>
+                                                <th scope="col">기본 타이틀3</th>
+                                                <th scope="col">기본 타이틀4</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                            <tr>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                                <td>테이블 내용 작성</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>    <!--//table responsive-->
+<xmp class="prettyprint linenums xmp">
+    <table class="table responsive">
+        <caption></caption>
+        <colgroup>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+            <col style="width:25%;"/>
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>    <!--//table responsive-->
+</xmp>
+                                    <h3>스크롤 테이블</h3>
+                                    <div class="table_scroll">
+                                        <table class="table">
+                                            <caption></caption>
+                                            <colgroup>
+                                                <col style="width:25%;"/>
+                                                <col style="width:25%;"/>
+                                                <col style="width:25%;"/>
+                                                <col style="width:25%;"/>
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">타이틀1</th>
+                                                    <th scope="col">타이틀2</th>
+                                                    <th scope="col">타이틀3</th>
+                                                    <th scope="col">타이틀4</th>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="col">타이틀</th>
+                                                    <th scope="col" colspan="2">타이틀</th>
+                                                    <th scope="col">타이틀</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">세로 타이틀1</th>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">세로 타이틀2</th>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">세로 타이틀3</th>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                    <td>테이블 내용 작성</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>    <!--//table-->
+                                    </div>    <!--//table_scroll-->
+<xmp class="prettyprint linenums xmp">
+    <div class="table_scroll">
+        <table class="table">
+            <caption></caption>
+            <colgroup>
+                <col style="width:25%;"/>
+                <col style="width:25%;"/>
+                <col style="width:25%;"/>
+                <col style="width:25%;"/>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col"></th>
+                    <th scope="col" colspan="2"></th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row"></th>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>    <!--//table-->
+    </div>    <!--//table_scroll-->
+</xmp>
+                                </div>    <!--//tab_con_item-->
+                                <div class="tab_con_item">
+                                    <h3>데코 박스</h3>
+                                    <div class="fac_box type_deco">
+                                        <div class="fac_box_inner">
+                                            <div class="box_title">개요정보 타이틀</div>
+                                            <p class="box_text">성동구민대학은 성동구를 대표하는 평생학습기관으로서 2008년 서울시교육청 평생학습기관으로 지정된 이래 현재까지 지정평생학습 프로그램을 운영하고 있습니다. 지역주민을 위한 다채로운 평생학습 프로그램과 학습동아리를 발굴, 지원하여 지역사회 복지 증진에 기여하고 있습니다.</p>
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_picture-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_box type_deco">
+        <div class="fac_box_inner">
+            <div class="box_title">타이틀</div>
+            <p class="box_text">내용</p>
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_deco-->
+</xmp>
+                                    <h3>텍스트 박스</h3>
+                                    <div class="fac_box type_text">
+                                        <div class="fac_box_inner">
+                                            <div class="box_title">개요정보 타이틀</div>
+                                            <p class="box_text">성동구민대학은 성동구를 대표하는 평생학습기관으로서 2008년 서울시교육청 평생학습기관으로 지정된 이래 현재까지 지정평생학습 프로그램을 운영하고 있습니다. 지역주민을 위한 다채로운 평생학습 프로그램과 학습동아리를 발굴, 지원하여 지역사회 복지 증진에 기여하고 있습니다.</p>
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_text-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_box type_text">
+        <div class="fac_box_inner">
+            <div class="box_title">타이틀</div>
+            <p class="box_text">내용</p>
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_text-->
+</xmp>
+                                    <h3>안내 박스</h3>
+                                    <div class="fac_box type_warning">
+                                        <div class="fac_box_inner">
+                                            <p class="warning"><span class="skip">강조</span>안내사항</p>
+                                            <div class="box_text">
+                                                <ul class="bu type3">
+                                                    <li>순서가 없는 목록입니다.</li>
+                                                    <li>순서가 없는 목록입니다.</li>
+                                                </ul>    <!--//bu type3-->
+                                            </div>    <!--//box_text-->
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_warning-->
+                                    <div class="fac_box type_warning type2">
+                                        <div class="fac_box_inner">
+                                            <p class="warning type2"><span class="skip">강조</span>주의사항</p>
+                                            <div class="box_text">
+                                                <ul class="bu type3">
+                                                    <li>순서가 없는 목록입니다.</li>
+                                                    <li>순서가 없는 목록입니다.</li>
+                                                </ul>    <!--//bu type3-->
+                                            </div>    <!--//box_text-->
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_warning type2-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_box type_warning">
+        <div class="fac_box_inner">
+            <p class="warning"><span class="skip">강조</span>안내사항</p>
+            <div class="box_text">
+                <ul class="bu type3">
+                    <li></li>
+                    <li></li>
+                </ul>    <!--//bu type3-->
+            </div>    <!--//box_text-->
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_warning-->
+
+    <div class="fac_box type_warning type2">
+        <div class="fac_box_inner">
+            <p class="warning type2"><span class="skip">강조</span>주의사항</p>
+            <div class="box_text">
+                <ul class="bu type3">
+                    <li></li>
+                    <li></li>
+                </ul>    <!--//bu type3-->
+            </div>    <!--//box_text-->
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_warning type2-->
+</xmp>
+                                    <h3>이미지 박스</h3>
+                                    <div class="fac_box type_img">
+                                        <div class="fac_box_inner">
+                                            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+                                            <div class="skip">대체텍스트</div>
+                                            <span class="img_zoom">
+                                                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+                                            </span>    <!--//img_zoom-->
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_img-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_box type_img">
+        <div class="fac_box_inner">
+            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+            <div class="skip">대체텍스트</div>
+            <span class="img_zoom">
+                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+            </span>    <!--//img_zoom-->
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_img-->
+</xmp>
+                                    <h3>이미지 분할박스 박스 .fac_box.type_img.divide2 ~ 5</h3>
+                                    <div class="fac_box type_img divide2">
+                                        <div class="fac_box_inner">
+                                            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+                                            <div class="skip">대체텍스트</div>
+                                            <span class="img_zoom">
+                                                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+                                            </span>    <!--//img_zoom-->
+                                        </div>    <!--//fac_box_inner-->
+                                        <div class="fac_box_inner">
+                                            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+                                            <div class="skip">대체텍스트</div>
+                                            <span class="img_zoom">
+                                                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+                                            </span>    <!--//img_zoom-->
+                                        </div>    <!--//fac_box_inner-->
+                                    </div>    <!--//fac_box type_img-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_box type_img divide2">
+        <div class="fac_box_inner">
+            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+            <div class="skip">대체텍스트</div>
+            <span class="img_zoom">
+                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+            </span>    <!--//img_zoom-->
+        </div>    <!--//fac_box_inner-->
+        <div class="fac_box_inner">
+            <img src="https://via.placeholder.com/500x500" alt="이미지" />
+            <div class="skip">대체텍스트</div>
+            <span class="img_zoom">
+                <a href="https://via.placeholder.com/500x500" target="_blank" title="새창 이미지 확대보기">이미지 확대보기</a>
+            </span>    <!--//img_zoom-->
+        </div>    <!--//fac_box_inner-->
+    </div>    <!--//fac_box type_img-->
+</xmp>
+                                </div>    <!--//tab_con_item-->
+                                <div class="tab_con_item">
+                                    <h3>컨텐츠 탭메뉴</h3>
+<xmp class="prettyprint linenums xmp">
+    <div class="tab_wrap">
+        <ul class="tab_list">
+            <li class="tab_item active"><button type="button" title="선택됨" class="tab_link"><span></span></button></li>    <!--//tab_item-->
+            <li class="tab_item"><button type="button" class="tab_link"><span></span></button></li>    <!--//tab_item-->
+            <li class="tab_item"><button type="button" class="tab_link"><span></span></button></li>    <!--//tab_item-->
+            <li class="tab_item"><button type="button" class="tab_link"><span></span></button></li>    <!--//tab_item-->
+            <li class="tab_item"><button type="button" class="tab_link"><span></span></button></li>    <!--//tab_item-->
+        </ul>    <!--//tab_list-->
+        <div class="tab_con_list">
+            <div class="tab_con_item active"></div>    <!--//tab_con_item-->
+            <div class="tab_con_item"></div>    <!--//tab_con_item-->
+            <div class="tab_con_item"></div>    <!--//tab_con_item-->
+            <div class="tab_con_item"></div>    <!--//tab_con_item-->
+            <div class="tab_con_item"></div>    <!--//tab_con_item-->
+        </div>    <!--//tab_con_list-->
+    </div>    <!--//tab_wrap-->
+</xmp>
+                                    <h3>링크</h3>
+                                    <p>본문링크 : <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="fac_link blank">https://www.sdfac.or.kr/kor/sdfac/sub/contents.do?gotoMenuNo=02010200</a></p>
+<xmp class="prettyprint linenums xmp">
+    <p>본문링크 : <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="fac_link blank"></a></p>
+</xmp>
+                                    <h3>버튼</h3>
+                                    <h4>기본 버튼</h4>
+                                    <div class="fac_btn_wrap">
+                                        <span class="fac_btn"><a href="" class="btn">기본 스타일1</a></span>
+                                        <span class="fac_btn type2"><a href="" class="btn">기본 스타일2</a></span>
+                                        <span class="fac_btn type3"><a href="" class="btn">기본 스타일3</a></span>
+                                    </div>    <!--//fac_btn_wrap-->
+                                    <div class="fac_btn_wrap">
+                                        <span class="fac_btn small"><a href="" class="btn">작은버튼1</a></span>
+                                        <span class="fac_btn type2 small"><a href="" class="btn">작은버튼2</a></span>
+                                        <span class="fac_btn type3 small"><a href="" class="btn">작은버튼3</a></span>
+                                    </div>    <!--//fac_btn_wrap-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_btn_wrap">
+        <span class="fac_btn"><a href="" class="btn">기본 스타일1</a></span>
+        <span class="fac_btn type2"><a href="" class="btn">기본 스타일2</a></span>
+        <span class="fac_btn type3"><a href="" class="btn">기본 스타일3</a></span>
+    </div>    <!--//fac_btn_wrap-->
+    <div class="fac_btn_wrap">
+        <span class="fac_btn small"><a href="" class="btn">작은버튼1</a></span>
+        <span class="fac_btn type2 small"><a href="" class="btn">작은버튼2</a></span>
+        <span class="fac_btn type3 small"><a href="" class="btn">작은버튼3</a></span>
+    </div>    <!--//fac_btn_wrap-->
+</xmp>
+                                    <h4>아이콘 버튼</h4>
+                                    <div class="fac_btn_wrap">
+                                        <span class="fac_btn type_icon icon01"><a href="" class="btn">기본 스타일</a></span>
+                                        <span class="fac_btn type_icon icon02"><a href="" class="btn">기본 스타일</a></span>
+                                        <span class="fac_btn type_icon icon03"><a href="" class="btn">기본 스타일</a></span>
+                                        <span class="fac_btn type_icon icon04"><a href="" class="btn">기본 스타일</a></span>
+                                        <span class="fac_btn type_icon icon05"><a href="" class="btn">기본 스타일</a></span>
+                                        <span class="fac_btn type_icon icon06"><a href="" class="btn">기본 스타일</a></span>
+                                    </div>    <!--//fac_btn_wrap-->
+                                    <div class="fac_btn_wrap">
+                                        <span class="fac_btn small type_icon icon01"><a href="" class="btn">작은버튼</a></span>
+                                        <span class="fac_btn small type_icon icon02"><a href="" class="btn">작은버튼</a></span>
+                                        <span class="fac_btn small type_icon icon03"><a href="" class="btn">작은버튼</a></span>
+                                        <span class="fac_btn small type_icon icon04"><a href="" class="btn">작은버튼</a></span>
+                                        <span class="fac_btn small type_icon icon05"><a href="" class="btn">작은버튼</a></span>
+                                        <span class="fac_btn small type_icon icon06"><a href="" class="btn">작은버튼</a></span>
+                                    </div>    <!--//fac_btn_wrap-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_btn_wrap">
+        <span class="fac_btn type_icon icon01"><a href="" class="btn">기본 스타일</a></span>
+        <span class="fac_btn type_icon icon02"><a href="" class="btn">기본 스타일</a></span>
+        <span class="fac_btn type_icon icon03"><a href="" class="btn">기본 스타일</a></span>
+        <span class="fac_btn type_icon icon04"><a href="" class="btn">기본 스타일</a></span>
+        <span class="fac_btn type_icon icon05"><a href="" class="btn">기본 스타일</a></span>
+        <span class="fac_btn type_icon icon06"><a href="" class="btn">기본 스타일</a></span>
+    </div>    <!--//fac_btn_wrap-->
+    <div class="fac_btn_wrap">
+        <span class="fac_btn small type_icon icon01"><a href="" class="btn">작은버튼</a></span>
+        <span class="fac_btn small type_icon icon02"><a href="" class="btn">작은버튼</a></span>
+        <span class="fac_btn small type_icon icon03"><a href="" class="btn">작은버튼</a></span>
+        <span class="fac_btn small type_icon icon04"><a href="" class="btn">작은버튼</a></span>
+        <span class="fac_btn small type_icon icon05"><a href="" class="btn">작은버튼</a></span>
+        <span class="fac_btn small type_icon icon06"><a href="" class="btn">작은버튼</a></span>
+    </div>    <!--//fac_btn_wrap-->
+</xmp>
+                                    <h3>폼요소</h3>
+                                    <h4>텍스트 영역</h4>
+                                    <span class="fac_form">
+                                        <input type="text" title="작성시 입력" class="fac_input" placeholder="인풋박스 활성화">
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="text" title="작성시 입력" class="fac_input" placeholder="인풋박스 비활성화" disabled>
+                                    </span>    <!--//fac_form-->
+<xmp class="prettyprint linenums xmp">
+    <span class="fac_form">
+        <input type="text" title="작성시 입력" class="fac_input" placeholder="인풋박스 활성화">
+    </span>    <!--//fac_form-->
+    <span class="fac_form">
+        <input type="text" title="작성시 입력" class="fac_input" placeholder="인풋박스 비활성화" disabled>
+    </span>    <!--//fac_form-->
+</xmp>
+                                    <h4>셀렉트 박스</h4>
+                                    <h5>기본 셀렉트</h5>
+                                    <div class="fac_real_select_box">
+                                        <select title="셀렉트박스" class="fac_select">
+                                            <option>Select1</option>
+                                            <option>Select2</option>
+                                            <option>Select3</option>
+                                        </select>    <!--//fac_select-->
+                                    </div>     <!--//fac_real_select_box-->
+                                    <div class="fac_real_select_box">
+                                        <select title="셀렉트박스" class="fac_select" disabled>
+                                            <option>Select1</option>
+                                            <option>Select2</option>
+                                            <option>Select3</option>
+                                        </select>    <!--//fac_select-->
+                                    </div>     <!--//fac_real_select_box-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_real_select_box">
+        <select title="셀렉트박스" class="fac_select">
+            <option>Select1</option>
+            <option>Select2</option>
+            <option>Select3</option>
+        </select>    <!--//fac_select-->
+    </div>     <!--//fac_real_select_box-->
+    <div class="fac_real_select_box">
+        <select title="셀렉트박스" class="fac_select" disabled>
+            <option>Select1</option>
+            <option>Select2</option>
+            <option>Select3</option>
+        </select>    <!--//fac_select-->
+    </div>     <!--//fac_real_select_box-->
+</xmp>
+                                    <h5>가짜 셀렉트</h5>
+                                    <div class="fac_fake_select_box">
+                                        <select title="셀렉트박스" class="real_select">
+                                            <option></option>
+                                            <option></option>
+                                            <option></option>
+                                        </select>    <!--//real_select-->
+                                        <div class="fac_fake_select">
+                                            <button type="button" title="하위메뉴 열기" class="fac_select_open_btn">
+                                                <span>Select1</span>
+                                            </button>    <!--//fac_select_open_btn-->
+                                            <ul class="fake_select_list">
+                                                <li class="fake_select_item active">
+                                                    <button type="button" title="선택됨" class="fake_select_btn">Select1</button>
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">Select2</button>
+                                                </li>    <!--//fake_select_item-->
+                                                <li class="fake_select_item">
+                                                    <button type="button" class="fake_select_btn">Select3</button>
+                                                </li>    <!--//fake_select_item-->
+                                            </ul>    <!--//fake_select_list-->
+                                        </div>    <!--//fac_fake_select-->
+                                    </div>     <!--//fac_fake_select_box-->
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_fake_select_box">
+        <select title="셀렉트박스" class="real_select">
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>    <!--//real_select-->
+        <div class="fac_fake_select">
+            <button type="button" title="하위메뉴 열기" class="fac_select_open_btn">
+                <span>Select1</span>
+            </button>    <!--//fac_select_open_btn-->
+            <ul class="fake_select_list">
+                <li class="fake_select_item active">
+                    <button type="button" title="선택됨" class="fake_select_btn">Select1</button>
+                </li>    <!--//fake_select_item-->
+                <li class="fake_select_item">
+                    <button type="button" class="fake_select_btn">Select2</button>
+                </li>    <!--//fake_select_item-->
+                <li class="fake_select_item">
+                    <button type="button" class="fake_select_btn">Select3</button>
+                </li>    <!--//fake_select_item-->
+            </ul>    <!--//fake_select_list-->
+        </div>    <!--//fac_fake_select-->
+    </div>     <!--//fac_fake_select_box-->
+</xmp>
+                                    <h4>체크박스</h4>
+                                    <span class="fac_form">
+                                        <input type="checkbox" id="test1" class="fac_checkbox">
+                                        <label for="test1">체크박스</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="checkbox" id="test2" class="fac_checkbox">
+                                        <label for="test2">체크박스</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="checkbox" id="test3" class="fac_checkbox">
+                                        <label for="test3">체크박스</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="checkbox" id="test4" class="fac_checkbox" disabled>
+                                        <label for="test4">체크박스 비활성</label>
+                                    </span>    <!--//fac_form-->
+<xmp class="prettyprint linenums xmp">
+    <span class="fac_form">
+        <input type="checkbox" id class="fac_checkbox">
+        <label for>체크박스</label>
+    </span>    <!--//fac_form-->
+    <span class="fac_form">
+        <input type="checkbox" id class="fac_checkbox" disabled>
+        <label for>체크박스 비활성</label>
+    </span>    <!--//fac_form-->
+</xmp>
+                                    <h4>라디오 버튼</h4>
+                                    <span class="fac_form">
+                                        <input type="radio" id="test5" name="radio01" class="fac_radio">
+                                        <label for="test5">라디오버튼</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="radio" id="test6" name="radio01" class="fac_radio">
+                                        <label for="test6">라디오버튼</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="radio" id="test7" name="radio01" class="fac_radio">
+                                        <label for="test7">라디오버튼</label>
+                                    </span>    <!--//fac_form-->
+                                    <span class="fac_form">
+                                        <input type="radio" id="test8" name="radio01" class="fac_radio" disabled>
+                                        <label for="test8">라디오버튼 비활성</label>
+                                    </span>    <!--//fac_form-->
+<xmp class="prettyprint linenums xmp">
+    <span class="fac_form">
+        <input type="radio" id name class="fac_radio">
+        <label for>라디오버튼</label>
+    </span>    <!--//fac_form-->
+    <span class="fac_form">
+        <input type="radio" id name class="fac_radio" disabled>
+        <label for>라디오버튼 비활성</label>
+    </span>    <!--//fac_form-->
+</xmp>
+                                    <h3>라인</h3>
+                                    <div style="display: inline-block;width: 80%;">
+                                        <div class="fac_line"></div>
+                                        <div class="fac_line type2"></div>
+                                        <div class="fac_line type3"></div>
+                                        <div class="fac_line type4"></div>
+                                        <div class="fac_line type5"></div>
+                                    </div>
+                                    <div style="display: inline-block;height: 100px;">
+                                        <span class="fac_line vertical type2"></span>
+                                        <span class="fac_line vertical type4"></span>
+                                        <span class="fac_line vertical type5"></span>
+                                    </div>
+<xmp class="prettyprint linenums xmp">
+    <div class="fac_line"></div>
+    <div class="fac_line type2"></div>
+    <div class="fac_line type3"></div>
+    <div class="fac_line type4"></div>
+    <div class="fac_line type5"></div>
+    <span class="fac_line vertical type2"></span>
+    <span class="fac_line vertical type4"></span>
+    <span class="fac_line vertical type5"></span>
+</xmp>
+                                </div>    <!--//tab_con_item-->
+                            </div>    <!--//tab_con_list-->
+                        </div>    <!--//tab_wrap-->
+                    </div>    <!--//contents-->
+                </article>
+            </main>
+        </div>    <!--//wrap-->
+    </div>    <!--//container-->
+    <footer id="footer">
+        <div class="footer_go">
+            <button type="button" title="맨위로">TOP</button>
+        </div>    <!--//footer_go-->
+        <div class="footer_inner">
+            <div class="footer_logo_box">
+                <a href="" class="logo">
+                    <img src="/2023Sungdong/site/sdfac/images/common/logo_white_wide.png" alt="성동문화재단" class="logo_img" />
+                    <span class="site_title">강좌</span>
+                </a>    <!--//logo-->
+            </div>    <!--//footer_logo_box-->
+            <div class="footer_info_box">
+                <div class="nav_box">
+                    <ul class="nav_list">
+                        <li class="nav_item">
+                            <a href="" class="nav_link">홈페이지이용약관</a>    <!--//nav_link-->
+                        </li>    <!--//nav_item-->
+                        <li class="nav_item">
+                            <a href="" class="nav_link">전자우편 무단수집거부</a>    <!--//nav_link-->
+                        </li>    <!--//nav_item-->
+                        <li class="nav_item">
+                            <a href="" class="nav_link">클린신고센터</a>    <!--//nav_link-->
+                        </li>    <!--//nav_item-->
+                        <li class="nav_item">
+                            <a href="" class="nav_link">영상정보처리기기 관리방침</a>    <!--//nav_link-->
+                        </li>    <!--//nav_item-->
+                        <li class="nav_item privacy">
+                            <a href="" class="nav_link">개인정보처리방침</a>    <!--//nav_link-->
+                        </li>    <!--//nav_item-->
+                    </ul>    <!--//nav_list-->
+                </div>    <!--//nav_box-->
+                <div class="address_box">
+                    <ul class="address_list">
+                        <li class="address_item address">
+                            <address>서울시 성동구 고산자로 10길9 (행당동 142-4)</address>
+                        </li>    <!--//address_item-->
+                        <li class="address_item tel">
+                            <span>
+                                <em>TEL</em>
+                                <em>02-2204-7500</em>
+                            </span>
+                        </li>    <!--//address_item-->
+                        <li class="address_item fax">
+                            <span>
+                                <em>FAX</em>
+                                <em>02-2299-6449</em>
+                            </span>
+                        </li>    <!--//address_item-->
+                    </ul>    <!--//address_list-->
+                </div>    <!--//address_box-->
+                <p class="copyright">
+                    <span class="copy_text">COPYRIGHTⓒ2023 성동문화재단</span> <br />
+                    <span class="copy_text">본 사이트에 게시된 이메일주소는 자동수집을 거부하며, 이를 위반시 정보통신망법에 의해 처벌될 수 있습니다.</span>
+                </p>    <!--//copyright-->
+            </div>    <!--//footer_info_box-->
+        </div>    <!--//footer_inner-->
+    </footer>    <!--//#footer-->
+</div>     <!--//#wrapper-->
+</body>
+</html>

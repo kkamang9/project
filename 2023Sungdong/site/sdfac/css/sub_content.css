@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* ㈜한신정보기술 - 이재홍 2023.08 */
+
+/* 소개 > 오시는길 */
+.cts34_wrap .map_wrap{display:block;position:relative;width:100%;border:2px solid rgba(76, 128, 189, 0.2);border-radius:25px;font-size:0;line-height:0;box-sizing:border-box;overflow:hidden;}
+.cts34_wrap .map_wrap .root_daum_roughmap{width:100%;}
+.cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:450px;}
+.cts34_wrap .map_wrap .root_daum_roughmap .wrap_map .map div:nth-child(2){right:unset !important;left:10px;}
+.cts34_wrap .map_wrap .fac_btn{position:absolute;z-index:1;bottom:15px;right:10px;}
+.cts34_wrap .fac_box.type_text{margin-top:20px;}
+.cts34_wrap .fac_box.type_text .fac_box_inner{min-height:0;}
+@media screen and (max-width:1600px){
+    .cts34_wrap .map_wrap{border-radius:20px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:400px;}
+}
+@media screen and (max-width:1000px){
+    .cts34_wrap .map_wrap{border-radius:15px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:350px;}
+    .cts34_wrap .map_wrap .fac_btn{bottom:10px;}
+    .cts34_wrap .fac_box.type_text{margin-top:15px;}
+}
+@media screen and (max-width:640px){
+    .cts34_wrap .map_wrap{border-radius:10px;}
+    .cts34_wrap .map_wrap .root_daum_roughmap .wrap_map{height:250px;}
+    .cts34_wrap .fac_box.type_text{margin-top:10px;}
+}
