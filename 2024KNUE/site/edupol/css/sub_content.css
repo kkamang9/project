@@ -1,0 +1,119 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 2024.03 안병민 */
+
+/*대학원 소개 > 교육 목적*/
+.cts653_wrap .waypoint:first-child h4{margin-top:0;}
+.cts653_wrap .vision_img_wrap{margin-top:80px;}
+.cts653_wrap .vision_img_wrap img{display:block;margin:0 auto;}
+@media all and (max-width:1470px){
+    .cts653_wrap .vision_img_wrap{margin-top:60px;}
+    .cts653_wrap .vision_img_wrap img{width:640px;}
+}
+@media all and (max-width:640px){
+    .cts653_wrap .vision_img_wrap{margin-top:40px;}
+}
+
+
+/*대학원 소개 > VISION*/
+.cts654_wrap h3{margin-top:75px;}
+.cts654_wrap .vision_img_wrap{margin-top:147px;font-size:0;line-height:0;}
+.cts654_wrap .vision_img_wrap .waypoint + .waypoint{margin-top:137px;}
+@media all and (max-width:1470px){
+    .cts654_wrap p + h3{margin-top:55px;}
+    .cts654_wrap .vision_img_wrap{margin-top:80px;}
+    .cts654_wrap .vision_img_wrap .waypoint + .waypoint{margin-top:60px;}
+}
+@media all and (max-width:640px){
+    .cts654_wrap .vision_img_wrap{margin-top:40px;}
+    .cts654_wrap .vision_img_wrap .waypoint + .waypoint{margin-top:20px;}
+}
+
+
+/*대학원 소개 > 연혁*/
+
+
+
+/*대학원 소개 > 현황*/
+.cts656_wrap h3{margin-top:80px;}
+.cts656_wrap .waypoint:first-child h3{margin-top:0;}
+.cts656_wrap h3 + .table_scroll,
+.cts656_wrap h3 + .table{margin-top:50px;}
+.cts656_wrap .warning{margin-top:27px;}
+.cts656_wrap .warning + .warning{margin-top:0;}
+@media all and (max-width:1470px){
+    .cts656_wrap h3{margin-top:50px;}
+    .cts656_wrap h3 + .table_scroll,
+    .cts656_wrap h3 + .table{margin-top:0;}
+}
+@media all and (max-width:640px){
+    .cts656_wrap h3{margin-top:30px;}
+}
+
+
+/*전공소개 > 교육정책전공*/
+.edu_text_box{position:relative;font-size:0;line-height:0;}
+.edu_text_box + .edu_text_box{margin-top:90px;}
+.edu_text_box .box_bg{width:100%;height:300px;background-position:center center;background-repeat:no-repeat;background-size:cover;}
+.edu_text_box .box_bg.type1{background-image:url(../images/contents/edu_box_bg01.jpg);}
+.edu_text_box .box_bg.type2{background-image:url(../images/contents/edu_box_bg02.jpg);}
+.edu_text_box .box_bg.type3{background-image:url(../images/contents/edu_box_bg03.jpg);}
+.edu_text_box .box_title{position:absolute;top:260px;left:0;width:310px;background-color:#086dcd;border-radius:0 70px 0 70px;font-size:32px;color:#fff;letter-spacing:-0.03em;line-height:180px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:700;text-align:center;}
+.edu_text_box .box_text{min-height:140px;padding:31px 20px 0 350px;font-size:18px;color:#555;letter-spacing:-0.03em;line-height:30px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:500;word-break:keep-all;}
+@media all and (max-width:1470px){
+    .edu_text_box .box_bg{height:260px;}
+    .edu_text_box .box_title{top:220px;width:260px;font-size:30px;line-height:160px;}
+    .edu_text_box .box_text{min-height:120px;padding:30px 20px 0 300px;}
+}
+@media all and (max-width:1000px){
+    .edu_text_box + .edu_text_box{margin-top:60px;}
+    .edu_text_box .box_bg{height:220px;}
+    .edu_text_box .box_title{top:190px;width:220px;font-size:26px;line-height:140px;}
+    .edu_text_box .box_text{min-height:110px;padding:25px 20px 0 245px;font-size:16px;line-height:26px;}
+}
+@media all and (max-width:640px){
+    .edu_text_box + .edu_text_box{margin-top:40px;}
+    .edu_text_box .box_bg{height:180px;}
+    .edu_text_box .box_title{top:160px;width:66.67vw;max-width:300px;border-radius:0 70px 70px 70px;font-size:20px;line-height:40px;}
+    .edu_text_box .box_text{min-height:0;padding:35px 0 0 0;font-size:15px;line-height:24px;}
+}
+
+
+.cts661_wrap .tab_box.type01,
+.cts663_wrap .tab_box.type01,
+.cts665_wrap .tab_box.type01,
+.cts667_wrap .tab_box.type01,
+.cts669_wrap .tab_box.type01{margin-top:90px;}
+.cts661_wrap .prof_wrap,
+.cts663_wrap .prof_wrap,
+.cts665_wrap .prof_wrap,
+.cts667_wrap .prof_wrap,
+.cts669_wrap .prof_wrap{margin-top:70px;}
+@media all and (max-width:1000px){
+    .cts661_wrap .tab_box.type01,
+    .cts663_wrap .tab_box.type01,
+    .cts665_wrap .tab_box.type01,
+    .cts667_wrap .tab_box.type01,
+    .cts669_wrap .tab_box.type01{margin-top:50px;}
+    .cts661_wrap .prof_wrap,
+    .cts663_wrap .prof_wrap,
+    .cts665_wrap .prof_wrap,
+    .cts667_wrap .prof_wrap,
+    .cts669_wrap .prof_wrap{margin-top:40px;}
+}
+@media all and (max-width:640px){
+    .cts661_wrap .prof_wrap,
+    .cts663_wrap .prof_wrap,
+    .cts665_wrap .prof_wrap,
+    .cts667_wrap .prof_wrap,
+    .cts669_wrap .prof_wrap{margin-top:20px;}
+}
+
+
+.pub_prof_wrap .prof_wrap .prof_info_box + .prof_list{margin-top:100px;}
+@media all and (max-width:1000px){
+    .pub_prof_wrap .prof_wrap .prof_info_box + .prof_list{margin-top:60px;}
+}
+@media all and (max-width:640px){
+    .pub_prof_wrap .prof_wrap .prof_info_box + .prof_list{margin-top:40px;}
+}

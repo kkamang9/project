@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 2024.03 안병민 */
+
+/* 대학원소개 > 일반대학원 소개 > 대학원장인사말 */
+/* 대학원소개 > 교육대학원 소개 > 대학원장인사말 */
+.cts604_wrap .greeting_top_box .greeting_top_text,
+.cts608_wrap .greeting_top_box .greeting_top_text{padding-right:710px;}
+.cts604_wrap .greeting_top_box .greeting_top_text span,
+.cts608_wrap .greeting_top_box .greeting_top_text span{font-size:35px;}
+@media all and (max-width:1470px){
+    .cts604_wrap .greeting_top_box .greeting_top_text,
+    .cts608_wrap .greeting_top_box .greeting_top_text{padding-right:50%;}
+    .cts604_wrap .greeting_top_box .greeting_top_text span,
+    .cts608_wrap .greeting_top_box .greeting_top_text span{font-size:30px;}
+}
+@media all and (max-width:1000px){
+    .cts604_wrap .greeting_top_box .greeting_top_text span,
+    .cts608_wrap .greeting_top_box .greeting_top_text span{font-size:25px;}
+}
+@media all and (max-width:640px){
+    .cts604_wrap .greeting_top_box .greeting_top_text,
+    .cts608_wrap .greeting_top_box .greeting_top_text{padding:0 50px;}
+    .cts604_wrap .greeting_top_box .greeting_top_text span,
+    .cts608_wrap .greeting_top_box .greeting_top_text span{font-size:22px;}
+}
+
+
+/* 대학원소개 > 일반대학원 소개 > 일반대학원 소개 */
+/* 대학원소개 > 교육대학원 소개 > 교육대학원 소개 */
+.cts605_wrap h3,
+.cts609_wrap h3{margin-top:72px;margin-bottom:42px;}
+@media all and (max-width:1470px){
+    .cts605_wrap h3,
+    .cts609_wrap h3{margin-top:50px;margin-bottom:15px;}
+}
+@media all and (max-width:640px){
+    .cts605_wrap h3,
+    .cts609_wrap h3{margin-top:30px;}
+}
+
+
+/* 전공소개 > 일반대학원 */
+/* 전공소개 > 교육대학원 */
+.cts614_wrap .temp_box.prev_type,
+.cts615_wrap .temp_box.prev_type{margin:50px 0;}
+
+
+/* 학사정보 > 외국어/종합시험 */
+.cts641_wrap h3{margin-top:75px;margin-bottom:45px;}
+.cts641_wrap .waypoint:first-child h3{margin-top:0;}
+.cts641_wrap h4{margin-top:45px;}
+.cts641_wrap .warning.green{margin-top:7px;}
+.cts641_wrap .auto_step_box .step_list .step_item .title_box .title{padding-left:0;text-align:center}
+@media all and (max-width:1470px){
+    .cts641_wrap h3{margin-top:50px;margin-bottom:15px;}
+    .cts641_wrap h4{margin-top:15px;}
+    .cts641_wrap .warning.green{margin-top:0;}
+}
+@media all and (max-width:640px){
+    .cts641_wrap h3{margin-top:30px;}
+}
+
+/* ㈜한신정보기술 - 2024.08 이재홍 */
+/* 대학원소개 > 대학원생 권익 보호 > 상담센터 안내 */
+.cts1601_wrap .temp_box.contact_type .box_item .title_box{width:200px;}
+.cts1601_wrap .temp_box.contact_type .box_item .contact_box{width:calc(100% - 200px);}
+@media all and (max-width:1470px){
+    .cts1601_wrap .temp_box.contact_type .box_item .title_box{width:170px;}
+    .cts1601_wrap .temp_box.contact_type .box_item .contact_box{width:calc(100% - 170px);}
+}
+@media all and (max-width:1000px){
+    .cts1601_wrap .temp_box.contact_type .box_item .title_box{width:150px;}
+    .cts1601_wrap .temp_box.contact_type .box_item .contact_box{width:calc(100% - 150px);}
+}
+@media all and (max-width:640px){
+    .cts1601_wrap .temp_box.contact_type .box_item .title_box{width:100%;}
+    .cts1601_wrap .temp_box.contact_type .box_item .contact_box{width:100%;}
+}

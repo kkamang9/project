@@ -1,0 +1,167 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 권나람 - 24.01 */
+
+/* 메인 공통 */
+.rowgroup{display:block;position:relative;width:100%;box-sizing:border-box;}
+
+/* 스크롤 애니메이션 */
+.ani_on{opacity:0;visibility:hidden;transform:translateY(100px);transition-property:transform, opacity, visibility;transition-duration:1s;transition-timing-function:linear;}
+.ani_on.active{opacity:1;visibility:visible;transform:translateY(0px);}
+.ani_on.top_on{}
+.ani_on.bottom_on{}
+.ani_on.left_on{}
+.ani_on.right_on{}
+
+/* rowgroup1 시작 */
+.rowgroup1 .visual_photo{display:block;position:relative;width:100%;min-height:746px;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap{display:block;position:relative;width:100%;height:100%;padding-bottom:35px;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .slick-list{display:block;position:relative;height:auto;min-height:0;border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .slick-track{display:block;position:relative;height:auto;min-height:0;border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .slick-slide{display:block;position:relative;height:auto;min-height:0;border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .slick-rows{display:block;position:relative;height:auto;min-height:0;border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .visual_slide_item{display:block !important;position:relative;width:100% !important;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .visual_slide_item.no_image{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .visual_slide_item .visual_img_wrap{display:block;overflow:hidden;position:relative;width:100%;min-height:711px;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .visual_slide_item .visual_img_wrap .visual_bg{display:block;position:absolute;top:0;left:calc(50% - 1000px);width:2000px;height:100%;background-repeat:no-repeat;background-position:center center;background-size:cover;font-size:0;line-height:0;box-sizing:border-box;transform:scale(1.2);transition-property:transform;transition-duration:4000ms;transition-timing-function:cubic-bezier(0.35, 0.72, 0.49, 1);}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .slick-slide.slick-active .visual_slide_item .visual_img_wrap .visual_bg{transform:scale(1);}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_list .visual_slide_item .visual_img_wrap .visual_img{display:block;position:absolute;top:0;left:0;width:0;height:0;font-size:0;line-height:0;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .deco_box{display:block;position:absolute;z-index:3;bottom:0;left:0;width:100%;height:217px;box-sizing:border-box;overflow:hidden;}
+.rowgroup1 .visual_photo .visual_wrap .deco_box .wave{display:block;position:static;width:7360px;height:100%;margin-left:0;background-color:#fff;mask-image:url(../images/main/main_wave.png);-webkit-mask-image:url(../images/main/main_wave.png);mask-position:left top;-webkit-mask-position:left top;font-size:0;line-height:0;box-sizing:border-box;}
+@keyframes move_wave1 {
+    0%{margin-left:0;}
+    100%{margin-left:-3680px;}
+}
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave{animation-name:move_wave1;animation-duration:3s;animation-timing-function:cubic-bezier(0.45, 0.4, 0.4, 0.5);animation-iteration-count:infinite;animation-delay:1700ms;}
+.rowgroup1 .visual_photo .visual_wrap .deco_box .wave .mini_wave{display:inline-block;position:absolute;right:0;background-repeat:no-repeat;background-position:left top;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;clip-path:polygon(100% 0%, 100% 0%, 100% 100%, 100% 100%);transition-property:clip-path;transition-duration:1500ms;transition-timing-function:linear;}
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave .mini_wave{clip-path:polygon(0 0%, 100% 0%, 100% 100%, 0 100%);}
+@keyframes mini_wave1 {
+    0%, 100%{transform:scale(1);transform-origin:right top;}
+    25% {transform:scale(0.8);transform-origin:right top;}
+    75% {transform:scale(0.6);transform-origin:right top;}
+}
+.rowgroup1 .visual_photo .visual_wrap .deco_box .wave .mini_wave.type1{top:-154px;width:1458px;height:351px;background-image:url(../images/main/visual_wave_deco01.png);transition-delay:250ms;}
+.rowgroup1 .visual_photo .visual_wrap .deco_box .wave .mini_wave.type2{top:-204px;width:1178px;height:316px;background-image:url(../images/main/visual_wave_deco02.png);transition-delay:500ms;}
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave .mini_wave.type1,
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave .mini_wave.type2{animation-name:mini_wave1;animation-duration:20s;animation-timing-function:cubic-bezier(0.45, 0.4, 0.4, 0.5);animation-iteration-count:infinite;animation-delay:1500ms;}
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave .mini_wave.type1{}
+.rowgroup1.ready_on .visual_photo .visual_wrap .deco_box .wave .mini_wave.type2{}
+.rowgroup1 .visual_photo .visual_wrap .content_box{display:inline-block;z-index:4;position:absolute;top:117px;left:50%;transform:translateX(-50%);max-width:1500px;width:auto;min-height:247px;padding-top:187px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .slogan_box{display:inline-block;position:absolute;top:0;left:0;width:100%;height:187px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .slogan_box .slogan_logo{display:inline-block;position:absolute;top:0;right:calc(100% - 239px);width:284px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .slogan_box .slogan_logo .slogan_img{display:inline-block;position:relative;width:auto;height:auto;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .slogan_box .slogan_text_list{display:inline-block;position:absolute;bottom:58px;left:calc(50% - 8px);width:100%;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .slogan_box .slogan_text_list .slogan_text_item{display:inline-block;position:relative;width:auto;font-size:50px;color:#fff;line-height:55px;letter-spacing:-0.03em;font-weight:400;font-family:'ONETitle','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box{display:inline-block;position:relative;width:auto;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box{display:inline-block;position:relative;width:auto;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item + .detail_item{margin-left:10px;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item{display:inline-block;overflow:hidden;position:relative;width:auto;background-color:#fff;border-radius:18px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .search_input{display:inline-block;position:relative;min-width:450px;min-height:60px;padding:14px 55px 14px 24px;border:none;font-size:18px;color:#000;line-height:32px;letter-spacing:-0.03em;font-weight:400;font-family:'ONE','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .search_input::placeholder{color:#484848;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .search_input:focus-visible{outline-color:#2354e0;border-radius:inherit;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit{display:inline-block;position:absolute;top:0;right:0;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:before,
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:after{display:block;position:absolute;top:calc(50% - 12px);right:23px;width:24px;height:24px;background-image:url(../images/main/visual_search_icons.png);background-repeat:no-repeat;content:'';box-sizing:border-box;transition-property:clip-path;transition-duration:300ms;transition-timing-function:cubic-bezier(0.12, 0.8, 0.47, 0.8);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:before{background-position:left top;clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:hover:before{clip-path:polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:after{background-position:-25px top;clip-path:polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit:hover:after{clip-path:polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .form_item .form_submit .submit_input{display:inline-block;position:relative;z-index:1;min-width:55px;min-height:60px;border:none;font-size:0;line-height:0;color:transparent;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .detail_item{display:inline-block;overflow:hidden;position:relative;width:auto;background-image:linear-gradient(to right, #265de8, #2fdaff, #265de8);background-repeat:repeat-x;background-position:left top;background-size:200%;border-radius:18px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;text-align:center;transition-property:background-position;transition-duration:300ms;transition-timing-function:cubic-bezier(0.12, 0.8, 0.47, 0.8);}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .detail_item:hover{background-position:right top;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .detail_item .detail_btn{display:inline-block;position:relative;min-width:124px;min-height:60px;padding:14px 10px;border:none;font-size:18px;color:#fff;line-height:32px;letter-spacing:-0.03em;font-weight:400;font-family:'ONE','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .content_box .search_box .form_box .detail_item .detail_btn:hover{text-decoration:none;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control{display:inline-block;z-index:5;position:absolute;top:0;right:0;width:auto;height:100%;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box{display:inline-block;position:absolute;top:0;right:0;width:30px;height:100%;padding:70px 0 269px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner{display:block;position:relative;width:100%;height:100%;box-sizing:border-box;}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner:before,
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner:after{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner:before{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner:after{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner .current{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner .slash{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_count_box .count_inner .total{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_btn_box{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_btn_box .visual_btn{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_btn_box .visual_btn.prev{}
+.rowgroup1 .visual_photo .visual_wrap .visual_slide_control .visual_btn_box .visual_btn.next{}
+/* 삭제하기 */
+/* rowgroup1 끝 */
+
+/* rowgroup2 시작 */
+.rowgroup2{}
+.rowgroup2 .travel_photo{}
+.rowgroup2 .travel_photo .travel_wrap{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item.no_image{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_img_wrap{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_img_wrap .travel_bg{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_img_wrap .travel_img{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_title{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date .text{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date .year{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date .month{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date .date{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_list .travel_slide_item .travel_slide_link .travel_con_wrap .con_date .slash{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_control{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_control .travel_btn{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_control .travel_btn.prev{}
+.rowgroup2 .travel_photo .travel_wrap .travel_slide_control .travel_btn.next{}
+/* rowgroup2 끝 */
+
+/* rowgroup3 시작 */
+.rowgroup3{}
+.rowgroup3 .specialty_photo{}
+.rowgroup3 .specialty_photo .specialty_wrap{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_con_box{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_con_box .mini_title{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_con_box .title{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_btn_box{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_btn_box .special_btn{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_btn_box .special_btn.prev{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_btn_box .special_btn.next{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_deco{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_deco .crap{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_deco .peach{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_control .special_deco .vegetable{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item.no_image{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link .special_img_wrap{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link .special_img_wrap .special_bg{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link .special_img_wrap .special_img{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link .special_con_wrap{}
+.rowgroup3 .specialty_photo .specialty_wrap .special_slide_list .special_slide_item .special_slide_link .special_con_wrap .title{}
+/* rowgroup3 끝 */
+
+/* rowgroup4 시작 */
+.rowgroup4{}
+.rowgroup4 .old_photo{}
+.rowgroup4 .old_photo .old_wrap{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link .old_img_wrap{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link .old_img_wrap .old_bg{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link .old_img_wrap .old_img{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link .old_con_wrap{}
+.rowgroup4 .old_photo .old_wrap .old_slide_list .old_slide_item .old_slide_link .old_con_wrap .title{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_progress_box{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_progress_box .bar{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_btn{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_btn.prev{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_btn.next{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_count_box{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_count_box .current{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_count_box .slash{}
+.rowgroup4 .old_photo .old_wrap .old_slide_control .old_btn_box .old_count_box .total{}
+/* rowgroup4 끝 */

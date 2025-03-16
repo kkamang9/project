@@ -1,0 +1,624 @@
+@charset "utf-8";
+
+/* 일반 user 로그인 */
+.campus_user_login{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_user_login .login_choice_box{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_user_login .login_choice_box .login_choice_list{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item{display:inline-block;position:relative;width:calc((100% - 70px) / 2);margin-left:70px;vertical-align:top;box-sizing:border-box;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item:nth-child(2n-1){margin-left:0;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link{display:block;position:relative;width:100%;padding:67px 0 59px;box-sizing:border-box;text-align:center;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:12px solid #eaf5fe;border-radius:28px;content:'';box-sizing:border-box;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title{display:block;position:relative;width:100%;margin:0 0 44px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{display:inline-block;position:relative;font-size:34px;line-height:30px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+@media all and (max-width:1470px){
+    .campus_user_login .login_choice_box{padding:50px 0 0;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item{width:calc((100% - 50px) / 2);margin-left:50px;}
+}
+@media all and (max-width:1000px){
+    .campus_user_login .login_choice_top{padding:20px 0;font-size:20px;}
+    .campus_user_login .login_choice_box{padding:20px 0 0;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item{width:calc((100% - 20px) / 2);margin-left:20px;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link{padding:40px 0;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link:before{border-width:6px;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title{margin:0 0 20px;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{font-size:22px;line-height:32px;}
+}
+@media all and (max-width:640px){
+    .campus_user_login .login_choice_top{padding:13px 0;font-size:18px;line-height:24px;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item{display:block;width:100%;margin-top:20px;margin-left:0;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item:first-child{margin-top:0;}
+    .campus_user_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{font-size:18px;line-height:26px;}
+}
+
+/* sns 로그인 */
+.campus_sns_login{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_sns_login .login_choice_top{display:block;position:relative;width:100%;padding:35px 0;background-color:#eaf5fe;font-size:26px;color:#073673;line-height:30px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';text-align:center;box-sizing:border-box;}
+.campus_sns_login .login_choice_box{display:block;position:relative;width:100%;padding:76px 0 0;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item{display:inline-block;position:relative;width:calc((100% - 70px) / 2);margin-left:70px;vertical-align:top;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item:nth-child(2n-1){margin-left:0;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link{display:block;position:relative;width:100%;padding:67px 0 59px;box-sizing:border-box;text-align:center;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%;border-radius:28px;content:'';box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link:before{border:12px solid #b6e5a6;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link:before{border:12px solid #fff3a6;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title{display:block;position:relative;width:100%;margin:0 0 44px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .big_title{display:inline-block;position:relative;height:30px;background-repeat:no-repeat;background-position:left top;vertical-align:top;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .type_title .big_title{width:161px;background-image:url(/site/public/images/program/knue_login_naver.png);}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .type_title .big_title{width:164px;background-image:url(/site/public/images/program/knue_login_kakao.png);}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{display:inline-block;position:relative;margin-left:16px;font-size:34px;line-height:30px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .type_title .small_title{color:#2aa501;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .type_title .small_title{color:#371d1e;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .temp_btn{border-color:#29a500;background-color:#29a500;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .temp_btn{border-color:#371d1e;background-color:#371d1e;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .temp_btn.icon_type:hover .btn,
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .temp_btn.icon_type:hover .btn{color:transparent;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .temp_btn.icon_type:hover .move_text,
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .temp_btn.icon_type:hover .move_text{color:#fff;}
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .temp_btn.icon_type.arrow:before,
+.campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .temp_btn.icon_type.arrow:before{background-position:0 -20px;}
+@media all and (max-width:1470px){
+    .campus_sns_login .login_choice_box{padding:50px 0 0;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item{width:calc((100% - 50px) / 2);margin-left:50px;}
+}
+@media all and (max-width:1000px){
+    .campus_sns_login .login_choice_top{padding:20px 0;font-size:20px;}
+    .campus_sns_login .login_choice_box{padding:20px 0 0;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item{width:calc((100% - 20px) / 2);margin-left:20px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link{padding:40px 0;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link:before{border-width:6px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link:before{border-width:6px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title{margin:0 0 20px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .big_title{height:28px;background-size:auto 100%;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .type_title .big_title{width:149px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .type_title .big_title{width:152px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{margin-left:10px;font-size:26px;line-height:32px;}
+}
+@media all and (max-width:640px){
+    .campus_sns_login .login_choice_top{padding:13px 0;font-size:18px;line-height:24px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item{display:block;width:100%;margin-top:20px;margin-left:0;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item:first-child{margin-top:0;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .big_title{height:22px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.naver .login_type_link .type_title .big_title{width:118px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item.kakao .login_type_link .type_title .big_title{width:119px;}
+    .campus_sns_login .login_choice_box .login_choice_list .login_choice_item .login_type_link .type_title .small_title{margin-left:5px;font-size:20px;line-height:26px;}
+}
+
+/* 시설이용신청 - 목록 */
+.campus_tour_box{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_category{display:block;position:relative;width:100%;padding:45px 0;background-color:#f4f5f8;border-radius:20px;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.campus_tour_box .tour_category .category_inner{display:inline-block;position:relative;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_category .category_inner + .category_inner{margin-left:56px;}
+.campus_tour_box .tour_category .category_inner .inner_title{display:inline-block;position:relative;margin-right:16px;font-size:17px;color:#000;line-height:48px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_category .category_inner .temp_select_box .temp_select{border-radius:5px;}
+.campus_tour_box .tour_category .category_inner .inner_link_list{display:inline-block;position:relative;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item{display:inline-block;position:relative;margin-right:10px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:last-child{margin-right:0;}
+.campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item .inner_link{display:inline-block;position:relative;padding:0 25px;background-color:#fff;border:1px solid #b5b5b5;border-radius:5px;font-size:17px;color:#333;line-height:46px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;transition:background-color 250ms ease, border-color 250ms ease;}
+.campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item .inner_link:hover,
+.campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item.active .inner_link{color:#fff;background-color:#086dcd;border-color:#086dcd;text-decoration:none;}
+.campus_tour_box .tour_list{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner{display:block;position:relative;width:100%;padding:64px 0 0;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item{display:inline-block;position:relative;width:calc((100% - 120px) / 4);margin-top:40px;margin-right:40px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(4n){margin-right:0;}
+.campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+4){margin-top:0;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap{display:block;position:relative;width:100%;min-height:216px;border-radius:20px;box-sizing:border-box;overflow:hidden;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap .img_category{display:inline-block;position:absolute;z-index:3;top:13px;left:13px;padding:0 15px;border:2px solid #fff;border-radius:15px;font-size:15px;color:#fff;line-height:28px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item.type01 .item_inner .img_wrap .img_category{background-color:#049d56;}
+.campus_tour_box .tour_list .list_inner .tour_list_item.type02 .item_inner .img_wrap .img_category{background-color:#086973;}
+.campus_tour_box .tour_list .list_inner .tour_list_item.type03 .item_inner .img_wrap .img_category{background-color:#049dd9;}
+.campus_tour_box .tour_list .list_inner .tour_list_item.type04 .item_inner .img_wrap .img_category{background-color:#f7623a;}
+.campus_tour_box .tour_list .list_inner .tour_list_item.type05 .item_inner .img_wrap .img_category{background-color:#f14a61;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap .view_img{display:block;position:absolute;top:0;left:0;width:100%;height:100%;background-color:#ccc;background-repeat:no-repeat;background-position:center center;background-size:cover;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap .hidden_img{display:block;position:absolute;top:0;left:0;width:0;height:0;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap{display:block;position:relative;width:100%;margin:26px 0 0;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .title{display:inline-block;position:relative;font-size:30px;color:#000;line-height:32px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .sub_title{display:inline-block;position:relative;padding:0 18px;border-radius:16px;background-color:#edf9f4;font-size:18px;color:#20a165;line-height:32px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .title + .sub_title{margin-left:12px;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap{display:block;position:relative;width:100%;margin:22px 0 0;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item + .date_item{margin-top:6px;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange{display:inline-block;position:relative;padding:0 14px;border-width:1px;border-style:solid;border-radius:15px;font-size:15px;line-height:28px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange.type01{border-color:rgba(8, 109, 205, 0.45);color:#086dcd;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange.type02{border-color:rgba(10, 161, 177, 0.45);color:#0aa1b1;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .date_s_e{display:inline-block;position:relative;font-size:17px;color:#666;line-height:30px;letter-spacing:-0.03em;font-weight:400;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange + .date_s_e{margin-left:13px;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap{display:block;position:relative;width:100%;margin:28px 0 0;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap .temp_btn{width:calc((100% - 18px) / 2);margin-right:18px;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap .temp_btn:nth-child(2n){margin-right:0;}
+.campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap .temp_btn .btn{min-width:100%;}
+@media all and (min-width:1471px){
+    .campus_tour_box .tour_list .p-pagination{margin-top:140px;}
+}
+@media all and (max-width:1470px){
+    .campus_tour_box .tour_category{padding:20px 0;}
+    .campus_tour_box .tour_category .category_inner{display:block;}
+    .campus_tour_box .tour_category .category_inner + .category_inner{margin-top:10px;margin-left:0;}
+    .campus_tour_box .tour_list .list_inner{padding:40px 0 0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item{width:calc((100% - 60px) / 3);margin-top:30px;margin-right:30px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(4n){margin-right:30px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+4){margin-top:30px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(3n){margin-right:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+3){margin-top:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap{min-height:0;padding:32% 0;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .tour_category{padding:20px 3%;}
+    .campus_tour_box .tour_category .category_inner .inner_title{display:block;margin-right:0;margin-bottom:5px;line-height:38px;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list{display:block;width:100%;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item{width:calc((100% - 10px) / 3);margin-top:5px;margin-right:5px;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(3n){margin-right:0;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(-n+3){margin-top:0;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item .inner_link{width:100%;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item{width:calc((100% - 30px) / 2);margin-top:20px;margin-right:20px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(4n){margin-right:20px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+4){margin-top:20px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(3n){margin-right:20px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+3){margin-top:20px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(2n){margin-right:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:nth-child(-n+2){margin-top:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap{margin:15px 0 0;text-align:center;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap{margin:15px 0 0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item{text-align:center;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .date_s_e{display:block;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange + .date_s_e{margin-left:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap{margin:15px 0 0;}
+}
+@media all and (max-width:640px){
+    .campus_tour_box .tour_category .category_inner .inner_title{display:inline-block;min-width:60px;margin-bottom:0;font-size:16px;line-height:38px;}
+    .campus_tour_box .tour_category .category_inner .temp_select_box{width:calc(100% - 70px);margin-left:10px;}
+    .campus_tour_box .tour_category .category_inner .temp_select_box .temp_select{width:100%;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list{display:inline-block;width:calc(100% - 70px);margin-left:10px;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item{width:calc((100% - 5px) / 2);}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(3n){margin-right:5px;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(-n+3){margin-top:5px;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(2n){margin-right:0;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item:nth-child(-n+2){margin-top:0;}
+    .campus_tour_box .tour_category .category_inner .inner_link_list .inner_link_item .inner_link{padding:0 3px;font-size:15px;line-height:36px;letter-spacing:-0.06em;}
+    .campus_tour_box .tour_list .list_inner{padding:20px 0 0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item{display:block;width:100%;margin-top:20px !important;margin-right:0 !important;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item:first-child{margin-top:0 !important;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap{width:80%;margin:0 auto;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .img_wrap .img_category{font-size:14px;border-width:1px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .title{display:block;font-size:24px;line-height:28px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .sub_title{font-size:15px;line-height:28px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .text_wrap .title + .sub_title{margin-top:5px;margin-left:0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap{margin:5px 0 0;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange{display:inline-block;width:70px;padding:0 5px;font-size:14px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .date_s_e{display:inline-block;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .date_wrap .date_item .lange + .date_s_e{margin-left:5px;}
+    .campus_tour_box .tour_list .list_inner .tour_list_item .item_inner .btn_wrap .temp_btn{width:calc((100% - 10px) / 2);margin-right:10px;}
+}
+
+/* 시설이용신청 - 상세보기 */
+.campus_tour_box .tour_view{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .view_top_title{display:block;position:relative;width:100%;padding:0 0 20px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .view_top_title:before{display:block;position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:#10386d;content:'';box-sizing:border-box;}
+.campus_tour_box .view_top_title .state{display:inline-block;position:relative;padding:0 40px;background-color:#176ee5;border-radius:26px;font-size:22px;color:#fff;line-height:54px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .view_top_title .title{display:inline-block;position:relative;padding:0 12px 0 22px;font-size:38px;color:#0e0e0e;line-height:54px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .view_top_title .sub_title{display:inline-block;position:relative;margin:8px 0 0;padding:0 22px;background-color:#edf9f4;border-radius:18px;font-size:18px;color:#20a165;line-height:36px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_view .view_top_title + .temp_img_box{margin-top:63px;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box .slick-list{display:block;position:relative;width:100%;min-height:0;border:none;border-radius:20px;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box .slick-track{display:block;position:relative;width:100%;min-height:0;border:none;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box .slick-slide{display:block;position:relative;width:100%;min-height:0;border:none;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box .slick-rows{display:block;position:relative;width:100%;min-height:0;border:none;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box .real_img{background-color:#ccc;border-radius:0;}
+@media all and (min-width:1001px){
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box{width:575px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .con_box{width:calc(100% - 620px);height:auto;margin-left:45px;padding:42px 55px 39px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .con_box .desc_box{margin-top:0;}
+}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box{display:inline-block;position:absolute;z-index:5;bottom:-30px;left:50px;padding:0 24px;background-color:#073673;border-radius:10px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;box-shadow:0 16px 32px rgba(11, 44, 90, 0.13);}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count{display:inline-block;position:relative;margin-right:17px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .current,
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .total{display:inline-block;position:relative;width:28px;font-size:18px;color:#fff;line-height:60px;letter-spacing:0;font-weight:700;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;text-align:center;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .dash{display:inline-block;position:relative;width:13px;height:1px;margin:29px 0 0;background-color:#fff;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control{display:inline-block;position:relative;width:28px;height:60px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control:before{display:block;position:absolute;top:calc(50% - 6px);left:calc(50% - 6px);width:13px;height:13px;background-image:url(/site/public/images/program/knue_facility_img_slide_btn.png);background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;transform-origin:50% 50%;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control.prev{}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control.next{margin-left:11px;}
+.campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control.next:before{transform:rotateY(180deg);}
+.campus_tour_box .tour_view .btn_box{display:block;position:relative;width:100%;margin:39px 0 0;padding:0 190px 0 0;font-size:0;line-height:0;box-sizing:border-box;text-align:right;}
+.campus_tour_box .tour_view .btn_box .temp_btn.medium{margin-left:10px;}
+.campus_tour_box .tour_view .btn_box .temp_btn.medium:first-child{margin-left:0;}
+.campus_tour_box .tour_view .btn_box .temp_btn.medium .btn{min-width:148px;}
+@media all and (min-width:1001px){
+    .campus_tour_box .tour_view .cts_total{margin:139px 0 0;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01{width:calc(100% - (100% / 3));}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01:before{border-radius:6px;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_btn{}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list{}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item{width:50%;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item .tab_link{}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item .tab_link span{height:60px;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item .tab_link span:after{background-image:none;background-color:#0aa1b1;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item:first-child .tab_link span:before,
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item:first-child .tab_link span:after{border-radius:6px 0 0 6px;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item:last-child .tab_link span:before,
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item:last-child .tab_link span:after{border-radius:0 6px 6px 0;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item .tab_link span em{color:#303030;font-weight:700;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item.active .tab_link span em,
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 .tab_list .tab_item .tab_link:hover span em{color:#fff;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 + .cts_box{margin-top:38px;}
+}
+.campus_tour_box .tour_view .tour_view_desc_box{display:block;position:relative;width:100%;padding:55px 59px;border:1px solid #ddd;border-radius:20px;box-sizing:border-box;}
+@media all and (min-width:1471px){
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li{margin-top:14px;padding-left:26px;font-size:24px;color:#000;line-height:30px;font-weight:500;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li:first-child{margin-top:0;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li:before{top:9px;left:0;width:13px;height:13px;border-radius:2px;background-color:#84d0d8;transform-origin:50% 50%;transform:rotate(-45deg);}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li .bu{margin-top:12px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li .bu > li{margin-top:0;padding-left:15px;font-size:18px;color:#515151;font-weight:400;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu > li .bu > li:before{top:14px;left:4px;width:6px;height:3px;background-color:#515151;transform:none;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu.map_type > li{padding-left:30px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu.map_type > li:before{top:3px;left:0;width:19px;height:22px;background-color:transparent;background-image:url(/site/public/images/program/knue_facility_map_type_list_icon.png);background-repeat:no-repeat;background-position:left top;transform:none;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu.map_type > li .bu > li{padding-left:0;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu.map_type > li .bu > li:before{display:none;}
+    .campus_tour_box .tour_view .tour_view_desc_box .bu + .warning{margin-top:14px;}
+}
+.campus_tour_box .tour_view .tour_view_desc_box .tour_map_box{display:block;position:relative;width:1300px;margin:0 auto;box-sizing:border-box;}
+.campus_tour_box .tour_view .tour_view_desc_box .bu + .tour_map_box{margin-top:12px;}
+.campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map{display:block;position:relative;width:100%;height:460px;box-sizing:border-box;}
+.campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map .customoverlay{display:inline-block;position:relative;padding-bottom:50px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map .customoverlay .title{display:inline-block;position:relative;padding:0 10px;background-color:#fff;border-radius:10px;font-size:16px;color:#000;line-height:30px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;box-shadow:0 16px 32px rgba(11, 44, 90, 0.13);}
+
+
+.campus_tour_box .list_btn_box{display:block;position:relative;width:100%;margin:45px 0 0;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.campus_tour_box .list_btn_box .list_back{display:inline-block;position:relative;min-width:150px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .list_btn_box .list_back:before{display:block;position:absolute;top:0;left:0;width:100%;height:100%;border:1px solid #596069;border-radius:14px;content:'';box-sizing:border-box;box-shadow:0 16px 32px rgba(11, 44, 90, 0.13);}
+.campus_tour_box .list_btn_box .list_back em{display:inline-block;position:relative;padding-right:32px;font-size:18px;color:#55575a;line-height:52px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .list_btn_box .list_back em:before{display:block;position:absolute;top:calc(50% - 7px);right:0;width:17px;height:14px;background-image:url(/site/public/images/program/list_back_btn_icon.png);background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;}
+@media all and (min-width:1001px){
+    .campus_tour_box .donate_popup_wrap .donate_popup_box{width:auto;}
+    .campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner{padding:25px 25px 40px;}
+    .campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .tl{padding-left:75px;}
+}
+.campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .desc_box{display:block;position:relative;width:100%;margin:15px 0;padding:15px 39px;background-color:#f0f8fe;border:1px solid #cce2f4;font-size:18px;color:#000;line-height:24px;letter-spacing:-0.03em;font-weight:400;font-family:'WantedSans';word-break:keep-all;box-sizing:border-box;text-align:center;}
+.campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .text_center{margin-top:25px;}
+.campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .temp_btn.sky .btn{min-width:138px;}
+@media all and (min-width:1001px) and (max-width:1470px){
+    .campus_tour_box .tour_view .view_top_title + .temp_img_box{margin-top:40px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_box{width:500px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .con_box{width:calc(100% - 530px);margin-left:30px;padding:25px 20px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .con_box .desc_box .desc_item .desc_title{width:90px;}
+}
+@media all and (max-width:1470px){
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box{left:0;}
+    .campus_tour_box .tour_view .btn_box{margin:50px 0 0;padding:0;text-align:center;}
+    .campus_tour_box .tour_view .cts_total{margin:40px 0 0;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 + .cts_box{margin:20px 0 0;}
+    .campus_tour_box .tour_view .tour_view_desc_box{padding:30px 25px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .tour_map_box{width:100%;}
+    .campus_tour_box .list_btn_box{margin:20px 0 0;}
+    .campus_tour_box .list_btn_box .list_back em{line-height:48px;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .view_top_title .state{font-size:20px;line-height:40px;}
+    .campus_tour_box .view_top_title .title{font-size:30px;line-height:40px;}
+    .campus_tour_box .view_top_title .sub_title{margin:0;font-size:18px;line-height:40px;}
+    .campus_tour_box .tour_view .view_top_title + .temp_img_box{margin-top:20px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box{bottom:auto;left:auto;top:40vw;right:2%;padding:0 10px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count{margin-right:5px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control.next{margin-left:5px;}
+    .campus_tour_box .temp_img_box.type1 .box_inner .con_box .desc_box{margin-top:0;}
+    .campus_tour_box .tour_view .btn_box{margin:20px 0 0;}
+    .campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map{height:500px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map .customoverlay .title{font-size:15px;}
+    .campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .text_center{margin-top:15px;}
+    .campus_tour_box .donate_popup_wrap .donate_popup_box .popup_inner .desc_box{margin:10px 0;padding:10px;font-size:16px;line-height:22px;}
+}
+@media all and (max-width:640px){
+    .campus_tour_box .view_top_title .state{padding:0 10px;font-size:16px;line-height:30px;}
+    .campus_tour_box .view_top_title .title{padding:0 5px 0 10px;font-size:24px;line-height:30px;}
+    .campus_tour_box .view_top_title .sub_title{font-size:16px;line-height:30px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box{top:0;right:0;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .current,
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .total{font-size:16px;line-height:40px;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .count .dash{margin:20px 0 0;}
+    .campus_tour_box .tour_view .temp_img_box.type1 .box_inner .img_btn_box .btn_control{height:40px;}
+    .campus_tour_box .tour_view .btn_box .temp_btn.medium .btn{min-width:90px;}
+    .campus_tour_box .tour_view .cts_total{margin:20px 0 0;}
+    .campus_tour_box .tour_view .cts_total .tab_box.type01 + .cts_box{margin:10px 0 0;}
+    .campus_tour_box .tour_view .tour_view_desc_box{padding:15px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map{height:400px;}
+    .campus_tour_box .tour_view .tour_view_desc_box .tour_map_box #map .customoverlay .title{font-size:13px;}
+    .campus_tour_box .list_btn_box{margin:20px 0 0;}
+    .campus_tour_box .list_btn_box .list_back em{font-size:15px;line-height:38px;}
+}
+
+/* 시설이용신청 - 캘린더 */
+.campus_tour_box .tour_calendar{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_top_title{display:block;position:relative;width:100%;padding:29px 0 34px;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.campus_tour_box .tour_calendar .calendar_top_title .month_btn{display:inline-block;position:relative;width:50px;height:50px;border:1px solid #d4d4d4;border-radius:100%;vertical-align:top;box-sizing:border-box;box-shadow:0 16px 32px rgba(0, 0, 0, 0.1);}
+.campus_tour_box .tour_calendar .calendar_top_title .month_btn:before{display:block;position:absolute;top:calc(50% - 8px);width:17px;height:16px;background-image:url(/site/public/images/program/knue_facility_month_btn.png);background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;transform-origin:50% 50%;}
+.campus_tour_box .tour_calendar .calendar_top_title .month_btn:hover:before{background-position:-20px top;}
+.campus_tour_box .tour_calendar .calendar_top_title .month_btn.prev:before{left:calc(50% - 9px);}
+.campus_tour_box .tour_calendar .calendar_top_title .month_btn.next:before{left:calc(50% - 7px);transform:rotate(180deg);}
+.campus_tour_box .tour_calendar .calendar_top_title .month_title{display:inline-block;position:relative;margin:0 43px;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_top_title .month_title em{display:inline-block;position:relative;font-size:36px;color:#111;line-height:50px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_top_title .month_title em.calendar_year + em.calendar_month{margin-left:10px;}
+.campus_tour_box .tour_calendar .calendar_box{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar{position:relative;width:100%;box-sizing:border-box;border-collapse:unset;border-style:hidden;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead{position:relative;width:100%;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr{position:relative;width:100%;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr th{padding:17px 3px;border:1px solid #073673;background-color:#073673;font-size:20px;color:#fff;line-height:24px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';text-align:center;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr:first-child th:first-child{border-radius:20px 0 0 0;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr:first-child th:last-child{border-radius:0 20px 0 0;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody{position:relative;width:100%;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr{position:relative;width:100%;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td{border-width:0 1px 1px 0;border-style:solid;border-color:#ddd;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td:first-child{border-width:0 1px 1px 1px;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child{border-radius:0 0 0 20px;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child{border-radius:0 0 20px 0;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn{display:block;position:relative;width:100%;height:184px;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child .cal_btn{border-radius:0 0 0 19px;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child .cal_btn{border-radius:0 0 19px 0;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td a.cal_btn{background-color:#ecf2ff;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td div.cal_btn{background-color:#fdeef2;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td div.cal_btn.sche_none{background-color:transparent;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn.active:before{display:block;position:absolute;top:0;left:-1px;width:calc(100% + 2px);height:calc(100% + 1px);border:5px solid #2652aa;content:'';box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child .cal_btn.active:before{border-radius:0 0 0 20px;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child .cal_btn.active:before{border-radius:0 0 20px 0;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .day_num{display:inline-block;position:absolute;top:0;left:0;width:40px;height:40px;padding:11px 0 0;font-size:18px;color:#333;line-height:20px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;text-align:center;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td:first-child .cal_btn .day_num,
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td:last-child .cal_btn .day_num,
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn.holiday .day_num{color:#b00d33;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn.active .day_num{background-color:#2652aa;color:#fff;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .state_text{display:inline-block;position:relative;top:50%;left:50%;transform:translateX(-50%) translateY(-50%);font-size:19px;line-height:24px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td a.cal_btn .state_text{color:#2652aa;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td div.cal_btn .state_text{color:#b00d33;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list{display:inline-block;position:relative;width:100%;font-size:0;line-height:0;vertical-align:top;box-sizing:border-box;text-align:left;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item{display:inline-block;position:relative;width:calc((100% - 90px) / 4);margin-top:10px;margin-right:30px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(4n){margin-right:0;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(-n+4){margin-top:0;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check input[type="radio"]{display:block;position:absolute;top:0;left:0;width:0;height:0;border:none;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check label{display:block;position:relative;z-index:1;width:100%;padding:10px 3px;background-color:#ecf2ff;border:1px solid rgba(38, 82, 170, 0.56);border-radius:5px;font-size:16px;color:#2652aa;line-height:20px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';text-align:center;box-sizing:border-box;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check input[type="radio"]:checked + label{background-color:#2652aa;border-color:#2652aa;color:#fff;font-weight:700;}
+.campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check input[type="radio"]:disabled + label{background-color:#fff;border-color:#d7d8d9;color:#949494;font-weight:400;}
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar + table.time_calendar,
+.campus_tour_box .tour_calendar .calendar_box table.sche_calendar + .text_right,
+.campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_center,
+.campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_right{margin-top:80px;}
+@media all and (max-width:1470px){
+    .campus_tour_box .tour_calendar .calendar_top_title{padding:20px 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr th{padding:10px 3px;font-size:18px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn{height:140px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn.active:before{border-width:3px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .state_text{font-size:17px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar + table.time_calendar,
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar + .text_right,
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_center,
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_right{margin-top:40px;}
+}
+@media all and (min-width:1001px) and (max-width:1470px){
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(1){width:180px !important;}
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(2){width:100px !important;}
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(3){width:calc(100% - 280px) !important;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn{width:40px;height:40px;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn:before{transform:scale(0.8);}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn.next:before{transform:scale(0.8) rotate(180deg);}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_title{margin:0 20px;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_title em{font-size:28px;line-height:40px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr th{padding:5px 3px;font-size:17px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn{height:100px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .day_num{width:30px;height:28px;padding:5px 0 0;font-size:15px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .state_text{font-size:15px;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item{width:calc((100% - 10px) / 3);margin-top:5px;margin-right:5px;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(4n){margin-right:5px;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(3n){margin-right:0;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(-n+4){margin-top:5px;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item:nth-child(-n+3){margin-top:0;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check label{padding:5px 3px;font-size:15px;word-break:keep-all;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar + table.time_calendar,
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar + .text_right,
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_center,
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar + .text_right{margin-top:25px;}
+}
+@media all and (min-width:641px) and (max-width:1000px){
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(1){width:120px !important;}
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(2){width:80px !important;}
+    .campus_tour_box .tour_calendar .calendar_box table.time_calendar colgroup col:nth-child(3){width:calc(100% - 200px) !important;}
+}
+@media all and (max-width:640px){
+    .campus_tour_box .tour_calendar .calendar_top_title{padding:10px 0;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn{width:30px;height:30px;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn:before{transform:scale(0.6);}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_btn.next:before{transform:scale(0.6) rotate(180deg);}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_title{margin:0 10px;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_title em{font-size:20px;line-height:30px;}
+    .campus_tour_box .tour_calendar .calendar_top_title .month_title em.calendar_year + em.calendar_month{margin-left:5px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr:first-child th:first-child{border-radius:10px 0 0 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr:first-child th:last-child{border-radius:0 10px 0 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child{border-radius:0 0 0 10px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child{border-radius:0 0 10px 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child .cal_btn{border-radius:0 0 0 9px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child .cal_btn{border-radius:0 0 9px 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:first-child .cal_btn.active:before{border-radius:0 0 0 10px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr:last-child td:last-child .cal_btn.active:before{border-radius:0 0 10px 0;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar thead tr th{font-size:14px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn{height:60px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .day_num{width:20px;height:auto;padding:0;font-size:11px;line-height:17px;}
+    .campus_tour_box .tour_calendar .calendar_box table.sche_calendar tbody tr td .cal_btn .state_text{font-size:11px;letter-spacing:-0.1em;}
+    .campus_tour_box .tour_calendar .calendar_box .time_calendar .time_list .time_item .time_check label{font-size:13px;line-height:16px;}
+}
+
+/* 시설이용신청 - 예약신청 */
+.campus_tour_box .online_agree_wrap .down_list{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .online_agree_wrap .down_list .down_item{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .online_agree_wrap .down_list .down_item + .down_item{margin-top:10px;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down{width:440px;background-color:#f6f6f6;border-color:#f6f6f6;border-radius:0;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down:after{background-position:-20px 0;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down .btn{width:100%;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down .move_text{color:#515151;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .p-upload{display:inline-block;position:relative;width:calc(100% - 440px);padding-left:16px;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .p-upload .p-form-group .p-form-group__upload .p-input{background-color:#fff;border-color:#e0e0e0;color:#515151;}
+.campus_tour_box .online_agree_wrap .down_list .down_item .p-upload .p-form-group .p-input__addon .p-button{background-color:#fff;border:1px solid #e0e0e0 !important;color:#444;}
+.campus_tour_box .online_agree_wrap .p-table + .text_center,
+.campus_tour_box .online_agree_wrap .warning_box + .text_center{margin-top:60px;}
+.campus_tour_box .online_agree_wrap .warning_box + .text_center .temp_btn + .temp_btn{margin-left:20px;}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="1"]{width:140px;}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="2"]{width:140px;}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="3"]{width:calc((100% - 560px) / 3);}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="4"]{width:140px;}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="5"]{width:calc((100% - 560px) / 3);}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="6"]{width:140px;}
+.campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="7"]{width:calc((100% - 560px) / 3);}
+
+@media all and (max-width:1470px){
+    .campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down{width:280px;}
+    .campus_tour_box .online_agree_wrap .down_list .down_item .p-upload{width:calc(100% - 280px);}
+    .campus_tour_box .online_agree_wrap .p-table + .text_center,
+    .campus_tour_box .online_agree_wrap .warning_box + .text_center{margin-top:40px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="1"]{width:100px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="2"]{width:100px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="3"]{width:calc((100% - 400px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="4"]{width:100px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="5"]{width:calc((100% - 400px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="6"]{width:100px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="7"]{width:calc((100% - 400px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table .temp_text{display:block;}
+    .campus_tour_box .online_agree_wrap .p-table .temp_text + .temp_form{margin-left:0;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down .btn{color:#515151;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="1"]{width:95px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="2"]{width:95px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="3"]{width:calc((100% - 380px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="4"]{width:95px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="5"]{width:calc((100% - 380px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="6"]{width:95px;}
+    .campus_tour_box .online_agree_wrap .p-table colgroup col[data-col="7"]{width:calc((100% - 380px) / 3);}
+    .campus_tour_box .online_agree_wrap .p-table + .text_center,
+    .campus_tour_box .online_agree_wrap .warning_box + .text_center{margin-top:30px;}
+}
+@media all and (min-width:761px){
+    .campus_tour_box .online_agree_wrap .p-table .temp_text{color:#666;font-weight:400;letter-spacing:-0.09em;}
+    .campus_tour_box .online_agree_wrap .p-table th{text-align:center;}
+    .campus_tour_box .online_agree_wrap .p-table tbody th,
+    .campus_tour_box .online_agree_wrap .p-table tbody td{border-width:0 0 1px !important;border-style:solid !important;border-color:transparent transparent #d9d9d9 !important;}
+    .campus_tour_box .online_agree_wrap .p-table tbody th{padding:10px;}
+    .campus_tour_box .online_agree_wrap .p-table tbody th[rowspan]{border-right:1px solid #d9d9d9 !important;}
+    .campus_tour_box .online_agree_wrap .p-table tbody tr:first-child th,
+    .campus_tour_box .online_agree_wrap .p-table tbody tr:first-child td{border-top:2px solid #222 !important;}
+}
+@media all and (max-width:1000px) and (min-width:761px){
+    .campus_tour_box .online_agree_wrap .p-table tbody th,
+    .campus_tour_box .online_agree_wrap .p-table tbody td{}
+}
+@media all and (max-width:760px){
+    .campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down{width:100%;}
+    .campus_tour_box .online_agree_wrap .down_list .down_item .p-upload{width:100%;padding-left:0;}
+    .campus_tour_box .online_agree_wrap .down_list .down_item .temp_btn.down + .p-upload{margin-top:5px;}
+    .campus_tour_box .online_agree_wrap .p-table + .text_center,
+    .campus_tour_box .online_agree_wrap .warning_box + .text_center{margin-top:20px;}
+    .campus_tour_box .online_agree_wrap .warning_box + .text_center .temp_btn + .temp_btn{margin-left:10px;}
+}
+
+/* 시설이용신청 - 신청완료 */
+.campus_tour_box .tour_confirm .confirm_box{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .view_top_title + .confirm_box{margin-top:53px;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner{display:block;position:relative;width:100%;background-color:#eaf5fe;padding:33px 45px 37px;border-radius:20px 20px 0 0;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title em{display:inline-block;position:relative;padding-left:49px;font-size:21px;color:#086dcd;line-height:37px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title em:before{display:block;position:absolute;top:0;left:0;width:36px;height:37px;background-image:url(/site/public/images/program/knue_facility_confirm_title.png);background-repeat:no-repeat;background-position:left top;content:'';box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date{display:block;position:relative;width:100%;margin-top:22px;padding-top:32px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date:before{display:block;position:absolute;top:0;left:0;width:100%;height:1px;background-color:#b8d9f5;content:'';box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date em{display:inline-block;position:relative;padding:0 75px;background-color:#f1f8fe;border:5px solid #fff;border-radius:30px;font-size:21px;color:#073673;line-height:48px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info{display:block;position:relative;width:100%;margin-top:22px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info em{display:inline-block;position:relative;font-size:18px;color:#3a80c3;line-height:30px;letter-spacing:-0.03em;font-weight:500;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay{display:block;position:relative;width:100%;margin-top:22px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay .warning:before{background-image:url(/site/public/images/program/knue_facility_confirm_warning.png);}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay .pay_list{display:block;position:relative;width:500px;margin:22px auto 0;padding:17px 3px;background-color:#fff;border-radius:25px;font-size:0;line-height:0;box-sizing:border-box;}
+.campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay .pay_list .tl{display:inline-block;width:auto;vertical-align:top;}
+.campus_tour_box .tour_confirm .confirm_box + .text_center{margin-top:60px;}
+.campus_tour_box .tour_confirm .confirm_box + .text_center .temp_btn + .temp_btn{margin-left:20px;}
+@media all and (max-width:1470px){
+    .campus_tour_box .tour_confirm .view_top_title + .confirm_box,
+    .campus_tour_box .tour_confirm .confirm_box + .text_center{margin-top:40px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner{padding:30px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date{margin-top:10px;padding-top:11px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date em{font-size:20px;line-height:36px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info{margin-top:10px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info em{font-size:17px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay{margin-top:10px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay .pay_list{margin:10px auto 0;padding:10px;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .tour_confirm .view_top_title + .confirm_box,
+    .campus_tour_box .tour_confirm .confirm_box + .text_center{margin-top:30px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title em{padding-left:40px;font-size:18px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date em{font-size:17px;line-height:28px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info em{font-size:16px;line-height:20px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_pay .pay_list{width:100%;}
+}
+@media all and (max-width:640px){
+    .campus_tour_box .tour_confirm .view_top_title + .confirm_box,
+    .campus_tour_box .tour_confirm .confirm_box + .text_center{margin-top:20px;}
+    .campus_tour_box .tour_confirm .confirm_box + .text_center .temp_btn + .temp_btn{margin-left:10px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner{padding:20px 10px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title em{padding-top:44px;padding-left:0;font-size:17px;line-height:22px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_title em:before{left:calc(50% - 18px);}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_date em{padding:0 20px;font-size:15px;}
+    .campus_tour_box .tour_confirm .confirm_box .confirm_inner .confirm_info em{font-size:14px;}
+}
+
+/* 시설이용신청 - 나의 예약현황 */
+.campus_tour_box .my_tour{display:block;position:relative;width:100%;box-sizing:border-box;}
+.campus_tour_box .my_tour .temp_search_box{position:relative;z-index:1;background-color:#f4f5f8;border-radius:10px;text-align:center;}
+.campus_tour_box .my_tour .temp_search_box .detail_wrap{display:inline-block;vertical-align:top;}
+.campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title{display:inline-block;position:relative;font-size:17px;color:#000;line-height:48px;letter-spacing:-0.03em;font-weight:600;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title + .temp_date_box,
+.campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title + .temp_form_box{margin-left:14px;}
+.campus_tour_box .my_tour .temp_search_box .temp_date_box .p-date-group .p-form-group.p-date .p-input{border-color:#b5b5b5;border-radius:3px;}
+@media all and (min-width:1001px){
+    .campus_tour_box .my_tour .temp_search_box .temp_date_box .p-date-group .p-form-group.p-date .p-input{font-size:17px;}
+    .campus_tour_box .my_tour .temp_search_box .temp_date_box .p-date-group .p-form-group.p-date .p-input::placeholder{font-size:17px;}
+}
+@media all and (max-width:1000px){
+}
+.campus_tour_box .my_tour .temp_search_box .temp_form_box{display:inline-block;width:auto;vertical-align:top;text-align:left;}
+.campus_tour_box .my_tour .temp_search_box .temp_date_box + .temp_form_box{margin-left:50px;}
+.campus_tour_box .my_tour .temp_search_box .temp_form_box .temp_select_box .temp_select{border-color:#b5b5b5;border-radius:3px;}
+.campus_tour_box .my_tour .temp_search_box .temp_form_box .temp_input{border-color:#b5b5b5;border-radius:3px;}
+.campus_tour_box .my_tour .temp_search_box + .table{margin-top:80px;}
+.campus_tour_box .my_tour .table .my_btn{display:inline-block;position:relative;padding:0 10px;border:1px solid #b5b5b5;border-radius:5px;font-size:15px;color:#444;line-height:28px;letter-spacing:-0.03em;font-weight:400;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;transition:background-color 200ms ease, color 200ms ease;}
+.campus_tour_box .my_tour .table .my_btn:hover{background-color:#073673;border-color:#073673;color:#fff;text-decoration:none;}
+.campus_tour_box .my_tour .table .my_btn.pay{border-color:#086dcd;color:#086dcd;}
+.campus_tour_box .my_tour .table .my_btn.pay:hover{background-color:#086dcd;color:#fff;}
+.campus_tour_box .my_tour .table span.my_btn.pay{background-color:rgba(32, 126, 212, 0.64);border-color:rgba(32, 126, 212, 0.64);color:#fff;}
+.campus_tour_box .my_tour .table span.my_btn.pay:hover{background-color:rgba(32, 126, 212, 0.64);border-color:rgba(32, 126, 212, 0.64);color:#fff;}
+.campus_tour_box .my_tour .table .admin_btn:after{display:inline-block;position:relative;width:15px;height:16px;margin:5px 0 0 4px;background-image:url(/site/public/images/program/knue_facility_admin_btn.png);background-repeat:no-repeat;background-position:left top;vertical-align:top;box-sizing:border-box;}
+.campus_tour_box .my_tour .table .admin_btn:hover:after{background-position:-15px top;}
+.campus_tour_box .my_tour .donate_popup_wrap .donate_popup_box .popup_inner .popup_msg{display:block;position:relative;width:100%;background-color:#f0f8fe;border:1px solid #cce2f4;box-sizing:border-box;text-align:center;}
+@media all and (min-width:1001px){
+    .campus_tour_box .my_tour .donate_popup_wrap .donate_popup_box{width:540px;}
+    .campus_tour_box .my_tour .donate_popup_wrap .donate_popup_box .popup_inner{padding:30px 25px;}
+}
+@media all and (max-width:1470px){
+    .campus_tour_box .my_tour .temp_search_box + .table{margin-top:40px;}
+}
+@media all and (max-width:1000px){
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap{display:block;}
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_form_box .temp_select_box{margin-right:0;}
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap + .detail_wrap{margin-top:10px;}
+    .campus_tour_box .my_tour .temp_search_box .temp_date_box + .temp_form_box{display:block;margin-top:10px;margin-left:0;text-align:center;}
+    .campus_tour_box .my_tour .temp_search_box + .table{margin-top:30px;}
+    .campus_tour_box .my_tour .table .my_btn{padding:0 5px;font-size:13px;line-height:24px;}
+    .campus_tour_box .my_tour .table .admin_btn:after{display:none;}
+}
+@media all and (min-width:641px){
+    .campus_tour_box .my_tour .table th > div,
+    .campus_tour_box .my_tour .table td > div{display:inline-block;vertical-align:top;}
+}
+@media all and (max-width:640px){
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title{display:block;line-height:38px;}
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title + .temp_date_box,
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_date_title + .temp_form_box{margin-left:0;}
+    .campus_tour_box .my_tour .temp_search_box .detail_wrap .temp_form_box .temp_select_box{margin-right:0;margin-bottom:0;}
+    .campus_tour_box .my_tour .temp_search_box + .table{margin-top:20px;}
+    .campus_tour_box .my_tour .table th > div, .campus_tour_box .my_tour .table td > div{display:inline-block;vertical-align:top;}
+    .campus_tour_box .my_tour .table th > br, .campus_tour_box .my_tour .table td > br{display:none;}
+    .campus_tour_box .my_tour .table .my_btn{line-height:22px;}
+}

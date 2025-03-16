@@ -1,0 +1,18 @@
+@charset "utf-8";
+/*관리자로그인*/
+#admin_body { background:url(../images/login/login_bg.gif) no-repeat center top;}
+#admin_body .login_box { margin:200px auto 0; padding:70px; width:630px; height:340px; background:#141e36; }
+#admin_body .login_box .tit_area { padding:30px 0 30px 150px; background:url(../images/login/login_box_icon.png) no-repeat 20px center;}
+#admin_body .login_box .tit_area h1 { font-size:38px; color:#fff; line-height:40px;}
+#admin_body .login_box .tit_area h1 span { display:block; font-size:17px; font-weight:normal; }
+#admin_body .login_box .tit_area p { padding:5px 0; color:#c4c4c4; font-size:14px;}
+
+#admin_body .login_cont { width:100%; margin:20px 0;}
+#admin_body .login_cont h2 { display:inline-block; float:left; padding:5px 10px 0 20px; width:170px; background:none;}
+#loginForm { display:inline-block; float:left;  position: relative; margin:0 auto; width:400px; }
+#loginForm p { display:block; clear:both; padding-left:15px;   }
+#loginForm label { display:inline-block; float: left; width: 100px; background:url(../images/contents/login_spanbg.gif) no-repeat 85% center; color: #707070;   font-size: 13px;  font-weight: bold;  line-height: 42px;   }
+#loginForm input.text { display:inline-block; float:left;   margin-bottom: 8px; padding:3px; width: 270px; height:28px; background: #fff none repeat scroll 0 0;  border: 1px solid #cecece; }
+#loginForm .btn { position: absolute;  right: 0;  top: 0;}
+
+.login_foot { margin:0 auto; padding:30px; width:75%; border-top:1px solid #5b6273; text-align:center; color:#adadad; font-size:14px;  }

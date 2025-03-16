@@ -1,0 +1,190 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 2024.04 - 안병민 */
+
+
+/* GowunBt */
+@font-face{
+    font-family:'GowunBt';
+    font-weight:400;
+    src:url("../font/GowunBatang-Regular.woff") format('woff');
+}
+
+/* 오시는길 */
+.traffic_wrap{font-size:0;line-height:0;}
+.traffic_wrap h3{margin-bottom:50px;}
+.traffic_wrap .traffic_tab_box{position:relative;margin:136px 0 91px;border-top:2px solid #000;text-align:center;}
+.traffic_wrap .traffic_tab_box:before{display:block;position:absolute;bottom:0;left:0;width:100%;height:1px;background-color:#b9b9b9;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list{display:inline-block;padding-left:9px;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item{display:inline-block;position:relative;margin-right:76px;vertical-align:top;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item:last-child{margin-right:0;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn{position:relative;padding:21px 0 20px;border:none;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn:after{display:inline-block;width:18px;height:18px;margin-top:-2px;margin-left:0;background:url(/site/public/images/template/tab_icon.png) left center / cover no-repeat;vertical-align:middle;transform:scale(0);transition-property:margin, transform;transition-duration:0.5s;transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1);}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item.active .traffic_tab_btn:after{margin-left:11px;transform:scale(1);}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn .btn_text{font-size:18px;color:#323232;letter-spacing:-0.03em;line-height:24px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;transition-property:color;transition-duration:0.5s;transition-timing-function:cubic-bezier(0.22, 1, 0.36, 1);vertical-align:middle;}
+.traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item.active .traffic_tab_btn .btn_text{color:#0583f2;font-weight:700;}
+.traffic_wrap .traffic_box{display:none;}
+.traffic_wrap .traffic_box.active{display:block;}
+.traffic_wrap .traffic_box.long .temp_box.news_type .box_inner .news_item .left_box{width:300px;}
+.traffic_wrap .traffic_box.long .temp_box.news_type .box_inner .news_item .right_box{width:calc(100% - 350px);}
+.traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .right_inner{min-height:130px;}
+.traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .warning_box.type3 .top_box .title{display:inline-block;width:auto;margin-right:27px;}
+.traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .warning_box.type3 .top_box .title + .temp_btn{margin-top:-5px;}
+.traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .table{margin-top:54px;}
+@media all and (min-width:1001px){
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn:hover .btn_text{color:#0583f2;font-weight:700;}
+}
+@media all and (max-width:1470px){
+    .traffic_wrap h3{margin-bottom:30px;}
+    .traffic_wrap .traffic_tab_box{margin:130px 0 50px;}
+    .traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .right_inner{min-height:0;}
+    .traffic_wrap .traffic_box.long .temp_box.news_type .box_inner .news_item .left_box{width:220px;}
+    .traffic_wrap .traffic_box.long .temp_box.news_type .box_inner .news_item .right_box{width:calc(100% - 250px);}
+}
+@media all and (max-width:1000px){
+    .traffic_wrap h3{margin-bottom:20px;}
+    .traffic_wrap .traffic_tab_box{margin:90px 0 50px;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item{margin-right:40px;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn{padding:17px 0;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn .btn_text{font-size:17px;line-height:21px;}
+    .traffic_wrap .traffic_box.long .temp_box.news_type .box_inner .news_item .right_box{width:100%;}
+    .traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .warning_box.type3 .top_box .title{display:block;width:100%;}
+    .traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .warning_box.type3 .top_box .title + .temp_btn{margin-top:10px;}
+    .traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .table{margin-top:30px;}
+}
+@media all and (max-width:640px){
+    .traffic_wrap .traffic_tab_box{margin:50px 0 30px;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list{display:block;width:100%;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item{width:50%;margin-right:0;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item:nth-child(2n){border-left:1px solid #d3d3d3;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item:nth-child(n + 3){border-top:1px solid #d3d3d3;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn{padding:14px 0;}
+    .traffic_wrap .traffic_tab_box .traffic_tab_list .traffic_tab_item .traffic_tab_btn .btn_text{font-size:16px;line-height:20px;}
+    .traffic_wrap .traffic_box .temp_box.news_type .box_inner .news_item .right_box .table{margin-top:20px;}
+}
+
+
+/* 학과별 > 학과소개 */
+/* 한신정보기술 안형주 2024.04 */
+.sogae_wrap{position:relative;box-sizing:border-box;font-size:0;line-height:0;}
+.sogae_wrap .sogar_box{display:inline-block;position:relative;box-sizing:border-box;vertical-align:top;}
+.sogae_wrap .left_img_box{width:600px;}
+.sogae_wrap .left_img_box .img_box{display:block;position:relative;width:550px;height:367px;padding-top:60px;background-image:url(../images/contents/left_back_img.png);background-repeat:no-repeat;background-size:100% 100%;background-position:left top;box-sizing:border-box;text-align:right;}
+.sogae_wrap .left_img_box .img_box .img_text{position:relative;padding-left:82px;padding-right:22px;}
+.sogae_wrap .left_img_box .img_box .img_text:before{display:block;position:absolute;top:calc(50% - 1px);left:0;width:64px;height:1px;background-color:#7b97d0;content:'';}
+.sogae_wrap .left_img_box .img_box .img_text .text{width:235px;height:32px;background-image:url(../images/contents/left_text_img.png);background-repeat:no-repeat;background-size:contain;font-size:0;line-height:0;}
+.sogae_wrap .left_img_box .img_box .img_item{display:block;width:550px;height:367px;margin-top:18px;margin-left:50px;border-radius:30px 8px;background-repeat:no-repeat;background-size:contain;}
+.sogae_wrap .right_text_box{width:calc(100% - 670px);margin-left:70px;}
+.sogae_wrap .right_text_box .sogar_title{font-size:38px;line-height:60px;letter-spacing:0;font-weight:800;color:#0e0e0e;}
+.sogae_wrap .right_text_box .sogar_title .gangjo{position:relative;padding-top:30px;box-sizing:border-box;font-size:45px;}
+.sogae_wrap .right_text_box .sogar_title .gangjo:before{display:block;position:absolute;top:0;right:-110px;width:93px;height:69px;background-image:url(../images/contents/title_deco_img.png);background-repeat:no-repeat;}
+.sogae_wrap .right_text_box .sogar_text_box{margin-top:15px;}
+.sogae_wrap .right_text_box .sogar_text_box .desc{padding-top:30px;font-size:18px;line-height:30px;letter-spacing:-0.025em;font-weight:500;color:#666;word-break:keep-all;}
+/* 학과별 학과소개 이미지 시작 */
+/* 교육학과 cts972*/
+.education .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/education_studies.png);}
+/* 유아교육과 cts998 */
+.ece .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/ece_studies.png);}
+/* 특수교육과 cts1018*/           
+.sped .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/sped_studies.png);}
+/* 국어교육과 cts1035*/ 
+.korean .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/korean_studies.png);}
+/* 영어교육과 cts1105*/ 
+.english .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/english_studies.png);}
+/* 불어교육과 cts1070*/ 
+.french .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/french_studies.png);}
+/* 독어교육과 cts1054*/ 
+.german .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/german_studies.png);}
+/* 중국어교육과 cts1136*/ 
+.chinese .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/chinese_studies.png);}
+/* 일반사회교육과 cts1125*/ 
+.social .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/social_studies.png);}
+/* 지리교육과 cts1151*/ 
+.geography .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/geography_studies.png);}
+/* 역사교육과 cts1085*/ 
+.history .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/history_studies.png);}
+/* 수학교육과 cts1223*/ 
+.math .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/math_studies.png);}
+/* 화학교육과 cts1265*/ 
+.chemedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/chemedu_studies.png);}
+/* 생물교육과 cts1209*/ 
+.bioedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/bioedu_studies.png);}
+/* 지구과학교육과 cts1240*/ 
+.earth .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/earth_studies.png);}
+/* 컴퓨터교육과 cts1251*/ 
+.techedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/techedu_studies.png);}
+/* 교육과 cts1181*/ 
+.comedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/comedu_studies.png);}
+/* 환경교육과 cts1278*/ 
+.envi .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/envi_studies.png);}
+/* 미술교육과 cts1294*/ 
+.artedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/artedu_studies.png);}
+/* 체육교육과 cts1317*/ 
+.phy .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/phy_studies.png);}
+/* 윤리교육과 cts1333*/ 
+.ethics .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/ethics_studies.png);}
+/* 물리교육과 cts1195*/ 
+.phys .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/phys_studies.png);}
+/* 가정교육과 cts1169*/ 
+.homeedu .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/homeedu_studies.png);}
+/* 음악교육과 cts1306*/ 
+.music .sogae_wrap .left_img_box .img_box .img_item{background-image:url(../../studies/images/contents/music_studies.png);}
+/* 학과별 학과소개 이미지 끝 */
+
+@media all and (max-width:1300px) {
+    .sogae_wrap .left_img_box{width:480px;}
+    .sogae_wrap .left_img_box .img_box{width:450px;height:300px;padding-top:50px;}
+    .sogae_wrap .left_img_box .img_box .img_item{width:450px;height:300px;margin-left:30px;}
+    .sogae_wrap .right_text_box{width:calc(100% - 520px);margin-left:40px;}
+    .sogae_wrap .right_text_box .sogar_title{font-size:33px;line-height:55px;}
+    .sogae_wrap .right_text_box .sogar_title .gangjo{font-size:40px;}
+    .sogae_wrap .right_text_box .sogar_text_box{margin-top:0;}
+    .sogae_wrap .right_text_box .sogar_title .gangjo:before{right:-60px;width:62px;height:46px;background-size:contain;}
+}
+@media all and (max-width:1000px) {
+    .sogae_wrap .sogar_box{display:block;}
+    .sogae_wrap .left_img_box{width:100%;}
+    .sogae_wrap .left_img_box .img_box{margin:0 auto;}
+    .sogae_wrap .right_text_box{width:100%;margin-left:0;margin-top:110px;}
+    .sogae_wrap .right_text_box .sogar_title span{display:block;}
+    .sogae_wrap .right_text_box .sogar_text_box{margin-top:10px;padding-bottom:30px;}
+    .sogae_wrap .right_text_box .sogar_text_box .desc{padding-top:20px;}
+    .sogae_wrap .left_img_box .img_box .img_text{padding-left:50px;padding-right:12px;}
+    .sogae_wrap .left_img_box .img_box .img_text:before{width:38px;}
+    .sogae_wrap .left_img_box .img_box .img_text .text{transform:scale(0.9);}
+}
+@media all and (max-width:640px) {
+    .sogae_wrap .left_img_box .img_box{width:310px;height:207px;padding-top:25px;}
+    .sogae_wrap .left_img_box .img_box .img_item{width:310px;height:207px;}
+    .sogae_wrap .right_text_box{margin-top:80px;}
+    .sogae_wrap .right_text_box .sogar_title{font-size:20px;line-height:34px;}
+    .sogae_wrap .right_text_box .sogar_title .gangjo{padding-top:15px;font-size:24px;}
+    .sogae_wrap .right_text_box .sogar_title .gangjo:before{right:-50px;width:40px;height:30px;}
+    .sogae_wrap .right_text_box .sogar_text_box .desc{padding-top:15px;font-size:15px;line-height:24px;}
+    .sogae_wrap .left_img_box .img_box .img_text .text{width:160px;height:22px;}
+}
+@media all and (max-width:380px) {
+    .sogae_wrap .left_img_box .img_box{margin:0 auto 0 0;}
+    .sogae_wrap .left_img_box .img_box .img_item{margin-left:26px;}
+}
+
+.major .temp_box.news_type .box_inner .news_item .right_box .right_inner .desc_box + .desc_box{padding-bottom:0;}
+.jinlo .temp_box.news_type.long .box_inner .news_item .right_box .right_inner .desc_box{padding-bottom:0;}
+
+
+/* 교육과정안내 */
+.curriculum_wrap .table_scroll tr th,
+.curriculum_wrap .table_scroll tr td{padding:5px;letter-spacing:-0.08em;}
+.curriculum_wrap .cts_box .cts_item > h3{margin-top:72px;}
+@media all and (max-width:1470px) {
+    .curriculum_wrap .cts_box .cts_item > h3{margin-top:55px;}
+}
+@media all and (max-width:1235px) {
+    .curriculum_wrap .table_scroll > .table{min-width:1235px;}
+}
+@media all and (max-width:1000px) {
+    .curriculum_wrap .cts_box .cts_item > h3{margin-top:40px;}
+}
+@media all and (max-width:640px) {
+    .curriculum_wrap .cts_box .cts_item > h3{margin-top:10px;}
+}

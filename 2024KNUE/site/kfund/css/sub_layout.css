@@ -1,0 +1,14 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 2024.03 안병민 */
+.fixed_menu{transition-property:bottom;transition-duration:1s;}
+.fixed_menu.scroll_active{bottom:-100px;}
+@media all and (max-width:1470px){
+    .fixed_menu.scroll_active{bottom:-90px;}
+}
+@media all and (max-width:1000px){
+    .fixed_menu.scroll_active{bottom:-70px;}
+}
+@media all and (max-width:640px){
+    .fixed_menu.scroll_active{bottom:-60px;}
+}

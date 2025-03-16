@@ -1,0 +1,89 @@
+@charset "UTF-8";
+
+/* 나눔고딕 */
+/* 
+ * Nanum Gothic (Korean) http://www.google.com/webfonts/earlyaccess
+ */
+ @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/*
+@font-face {
+    font-family: "NG";
+    src: url("font/NanumGothic-Regular.eot");
+	src: local("dddd.ttf"), url("/font/NanumGothic-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "NG_B";
+	src: url("font/NanumGothic-Bold.eot");
+    src: local("dddd.ttf"), url("/font/NanumGothic-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "NG_EB";
+	src: url("font/NanumGothic-ExtraBold.eot");
+    src: local("dddd.ttf"), url("font/NanumGothic-ExtraBold.woff") format("woff");
+}
+
+*/
+
+/* reset style [start] */
+html,body, iframe,h1, h2, h3, h4, h5, h6, p, blockquote,pre,button,
+q, s, dl, dt, dd, ol, ul, li, fieldset, form, input, table,tr, th ,td
+{ margin:0;padding:0;border:0;line-height:1.5em; }
+
+img,fieldset{border:0 none;}
+
+body {
+	font-size:85%;
+	line-height:1.8em;
+	color:#545454;
+	font-family:"나눔고딕",Nanum Gothic,NG,"돋움", Dotum, "굴림", Gulim, "Lucida Grande", Tahoma, Verdana, AppleGothic, UnDotum, sans-serif;
+	position:relative;
+}
+
+/* Tag Standard ***********************************************************************/
+
+/* Tag구문(Construction) */
+strong{font-weight:bold;}
+em{font-style:normal;}
+dfn{font-style:normal;}
+cite{font-style:normal;}
+sup{font-size:.92em;}
+sub{font-size:.92em;}
+address{font-style: normal;}
+del{text-decoration:line-through;}
+button{cursor:pointer;border:none;background:none}
+/* button::-moz-focus-inner{border:0;padding:0;} */
+
+/* common */
+ol,ul,li{list-style:none;}
+table{border-collapse:collapse; border-spacing:0;}
+
+hr{display:none;}
+
+span.button,img.button,a.button{cursor:pointer;vertical-align:middle;}
+
+legend{position:absolute;visibility:hidden;overflow:hidden;width:0;height:0;font-size:0%;line-height:0;}
+caption{width:0;height:0;margin-top:-1px;font-size:0%;line-height:0;visibility:hidden;overflow:hidden;}
+select,input{vertical-align:middle;}
+select{padding:2px;}
+textarea{resize:none;}
+input[type="text"],input[type="password"],textarea{border:1px solid #ddd;}
+
+a:link{color:#636363;text-decoration:none;}
+a:visited{color:#636363;text-decoration:none;}
+a:hover{color:#0030AE;text-decoration:underline;}
+a:active{color:#0030AE;text-decoration:underline;}
+
+/* 공통 */
+.clearfix:after{display:block;clear:both;content:".";visibility:hidden;height:0;}
+.clearfix{display:inline-block;}
+.clearfix{display:block;}
+
+.clear{clear:both;}
+.hide{display:none;}
+.skip{position:absolute;overflow:hidden;height:0;width:0;font-size:0;visibility:hidden;}
+.image{vertical-align:top;}
+.NG{font-family:Nanum Gothic,'나눔고딕',ng,NG;}
+.MG{font-family:Malgun Gothic,'맑은 고딕';}
+.NG_B {font-family:Nanum Gothic; font-weight:600;}
+.NG_E {font-family:Nanum Gothic; font-weight:bold;}

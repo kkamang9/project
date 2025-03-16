@@ -1,0 +1,658 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 2024.03 안병민 */
+
+/*기부자 예우  > 명예의 전당*/
+@media all and (min-width:1001px){
+.cts705_wrap .tab_box.type01 .tab_list .tab_item{width:calc(100% / 5);}
+}
+.donate_name_box{display:none;margin-top:59px;font-size:0;line-height:0;}
+.donate_name_box.active{display:block;}
+.donate_name_box .donate_name_list{}
+.donate_name_box .donate_name_list .donate_name_item{display:inline-block;position:relative;width:calc((100% - 42px) / 3);height:180px;margin-right:21px;box-sizing:border-box;border:1px solid #ddd;border-radius:10px;text-align:center;vertical-align:top;}
+.donate_name_box .donate_name_list .donate_name_item:nth-child(3n){margin-right:0;}
+.donate_name_box .donate_name_list .donate_name_item:nth-child(n + 4){margin-top:30px;}
+.donate_name_box .donate_name_list .donate_name_item .item_inner{position:relative;top:50%;padding:9px 15px 0;transform:translateY(-50%);}
+.donate_name_box .donate_name_list .donate_name_item .item_inner .item_title{width:100%;font-size:35px;color:#000;letter-spacing:-0.03em;line-height:39px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+.donate_name_box .donate_name_list .donate_name_item .item_inner .item_sub_title{min-width:248px;margin-top:30px;padding:9px 20px;background-color:#e6eefa;border-radius:50px;font-size:18px;color:#000;letter-spacing:-0.03em;line-height:22px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:700;word-break:keep-all;}
+
+.donate_name_box.month .donate_name_list{overflow:hidden;}
+.donate_name_box.month .donate_name_list .donate_name_item{width:calc(100% / 5);height:115px;margin-right:0;border-left:none;border-radius:0;}
+.donate_name_box.month .donate_name_list .donate_name_item:nth-child(5n + 1){border-left:1px solid #ddd;}
+.donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 4){margin-top:0;}
+.donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 6){margin-top:-1px;}
+.donate_name_box.month .donate_name_list .donate_name_item:after{display:block;position:absolute;bottom:-10px;right:-10px;z-index:1;width:20px;height:20px;background-color:#fff;}
+.donate_name_box.month .donate_name_list .donate_name_item:nth-last-child(-n + 5):after,
+.donate_name_box.month .donate_name_list .donate_name_item:nth-child(5n):after{display:none;}
+.donate_name_box.month .donate_name_list .donate_name_item .item_inner{padding-top:2px;}
+.donate_name_box.month .donate_name_list .donate_name_item .item_inner .item_title{font-size:23px;color:#545454;line-height:27px;}
+.donate_name_box.month .donate_name_list .donate_name_item .item_inner .item_sub_title{min-width:0;margin-top:18px;padding:0;background-color:transparent;font-size:18px;color:#545454;line-height:22px;}
+@media all and (max-width:1470px){
+    .donate_name_box .donate_name_list .donate_name_item .item_inner .item_title{font-size:28px;line-height:32px;}
+    .donate_name_box .donate_name_list .donate_name_item .item_inner .item_sub_title{min-width:0;font-size:16px;line-height:20px;}
+}
+@media all and (max-width:1000px){
+    .donate_name_box{margin-top:30px;}
+    .donate_name_box .donate_name_list .donate_name_item{width:calc((100% - 15px) / 2);margin-right:15px;}
+    .donate_name_box .donate_name_list .donate_name_item:nth-child(n + 3){margin-top:20px;}
+    .donate_name_box .donate_name_list .donate_name_item:nth-child(3n){margin-right:15px;}
+    .donate_name_box .donate_name_list .donate_name_item:nth-child(2n){margin-right:0;}
+    .donate_name_box .donate_name_list .donate_name_item .item_inner .item_title{font-size:24px;line-height:28px;}
+    .donate_name_box .donate_name_list .donate_name_item .item_inner .item_sub_title{margin-top:10px;font-size:15px;line-height:19px;}
+
+    .donate_name_box.month .donate_name_list .donate_name_item{width:calc(100% / 4);}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(5n + 1){border-left:none;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(4n + 1){border-left:1px solid #ddd;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 3){margin-top:0;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 5){margin-top:-1px;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(3n){margin-right:0;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-last-child(-n + 5):after,
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(5n):after{display:block;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-last-child(-n + 4):after,
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(4n):after{display:none;}
+    .donate_name_box.month .donate_name_list .donate_name_item .item_inner .item_title{font-size:20px;line-height:24px;}
+    .donate_name_box.month .donate_name_list .donate_name_item .item_inner .item_sub_title{margin-top:10px;font-size:16px;line-height:20px;}
+}
+@media all and (max-width:640px){
+    .donate_name_box .donate_name_list .donate_name_item{width:100%;height:140px;margin-right:0;}
+    .donate_name_box .donate_name_list .donate_name_item:nth-child(n + 2){margin-top:15px;}
+
+    .donate_name_box.month .donate_name_list .donate_name_item{width:calc(100% / 2);}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(4n + 1){border-left:none;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(2n + 1){border-left:1px solid #ddd;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 2){margin-top:0;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(n + 3){margin-top:-1px;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-last-child(-n + 4):after,
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(4n):after{display:none;}
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-last-child(-n + 2):after,
+    .donate_name_box.month .donate_name_list .donate_name_item:nth-child(2n):after{display:none;}
+}
+
+
+.start_line{display:block;width:100%;margin:50px 0;background-color:#f14a61;font-size:20px;color:#fff;line-height:30px;word-break:keep-all;box-sizing:border-box;text-align:center;}
+
+
+/*기부금 안내 > 기부 현황*/
+.donate_state_wrap{position:relative;font-size:0;line-height:0;}
+.donate_state_wrap .state_staff_btn{position:absolute;top:0;right:0;}
+.donate_state_wrap .donate_state_box .donate_title{font-size:30px;color:#000;letter-spacing:-0.03em;line-height:54px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:900;word-break:keep-all;vertical-align:bottom;}
+.donate_state_wrap .donate_state_box .donate_title .total_sum,
+.donate_state_wrap .donate_state_box .donate_title .use_sum{margin-left:8px;padding-right:27px;background:linear-gradient(to right,#43a732 5%,#22a186 20%,#0192d4 47%,#0083d4 56%,#006bbf 74%,#004c9a 92%);background-clip:text;-webkit-background-clip:text;font-size:60px;color:transparent;letter-spacing:-0.03em;line-height:64px;font-family:'Sebang', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;font-style:italic;vertical-align:bottom;}
+.donate_state_wrap .donate_state_box .donate_title .donate_unit{font-size:20px;color:#073673;line-height:44px;font-weight:600;vertical-align:bottom;}
+.donate_state_wrap .donate_state_box .total_table_box{display:inline-block;width:50%;min-height:383px;margin-top:40px;padding-right:40px;vertical-align:top;}
+.donate_state_wrap .donate_state_box .total_chart_box{display:inline-block;position:absolute;top:0;right:0;width:50%;margin-top:140px;padding:10px 10px 10px 0;box-sizing:border-box;border:1px solid #dadada;vertical-align:top;}
+/*.donate_state_wrap .donate_state_box .total_chart_box canvas{height:100% !important;}*/
+.donate_state_wrap .donate_state_box.use{margin-top:100px;}
+.donate_state_wrap .donate_state_box.use .table_unit{margin-top:40px;}
+@media all and (max-width:1470px){
+    .donate_state_wrap .donate_state_box .donate_title{font-size:24px;line-height:42px;}
+    .donate_state_wrap .donate_state_box .donate_title .total_sum,
+    .donate_state_wrap .donate_state_box .donate_title .use_sum{margin-left:0;padding-right:15px;font-size:52px;line-height:56px;}
+    .donate_state_wrap .donate_state_box .total_table_box{width:40%;min-height:calc(35px + 29.18vw);}
+    .donate_state_wrap .donate_state_box .total_chart_box{width:60%;margin-top:130px;}
+    .donate_state_wrap .donate_state_box.use{margin-top:70px;}
+    .donate_state_wrap .donate_state_box.use .table_unit{margin-top:20px;}
+}
+@media all and (max-width:1235px){
+    .donate_state_wrap .donate_state_box .total_table_box{margin-top:30px;}
+    .donate_state_wrap .donate_state_box .total_chart_box{margin-top:122px;}
+}
+@media all and (max-width:1000px){
+    .donate_state_wrap .donate_state_box .donate_title{font-size:20px;line-height:36px;}
+    .donate_state_wrap .donate_state_box .donate_title .total_sum,
+    .donate_state_wrap .donate_state_box .donate_title .use_sum{padding-right:10px;font-size:44px;line-height:48px;}
+    .donate_state_wrap .donate_state_box .donate_title .donate_unit{font-size:18px;line-height:34px;}
+    .donate_state_wrap .donate_state_box .total_table_box{padding-right:20px;}
+    .donate_state_wrap .donate_state_box .total_chart_box{margin-top:113px;}
+}
+@media all and (max-width:640px){
+    .donate_state_wrap .donate_state_box .donate_title{line-height:38px;}
+    .donate_state_wrap .donate_state_box .donate_title .donate_title_text{width:100%;margin-bottom:15px;}
+    .donate_state_wrap .donate_state_box .donate_title .total_sum,
+    .donate_state_wrap .donate_state_box .donate_title .use_sum{font-size:36px;line-height:40px;}
+    .donate_state_wrap .donate_state_box .donate_title .donate_unit{font-size:16px;line-height:28px;}
+    .donate_state_wrap .donate_state_box .total_table_box{width:100%;min-height:0;margin-top:10px;padding-right:0;}
+    .donate_state_wrap .donate_state_box .total_chart_box{position:relative;top:inherit;right:inherit;width:100%;margin-top:0;}
+    .donate_state_wrap .donate_state_box.use{margin-top:50px;}
+}
+
+
+/*기부금 안내 > 기부 현황 관리*/
+.donate_state_wrap h3{margin-bottom:15px;padding-left:30px;font-size:30px;color:#073673;letter-spacing:-0.03em;line-height:48px;}
+.donate_state_wrap .state_staff_btn{position:absolute;top:0;right:0;}
+.donate_state_wrap .state_staff_box{position:relative;padding:40px 70px;border-top:2px solid #073673;border-bottom:1px solid #dfdfdf;}
+.donate_state_wrap .state_staff_box .donate_form{display:inline-block;width:calc((100% - 158px) / 2);}
+.donate_state_wrap .state_staff_box .donate_form:nth-child(n + 3){margin-top:20px;}
+.donate_state_wrap .state_staff_box .donate_form.date{padding-right:107px;}
+.donate_state_wrap .state_staff_box .donate_form.date .donate_title{width:78px;}
+.donate_state_wrap .state_staff_box .donate_form.date .min_date + .donate_title{width:auto;padding:0 14px 0 15px;}
+.donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group{width:100%;}
+.donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:185px;}
+.donate_state_wrap .state_staff_box .donate_form.sum{padding-right:63px;}
+.donate_state_wrap .state_staff_box .donate_form.sum .donate_title{width:93px;}
+.donate_state_wrap .state_staff_box .donate_form.sum .min_sum + .donate_title{width:64px;padding-left:10px;letter-spacing:0.2em}
+.donate_state_wrap .state_staff_box .donate_form.sum .max_sum + .donate_title{width:auto;padding-left:10px;}
+.donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:170px;}
+.donate_state_wrap .state_staff_box .donate_form.name{padding-right:107px;}
+.donate_state_wrap .state_staff_box .donate_form.name .donate_title{width:136px;}
+.donate_state_wrap .state_staff_box .donate_form.name .temp_form{width:calc(100% - 136px);}
+.donate_state_wrap .state_staff_box .donate_form.number{padding-right:63px;}
+.donate_state_wrap .state_staff_box .donate_form.number .donate_title{width:93px;}
+.donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:calc(100% - 93px);}
+.donate_state_wrap .state_staff_box .donate_title{font-size:19px;color:#0e0e0e;letter-spacing:-0.03em;line-height:48px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:500;word-break:keep-all;}
+.donate_state_wrap .state_staff_box .temp_form .temp_input{width:100%;min-height:48px;}
+.donate_state_wrap .state_staff_box .temp_form .donate_input_icon{position:absolute;top:calc(50% - 10px);right:10px;}
+.donate_state_wrap .state_staff_box .form_btn.search2{position:absolute;top:40px;right:70px;background-color:#063673;border-color:#063673;}
+.donate_state_wrap .state_staff_box .form_btn.search2 .btn{min-width:113px;padding:47px 32px 49px 52px;font-size:18px;color:#fff;letter-spacing:-0.03em;line-height:22px;}
+.donate_state_wrap .state_staff_box .form_btn.search2 .btn:focus{outline-color:#ff6600;}
+.donate_state_wrap .state_staff_box .form_btn.search2 .btn + .icon{top:calc((100% - 24px) / 2);left:calc((100% - 62px) / 2);}
+.donate_state_wrap .donate_state_table{margin-top:60px;}
+.donate_state_wrap .donate_state_table .temp_form .temp_check + label{padding-left:0;padding-right:20px;font-size:0;line-height:27px;}
+.state_btn_box{margin-top:30px;}
+.state_btn_box .temp_btn:last-child{float:right;}
+.state_btn_box .temp_btn .btn{min-width:86px;}
+
+@media all and (min-width:1001px){
+    .state_staff_wrap .state_staff_box .form_btn.search2:hover{background-color:#fff;}
+    .state_staff_wrap .state_staff_box .form_btn.search2 .btn:hover{color:#063673;}
+    .state_staff_wrap .state_staff_box .form_btn.search2 .btn:hover + .icon{background-position:-25px 0;}
+}
+@media all and (max-width:1470px){
+    .donate_state_wrap h3{font-size:26px;}
+    .donate_state_wrap .state_staff_box{padding:30px;}
+    .donate_state_wrap .state_staff_box .donate_title{font-size:17px;}
+    .donate_state_wrap .state_staff_box .donate_form{width:calc((100% - 116px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.date,
+    .donate_state_wrap .state_staff_box .donate_form.sum,
+    .donate_state_wrap .state_staff_box .donate_form.name,
+    .donate_state_wrap .state_staff_box .donate_form.number{padding-right:30px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .donate_title{width:53px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:calc(100% - 53px);}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 30px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.date .min_date + .donate_title{padding:0 8px;}
+    .donate_state_wrap .state_staff_box .donate_form.sum .donate_title{width:67px;}
+    .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 150px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.sum .min_sum + .donate_title{width:58px;}
+    .donate_state_wrap .state_staff_box .donate_form.name .donate_title{width:106px;}
+    .donate_state_wrap .state_staff_box .donate_form.name .temp_form{width:calc(100% - 106px);}
+    .donate_state_wrap .state_staff_box .donate_form.number .donate_title{width:67px;}
+    .donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:calc(100% - 67px);}
+    .donate_state_wrap .state_staff_box .form_btn.search2{top:30px;right:30px;}
+    .donate_state_wrap .donate_state_table{margin-top:40px;}
+}
+@media all and (max-width:1235px){
+    .donate_state_wrap h3{padding-left:0;}
+    .donate_state_wrap .state_staff_box{padding:30px 0;}
+    .donate_state_wrap .state_staff_box .form_btn.search2{right:0;}
+    .donate_state_wrap .donate_state_table{margin-top:25px;}
+}
+@media all and (max-width:1000px){
+    .donate_state_wrap .state_staff_box{padding:20px 0;}
+    .donate_state_wrap .state_staff_box .donate_title{font-size:15px;}
+    .donate_state_wrap .state_staff_box .donate_form{width:calc(100% - 116px);}
+    .donate_state_wrap .state_staff_box .donate_form.sum,
+    .donate_state_wrap .state_staff_box .donate_form.name,
+    .donate_state_wrap .state_staff_box .donate_form.number{margin-top:10px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.sum .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.name .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.number .donate_title{width:110px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:calc(100% - 110px);}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 29px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 193px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.name .temp_form{width:calc(100% - 110px);}
+    .donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:calc(100% - 110px);}
+    .donate_state_wrap .state_staff_box .form_btn.search2{top:20px;}
+    .donate_state_wrap .state_staff_box .form_btn.search2 .btn{padding:100px 32px 100px 52px;}
+}
+@media all and (max-width:640px){
+    .donate_state_wrap h3{font-size:24px;line-height:38px;}
+    .donate_state_wrap .state_staff_box .temp_form .temp_input{min-height:38px;}
+    .donate_state_wrap .state_staff_box .donate_form{width:100%;}
+    .donate_state_wrap .state_staff_box .donate_form.date,
+    .donate_state_wrap .state_staff_box .donate_form.sum,
+    .donate_state_wrap .state_staff_box .donate_form.name,
+    .donate_state_wrap .state_staff_box .donate_form.number{padding-right:0;}
+    .donate_state_wrap .state_staff_box .donate_form.sum,
+    .donate_state_wrap .state_staff_box .donate_form.name,
+    .donate_state_wrap .state_staff_box .donate_form.number{margin-top:5px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.sum .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.name .donate_title,
+    .donate_state_wrap .state_staff_box .donate_form.number .donate_title{width:100%;line-height:31px;}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:100%;}
+    .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 20px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 81px) / 2);}
+    .donate_state_wrap .state_staff_box .donate_form.sum .min_sum + .donate_title{line-height:38px;}
+    .donate_state_wrap .state_staff_box .donate_form.name .temp_form,
+    .donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:100%;}
+    .donate_state_wrap .state_staff_box .form_btn.search2{position:relative;top:inherit;right:inherit;width:100%;margin-top:15px;}
+    .donate_state_wrap .state_staff_box .form_btn.search2 .btn{min-width:100%;padding:8px 32px 12px 52px;text-align:center;}
+}
+
+
+/*기부금 안내 > 사용기금 현황 관리 */
+.donate_state_wrap.use_staff .state_staff_box .donate_form.year{padding-right:107px;}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.year .donate_title{width:93px;}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.year .temp_select_box{width:calc(100% - 93px);}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.year .temp_select_box .temp_select{width:100%;}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.purpose{padding-right:63px;}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .donate_title{width:61px;}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .temp_select_box{width:calc(100% - 61px);}
+.donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .temp_select_box .temp_select{width:100%;}
+.donate_state_wrap.use_staff .state_staff_box .form_btn.search2 .btn{padding:12px 32px 14px 52px;}
+.donate_state_wrap.use_staff .use_state_table{margin-top:60px;}
+.donate_state_wrap.use_staff .use_state_table .temp_form .temp_check + label{padding-left:0;padding-right:20px;font-size:0;line-height:27px;}
+@media all and (max-width:1470px){
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year{padding-right:40px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .donate_title{width:78px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .temp_select_box{width:calc(100% - 78px);}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose{padding-right:40px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .donate_title{width:49px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .temp_select_box{width:calc(100% - 49px);}
+    .donate_state_wrap.use_staff .use_state_table{margin-top:40px;}
+}
+@media all and (max-width:1235px){
+    .donate_state_wrap.use_staff .use_state_table{margin-top:25px;}
+}
+@media all and (max-width:1000px){
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose{margin-top:10px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .donate_title,
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .donate_title{width:110px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .temp_select_box,
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .temp_select_box{width:calc(100% - 110px);}
+    .donate_state_wrap.use_staff .state_staff_box .form_btn.search2 .btn{padding:41px 32px 43px 52px;}
+}
+@media all and (max-width:640px){
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year,
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose{padding-right:0;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose{margin-top:5px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .donate_title,
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .donate_title{width:100%;line-height:31px;}
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.year .temp_select_box,
+    .donate_state_wrap.use_staff .state_staff_box .donate_form.purpose .temp_select_box{width:100%;}
+    .donate_state_wrap.use_staff .state_staff_box .form_btn.search2 .btn{min-width:100%;padding:8px 32px 12px 52px;text-align:center;}
+}
+
+
+/*기부금 안내 > 기부 현황 관리 > 팝업 (페이지로 변경)*/
+/*기부금 안내 > 사용기금 현황 관리 > 팝업 (페이지로 변경)*/
+.donate_add_wrap{font-size:0;line-height:0;}
+.donate_add_wrap .donate_add_box .donate_add_title{width:100%;padding:17px 30px;background-image:linear-gradient(to right,#052e74,#014c9b);font-size:22px;color:#fff;letter-spacing:-0.03em;line-height:26px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:500;word-break:keep-all;}
+.donate_add_wrap .donate_add_box .add_inner{padding:40px 0;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap{margin-bottom:18px;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_title{width:125px;padding-left:28px;font-size:20px;color:#000;letter-spacing:-0.03em;line-height:48px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:700;word-break:keep-all;vertical-align:top;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box{display:inline-block;width:calc(100% - 125px);vertical-align:top;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-form-group__upload{display:table-cell;width:100%;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-input{height:48px;margin:0;background:#fff;border:1px solid #e0e0e0;line-height:46px;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-button.p-button--small{width:90px;height:48px;padding:0;line-height:48px;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-button.p-button--small.primary{margin:0 10px;background-color:#fff;border:1px solid #0339a6;font-size:16px;color:#0339a6;}
+.donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-button.p-button--small.upload{background-color:#073673;border:1px solid #073673;font-size:16px;color:#fff;}
+.donate_add_wrap .donate_add_box .add_inner .table tbody tr td{padding:6px 20px;line-height:38px;}
+.donate_add_wrap .donate_add_box .add_inner .temp_form .temp_input{width:100%;min-height:38px;line-height:36px;}
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_year,
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month,
+.donate_add_wrap .donate_add_box .add_inner .donate_date{font-size:inherit;line-height:inherit;}
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_year .temp_select{display:inline-block;width:100px;min-height:38px;}
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month .temp_select{display:inline-block;width:70px;min-height:38px;margin-left:15px;}
+.donate_add_wrap .donate_add_box .add_inner .donate_row_btn{width:35px;height:35px;background-image:url(../images/program/donate_row_btn.png);background-size:cover;background-repeat:no-repeat;border:1px solid #e0e0e0;border-radius:5px;font-size:0;line-height:0;}
+.donate_add_wrap .donate_add_box .add_inner .donate_row_btn.del{background-position:left center;}
+.donate_add_wrap .donate_add_box .add_inner .donate_row_btn.add{margin-left:7px;background-position:right center;}
+.donate_add_wrap .donate_add_box .add_inner .temp_form.donate_date .temp_input{width:63px;margin-left:15px;}
+.donate_add_wrap .donate_add_box .add_inner .add_btn_box{margin-top:22px;text-align:right;}
+.donate_add_wrap .donate_add_box .add_inner .add_btn_box .temp_btn .btn{min-width:85px;}
+
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.use_year,
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.use_year .temp_select,
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.use_purpose,
+.donate_add_wrap .donate_add_box .add_inner .temp_select_box.use_purpose .temp_select{width:100%;}
+@media all and (max-width:1235px){
+    .donate_add_wrap .donate_add_box .add_inner{padding:20px 0;}
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_year .temp_select{width:90px;}
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month .temp_select{width:60px;margin-left:7px;}
+    .donate_add_wrap .donate_add_box .add_inner .temp_form.donate_date .temp_input{width:50px;margin-left:7px;padding:0 13px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_row_btn{width:28px;height:28px;}
+}
+@media all and (max-width:1000px){
+    .donate_add_wrap .donate_add_box .donate_add_title{padding:10px 20px;font-size:18px;line-height:22px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_title{width:85px;padding-left:0;font-size:18px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box{width:calc(100% - 85px);}
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_year,
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month,
+    .donate_add_wrap .donate_add_box .add_inner .donate_date{margin:3px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_row_btn.del,
+    .donate_add_wrap .donate_add_box .add_inner .donate_row_btn.add{margin:3px;}
+}
+@media all and (max-width:640px){
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_title{width:100%;}
+    .donate_add_wrap .donate_add_box .add_inner .table tbody tr td{padding:6px 7px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_title{font-size:17px;line-height:29px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box{width:100%;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-input{height:38px;line-height:36px;}
+    .donate_add_wrap .donate_add_box .add_inner .donate_upload_wrap .upload_box .p-wrap.bbs .p-button.p-button--small{width:auto;height:38px;padding:0 20px;line-height:36px;}
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_year .temp_select,
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month .temp_select,
+    .donate_add_wrap .donate_add_box .add_inner .temp_form.donate_date .temp_input{width:70px;}
+    .donate_add_wrap .donate_add_box .add_inner .temp_select_box.donate_month .temp_select,
+    .donate_add_wrap .donate_add_box .add_inner .temp_form.donate_date .temp_input{margin:0;}
+    .donate_add_wrap .donate_add_box .add_inner .add_btn_box{margin-top:15px;}
+}
+
+
+/* 약정서 관리*/
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period{width:calc(100% - 158px);padding-right:0;}
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .donate_title{width:95px;}
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_wrap{display:inline-block;width:calc(100% - 95px);vertical-align:top;}
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_form{width:calc(100% - 95px);}
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .temp_select{display:inline-block;width:212px;vertical-align:top;}
+.agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .input_split{padding:0 15px 0 10px;font-size:19px;color:#0e0e0e;line-height:48px;vertical-align:top;}
+.agree_list_wrap .donate_state_wrap .state_staff_box .form_btn.search2 .btn{padding:80px 32px 82px 52px;}
+.agree_list_wrap .donate_state_wrap .use_state_table{margin-top:60px;}
+.agree_list_wrap .donate_state_wrap .use_state_table .temp_form .temp_check + label{padding-left:0;padding-right:20px;font-size:0;line-height:27px;}
+.agree_list_wrap .donate_state_wrap .temp_btn{margin-right:10px;}
+@media all and (max-width:1470px){
+    .agree_list_wrap .donate_state_wrap .state_staff_box{padding:30px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_title{font-size:17px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form{width:calc((100% - 116px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number{padding-right:30px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .donate_title{width:53px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:calc(100% - 53px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 30px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .min_date + .donate_title{padding:0 8px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .donate_title{width:67px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .donate_title:last-child{width:auto}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 150px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .min_sum + .donate_title{width:58px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period{width:calc(100% - 145px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .donate_title{width:68px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_wrap{display:inline-block;width:calc(100% - 68px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box{width:25%;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .temp_select{width:calc(100% - 40px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:nth-child(2) .temp_select{width:calc(100% - 54px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:last-child .temp_select{width:calc(100% - 25px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .input_split{font-size:17px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:last-child .input_split{padding-right:0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .donate_title{width:106px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .temp_form{width:calc(100% - 106px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .donate_title{width:67px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:calc(100% - 67px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .form_btn.search2{top:30px;right:30px;}
+    .agree_list_wrap .donate_state_wrap .use_state_table{margin-top:40px;}
+    .agree_list_wrap .donate_state_wrap .use_state_table .temp_btn{margin-right:0;}
+    .agree_list_wrap .donate_state_wrap .use_state_table .temp_btn .btn{min-width:114px;}
+    }
+@media all and (max-width:1235px){
+    .agree_list_wrap .donate_state_wrap h3{padding-left:0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box{padding:30px 0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .form_btn.search2{right:0;}
+    .agree_list_wrap .donate_state_wrap .use_state_table{margin-top:25px;}
+    }
+@media all and (max-width:1000px){
+    .agree_list_wrap .donate_state_wrap .state_staff_box{padding:20px 0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .input_split{font-size:15px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period{width:100%;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period{margin-top:10px;padding-right:0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date{padding-right:0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .donate_title{width:110px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:calc(100% - 110px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 29px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 193px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .temp_form{width:calc(100% - 110px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .temp_form,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_wrap{width:calc(100% - 110px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .form_btn.search2{position:relative;top:inherit;right:inherit;width:100%;margin-top:15px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .form_btn.search2 .btn{min-width:100%;padding:10px 32px 10px 52px;text-align:center;}
+    }
+@media all and (max-width:800px){
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .donate_title{line-height:106px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box{width:50%;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:nth-child(2) .temp_select,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:last-child .temp_select{width:calc(100% - 35px);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:nth-child(n + 3){margin-top:10px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box:nth-child(2) .input_split{padding-right:0;}
+    }
+@media all and (max-width:640px){
+    .agree_list_wrap .donate_state_wrap h3{font-size:24px;line-height:38px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .temp_form .temp_input{min-height:38px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .temp_form,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_wrap {width:100%;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number{padding-right:0;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period{margin-top:5px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .donate_title{width:100%;line-height:31px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box{width:100%;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.date .temp_date_box .p-date-group .p-form-group.p-date{width:calc((100% - 20px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .temp_form{width:calc((100% - 81px) / 2);}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.sum .min_sum + .donate_title,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.period .temp_select_box .input_split{line-height:38px;}
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.name .temp_form,
+    .agree_list_wrap .donate_state_wrap .state_staff_box .donate_form.number .temp_form{width:100%;}
+    .agree_list_wrap .donate_state_wrap .state_btn_box{margin-top:10px;}
+    .agree_list_wrap .donate_state_wrap .state_btn_box .temp_btn{margin:5px 3px;}
+    .agree_list_wrap .donate_state_wrap .state_btn_box .temp_btn:last-child{float:inherit;}
+    }
+
+
+/* 온라인 약정 정보 */
+.online_agree_wrap .essential{margin-left:5px;}
+.online_agree_wrap .table tbody td{font-size:0;line-height:0;text-align:left;}
+.online_agree_wrap .table tbody td .temp_form{margin-right:20px;font-size:0;line-height:0;}
+.online_agree_wrap .table tbody td .temp_form:last-child{margin-right:0;}
+.online_agree_wrap .table tbody td .input_text,
+.online_agree_wrap .table tbody td .input_split{font-size:18px;line-height:38px;}
+.online_agree_wrap .table tbody td .temp_form .input_text,
+.online_agree_wrap .table tbody td .temp_select_box .input_text{padding-right:15px;}
+.online_agree_wrap .table tbody td .input_split{margin:0 5px;}
+.online_agree_wrap .table tbody td .temp_form .temp_radio{top:12px;}
+.online_agree_wrap .table tbody td .temp_form .temp_radio + label{line-height:38px;}
+.online_agree_wrap .table tbody td .temp_form .temp_radio + label:before{top:9px;}
+.online_agree_wrap .table tbody td .temp_form .temp_radio + label:after{top:7px;}
+.online_agree_wrap .table tbody td .temp_form.direct_text .temp_input{width:360px;}
+.online_agree_wrap .table tbody td .during_box .input_split + .temp_select_box{margin-left:15px;}
+.online_agree_wrap .table tbody td .during_box .donate_during{margin-left:10px;font-size:18px;line-height:38px;}
+.online_agree_wrap .table tbody td .donate_alumnus_box{display:none;margin-top:10px;}
+.online_agree_wrap .table tbody td .donate_alumnus_box .temp_form + .temp_form{margin-left:18px;}
+.online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .temp_input{width:198px;}
+.online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .input_text{padding:0 0 0 15px;}
+.online_agree_wrap .table tbody td .donate_alumnus_box .temp_form:last-child .input_text{padding:0 15px 0 0;}
+.online_agree_wrap .table tbody td .donate_alumnus_box .temp_form:first-child .temp_input{margin-left:0;}
+.online_agree_wrap .table tbody td .name_top_box{margin-top:10px;}
+.online_agree_wrap .table tbody td .name_bot_box{display:none;margin-top:10px;}
+.online_agree_wrap .table tbody td .name_box .temp_form + .temp_form{margin-left:20px;}
+.online_agree_wrap .table tbody td .name_box .temp_form .input_text{min-width:75px;}
+.online_agree_wrap .table tbody td .name_box .temp_form.name .temp_input,
+.online_agree_wrap .table tbody td .name_box .temp_form.corp .temp_input{width:275px;}
+.online_agree_wrap .table tbody td .name_box .temp_form.resi .temp_input{width:169px;}
+.online_agree_wrap .table tbody td .name_box .temp_form.resi .temp_input:last-child{margin-right:0;}
+.online_agree_wrap .table tbody td .name_box .temp_form.entr .temp_input{width:300px;margin-right:0;}
+.online_agree_wrap .table tbody td .name_box .anony_warning{display:none;margin-top:10px;}
+.online_agree_wrap .table tbody td .tel_box{margin-right:20px;vertical-align:top;}
+.online_agree_wrap .table tbody td .tel_box .temp_select_box.small .temp_select{display:inline-block;width:80px;vertical-align:top;}
+.online_agree_wrap .table tbody td .tel_box .temp_form.small .temp_input{width:80px;}
+.online_agree_wrap .table tbody td .email_box{vertical-align:top;}
+.online_agree_wrap .table tbody td .email_box .temp_form .input_text{min-width:75px;}
+.online_agree_wrap .table tbody td .email_box .temp_form.small .temp_input{width:275px;}
+.online_agree_wrap .table tbody td .address_box{width:100%;}
+.online_agree_wrap .table tbody td .address_box .temp_form + .temp_form{margin-top:10px;margin-left:0;}
+.online_agree_wrap .table tbody td .address_box .temp_form.post .temp_input{width:200px;}
+.online_agree_wrap .table tbody td .address_box .temp_form.address,
+.online_agree_wrap .table tbody td .address_box .temp_form.detail{width:calc(100% - 230px);}
+.online_agree_wrap .table tbody td .address_box .temp_form.address .temp_input,
+.online_agree_wrap .table tbody td .address_box .temp_form.detail .temp_input{width:100%;}
+.online_agree_wrap .table tbody td .address_box .temp_btn{margin:0 10px;}
+.online_agree_wrap .table tbody td .address_box .temp_btn .btn{min-width:110px;}
+.online_agree_wrap .table tbody td .job_box .temp_form + .temp_form{margin-left:19px;}
+.online_agree_wrap .table tbody td .job_box .temp_form .input_text{min-width:75px;}
+.online_agree_wrap .table tbody td .job_box .temp_form .temp_input{width:189px;}
+.online_agree_wrap .table tbody td .job_box .temp_form:first-child .temp_input{margin-left:0;}
+.online_agree_wrap .table tbody td .job_box .temp_form:last-child .temp_input{margin-right:0;}
+.online_agree_wrap .table tbody td .deposit_list{}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item.no_bank{display:none;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .h6{margin-top:5px;margin-bottom:0;padding-top:10px;padding-left:0;border-top:1px solid #e0e0e0;font-size:20px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .input_text{min-width:75px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_btn{margin:0 10px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_btn .btn{min-width:110px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form .temp_input{width:134px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_account .temp_input{width:154px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_top_box{margin-top:10px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_bot_box{margin-top:10px;}
+.online_agree_wrap .table tbody td .deposit_list .deposit_item .no_bank_text{margin-top:10px;font-size:18px;line-height:38px;}
+.online_agree_wrap .correct_wrap{}
+.online_agree_wrap .correct_wrap .correct_reason{display:block;width:100%;text-align:right;}
+.online_agree_wrap .correct_wrap .correct_reason .temp_input{width:50%;}
+.online_agree_wrap .correct_wrap .table{margin-top:30px;}
+.online_agree_wrap .correct_wrap .table tbody td{font-size:18px;line-height:30px;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box{width:540px;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .close_btn_box{top:21px;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list{font-size:0;line-height:0;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item{display:inline-block;width:25%;vertical-align:top;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item .temp_btn{width:100%;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item .temp_btn .btn{min-width:100%;}
+.online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item.active .temp_btn .btn{background-color:#073673;color:#fff;}
+@media all and (max-width:1470px){
+    .online_agree_wrap .table tbody td .temp_form{margin-right:10px;}
+    .online_agree_wrap .table tbody td .during_box .temp_select_box{width:calc((100% - 269px) / 4);}
+    .online_agree_wrap .table tbody td .during_box .temp_select_box .temp_select{width:100%;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form{width:100%;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form + .temp_form{margin-left:0;margin-top:10px;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .temp_input{width:270px;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form:last-child .temp_input{width:310px;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .input_text{font-size:17px;}
+    .online_agree_wrap .table tbody td .temp_form.name,
+    .online_agree_wrap .table tbody td .temp_form.resi,
+    .online_agree_wrap .table tbody td .temp_form.corp,
+    .online_agree_wrap .table tbody td .temp_form.entr{width:100%;}
+    .online_agree_wrap .table tbody td .temp_form.resi,
+    .online_agree_wrap .table tbody td .temp_form.entr{margin-top:10px;margin-left:0 !important;}
+    .online_agree_wrap .table tbody td .temp_form.resi .input_text{width:106px;}
+    .online_agree_wrap .table tbody td .name_box .temp_form.name .temp_input,
+    .online_agree_wrap .table tbody td .name_box .temp_form.corp .temp_input{width:278px;}
+    .online_agree_wrap .table tbody td .name_box .temp_form.resi .temp_input{width:115px;}
+    .online_agree_wrap .table tbody td .temp_form.direct_text{width:calc(100% - 441px);}
+    .online_agree_wrap .table tbody td .temp_form.direct_text .temp_input{width:100%;}
+    .online_agree_wrap .table tbody td .tel_box{width:100%;margin-right:0;}
+    .online_agree_wrap .table tbody td .tel_box .temp_form.small .temp_input{width:81px;}
+    .online_agree_wrap .table tbody td .email_box,
+    .online_agree_wrap .table tbody td .email_box .temp_form{width:100%;}
+    .online_agree_wrap .table tbody td .email_box .temp_form.small .temp_input{width:277px;}
+    .online_agree_wrap .table tbody td .address_box .temp_form.post .temp_input{width:229px;}
+    .online_agree_wrap .table tbody td .address_box .temp_form.address .temp_input,
+    .online_agree_wrap .table tbody td .address_box .temp_form.detail .temp_input{width:350px;}
+    .online_agree_wrap .table tbody td .job_box .temp_form{width:100%;}
+    .online_agree_wrap .table tbody td .job_box .temp_form + .temp_form{margin-top:10px;margin-left:0;}
+    .online_agree_wrap .table tbody td .job_box .temp_form .temp_input{width:275px;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_bot_box .temp_form{width:100%;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_bot_box .temp_form + .temp_form{margin-top:10px;margin-left:0;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .input_text{min-width:86px;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_account .temp_input,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form .temp_input{width:263px;}
+    .online_agree_wrap .correct_wrap .table tbody td{font-size:17px;}
+}
+@media all and (max-width:1000px){
+    .online_agree_wrap .table tbody td .temp_form{margin-right:0;}
+    .online_agree_wrap .table tbody td .input_text,
+    .online_agree_wrap .table tbody td .input_split{font-size:16px;}
+    .online_agree_wrap .table tbody td .during_box .temp_select_box{width:calc((100% - 155px) / 4);}
+    .online_agree_wrap .table tbody td .during_box .donate_during{width:100%;margin-left:0;font-size:16px;}
+    .online_agree_wrap .table tbody td .during_box .input_split + .temp_select_box{margin-left:10px;}
+    .online_agree_wrap .table tbody td .temp_form.direct_text{width:100%;}
+    .online_agree_wrap .table tbody td .name_box .temp_form.name .temp_input,
+    .online_agree_wrap .table tbody td .name_box .temp_form.corp .temp_input{width:calc(100% - 75px);}
+    .online_agree_wrap .table tbody td .name_box .temp_form.resi .temp_input{width:calc((100% - 123px) / 2);}
+    .online_agree_wrap .table tbody td .name_box .temp_form.entr .temp_input{width:calc(100% - 144px);}
+    .online_agree_wrap .table tbody td .tel_box .temp_form:last-child{width:calc(100% - 155px);}
+    .online_agree_wrap .table tbody td .tel_box .temp_select_box .input_text{width:75px;}
+    .online_agree_wrap .table tbody td .tel_box .temp_form.small .temp_input{width:calc((100% - 33px) / 2);}
+    .online_agree_wrap .table tbody td .email_box .temp_form.small .temp_input{width:calc((100% - 99px) / 2);}
+    .online_agree_wrap .table tbody td .address_box .temp_form{width:100%;}
+    .online_agree_wrap .table tbody td .address_box .temp_form.post .temp_input{width:calc(100% - 122px)}
+    .online_agree_wrap .table tbody td .address_box .temp_btn{margin-right:0;}
+    .online_agree_wrap .table tbody td .address_box .temp_form.address,
+    .online_agree_wrap .table tbody td .address_box .temp_form.detail,
+    .online_agree_wrap .table tbody td .address_box .temp_form.address .temp_input,
+    .online_agree_wrap .table tbody td .address_box .temp_form.detail .temp_input{width:100%;}
+    .online_agree_wrap .table tbody td .job_box .temp_form .temp_input{width:calc(100% - 75px);}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .input_text{font-size:16px;}
+    .online_agree_wrap .table tbody td .temp_form.sum .temp_input,
+    .online_agree_wrap .table tbody td .temp_form.number .temp_input{width:100%;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_text .temp_input{width:calc(100% - 208px);}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_btn{margin-right:0;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_account .temp_input,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form .temp_input{width:calc(100% - 86px);}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .no_bank_text{font-size:15px;line-height:21px;}
+    .online_agree_wrap .donate_popup_wrap .donate_popup_box .close_btn_box{top:11px;}
+    .online_agree_wrap .correct_wrap .table tbody td{font-size:16px;line-height:26px;}
+}
+@media all and (max-width:800px){
+    .online_agree_wrap .table tbody td .during_box .temp_select_box{width:calc((100% - 70px) / 2);}
+    .online_agree_wrap .table tbody td .during_box .temp_select_box:nth-child(5){margin-left:0}
+    .online_agree_wrap .table tbody td .during_box .temp_select_box:nth-child(n + 5){margin-top:10px;}
+    .online_agree_wrap .table tbody td .input_split:nth-child(n + 5){margin-top:10px;width:auto;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_text .temp_input{width:calc(100% - 188px);}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_btn{margin-right:0;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_btn .btn{min-width:90px;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_account .temp_input,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form .temp_input{width:calc(100% - 86px);}
+    }
+@media all and (max-width:640px){
+    .online_agree_wrap .table tbody tr th{padding:5px;}
+    .online_agree_wrap .table tbody td .input_split,
+    .online_agree_wrap .table tbody td .input_text,
+    .online_agree_wrap .table tbody td .during_box .donate_during{font-size:15px;}
+    .online_agree_wrap .table tbody td .name_box .temp_form .input_text,
+    .online_agree_wrap .table tbody td .email_box .temp_form .input_text,
+    .online_agree_wrap .table tbody td .job_box .temp_form .input_text,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .input_text{width:100%;line-height:31px;}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form .temp_input{width:calc(100% - 78px);}
+    .online_agree_wrap .table tbody td .donate_alumnus_box .temp_form:last-child .temp_input{width:calc(100% - 42px);}
+    .online_agree_wrap .table tbody td .name_top_box,
+    .online_agree_wrap .table tbody td .name_bot_box{margin-top:0;}
+    .online_agree_wrap .table tbody td .temp_form.resi,
+    .online_agree_wrap .table tbody td .temp_form.entr{margin-top:5px;}
+    .online_agree_wrap .table tbody td .name_box .temp_form.resi .temp_input{width:calc((100% - 16px) / 2);}
+    .online_agree_wrap .table tbody td .name_box .temp_form.name .temp_input,
+    .online_agree_wrap .table tbody td .name_box .temp_form.corp .temp_input,
+    .online_agree_wrap .table tbody td .name_box .temp_form.entr .temp_input{width:100%;}
+    .online_agree_wrap .table tbody td .tel_box .temp_select_box .input_text{width:auto;line-height:31px;}
+    .online_agree_wrap .table tbody td .tel_box .temp_select_box.small .temp_select{display:block;}
+    .online_agree_wrap .table tbody td .tel_box .temp_form:last-child{width:calc(100% - 80px);vertical-align:bottom;}
+    .online_agree_wrap .table tbody td .email_box .temp_form.small .temp_input{width:calc((100% - 23px) / 2);}
+    .online_agree_wrap .table tbody td .job_box .temp_form .temp_input,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_account .temp_input,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form .temp_input{width:100%;}
+    .online_agree_wrap .table tbody td .job_box .temp_form + .temp_form,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_bot_box,
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .bank_bot_box .temp_form + .temp_form{margin-top:5px;}
+    .online_agree_wrap .table tbody td .deposit_list .deposit_item .auto_box .temp_form.bank_text .temp_input{width:calc(100% - 102px);}
+    .online_agree_wrap .correct_wrap .correct_reason .temp_input{width:100%;}
+    .online_agree_wrap .correct_wrap .table{margin-top:10px;}
+    .online_agree_wrap .correct_wrap .table tbody td{font-size:15px;line-height:24px;}
+    .online_agree_wrap .state_btn_box{margin-top:10px;}
+    .online_agree_wrap .state_btn_box .temp_btn{margin:5px 3px;}
+    .online_agree_wrap .state_btn_box .temp_btn:last-child{float:inherit;}
+    .online_agree_wrap .donate_popup_wrap .donate_popup_box{width:94%;}
+    .online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item{width:calc(100% / 3);}
+    .online_agree_wrap .donate_popup_wrap .donate_popup_box .bank_list .bank_item .temp_btn.small .btn{padding:6px 10px;}
+}

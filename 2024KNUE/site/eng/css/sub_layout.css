@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* sub_head 수정 */
+.sub_head .head_top .head_title_box .current_title em{word-break:keep-all;}
+@media all and (min-width:1471px){
+    .sub_head .head_top .head_title_box .current_title em{font-size:46px;}
+}
+@media all and (min-width:1001px) and (max-width:1470px){
+    .sub_head .head_top .head_title_box .current_title em{font-size:30px;}
+}
+@media all and (min-width:1001px){
+    .sub_head .head_top .path_box .path_inner .tab_wrap .inner_depth .inner_btn span em{font-size:16px;line-height:18px;}
+}
+@media all and (min-width:1001px) and (max-width:1235px){
+    .sub_head .head_top .path_box .path_inner .tab_wrap .inner_depth .inner_btn span em{font-size:15px;}
+}
+@media all and (max-width:1000px){
+    .sub_head .head_top .head_title_box .current_title:before{display:none;}
+    .sub_head .head_top .head_title_box .current_title em{font-size:26px;line-height:30px;}
+    .sub_head .head_top .breadcrumb ul li a{word-break:keep-all;}
+}
+@media all and (max-width:640px){
+    .sub_head .head_top .head_title_box .current_title em{font-size:21px;line-height:30px;}
+    .sub_head .head_top .path_box .path_inner .tab_wrap .inner_depth .inner_btn span em{font-size:14px;line-height:16px;}
+}

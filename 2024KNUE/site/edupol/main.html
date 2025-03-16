@@ -1,0 +1,1247 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/common/images/favicon.png">
+    <link rel="icon" href="/common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="/site/public/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="/site/edupol/css/main.css" />
+    <script src="/common/js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="/common/js/jquery.screen.js"></script>
+    <script src="/common/js/slick.min.custom.1.8.0.12.js"></script>
+    <script src="/common/js/slick.extensions.min.js"></script>
+    <script src="/site/public/js/common.js"></script><!--//교원대 (메인,서브) 공통 스크립트-->
+    <script src="/site/edupol/js/common.js"></script>
+    <script src="/site/edupol/js/main.js"></script>
+    <title>교육정책전문대학원</title>
+</head>
+<body id="main" class="main ${siteInfo.siteId}">
+<!--// 메인레이아웃(id="main" class="main 사이트아이디") -->
+<!--// 서브레이아웃(id="sub" class="sub 사이트아이디 page현재메뉴키값") -->
+<div class="accessibility">
+    <a href="#container">본문 바로가기</a>
+</div>  <!--//accessibility-->
+<div id="wrapper">
+    <header id="header">
+        <div class="header_gnb">
+            <div class="wrap">
+                <div class="gnb_link_box">
+                    <ul class="gnb_link_list">
+                        <li class="gnb_link_item">
+                            <a href="./index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>HOME</em></a>
+                        </li>
+                        <li class="gnb_link_item">
+                            <a href="/www/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>한국교원대학교</em></a>
+                        </li>
+                    </ul>
+                </div>    <!--//gnb_link_box-->
+                <div class="gnb_login">
+                    <a href="" class="login">로그인</a>
+                    <!--// 로그인 해야 하는 상태라면 텍스트 로그아웃으로 수정 -->
+                    <!--// 로그아웃 해야 하는 상태라면 텍스트 로그인으로 수정 -->
+                </div>    <!--//gnb_login-->
+            </div>    <!--//wrap-->
+        </div>    <!--//header_gnb-->
+        <div class="header_box">
+            <div class="wrap">
+                <h1 class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <span class="logo_con con_img">한국교원대학교</span>
+                        <span class="logo_con con_text">교육정책전문대학원</span>
+                    </a>    <!--//logo_link-->
+                </h1>    <!--//logo-->
+                <ul class="last_link_list">
+                    <li class="last_link_item">
+                        <button type="button" title="열기" class="last_link search">검색 폼</button>
+                    </li>
+                    <li class="last_link_item menu_show">
+                        <button type="button" class="menu_button">메뉴열기</button>    <!--//menu_button-->
+                    </li>
+                </ul>    <!--//last_link_list-->
+            </div>    <!--//wrap-->
+            <div class="search_form_box">
+                <form action="">    <!--// action 값 필수 개발 -->
+                    <fieldset>
+                        <legend>교원대학교 검색 영역</legend>
+                        <!--// input type hidden 값을 사용한다면 ★꼭 legend 태그 뒤에 사용★ -->
+                        <div class="form_inner">
+                            <span class="form_cell type_text">
+                                <input type="text" title="검색어 입력" placeholder="무엇을 찾고 계신가요?" />
+                            </span>
+                            <span class="form_cell type_submit">
+                                <input type="submit" title="검색하기" value="검색" />
+                            </span>
+                        </div>    <!--//form_inner-->
+                    </fieldset>
+                </form>
+            </div>    <!--//search_form_box-->
+        </div>    <!--//header_box-->
+        <div class="lnb">
+            <div class="lnb_topbox"><!--// 모바일(1000px 이하 부터)에서만 사용됨 -->
+                <span class="logo">
+                    <a href="./index.do" class="logo_link">
+                        <span class="logo_con con_img">한국교원대학교</span>
+                        <span class="logo_con con_text">교육정책전문대학원</span>
+                    </a>    <!--//logo_link-->
+                </span>    <!--//logo-->
+                <div class="lnb_gnb">
+                    <div class="gnb_link_box">
+                        <ul class="gnb_link_list">
+                            <li class="gnb_link_item">
+                                <a href="./index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>HOME</em></a>
+                            </li>
+                            <li class="gnb_link_item">
+                                <a href="/www/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="gnb_link"><em>한국교원대학교</em></a>
+                            </li>
+                        </ul>
+                    </div>    <!--//gnb_link_box-->
+                    <div class="gnb_login">
+                        <a href="" class="login">로그인</a>
+                        <!--// 로그인 해야 하는 상태라면 텍스트 로그아웃으로 수정 -->
+                        <!--// 로그아웃 해야 하는 상태라면 텍스트 로그인으로 수정 -->
+                    </div>    <!--//gnb_login-->
+                </div>    <!--//lnb_gnb-->
+            </div>    <!--//lnb_topbox-->
+            <nav class="menu eachdown">
+                <!--// 모바일(1000px 이하 부터)을 위해 초기에 5차 메뉴까지 개발 필요 -->
+                <!--// 와이드에서는 3차메뉴까지만 표출되게 css 잡아놓음 -->
+                <!--// 내가 어떤 메뉴를 선택하든 그 해당메뉴의 ★★★마지막차수★★★ a태그 .depth_text 클레스명에 spy 클레스 및 title="선택됨" 필수로 달아주시는 개발 부탁드립니다 -->
+                <!--// EX1) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2)에서 2차메뉴명을 클릭했을 때 3차메뉴명들 중 첫번째인 3차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// EX2) 1차메뉴명 - 2차메뉴명 - (3차메뉴명1, 3차메뉴명2) - (4차메뉴명1, 4차메뉴명2)에서 2차메뉴명을 클릭했을 때 4차메뉴명들 중 첫번째인 4차메뉴명1 에 spy 클레스와 title="선택됨" 달림 -->
+                <!--// CMS에서 새창 설정일때 a태그 .depth_text 클레스명에 target="_blank" title="새창" rel="noopener noreferrer" 필수 개발 부탁드립니다 -->
+                <h2 class="skip">메뉴</h2>    <!--//skip-->
+                <div class="depth depth1">
+                    <div class="line_deco_box">
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                        <i class="line_deco"></i>
+                    </div>    <!--//line_deco_box-->
+                    <ul class="depth_list depth1_list">
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>확인필요</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" target="_blank" title="새창"  rel="noopener noreferrer" class="depth_text depth2_text"><span><em>2차메뉴1 새창</em></span></a>
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth3_text"><span><em>3차메뉴 새창</em></span></a>
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1 하위 선택됨</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴 하위 선택됨</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴 하위 선택됨</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" title="선택됨" class="depth_text depth5_text spy"><span><em>5차메뉴 선택됨</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                            </li>
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" target="_blank" title="새창" rel="noopener noreferrer" class="depth_text depth4_text"><span><em>4차메뉴 새창</em></span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴1</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴2</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴3</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                        <li class="depth_item depth1_item">
+                            <a href="" class="depth_text depth1_text"><span><em>1차메뉴</em></span></a>
+                            <div class="depth depth2">
+                                <ul class="depth_list depth2_list">
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                    <li class="depth_item depth2_item">
+                                        <a href="" class="depth_text depth2_text"><span><em>2차메뉴4</em></span></a>
+                                        <div class="depth depth3">
+                                            <ul class="depth_list depth3_list">
+                                                <li class="depth_item depth3_item">
+                                                    <a href="" class="depth_text depth3_text"><span><em>3차메뉴</em></span></a>
+                                                    <div class="depth depth4">
+                                                        <ul class="depth_list depth4_list">
+                                                            <li class="depth_item depth4_item">
+                                                                <a href="" class="depth_text depth4_text"><span><em>4차메뉴</em></span></a>
+                                                                <div class="depth depth5">
+                                                                    <ul class="depth_list depth5_list">
+                                                                        <li class="depth_item depth5_item">
+                                                                            <a href="" class="depth_text depth5_text"><span><em>5차메뉴</em></span></a>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>    <!--//depth5-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>    <!--//depth4-->
+                                                </li>
+                                            </ul>
+                                        </div>    <!--//depth3-->
+                                    </li>
+                                </ul>
+                            </div>    <!--//depth2-->
+                        </li>
+                    </ul>
+                    <div class="promotion_box"><!--// 홍보관 이동 링크 , 현재로는 대표에만 사용됨 그냥 두셔도 됩니다 -->
+                        <a href="/pr/index.do" target="_blank" title="새창" rel="noopener noreferrer" class="promotion_link">40주년 홍보관</a>
+                    </div>    <!--//promotion_box-->
+                </div>    <!--//depth1-->
+            </nav>    <!--//menu eachdown-->
+            <div class="menu_hide">
+                <button type="button" class="menu_button">메뉴 닫기</button>
+            </div>    <!--//menu_hide-->
+        </div>    <!--//lnb-->
+        <div class="lnb_curtain">
+            <button type="button">메뉴 닫기</button>
+        </div>    <!--//lnb_curtain-->
+        <div class="header_last">
+            <ul class="last_link_list">
+                <li class="last_link_item">
+                    <button type="button" title="열기" class="last_link search">검색 폼</button>
+                </li>
+                <li class="last_link_item">
+                    <a href="" title="바로가기" class="last_link sitemap">사이트맵</a>
+                </li>
+            </ul>    <!--//last_link_list-->
+        </div>    <!--//header_last-->
+    </header>    <!--//#header-->
+    <div class="sub_visual">
+        <!--//필요시 사용 예정입니다-->
+    </div>    <!--//sub_visual-->
+    <div id="container">
+        <main>
+            <div class="rowgroup rowgroup1">
+                <h2 class="skip">메인슬라이드</h2>
+                <div class="main_slide_wrap">
+                    <div class="main_slide_box">
+                        <div class="main_slide_list">
+                            <div class="main_slide_item">
+                                <img class="item_img" src="/site/edupol/images/main/main_slide_img01.jpg" alt="메인슬라이드 이미지1">
+                                <span class="item_bg" style="background-image:url(/site/edupol/images/main/main_slide_img01.jpg)"></span>
+
+                                <div class="slide_text_box">
+                                    <p class="box_sub_title">The Graduate School of</p>
+                                    <p class="box_main_title">Educational Policy<br>&Administration</p>
+                                    <p class="box_text">세계화 지방화시대 교육 인적자원 개발 혁신을 선도하는 국내 최고 권의,<br>비전과 혁신을 추구하는 국제 수준의 교육정책부문 교육연구기관</p>
+                                </div>
+                            </div><!--//main_slide_item-->
+                            <div class="main_slide_item">
+                                <img class="item_img" src="/site/edupol/images/main/main_slide_img02.jpg" alt="메인슬라이드 이미지1">
+                                <span class="item_bg" style="background-image:url(/site/edupol/images/main/main_slide_img02.jpg)"></span>
+
+                                <div class="slide_text_box">
+                                    <p class="box_sub_title">The Graduate School of</p>
+                                    <p class="box_main_title">Educational Policy<br>&Administration</p>
+                                    <p class="box_text">세계화 지방화시대 교육 인적자원 개발 혁신을 선도하는 국내 최고 권의,<br>비전과 혁신을 추구하는 국제 수준의 교육정책부문 교육연구기관</p>
+                                </div>
+                            </div><!--//main_slide_item-->
+                            <div class="main_slide_item">
+                                <img class="item_img" src="/site/edupol/images/main/main_slide_img03.jpg" alt="메인슬라이드 이미지1">
+                                <span class="item_bg" style="background-image:url(/site/edupol/images/main/main_slide_img03.jpg)"></span>
+
+                                <div class="slide_text_box">
+                                    <p class="box_sub_title">The Graduate School of</p>
+                                    <p class="box_main_title">Educational Policy<br>&Administration</p>
+                                    <p class="box_text">세계화 지방화시대 교육 인적자원 개발 혁신을 선도하는 국내 최고 권의,<br>비전과 혁신을 추구하는 국제 수준의 교육정책부문 교육연구기관</p>
+                                </div>
+                            </div><!--//main_slide_item-->
+                        </div>
+                        <div class="main_slide_control clearfix">
+                            <div class="dots_inner">
+
+                            </div>
+                            <div class="control_inner">
+                                <button type="button" class="slick-arrow prev">이전</button>
+                                <button type="button" class="slick-arrow auto">정지</button>
+                                <button type="button" class="slick-arrow next">다음</button>
+                            </div>
+                        </div>
+                        <div class="main_progress on">
+                            <div class="progress_bar"></div>
+                        </div>
+                    </div>
+                    <div class="main_menu_box">
+                        <div class="main_menu_list">
+                            <div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">학사정보</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">교육과정</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">교육정책포럼</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">교수진</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div><div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">입학자료실</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div><div class="main_menu_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_text">공지사항</span>
+                                        <i class="item_arrow"></i>
+                                        <i class="item_icon"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                //★ 공지사항 게시판의 최근 등록된 글 순으로 .notice_item 복사해주세요 (최대 4개입니다)
+                //★ .notice_item .item_area 에 해당 게시글 링크 넣어주세요
+                //★ .notice_item .item_area .item_title 에 해당 게시글 제목 넣아주세요
+                //★ .notice_item .item_area .item_date 에 해당 게시글 날짜 넣아주세요
+            -->
+            <div class="rowgroup rowgroup2">
+                <div class="notice_box">
+                    <h2 class="notice_title">공지사항</h2>
+                    <div class="notice_list">
+                        <div class="notice_item">
+                            <a class="item_area" href="">
+                                <span class="item_inner">
+                                    <span class="item_text_box">
+                                        <span class="item_title">2023 교육정책세미나 개최 안내</span>
+                                        <span class="item_date">2023-10-23</span>
+                                    </span>
+                                    <span class="deco_box1"></span>
+                                    <span class="deco_box2"></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="notice_item">
+                            <a class="item_area" href="">
+                                <span class="item_inner">
+                                    <span class="item_text_box">
+                                        <span class="item_title">2023학년도 전기 교육 정책전문대학원 비대면 입학전형 관련 안내</span>
+                                        <span class="item_date">2023-01-16</span>
+                                    </span>
+                                    <span class="deco_box1"></span>
+                                    <span class="deco_box2"></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="notice_item">
+                            <a class="item_area" href="">
+                                <span class="item_inner">
+                                    <span class="item_text_box">
+                                        <span class="item_title">제19회 교육정책세미나 개최 안내 제19회 교육정책세미나 개최 안내 제19회 교육정책세미나 개최 안내</span>
+                                        <span class="item_date">2021-09-17</span>
+                                    </span>
+                                    <span class="deco_box1"></span>
+                                    <span class="deco_box2"></span>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="notice_item">
+                            <a class="item_area" href="">
+                                <span class="item_inner">
+                                    <span class="item_text_box">
+                                        <span class="item_title">2021-2학기 비대면수업 실시 안내</span>
+                                        <span class="item_date">2021-08-19</span>
+                                    </span>
+                                    <span class="deco_box1"></span>
+                                    <span class="deco_box2"></span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="more_view_box">
+                        <a class="more_view" href="">공지사항 더보기</a>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                //★ 입학공지 게시판의 최근 등록된 글 순으로 .left_box .forum_item 복사해주세요 (최대 2개입니다)
+                //★ .left_box .forum_item .item_area 에 해당 게시글 링크 넣어주세요
+                //★ .left_box .forum_item .item_area .item_title 에 해당 게시글 제목 넣아주세요
+                //★ .left_box .forum_item .item_area .item_date 에 해당 게시글 날짜 넣아주세요
+            -->
+            <div class="rowgroup rowgroup3">
+                <div class="forum_wrap clearfix">
+                    <span class="forum_bg_text">KNUE</span>
+                    <div class="forum_box left_box">
+                        <h3 class="forum_title">입학공지</h3>
+                        <ul class="forum_list clearfix">
+                            <li class="forum_item">
+                                <a class="item_area" href="">
+                                    <span class="item_title">2024학년도 전기 교육정책 전문대학원 석사/박사 입학전형 2024학년도 전기 교육정책 전문대학원 석사/박사 입학전형</span>
+                                    <span class="item_date">2024-02-08</span>
+                                </a>
+                            </li>
+                            <li class="forum_item">
+                                <a class="item_area" href="">
+                                    <span class="item_title">2024학년도 전기 교육정책전문 대학원 입학전형 수험생 안내사항</span>
+                                    <span class="item_date">2024-01-09</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="more_view_box">
+                            <a class="more_view" href="">입학공지 더보기</a>
+                        </div>
+                    </div>
+
+                    <!--
+                        //★ 교육정책포럼 게시판의 최근 등록된 글 순으로 .right_box .forum_item 복사해주세요 (최대 2개입니다)
+                        //★ .right_box .forum_item .item_area 에 해당 게시글 링크 넣어주세요
+                        //★ .right_box .forum_item .item_area .item_title 에 해당 게시글 제목 넣아주세요
+                        //★ .right_box .forum_item .item_area .item_date 에 해당 게시글 날짜 넣아주세요
+                    -->
+                    <div class="forum_box right_box">
+                        <h3 class="forum_title">교육정책포럼</h3>
+                        <ul class="forum_list clearfix">
+                            <li class="forum_item">
+                                <a class="item_area" href="">
+                                    <span class="item_title">2024년 제1회 교육정책포럼 개최 안내</span>
+                                    <span class="item_date">2024-03-06</span>
+                                </a>
+                            </li>
+                            <li class="forum_item">
+                                <a class="item_area" href="">
+                                    <span class="item_title">2023 교육정책세미나 개최 안내</span>
+                                    <span class="item_date">2023-10-23</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="more_view_box">
+                            <a class="more_view" href="">교육정책포럼 더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowgroup rowgroup4">
+                <div class="intro_wrap">
+                    <div class="intro_box">
+                        <h3 class="intro_title">전공소개</h3>
+                        <ul class="intro_list">
+                            <li class="intro_item">
+                                <a  class="item_area" href="">
+                                    <i class="item_icon"></i>
+                                    <i class="item_plus"></i>
+                                    <span class="item_title">교육정책</span>
+                                </a>
+                            </li>
+                            <li class="intro_item">
+                                <a  class="item_area" href="">
+                                    <i class="item_icon"></i>
+                                    <i class="item_plus"></i>
+                                    <span class="item_title">교육ㆍ사회정책</span>
+                                </a>
+                            </li>
+                            <li class="intro_item">
+                                <a  class="item_area" href="">
+                                    <i class="item_icon"></i>
+                                    <i class="item_plus"></i>
+                                    <span class="item_title">교육시설환경정책 </span>
+                                </a>
+                            </li>
+                            <li class="intro_item">
+                                <a  class="item_area" href="">
+                                    <i class="item_icon"></i>
+                                    <i class="item_plus"></i>
+                                    <span class="item_title">교육혁신(계절제)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!--
+                //★ GALLERY 포토앨범 게시판의 최근 등록된 글 순으로 .gallery_item 복사해주세요
+                //★ .gallery_item .item_area 에 해당 게시글 링크 넣어주세요
+                //★ .gallery_item .item_area .item_title 에 해당 게시글 제목 넣아주세요
+                //★ .gallery_item .item_area .item_date 에 해당 게시글 날짜 넣아주세요
+                //★ .gallery_item .item_area .item_date 에 해당 게시글 날짜 넣아주세요
+                //★ .gallery_item .item_area .item_img src에 해당 게시글 이미지 링크 넣어주세요
+                //★ .gallery_item .item_area .item_img alt에 해당 게시글 이미지 설명 넣어주세요 (게시글제목 + '이미지')
+                //★ 해당 게시글에 이미지 없을 경우 해당 .gallery_item .item_img_box 에 클래스 .no_img 달아주세요
+                //★ .gallery_item .item_area .item_bg 에 해당 게시글 이미지 링크 넣어주세요
+            -->
+            <div class="rowgroup rowgroup5">
+                <div class="gallery_wrap">
+                    <div class="gallery_box">
+                        <h3 class="gallery_title">GALLERY 포토앨범</h3>
+                        <div class="gallery_list">
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약</span>
+                                        <span class="item_date">2024-03-12</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img01.jpg" alt="한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img01.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, 2024학년도 신입생 입학식 개최</span>
+                                        <span class="item_date">2024-03-05</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img02.jpg" alt="한국교원대, 2024학년도 신입생 입학식 개최 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img02.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대학교, 2023년도 교육국제화역량 인증대학 연속 선정</span>
+                                        <span class="item_date">2024-02-15</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img03.jpg" alt="한국교원대학교, 2023년도 교육국제화역량 인증대학 연속 선정 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img03.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">2023 글로컬 역량 강화 프로그램 성과 발표회개최</span>
+                                        <span class="item_date">2023-12-18</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img04.jpg" alt="2023 글로컬 역량 강화 프로그램 성과 발표회개최 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img04.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약</span>
+                                        <span class="item_date">2024-03-12</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img01.jpg" alt="한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img01.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약</span>
+                                        <span class="item_date">2024-03-12</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img01.jpg" alt="한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img01.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약</span>
+                                        <span class="item_date">2024-03-12</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img01.jpg" alt="한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img01.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div class="gallery_item">
+                                <a class="item_area" href="">
+                                    <span class="item_inner">
+                                        <span class="item_title">한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약</span>
+                                        <span class="item_date">2024-03-12</span>
+                                        <span class="item_img_box">
+                                            <img class="item_img" src="/site/edupol/images/main/gallery_slide_img01.jpg" alt="한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 한국교원대, AI・디지털 기반 미래교육 역량 강화 박차(7개 에듀테크 기업과 업무 협약 이미지">
+                                            <span class="item_bg" style="background-image:url(/site/edupol/images/main/gallery_slide_img01.jpg)"></span>
+                                            <span class="item_deco_box"></span>
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="gallery_slide_control">
+                            <button type="button" class="slick-arrow prev">이전</button>
+                            <span class="slick-text current"></span>
+                            <span class="slick-text slice">/</span>
+                            <span class="slick-text total"></span>
+                            <button type="button" class="slick-arrow next">다음</button>
+                            <a class="more_view" href="">GALLERY 포토앨범 더보기</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rowgroup rowgroup6">
+                <ul class="faq_list clearfix">
+                    <li class="faq_item edu">
+                        <span class="item_sub_title">Educational Policy Institute</span>
+                        <span class="item_big_title">교육정책연구소</span>
+                        <span class="item_link_box">
+                            <a class="item_link" href="">교육정책포럼</a>
+                            <a class="item_link" href="">교육정책연구</a>
+                        </span>
+                    </li>
+                    <li class="faq_item faq">
+                        <span class="item_sub_title">FAQ</span>
+                        <span class="item_big_title">교육정책전문대학원 FAQ</span>
+                        <span class="item_link_box">
+                            <a class="item_link" href="">바로가기</a>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+
+
+
+        </main>
+    </div>    <!--//#container-->
+    <div class="fixed_box">
+        <div class="fixed_inner">
+            <div class="fixed_open">
+                <button type="button" title="리스트 열기" class="open_btn"><span><em>퀵메뉴, 유저서비스</em></span></button>    <!--//open_btn-->
+            </div>    <!--//fixed_open-->
+            <div class="fixed_list">
+                <div class="fixed_item quick">
+                    <button type="button" title="퀵메뉴 열기" class="fix_btn">
+                        <span class="btn_wrap"><em>Quick <br />Menu</em></span>    <!--//btn_wrap-->
+                        <span class="hover_wrap">
+                            <em>Quick Menu</em>
+                        </span>    <!--//hover_wrap-->
+                    </button>    <!--//fix_btn-->
+                </div>    <!--//fixed_item quick-->
+                <div class="fixed_item user">
+                    <button type="button" title="유저서비스 열기" class="fix_btn">
+                        <span class="btn_wrap"><em>User <br />Service</em></span>    <!--//btn_wrap-->
+                        <span class="hover_wrap">
+                            <em>User Service</em>
+                        </span>    <!--//hover_wrap-->
+                    </button>    <!--//fix_btn-->
+                </div>    <!--//fixed_item user-->
+            </div>    <!--//fixed_list-->
+        </div>    <!--//fixed_inner-->
+        <div class="fixed_go">
+            <button type="button" class="go_btn"><span><em>TOP</em></span></button>    <!--//go_btn-->
+        </div>    <!--//fixed_go-->
+    </div>    <!--//fixed_box-->
+    <!--// footer 타입 총 3가지(.type1 , .type2 , .type3) 각각 ftl 따로 분리 필요 , 사이트별로 다른 푸터 적용할 수 있게 include 화 필요 -->
+    <footer id="footer" class="type01">
+        <div class="footer_wrap">
+            <div class="footer_link">
+                <ul class="link_list">
+                    <li class="link_item privacy"><a href="">개인정보처리방침</a></li>
+                    <li class="link_item"><a href="">이메일무단수집거부</a></li>
+                    <!--//<li class="link_item"><a href="">학교정보공개</a></li>-->
+                    <!--//<li class="link_item"><a href="">대학정보공시</a></li>-->
+                </ul>
+            </div>    <!--//footer_link-->
+            <div class="footer_logo_box">
+                <a href="./index.do" class="logo_link">
+                    <span class="logo_con con_img">Knue Teacher of Teachers</span>
+                    <span class="logo_con con_text">교육정책전문대학원</span>
+                </a>
+            </div>    <!--//footer_logo_box-->
+            <div class="footer_info">
+                <address>(28173)충북 청주시 흥덕구 강내면 태성탑연로 250</address>
+                <ul class="info_list">
+                    <li class="info_item tel">
+                        <em class="info_title">TEL</em>
+                        <em class="info_desc">043-XXX-XXXX</em>
+                    </li>
+                    <li class="info_item fax">
+                        <em class="info_title">FAX</em>
+                        <em class="info_desc">043-XXX-XXXX</em>
+                    </li>
+                    <li class="info_item email">    <!--//이메일 등록 되었을 때만 사용-->
+                        <em class="info_title">E-MAIL</em>
+                        <em class="info_desc">XXX@knue.ac.kr</em>
+                    </li>
+                </ul>    <!--//info_list-->
+            </div>    <!--//footer_info-->
+            <div class="footer_select">
+                <div class="select_box">
+                    <div class="select_list">
+                        <div class="select_item">
+                            <button type="button" title="관련 리스트 열기" class="select_btn"><span><em>관련링크</em></span></button>    <!--//select_btn-->
+                            <ul class="select_link_list" tabindex="0">
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크1</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크2</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크3</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크4</a></li>    <!--//select_link_item-->
+                                <li class="select_link_item"><a href="" target="_blank" title="새창" rel="noopener noreferrer">관련링크5</a></li>    <!--//select_link_item-->
+                            </ul>    <!--//select_link_list-->
+                        </div>    <!--//select_item-->
+                    </div>    <!--//select_list-->
+                    <em class="select_logo">한국교원대학교 Korea National University of Education</em>
+                </div>    <!--//select_box-->
+            </div>    <!--//footer_select-->
+            <p class="copyright">Copyright ⓒ KOREA NATIONAL UNIVERSITY <br />OF EDUCATION. All rights reserved.</p>    <!--//copyright-->
+            <div class="footer_go">
+                <button type="button" class="go_btn"><span><em>TOP</em></span></button>    <!--//go_btn-->
+            </div>    <!--//footer_go-->
+        </div>    <!--//footer_wrap-->
+        <div class="bg_deco">Knue</div>    <!--//bg_deco-->
+    </footer>    <!--//#footer-->
+</div>    <!--//wrapper-->
+</body>
+</html>

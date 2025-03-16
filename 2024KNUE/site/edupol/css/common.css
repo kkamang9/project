@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+/* (주)한신정보기술 박남규 - 2024.03 */
+
+/* --------------- header 시작 --------------- */
+@media all and (min-width:1471px){
+    .lnb .menu .depth1{padding-left:370px;}
+    .lnb .menu .depth1 .depth1_list .depth1_item{margin-left:40px;}
+}
+@media all and (min-width:1236px) and (max-width:1470px){
+    .lnb .menu .depth1{padding-left:350px;}
+    .lnb .menu .depth1 .depth1_list .depth1_item{margin-left:2vw;}
+}
+@media all and (min-width:1001px) and (max-width:1235px){
+    .header_box .logo .logo_link .logo_con.con_text{padding:9px 0 9px 5px;font-size:20px;letter-spacing:-0.08em;}
+    .lnb .menu .depth1{padding-left:330px;}
+    .lnb .menu .depth1 .depth1_list .depth1_item{margin-left:1.5vw;}
+    .lnb .menu .depth1 .depth1_list .depth1_item .depth1_text{width:100%;}
+    .lnb .menu .depth1 .depth1_list .depth1_item .depth1_text span em{font-size:18px;line-height:21px;letter-spacing:-0.08em;}
+}
+@media all and (max-width:640px){
+    .header_box .logo .logo_link .logo_con.con_text{width:95px;margin-top:-10px;padding:4px 0 0 5px;transform:translateY(5px);font-size:16px;line-height:18px;}
+    .lnb .lnb_topbox .logo .logo_link .logo_con.con_text{width:95px;margin-top:-10px;padding:4px 0 0 5px;transform:translateY(5px);font-size:16px;line-height:18px;}
+}
+/* --------------- header 끝 --------------- */

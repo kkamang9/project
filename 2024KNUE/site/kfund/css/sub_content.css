@@ -1,0 +1,469 @@
+@charset "utf-8";
+
+/* 한신정보기술 - 2024.03 안병민 */
+
+/* 발전기금재단 소개 > 재단소개 */
+/*
+.cts682_wrap .object_wrap{position:relative;padding-top:80px;}
+.cts682_wrap .object_wrap .object_title{width:189px;height:40px;margin-left:52px;background:url(../images/contents/cts682_object_title.png)center center / cover no-repeat;font-size:0;line-height:0;}
+.cts682_wrap .object_wrap .object_box{position:relative;overflow:hidden;margin-top:79px;padding:80px 50px 138px;box-sizing:border-box;border:1px solid #ddd;}
+.cts682_wrap .object_wrap .object_box:before{display:block;position:absolute;bottom:-10px;right:20px;width:332px;height:150px;background:url(../images/contents/cts682_box_deco.png)center center / cover no-repeat;}
+.cts682_wrap .object_wrap .object_box .box_title{font-size:39px;color:#0e0e0e;letter-spacing:0;line-height:43px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:700;}
+.cts682_wrap .object_wrap .object_box .box_text{position:relative;margin-top:64px;padding-top:65px;}
+.cts682_wrap .object_wrap .object_box .box_text:before{display:block;position:absolute;top:0;left:0;width:70px;height:2px;background-color:#2676de;}
+.cts682_wrap .object_wrap .object_bg{position:absolute;top:0;right:0;width:1100px;height:400px;background:url(../images/contents/cts682_object_bg.jpg)center center / cover no-repeat;box-shadow:-7px 7px 20px 0 rgba(64,64,64,0.2);border-radius:200px 0 0 200px;}
+@media all and (max-width:1470px){
+    .cts682_wrap .object_wrap{padding-top:60px;}
+    .cts682_wrap .object_wrap .object_title{margin-left:40px;}
+    .cts682_wrap .object_wrap .object_box{margin-top:60px;padding:50px 40px 130px;}
+    .cts682_wrap .object_wrap .object_box .box_text{margin-top:40px;padding-top:40px;}
+    .cts682_wrap .object_wrap .object_box:before{width:250px;height:113px;}
+    .cts682_wrap .object_wrap .object_bg{width:calc(100% - 300px);height:300px;}
+}
+@media all and (max-width:1000px){
+    .cts682_wrap .object_wrap .object_title{width:160px;height:34px;margin-left:25px;}
+    .cts682_wrap .object_wrap .object_box{padding:40px 25px 90px;}
+    .cts682_wrap .object_wrap .object_box:before{width:210px;height:95px;}
+    .cts682_wrap .object_wrap .object_box .box_title{font-size:30px;line-height:39px;}
+    .cts682_wrap .object_wrap .object_box .box_text{margin-top:31px;padding-top:35px;}
+    .cts682_wrap .object_wrap .object_bg{width:calc(100% - 230px);height:265px;}
+}
+@media all and (max-width:640px){
+    .cts682_wrap .object_wrap{padding-top:0;}
+    .cts682_wrap .object_wrap .object_title{width:120px;height:25px;margin-left:20px;}
+    .cts682_wrap .object_wrap .object_box{margin-top:30px;padding:25px 20px 60px;}
+    .cts682_wrap .object_wrap .object_box:before{width:150px;height:67px;}
+    .cts682_wrap .object_wrap .object_box .box_title{font-size:24px;}
+    .cts682_wrap .object_wrap .object_box .box_text{margin-top:7px;padding-top:25px;}
+    .cts682_wrap .object_wrap .object_bg{display:none;}
+}
+*/
+.cts682_wrap .object_wrap{font-size:0;line-height:0;}
+.cts682_wrap .object_wrap .top_text_box{position:relative;padding-top:71px;padding-left:808px;padding-bottom:411px;}
+.cts682_wrap .object_wrap .top_text_box:before{display:block;position:absolute;bottom:0px;left:0px;width:100vw;height:350px;background-image:linear-gradient(to bottom, #f1f4f9, #fff);}
+.cts682_wrap .object_wrap .top_text_box:after{display:block;position:absolute;top:0;left:-223px;width:960px;height:470px;background:url(../images/contents/cts682_object_bg.jpg) center center / cover no-repeat;}
+.cts682_wrap .object_wrap .top_text_box .title{font-size:48px;color:#3e6dc9;letter-spacing:-0.03em;line-height:54px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+.cts682_wrap .object_wrap .top_text_box .text{margin-top:41px;padding-right:5px;font-size:19px;color:#666;letter-spacing:-0.03em;line-height:35px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:500;word-break:keep-all;}
+.cts682_wrap .object_wrap h3{margin-top:0;margin-bottom:32px;}
+.cts682_wrap .object_wrap .work_list{}
+.cts682_wrap .object_wrap .work_list .work_item{display:inline-block;position:relative;width:350px;height:300px;padding:44px 38px 44px 48px;background-color:#f8f8f8;vertical-align:top;}
+.cts682_wrap .object_wrap .work_list .work_item + .work_item{margin-left:calc((100% - 350px * 4) / 3);}
+.cts682_wrap .object_wrap .work_list .work_item:before{display:block;position:absolute;bottom:38px;right:38px;width:60px;height:60px;background-image:url(../images/contents/cts682_icon.png);background-size:cover;background-repeat:no-repeat;}
+.cts682_wrap .object_wrap .work_list .work_item:nth-child(1):before{background-position:calc(-60px * 0) 0;}
+.cts682_wrap .object_wrap .work_list .work_item:nth-child(2):before{background-position:calc(-60px * 1) 0;}
+.cts682_wrap .object_wrap .work_list .work_item:nth-child(3):before{background-position:calc(-60px * 2) 0;}
+.cts682_wrap .object_wrap .work_list .work_item:nth-child(4):before{background-position:calc(-60px * 3) 0;}
+.cts682_wrap .object_wrap .work_list .work_item .item_title{font-size:26px;color:#0e0e0e;letter-spacing:-0.03em;line-height:32px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;word-break:keep-all;}
+.cts682_wrap .object_wrap .work_list .work_item .item_text{margin-top:15px;font-size:17px;color:#444;letter-spacing:-0.03em;line-height:28px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:400;word-break:keep-all;}
+@media all and (max-width:1470px){
+    .cts682_wrap .object_wrap .top_text_box{padding-top:20px;padding-left:50vw;padding-bottom:250px;}
+    .cts682_wrap .object_wrap .top_text_box:before{height:150px;}
+    .cts682_wrap .object_wrap .top_text_box:after{left:-3vw;width:50vw;height:370px;}
+    .cts682_wrap .object_wrap .top_text_box .title{font-size:40px;}
+    .cts682_wrap .object_wrap .top_text_box .text{margin-top:20px;padding-right:0;font-size:18px;line-height:30px;}
+    .cts682_wrap .object_wrap .work_list .work_item{width:calc((100% - 30px) / 2);height:250px; padding:40px 30px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(n + 3){margin-top:30px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(2n){margin-left:30px;}
+    .cts682_wrap .object_wrap .work_list .work_item + .work_item{margin-left:0;}
+    .cts682_wrap .object_wrap .work_list .work_item:before{bottom:25px;right:35px;}
+    .cts682_wrap .object_wrap .work_list .work_item .item_title{font-size:24px;}
+    .cts682_wrap .object_wrap .work_list .work_item .item_text{font-size:16px;}
+}
+@media all and (max-width:1000px){
+    .cts682_wrap .object_wrap .top_text_box{padding-bottom:120px;}
+    .cts682_wrap .object_wrap .top_text_box:before{height:90px;}
+    .cts682_wrap .object_wrap .top_text_box:after{height:290px;}
+    .cts682_wrap .object_wrap .top_text_box .title{font-size:32px;line-height:38px;}
+    .cts682_wrap .object_wrap .top_text_box .text{height:162px;margin-top:20px;font-size:17px;line-height:27px;}
+    .cts682_wrap .object_wrap .work_list .work_item{width:calc((100% - 20px) / 2);padding:25px 20px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(n + 3){margin-top:20px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(2n){margin-left:20px;}
+    .cts682_wrap .object_wrap .work_list .work_item .item_title{font-size:22px;line-height:28px;}
+    .cts682_wrap .object_wrap .work_list .work_item .item_text{font-size:15px;line-height:23px;}
+    .cts682_wrap .object_wrap .work_list .work_item:before{bottom:20px;right:25px;width:50px;height:50px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(1):before{background-position:calc(-50px * 0) 0;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(2):before{background-position:calc(-50px * 1) 0;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(3):before{background-position:calc(-50px * 2) 0;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(4):before{background-position:calc(-50px * 3) 0;}
+}
+@media all and (max-width:640px){
+    .cts682_wrap .object_wrap .top_text_box{padding-top:220px;padding-left:0;padding-bottom:40px;}
+    .cts682_wrap .object_wrap .top_text_box:before{display:none;}
+    .cts682_wrap .object_wrap .top_text_box:after{top:0;left:0;width:100%;height:200px;}
+    .cts682_wrap .object_wrap .top_text_box .title{font-size:24px;}
+    .cts682_wrap .object_wrap .top_text_box .text{height:auto;margin-top:5px;font-size:16px;line-height:26px;}
+    .cts682_wrap .object_wrap h3{margin-bottom:15px;}
+    .cts682_wrap .object_wrap .work_list .work_item{width:100%;height:auto;padding-bottom:80px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(n + 3),
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(n + 2){margin-top:10px;}
+    .cts682_wrap .object_wrap .work_list .work_item:nth-child(2n){margin-left:0;}
+    .cts682_wrap .object_wrap .work_list .work_item .item_title{font-size:20px;line-height:26px;}
+}
+
+/* 발전기금재단 소개 > 재단소개 */
+.cts683_wrap .temp_map_box .info_map .add_box .add_item.add{width:65%;}
+.cts683_wrap .temp_map_box .info_map .add_box .add_item .add_desc br{display:none;}
+@media all and (max-width:1470px){
+    .cts683_wrap .temp_map_box .info_map .add_box .add_item.add{width:57%;}
+    .cts683_wrap .temp_map_box .info_map .add_box .add_item .add_desc br{display:inline;}
+}
+@media all and (max-width:1000px){
+    .cts683_wrap .temp_map_box .info_map .add_box .add_item.add{width:100%;}
+    .cts683_wrap .temp_map_box .info_map .add_box .add_item .add_desc br{display:none;}
+}
+
+
+/* 기부금 안내 > 기부금 종류 */
+.cts685_wrap .donation_top_box{padding:85px 100px 113px;background:url(../images/contents/cts685_top_box.jpg) center center / cover no-repeat;}
+.cts685_wrap .donation_top_box .donation_sub_title{font-size:25px;color:#fff;letter-spacing:0;line-height:29px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:600;text-shadow:4px 3px 6px rgba(7,37,62,0.5);}
+.cts685_wrap .donation_top_box .donation_title_box{position:relative;margin-top:53px;padding-left:23px;}
+.cts685_wrap .donation_top_box .donation_title_box:before{display:block;position:absolute;top:13px;left:0;width:2px;height:calc(100% - 26px);background-color:#fff;}
+.cts685_wrap .donation_top_box .donation_title_box .donation_big_title{margin-top:0;font-size:38px;color:#fff;letter-spacing:0;line-height:60px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:600;text-shadow:4px 3px 6px rgba(7,37,62,0.5);}
+.cts685_wrap .donation_top_box .donation_title_box .donation_big_title span{text-shadow:3px 3px 0 rgba(14,90,202,1), 3px 3px 6px rgba(7,37,62,0.5);}
+.cts685_wrap h3{margin-top:75px;}
+.cts685_wrap h3 + p{margin-top:40px;}
+@media all and (max-width:1470px){
+    .cts685_wrap .donation_top_box{padding:75px 80px 85px;}
+    .cts685_wrap .donation_top_box .donation_title_box{margin-top:30px}
+    .cts685_wrap h3{margin-top:50px;}
+    .cts685_wrap h3 + p{margin-top:0;}
+}
+@media all and (max-width:1000px){
+    .cts685_wrap .donation_top_box{padding:55px 40px;}
+    .cts685_wrap .donation_top_box .donation_sub_title{font-size:21px;line-height:25px;}
+    .cts685_wrap .donation_top_box .donation_title_box .donation_big_title{font-size:32px;line-height:48px;}
+    .cts685_wrap .donation_top_box .donation_title_box:before{top:9px;height:calc(100% - 18px);}
+}
+@media all and (max-width:640px){
+    .cts685_wrap .donation_top_box{padding:45px 15px 38px;}
+    .cts685_wrap .donation_top_box .donation_sub_title{font-size:18px;line-height:26px;word-break:keep-all;}
+    .cts685_wrap .donation_top_box .donation_title_box{margin-top:10px;padding-left:15px;}
+    .cts685_wrap .donation_top_box .donation_title_box .donation_big_title{font-size:22px;line-height:34px;}
+    .cts685_wrap h3{margin-top:30px;}
+}
+
+/* 기부금 안내 > 기부금 사용처 */
+.cts686_wrap img{border-radius:10px;}
+
+/* 기부 참여 > 참여 방법 */
+.cts690_wrap .temp_box.logo_type .box_inner{padding-bottom:90px;}
+.cts690_wrap h3{margin-top:90px;}
+.cts690_wrap h3 + p{margin-top:40px;}
+@media all and (max-width:1470px){
+    .cts690_wrap h3{margin-top:50px;}
+    .cts690_wrap h3 + p{margin-top:0;}
+}
+@media all and (max-width:640px){
+    .cts690_wrap h3{margin-top:30px;}
+}
+
+
+/* 기부자 예우 > 기부자예우 프로그램 > 기부자예우 프로그램 안내 */
+.cts702_wrap .donor_box{margin-bottom:38px;padding:58px 100px;border:1px solid #ddd;border-radius:10px;text-align:center;}
+.cts702_wrap .donor_box .donor_text{display:inline-block;position:relative;font-size:30px;color:#086dcd;letter-spacing:-0.03em;line-height:34px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:600;word-break:keep-all;}
+.cts702_wrap .donor_box .donor_text:before,
+.cts702_wrap .donor_box .donor_text:after{display:block;position:absolute;top:calc(50% - 29px);left:-65px;width:50px;height:58px;background:url(../images/contents/cts702_text_deco.png)center center / cover no-repeat;}
+.cts702_wrap .donor_box .donor_text:after{left:inherit;right:-65px;transform:rotateY(180deg);}
+@media all and (max-width:1470px){
+    .cts702_wrap .donor_box .donor_text{font-size:26px;}
+}
+@media all and (max-width:1000px){
+    .cts702_wrap .donor_box{padding:30px 80px;}
+    .cts702_wrap .donor_box .donor_text{font-size:22px;}
+    .cts702_wrap .donor_box .donor_text:before,
+    .cts702_wrap .donor_box .donor_text:after{top:calc(50% - 24px);width:39px;height:45px;}
+    .cts702_wrap .donor_box .donor_text:before{left:-50px;}
+    .cts702_wrap .donor_box .donor_text:after{right:-50px;}
+}
+@media all and (max-width:640px){
+    .cts702_wrap .donor_box{padding:15px 60px;}
+    .cts702_wrap .donor_box .donor_text{font-size:18px;line-height:24px;}
+    .cts702_wrap .donor_box .donor_text:before,
+    .cts702_wrap .donor_box .donor_text:after{top:calc(50% - 15px);width:26px;height:30px;}
+    .cts702_wrap .donor_box .donor_text:before{left:-30px;}
+    .cts702_wrap .donor_box .donor_text:after{right:-30px;}
+}
+
+
+/* 기부자 예우 > 기부자예우 프로그램 > 소득공제혜택 */
+.cts703_wrap .benefit_item{display:inline-block;width:100%;margin-top:85px;font-size:0;line-height:0;}
+.cts703_wrap .benefit_item:first-child{margin-top:0;}
+.cts703_wrap .benefit_item .item_bg{display:inline-block;width:600px;height:300px;background-position:center center;background-repeat:no-repeat;background-size:cover;border-top-right-radius:40px;vertical-align:top;}
+.cts703_wrap .benefit_item.item1 .item_bg{background-image:url(../images/contents/cts703_img01.jpg);}
+.cts703_wrap .benefit_item.item2 .item_bg{background-image:url(../images/contents/cts703_img02.jpg);}
+.cts703_wrap .benefit_item.item3 .item_bg{background-image:url(../images/contents/cts703_img03.jpg);}
+.cts703_wrap .benefit_item .item_inner{display:inline-block;width:calc(100% - 600px);padding:20px 0 0 40px;vertical-align:top;}
+.cts703_wrap .benefit_item .item_inner .text_box{margin-top:40px;padding:32px 40px;background-color:#f8f8f8;border-top-left-radius:40px;}
+.cts703_wrap .benefit_item .item_inner .text_box .item_text{min-height:116px;font-size:18px;color:#666;letter-spacing:-0.03em;line-height:30px;font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Helvetica,AppleSDGothicNeo,sans-serif;font-weight:500;}
+.cts703_wrap .benefit_item .item_inner .text_box .item_text .warning{margin-top:25px;}
+@media all and (max-width:1470px){
+    .cts703_wrap .benefit_item{margin-top:50px;}
+    .cts703_wrap .benefit_item .item_bg{width:40%;height:250px;}
+    .cts703_wrap .benefit_item .item_inner{width:60%;padding-left:30px;}
+    .cts703_wrap .benefit_item .item_inner .text_box{margin-top:30px;padding:25px 30px;}
+    .cts703_wrap .benefit_item .item_inner .text_box .item_text{min-height:105px;font-size:17px;}
+    .cts703_wrap .benefit_item .item_inner .text_box .item_text .warning{margin-top:10px;}
+}
+@media all and (max-width:1000px){
+    .cts703_wrap .benefit_item .item_bg{height:215px;}
+    .cts703_wrap .benefit_item .item_inner{padding:10px 0 0 20px;}
+    .cts703_wrap .benefit_item .item_inner .text_box{margin-top:20px;padding:20px;}
+    .cts703_wrap .benefit_item .item_inner .text_box .item_text{min-height:0;font-size:16px;line-height:26px;}
+}
+@media all and (max-width:640px){
+    .cts703_wrap .benefit_item{margin-top:30px;}
+    .cts703_wrap .benefit_item .item_bg{display:none;}
+    .cts703_wrap .benefit_item .item_inner{width:100%;padding:0;}
+    .cts703_wrap .benefit_item .item_inner .text_box{margin-top:0;padding:15px 20px;border-top-left-radius:20px;}
+    .cts703_wrap .benefit_item .item_inner .text_box .item_text{font-size:15px;line-height:24px;}
+}
+
+/* 기부자 예우 > 기부자예우 프로그램 > 소득공제혜택
+.cts715_wrap h3{margin-top:70px;}
+.cts715_wrap p{margin-top:45px;}
+.cts715_wrap .temp_box.prev_type{margin-top:20px;}
+@media all and (max-width:1470px){
+    .cts715_wrap h3{margin-top:50px;}
+    .cts715_wrap p{margin-top:0;}
+}
+@media all and (max-width:640px){
+    .cts715_wrap h3{margin-top:25px;}
+}
+*/
+
+/* 후원의집 > 참여방법 및 해택 > 후원의집 참여방법 안내 */
+.cts715_wrap .temp_box{margin-top:22px;}
+.cts715_wrap .temp_img_box.small_img_box.type1{}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner{display:block;}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .img_box{width:276px;}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .img_box .real_img{border-radius:10px;}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .temp_box{display:inline-block;width:calc(100% - 310px);margin-top:0 !important;margin-left:34px;border-radius:0;vertical-align:top;box-sizing:border-box;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list{padding:0;}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box .step_list .step_item .title_box:before{border-radius:10px;}
+.cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box .step_list .step_item .title_box .title{text-align:center;}
+@media all and (min-width:1471px){
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .temp_box.text_type .desc_box{padding:33px 44px;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item{width:160px;margin-left:68px;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item:nth-child(n+4),
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item:nth-child(n+5){margin-top:0;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item:nth-child(5n+1){margin-left:0;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item:after{display:block;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box[data-row='4'] .step_list .step_item:nth-child(5n):after{display:none;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .auto_step_box .step_list .step_item .title_box{padding:29px 14px;}
+
+}
+@media all and (max-width:1470px) {
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .temp_box.text_type .desc_box{padding:25px 40px;}
+}
+@media all and (max-width:1000px) {
+    .cts715_wrap .temp_img_box.small_img_box.type1{margin-top:50px;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .img_box{display:block;margin:0 auto;height:286px;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .temp_box{width:100%;margin-top:40px !important;margin-left:0;}
+}
+@media all and (max-width:640px) {
+    .cts715_wrap .temp_img_box.small_img_box.type1{margin-top:30px;}
+    .cts715_wrap .temp_img_box.small_img_box.type1 .box_inner .img_box{width:220px;height:229px;}
+}
+
+/* 기부자 예우 > 기부자예우 프로그램 > 소득공제혜택 */
+.cts716_wrap .promo_item{font-size:0;line-height:0;}
+.cts716_wrap .promo_item img{border-radius:10px;}
+
+/* (주)한신정보기술 권나람 사원 추가 - 24.08.07 */
+/* 기부자 예우 > 기부자예우 프로그램 > 기부자예우 프로그램*/
+.cts702_wrap .table_scroll > .table thead tr th{word-break:keep-all;}
+.cts702_wrap .table_scroll > .table tbody tr td:first-child{word-break:keep-all;text-align:left;}
+.cts702_wrap .table_scroll > .table tbody tr td > .text{font-size:17px;line-height:25px;word-break:keep-all;}
+.cts702_wrap .table_scroll > .table tbody tr td > .bu > li{font-size:17px;line-height:26px;}
+.cts702_wrap .table_scroll > .table tbody tr td > .bu > li:before{top:11px;}
+@media all and (max-width:1470px) {
+    .cts702_wrap .table_scroll > .table tbody tr td > .text{font-size:16px;line-height:22px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li{font-size:16px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li:before{top:11px;}
+}
+@media all and (max-width:1000px) {
+    .cts702_wrap .table_scroll > .table tbody tr td > .text{font-size:15px;line-height:20px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li{padding-left:10px;font-size:15px;line-height:24px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li:before{top:10px;width:3px;height:3px;}
+}
+@media all and (max-width:640px) {
+    .cts702_wrap .table_scroll > .table tbody tr td > .text{font-size:14px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li{font-size:14px;line-height:20px;}
+    .cts702_wrap .table_scroll > .table tbody tr td > .bu > li:before{top:9px;}
+}
+
+.cts685_wrap .temp_box{}
+.cts685_wrap .temp_box.gray{background-color:#f7f7f7;}
+.cts685_wrap .temp_box.gray + .temp_box.gray{margin-top:80px;}
+.cts685_wrap .temp_box.gray .box_inner{display:block;width:100%;padding:75px 80px;font-size:0;line-height:0;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item{display:inline-block;position:relative;width:calc((100% - 80px) / 2);margin-right:80px;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item:last-child{margin-right:0;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type{display:block;position:relative;width:100%;border:1px solid #ddd;border-radius:8px;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type:before{display:block;position:absolute;bottom:-35px;left:calc((100% - 27px) / 2);width:27px;height:12px;background:url(/site/public/images/template/step_box_arrow.png) no-repeat left top;content:'';box-sizing:border-box;transform:rotate(90deg);}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{display:block;width:100%;padding:30px;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title{background-color:#e6f0fa;border-radius:8px 8px 0 0;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{border-top:1px solid #ddd;background-color:#fff;border-radius:0 0 8px 8px;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title .title{display:inline-block;font-size:22px;color:#000;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text{display:inline-block;font-size:19px;color:#555;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use{display:block;position:relative;width:100%;margin-top:60px;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item{display:block;overflow:hidden;position:relative;width:100%;border:1px solid #ddd;border-radius:8px;font-size:0;line-height:0;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item + .use_item{margin-top:10px;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title,
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{display:inline-block;padding:10px 15px;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title{width:150px;background-color:#e6f0fa;text-align:center;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{width:calc(100% - 150px);border-left:1px solid #ddd;background-color:#fff;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title .title,
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{display:inline-block;font-size:18px;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title .title{color:#000;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{color:#555;}
+@media all and (min-width:1001px) {
+    .cts685_wrap .temp_box.gray .box_inner .donate_item{display:inline-flex;flex-wrap:wrap;}
+}
+@media all and (max-width:1470px) {
+    .cts685_wrap .temp_box.gray .box_inner{padding:70px 5vw;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item{width:calc((100% - 5vw) / 2);margin-right:5vw;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{padding:22px 10px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title .title{font-size:20px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text{font-size:18px;line-height:28px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title{width:30%;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{width:70%;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{padding:10px 5px 10px 10px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title .title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{font-size:17px;line-height:28px;}
+}
+@media all and (max-width:1000px) {
+    .cts685_wrap .temp_box.gray .box_inner{padding:50px 4vw;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item{width:calc((100% - 4vw) / 2);margin-right:4vw;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type:before{bottom:-30px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{padding:18px 5px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{display:block;width:100%;padding:10px 5px;text-align:center;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{border-left:none;border-top:1px solid #ddd;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title .title{font-size:18px;line-height:28px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text{font-size:16px;line-height:26px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use{margin-top:50px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title .title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{font-size:16px;line-height:26px;}
+}
+@media all and (max-width:800px) {
+    .cts685_wrap .temp_box.gray .box_inner .donate_item{display:block;width:100%;margin-right:0;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item + .donate_item{margin-top:50px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{padding:15px 10px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text > br{display:none;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item + .use_item{margin-top:15px;}
+}
+@media all and (max-width:640px) {
+    .cts685_wrap .temp_box.gray .box_inner{padding:35px 15px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item + .donate_item{margin-top:30px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{padding:13px 10px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title .title{font-size:17px;line-height:26px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text{font-size:15px;line-height:24px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use{margin-top:30px;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type:before{bottom:-28px;transform:scale(0.8) rotate(90deg);transform-origin:center top;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{font-size:15px;line-height:24px;}
+}
+
+/*
+.cts685_wrap .temp_box.gray .box_inner{display:block;width:100%;padding:75px 80px;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item{display:block;position:relative;width:100%;font-size:0;line-height:0;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type{display:inline-block;position:relative;width:500px;margin-right:80px;border:1px solid #ddd;border-radius:8px;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type:before{display:block;position:absolute;top:calc(50% - 6px);right:-55px;width:27px;height:12px;background:url(/site/public/images/template/step_box_arrow.png) no-repeat left top;content:'';box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use{display:inline-block;width:calc(100% - 580px);position:relative;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title,
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{display:block;position:relative;width:100%;padding:30px;font-size:0;line-height:0;box-sizing:border-box;text-align:center;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title{height:90px;background-color:#e6f0fa;border-radius:8px 8px 0 0;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{border-top:1px solid #ddd;background-color:#fff;border-radius:0 0 8px 8px;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_title .title{display:inline-block;position:relative;font-size:22px;color:#000;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc .text{display:inline-block;position:relative;top:50%;font-size:20px;color:#555;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;transform:translateY(-50%);}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use{}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item{display:block;overflow:hidden;position:relative;width:100%;border:1px solid #ddd;border-radius:8px;font-size:0;line-height:0;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item + .use_item{margin-top:10px;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title{display:inline-block;width:150px;padding:10px 15px;background-color:#e6f0fa;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_title .title{display:inline-block;font-size:20px;color:#000;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc{display:inline-block;width:calc(100% - 150px);padding:10px 15px;border-left:1px solid #ddd;background-color:#fff;vertical-align:top;box-sizing:border-box;}
+.cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item .use_desc .text{display:inline-block;font-size:18px;color:#555;line-height:30px;letter-spacing:-0.03em;font-weight:700;font-family:'WantedSans';word-break:keep-all;vertical-align:top;box-sizing:border-box;}
+@media all and (min-width:1001px) {
+    .cts685_wrap .temp_box.gray .box_inner .donate_item{display:flex;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type{display:inline-flex;flex-direction:column;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_type .type_desc{height:100%;}
+    .cts685_wrap .temp_box.gray .box_inner .donate_item .donate_use .use_item{display:flex;}
+}*/
+
+/* ㈜ 한신정보기술 이재홍 추가 - 2024.08.12 */
+/* 발전기금재단 소개 > 이사장 인사말 */
+.president_wrap{display:block;position:relative;width:100%;padding-left:156px;}
+.president_wrap:before{display:block;position:absolute;top:0;left:0;width:100%;height:470px;background:linear-gradient(to bottom,#eaf5fe 40%,#fff)top center / cover no-repeat;border-radius:0 140px 0 140px;}
+.president_wrap .president_top_box{position:relative;padding-top:126px;}
+.president_wrap .president_top_box .president_img{position:absolute;top:-58px;right:117px;max-width:fit-content;max-height:fit-content;}
+.president_wrap .president_top_box .president_title_box{position:relative;}
+.president_wrap .president_top_box .president_title_box:before{display:block;position:absolute;top:-60px;left:-60px;width:108px;height:93px;background:url(/site/public/images/template/president_top_deco.png) center center / cover no-repeat;}
+.president_wrap .president_top_box .president_title_box .president_title{position:relative;font-size:40px;color:#292929;letter-spacing:-0.03em;line-height:54px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:700;}
+.president_wrap .president_top_box .president_title_box .president_title .title_point{width:100%;color:#0e5aca;}
+.president_wrap .president_text_box{position:relative;margin-top:49px;padding-left:41px;padding-right:170px;}
+.president_wrap .president_text_box:before{display:block;position:absolute;top:11px;left:1px;width:1px;height:calc(100% - 20px);background-color:#839ab9;}
+.president_wrap .president_text_box .president_sub_title{margin-bottom:46px;padding-left:2px;padding-right:510px;font-size:20px;color:#073673;letter-spacing:-0.03em;line-height:36px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:700;word-break:keep-all;}
+.president_wrap .president_text_box .president_text{font-size:18px;color:#666;letter-spacing:-0.03em;line-height:30px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:500;word-break:keep-all;}
+.president_wrap .president_sign_box{margin-top:47px;padding-left:41px;padding-right:175px;text-align:right;}
+.president_wrap .president_sign_box .sign_text{margin-top:7px;margin-right:24px;font-size:24px;color:#000;letter-spacing:-0.03em;line-height:28px;font-family:'WantedSans', 'Malgun Gothic', '맑은 고딕', Dotum, '돋움', Helvetica, AppleSDGothicNeo, sans-serif;font-weight:600;vertical-align:top;word-break:keep-all;}
+.president_wrap .president_sign_box .sign_img{vertical-align:top;}
+@media all and (max-width:1470px){
+    .president_wrap{padding-left:100px;}
+    .president_wrap .president_top_box{padding-top:105px;}
+    .president_wrap .president_top_box .president_img{top:20px;right:100px;width:400px;}
+    .president_wrap .president_top_box .president_title_box:before{top:-50px;left:-50px;width:90px;height:78px;}
+    .president_wrap .president_top_box .president_title_box .president_title{font-size:34px;line-height:48px;}
+    .president_wrap .president_text_box{margin-top:50px;padding-right:100px;}
+    .president_wrap .president_text_box .president_sub_title{padding-right:410px;font-size:18px;line-height:32px;}
+    .president_wrap .president_text_box .president_text{font-size:16px;line-height:28px;}
+    .president_wrap .president_sign_box{margin-top:25px;padding-right:100px;}
+    .president_wrap .president_sign_box .sign_text{margin-top:3px;font-size:22px;}
+}
+@media all and (max-width:1235px){
+    .president_wrap{padding-left:50px;}
+    .president_wrap .president_top_box{padding-top:70px;}
+    .president_wrap .president_top_box .president_img{right:50px;width:365px;}
+    .president_wrap .president_top_box .president_title_box:before{top:-30px;left:-30px;width:70px;height:60px;}
+    .president_wrap .president_text_box{margin-top:30px;padding-left:30px;padding-right:50px;}
+    .president_wrap .president_text_box .president_sub_title{padding-right:340px;}
+}
+@media all and (max-width:1000px){
+    .president_wrap{padding-left:40px;}
+    .president_wrap .president_top_box{padding-top:60px;}
+    .president_wrap .president_top_box .president_img{top:40px;width:320px;}
+    .president_wrap .president_top_box .president_title_box .president_title{font-size:28px;line-height:42px;}
+    .president_wrap .president_text_box{padding-left:20px; padding-right:40px;}
+    .president_wrap .president_text_box .president_sub_title{margin-bottom:25px;padding-right:310px;font-size:17px;line-height:27px;}
+    .president_wrap .president_sign_box{margin-top:15px;}
+    .president_wrap .president_sign_box .sign_text{font-size:18px;line-height:22px;}
+    .president_wrap .president_sign_box .sign_img{width:120px;}
+}
+@media all and (max-width:800px){
+    .president_wrap{padding-left:0;}
+    .president_wrap .president_top_box{padding-top:40px;}
+    .president_wrap .president_top_box .president_img{top:-15px;right:calc(50% - 120px);width:290px;}
+    .president_wrap .president_top_box .president_title_box{padding:0 3%;}
+    .president_wrap .president_top_box .president_title_box .president_title{width:100%;text-align:left;}
+    .president_wrap .president_top_box .president_title_box:before{display:none;}
+    .president_wrap .president_text_box{padding:0 3%;text-align:left;}
+    .president_wrap .president_text_box:before{display:none;}
+    .president_wrap .president_text_box .president_sub_title{padding-right:0;}
+    .president_wrap .president_sign_box{margin-top:50px;padding:0 3%;text-align:center;}
+}
+@media all and (max-width:640px){
+    .president_wrap:before{border-radius:0 50px;}
+    .president_wrap .president_top_box{padding-top:25px;}
+    .president_wrap .president_top_box .president_img{right:calc(50% - 100px);width:250px;}
+    .president_wrap .president_top_box .president_title_box .president_title{font-size:20px;line-height:30px;}
+    .president_wrap .president_text_box{margin-top:20px;}
+    .president_wrap .president_text_box .president_sub_title{margin-bottom:20px;font-size:16px;line-height:24px;}
+    .president_wrap .president_text_box .president_text{font-size:15px;line-height:25px;}
+    .president_wrap .president_sign_box{margin-top:20px;}
+    .president_wrap .president_sign_box .sign_text{margin-top:0;margin-right:15px;font-size:16px;}
+    .president_wrap .president_sign_box .sign_img{width:100px;}
+}

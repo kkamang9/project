@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="사이트 제목">
+    <meta name="keywords" content="키워드 입력">
+    <meta name="description" content="사이트 상세설명">
+    <meta name="format-detection" content="telephone=no">
+    <meta property="og:site_name" content="사이트명 표시">
+    <meta property="og:url" content="url 표기">
+    <meta property="og:image" content="대표 이미지 경로">
+    <meta property="og:title" content="페이지 제목 표시">
+    <meta property="og:description" content="페이지 설명 표시">
+    <meta property="og:type" content="website">
+    <link rel="shortcut icon" href="/common/images/favicon.png">
+    <link rel="icon" href="/common/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="./css/font.css" />
+    <link rel="stylesheet" type="text/css" href="./css/campusmap.css" />
+    <script src="./js/jquery-1.12.4.HS-20200709.min.js"></script>
+    <script src="./js/jquery.screen.js"></script>
+    <!--<script src="/common/js/slick.min.custom.1.8.0.12.js"></script>-->
+    <!--<script src="/common/js/slick.extensions.min.js"></script>-->
+    <script src="./js/common.js"></script>
+    <script src="./js/campusmap.js"></script>
+    <title>한국교원대 - 캠퍼스맵</title>
+</head>
+<body id="sub" class="sub www pageXX">
+<div id="wrapper">
+    <header id="header">
+        <div class="header_box">
+            <h1 class="logo">
+                <a href="/www/index.do" class="logo_link">
+                    <i class="logo_con con_img">한국교원대학교 Korea National University of Education</i>
+                    <span class="logo_con con_text">캠퍼스맵</span>
+                </a>    <!--//logo_link-->
+            </h1>    <!--//logo-->
+            <div class="header_link">
+                <span class="temp_btn hover icon_type medium arrow">
+                    <a href="/www/contents.do?key=447" target="_blank" title="새창" rel="noopener noreferrer" class="btn">오시는 길</a>
+                </span>
+            </div>    <!--//header_link-->
+        </div>
+    </header>    <!--//#header-->
+    <div id="container">
+        <div class="map_content_wrap">
+            <div class="map_info_wrap">
+                <form action="javascript:void(0);">
+                    <fieldset>
+                        <legend>캠퍼스맵 시설 검색영역</legend>
+                        <div class="search_box">
+                            <div class="input_box">
+                                <input type="text" title="시설명 검색" placeholder="시설명을 입력하세요." id="mapSearch" />
+                            </div>    <!--//input_box-->
+                            <div class="button_box submit">
+                                <button type="button" title="검색 버튼" class="btn">검색</button>
+                            </div>    <!--//button_box-->
+                        </div>    <!--//search_box-->
+                        <div class="databox"></div>
+                        <div class="databox2"></div>
+                        <div class="info_box">
+                            <div class="info_list">
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_1.jpg" data-latitude="36.608672909948936" data-longtitude="127.35723940819275" data-description="우리 대학의 중심 건물로, 총장님을 비롯한 여러 교수들과 직원들이 근무하는 곳입니다. 개교 당시 각종 행정부서는 교양학관에 있었으나, 대학본부가 세워진 후 이곳으로 모두 이전하여 본격적인 대학 본부의 기능을 수행하고 있습니다." data-listtext="true" class="link">
+                                        <i class="number"><span>1</span></i>
+                                        <em class="b_c">1</em>
+                                        <span class="text">대학본부</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>학사관리과</li>
+                                            <li>재무과</li>
+                                            <li>사무국장실</li>
+                                            <li>입학인재관리과</li>
+                                            <li>시설관리과</li>
+                                            <li>공직협사무실</li>
+                                            <li>총장실</li>
+                                            <li>입학학생처장실</li>
+                                            <li>기획부처장실</li>
+                                            <li>연구지원부장실</li>
+                                            <li>대외협력과</li>
+                                            <li>입학학생부처장실</li>
+                                            <li>특수학교설립추진단</li>
+                                            <li>총무과</li>
+                                            <li>부총장실</li>
+                                            <li>교수지원과</li>
+                                            <li>산학협력단</li>
+                                            <li>교수부장실</li>
+                                            <li>기획처장실</li>
+                                            <li>기획평가과</li>
+                                            <li>농협</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_2.jpg" data-latitude="36.60942355009409" data-longtitude="127.36083084990504" data-description="1984년 우리 대학 최초로 건설된 건물로, 처음으로 입시 면접이 치러진 곳입니다. 이 앞에서 1985년 첫 입학식이 열렸으며, 이곳의 강의실에서 우리 대학의 역사적인 첫 수업이 1985년 3월 4일 시작되었습니다. 2023년 리모델링이 진행되었으며, 주로 교직 수업이 진행되는 공간입니다." data-listtext="true" class="link">
+                                        <i class="number"><span>2</span></i>
+                                        <em class="b_c">6</em>
+                                        <span class="text">교양학관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>한국지구과학회및한국지구과학올림피아드사무국</li>
+                                            <li>한국근대교육사연구센터</li>
+                                            <li>특수교육과사무실</li>
+                                            <li>제4대학행정실</li>
+                                            <li>한국어문교육연구소</li>
+                                            <li>인문사회과학교육연구소</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_3.jpg" data-latitude="36.610524276571255" data-longtitude="127.36113218591568" data-description="2006년 준공된 건물로, 초등교육과, 유아교육과, 일반사회교육과, 지리교육과, 역사교육과의 수업, 연구, 행정이 이루어지는 공간입니다." data-listtext="true" class="link">
+                                        <i class="number"><span>3</span></i>
+                                        <em class="b_c">57</em>
+                                        <span class="text">종합교육관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>초등교육과사무실</li>
+                                            <li>일반사회과사무실</li>
+                                            <li>윤리교육과사무실</li>
+                                            <li>유아교육과사무실</li>
+                                            <li>지리교육과사무실</li>
+                                            <li>1대학행정실</li>
+                                            <li>역사교육과사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_4.jpg" data-latitude="36.610422240782185" data-longtitude="127.35986025243227" data-description="1985년 준공된 건물로, 교육학과, 국어교육과, 영어교육과, 독어교육과, 불어교육과, 중국어교육과의 수업, 연구, 행정이 이루어지는 공간입니다. 기숙사와 가장 가까운 건물로, 교양학관이나 학생회관을 갈 때 지나가는 통로로도 이용됩니다." data-listtext="true" class="link">
+                                        <i class="number"><span>4</span></i>
+                                        <em class="b_c">7</em>
+                                        <span class="text">인문과학관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>영어과사무실</li>
+                                            <li>독어과사무실</li>
+                                            <li>불어과사무실</li>
+                                            <li>한국어문교육연구소</li>
+                                            <li>중국어교육과사무실</li>
+                                            <li>교육학과사무실</li>
+                                            <li>제2대학 행정실</li>
+                                            <li>국어과사무실</li>
+                                            <li>교육과학연구소</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_5.jpg" data-latitude="36.60859794447126" data-longtitude="127.36192518214301" data-description="1987년 준공된 건물로, 물리교육과, 화학교육과, 생물교육과, 지구과학교육과의 수업, 연구, 행정이 이루어지는 공간입니다." data-listtext="true" class="link">
+                                        <i class="number"><span>5</span></i>
+                                        <em class="b_c">9</em>
+                                        <span class="text">자연과학관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>리모델링 공사중</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_6.jpg" data-latitude="36.60802721960549" data-longtitude="127.36217400481262" data-description="1996년 준공된 건물로, 수학교육과, 가정교육과의 수업, 연구, 행정이 이루어지는 공간이며, 신문방송사가 자리하고 있습니다." data-listtext="true" class="link">
+                                        <i class="number"><span>6</span></i>
+                                        <em class="b_c">17</em>
+                                        <span class="text">응용과학관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>신문방송사</li>
+                                            <li>히로시마대학한국센터</li>
+                                            <li>가정교육과 사무실</li>
+                                            <li>초등교육연구소</li>
+                                            <li>수학교육과사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_7.jpg" data-latitude="36.60922522645148" data-longtitude="127.36159837758719" data-description="2011년 준공된 건물로, 컴퓨터교육과, 기술교육과, 환경교육과의 수업, 연구, 행정이 이루어지는 공간입니다." data-listtext="true" class="link">
+                                        <i class="number"><span>7</span></i>
+                                        <em class="b_c">59</em>
+                                        <span class="text">융합과학관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>환경교육과사무실</li>
+                                            <li>컴퓨터교육과 사무실</li>
+                                            <li>기술교육과사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_8.jpg" data-latitude="36.60732869125796" data-longtitude="127.3614805465023" data-description="1985년 준공된 건물로, 음악교육과의 수업, 연구, 행정이 이루어지는 공간입니다. 연주홀이 있어 매 학기 음악교육과의 정기 연주회가 진행됩니다." data-listtext="true" class="link">
+                                        <i class="number"><span>8</span></i>
+                                        <em class="b_c">10</em>
+                                        <span class="text">음악관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>음악교육과사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_9.jpg" data-latitude="36.607757451803195" data-longtitude="127.3604989479749" data-description="1986년 준공된 건물로, 미술교육과의 수업, 연구, 행정이 이루어지는 공간입니다. 매 학기 미술교육과의 정기 전시회가 진행됩니다." data-listtext="true" class="link">
+                                        <i class="number"><span>9</span></i>
+                                        <em class="b_c">11</em>
+                                        <span class="text">미술관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>미술교육과사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_10.jpg" data-latitude="36.61009930296601" data-longtitude="127.3623485632232" data-description="1987년 준공된 건물로, 체육교육과와 초등교육과의 체육활동이 이루어지는 공간입니다." class="link">
+                                        <i class="number"><span>10</span></i>
+                                        <em class="b_c">12</em>
+                                        <span class="text">체육관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_11.jpg" data-latitude="36.60984008943542" data-longtitude="127.35792103423123" data-description="1989년 준공된 건물로, 주로 대학원(일반, 교육, 교육정책전문) 수업, 연구, 행정이 이루어지는 공간입니다." data-homepage="https://knue.ac.kr/grad/index.do" data-listtext="true" class="link">
+                                        <i class="number"><span>11</span></i>
+                                        <em class="b_c">13</em>
+                                        <span class="text">대학원</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>대학원총학생회</li>
+                                            <li>행정실</li>
+                                            <li>교육정책연구소</li>
+                                            <li>KOICA-Research Room</li>
+                                            <li>교육정책대학원과사무실</li>
+                                            <li>출판부</li>
+                                            <li>교육대학원총학생회</li>
+                                            <li>환경학교육연구소</li>
+                                            <li>전국대학노조한국교원대지부사무실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_12.jpg" data-latitude="36.61180839422309" data-longtitude="127.35739638783483" data-description="2008년 준공된 건물로, 전국에서 각 연수과정에 들어오는 연수생들의 기숙사 역할을 하고 있습니다." class="link">
+                                        <i class="number"><span>12</span></i>
+                                        <em class="b_c">65</em>
+                                        <span class="text">함덕당</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_13.jpg" data-latitude="36.612478190740816" data-longtitude="127.35716194731116" data-description="1999년 준공된 건물로, 전국의 유치원, 초·중등학교, 교육행정기관의 중견교육자를 대상으로 창의적이고 선진적인 연수 과정을 개발·운영하며, 국내 연수기관의 시범적·중추적인 역할을 합니다." data-homepage="https://tot.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>13</span></i>
+                                        <em class="b_c">26</em>
+                                        <span class="text">교원연수관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>교육연수부</li>
+                                            <li>연구개발센터</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_14.jpg" data-latitude="36.61070618350983" data-longtitude="127.35758691135788" data-description="2008년 준공된 건물로, 교육연구원과 교육정보원이 자리한 곳입니다. 우리학교의 3대 기능중 하나인 연구 기능을 수행하고 교사들의 연구 역량 함양을 위한 활동 공간이며, 또한 다양한 융합교육과 컴퓨터 실습실을 활용한 IT교육이 진행되며, 학내 전산 시스템이 모여 있는 공간입니다." data-homepage="https://ier.knue.ac.kr/www/main" data-listtext="true" class="link">
+                                        <i class="number"><span>14</span></i>
+                                        <em class="b_c">58</em>
+                                        <span class="text">교육연구관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>교육연구원</li>
+                                            <li>융합교육연구소</li>
+                                            <li>교과교육공동연구소</li>
+                                            <li>창의교육거점센터</li>
+                                            <li>탄소중립센터</li>
+                                            <li>교육정보원</li>
+                                            <li>학교경영연구소</li>
+                                            <li>통일다문화교육연구소</li>
+                                            <li>교양교육센터</li>
+                                            <li>교육과정연구소</li>
+                                            <li>컴퓨터종합정보지원실</li>
+                                            <li>학교인구안전교육연구소</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_15.jpg" data-latitude="36.61355118932649" data-longtitude="127.35694612820882" data-description="" data-listtext="true" class="link">
+                                        <i class="number"><span>15</span></i>
+                                        <em class="b_c">24</em>
+                                        <span class="text">국제연수관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>원격연수지원센터</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_16.jpg" data-latitude="36.61345496298821" data-longtitude="127.35748223298322" data-description="1998년 준공된 건물로, 주로 유학생들의 기숙사로 활용되고 있습니다." class="link">
+                                        <i class="number"><span>16</span></i>
+                                        <em class="b_c">25</em>
+                                        <span class="text">어울림관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_17.jpg" data-latitude="36.60892583654596" data-longtitude="127.35853715720627" data-description="1988년 구도서관 준공 이후, 2018년 현재의 건물로 신축 준공되었습니다. 지하 R층과 지상 6층까지 총 7개 층에는 주제별 자료실과 해다미 정원, 힐링카페, 시민휴, 청람아트홀, 그룹스터디룸 등 수요자 중심의 공간으로 조성되어 있습니다. 도서관은 대학의 미래교육을 지원하는 연구학습 및 복합문화공간으로서의 역할을 하고있습니다. 1층의 실내 정원은 대학 구성원의 교류 공간으로 활용되고 있습니다." data-homepage="https://lib.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>17</span></i>
+                                        <em class="b_c">68</em>
+                                        <span class="text">도서관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>인문과학자료실</li>
+                                            <li>시민열람실</li>
+                                            <li>공감 3</li>
+                                            <li>플레이 라운지</li>
+                                            <li>대출반납데스크</li>
+                                            <li>특수자료실</li>
+                                            <li>아동학습지원실</li>
+                                            <li>시민휴(休</li>
+                                            <li>복합문화공간(로비</li>
+                                            <li>Information Commons</li>
+                                            <li>청람아트홀</li>
+                                            <li>창의열람실</li>
+                                            <li>청람교사자료실</li>
+                                            <li>사회과학자료실</li>
+                                            <li>소공연장</li>
+                                            <li>라이브러리라운지</li>
+                                            <li>보존서고</li>
+                                            <li>힐링카페</li>
+                                            <li>교육학자료실</li>
+                                            <li>복사실</li>
+                                            <li>자연예체능자료실</li>
+                                            <li>자율학습실</li>
+                                            <li>신착자료실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_18.jpg" data-latitude="36.60724247551455" data-longtitude="127.3571992796576" data-description="1987년 미술관 3층의 작은 연구실에서 조촐하게 개관한 교육박물관은 이후 대학본부 5층을 거쳐 2009년에 지금의 웅장하고 아름다운 모습을 가지게 되었습니다. 전국 최대의 교육박물관이자 대학박물관인 교육박물관은 5만 점 이상의 교육 역사 자료를 비롯해 고고, 역사, 민속 분야의 다양한 유물을 소장하고 있는 교육사 전문 박물관입니다. 한국 교육의 역사를 한눈에 살필 수 있는 상설전시실과 체험실, 늘 새로운 전시가 함께하는 기획전시실이 있습니다." data-homepage="https://museum.knue.ac.kr/" class="link">
+                                        <i class="number"><span>18</span></i>
+                                        <em class="b_c">60</em>
+                                        <span class="text">교육박물관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li></li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="" data-latitude="36.6129431480504" data-longtitude="127.36061250913194" data-description="교원양성 과정 중 하나인 사도교육과정이 진행되는 공간입니다. 최근 준공된 다정관을 포함하여 기숙사 공간이 있으며, 사도교육원 및 기숙사 식당이 있습니다." data-homepage="https://rec.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>19</span></i>
+                                        <em class="b_c">31</em>
+                                        <span class="text">사도교육원</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>사도교육원</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_20.jpg" data-latitude="36.60767962034358" data-longtitude="127.3586683102557" data-description="입학식, 졸업식, 학생총회, 동아리 공연 등의 대규모 행사와 유명 인사들의 초청 강연이 열리는 곳으로, 학교 구성원들에게 의미가 큰 건물입니다. 우리 대학 건물 중 착공부터 완공까지 걸린 시간이 가장 오래 걸린 건물입니다." class="link">
+                                        <i class="number"><span>20</span></i>
+                                        <em class="b_c">19</em>
+                                        <span class="text">교원문화관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_21.jpg" data-latitude="36.60844026593346" data-longtitude="127.35968617819807" data-description="동아리 활동을 위한 동아리실 이외에도 식당, 매점, 서점, 우체국 등이 자리 잡고 있습니다. 1층에 위치한 소극장에는 각종 동아리 공연이 개최되며, 학생 총회뿐 아니라 여러 학과의 행사, 명사 초청 강의들이 열려 학생들의 문화생활 중심지 역할을 합니다." data-listtext="true" class="link">
+                                        <i class="number"><span>21</span></i>
+                                        <em class="b_c">3</em>
+                                        <span class="text">학생회관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>우편취급국</li>
+                                            <li>소극장</li>
+                                            <li>총동문회</li>
+                                            <li>교지편집위원실</li>
+                                            <li>느티헌</li>
+                                            <li>다목적공연장</li>
+                                            <li>매화헌</li>
+                                            <li>카페테리아</li>
+                                            <li>매점</li>
+                                            <li>학생지원과</li>
+                                            <li>총학생회실</li>
+                                            <li>모성보호실</li>
+                                            <li>예비군중대장실</li>
+                                            <li>구내서점</li>
+                                            <li>보건진료실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_22.jpg" data-latitude="36.60795659464988" data-longtitude="127.35945759204232" data-description="2022년 준공된 건물로, 학생들의 동아리 활동을 위한 공간이 존재합니다." data-listtext="true" class="link">
+                                        <i class="number"><span>22</span></i>
+                                        <em class="b_c">46</em>
+                                        <span class="text">제2학생회관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>동아리실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_23.jpg" data-latitude="36.61044170857462" data-longtitude="127.35863359539361" data-description="교수들의 연구와 회의를 위한 공간으로, 각종 학술 세미나와 워크숍이 열리는 곳입니다." data-listtext="true" class="link">
+                                        <i class="number"><span>23</span></i>
+                                        <em class="b_c">2</em>
+                                        <span class="text">교수회관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>패컬티라운지</li>
+                                            <li>대학평의원회</li>
+                                            <li>교수회평의회</li>
+                                        </ul>
+                                    </div>
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_24.jpg" data-latitude="36.6125152526897" data-longtitude="127.35606947323834" data-description="" data-homepage="https://school.cbe.go.kr/ahsknue-h/M01" class="link">
+                                        <i class="number"><span>24</span></i>
+                                        <em class="b_c">D01</em>
+                                        <span class="text">부설고등학교</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_25.jpg" data-latitude="36.60677614740688" data-longtitude="127.36018980451159" data-description="학교 천문학 연구와 교육을 위한 시설로, 학생들과 지역 주민들에게 천문 관측 기회를 제공합니다." class="link">
+                                        <i class="number"><span>25</span></i>
+                                        <em class="b_c">16</em>
+                                        <span class="text">청람천문대</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_26.jpg" data-latitude="36.60544038188026" data-longtitude="127.35938723730305" data-description="사라진 우리 황새를 복원하자는 뜻에서 1996년 우리 대학 교수들을 중심으로 설립되었습니다. 이후 2002년에 국내 최초로 황새 자연번식에 성공하였고, 2013년에는 충남 예산군에 황새생태원이 완공된 후 황새 60마리를 임대하기도 했으며, 2014년에는 총 128마리의 황새를 이곳에서 사육하고 있습니다. 학생들 사이에서는 동아리 ‘황새야’가 황새 복원사업을 위한 홍보행사, 교육활동 등을 활발히 하고 있습니다." data-homepage="https://www.stork.or.kr/" class="link">
+                                        <i class="number"><span>26</span></i>
+                                        <em class="b_c">69</em>
+                                        <span class="text">청람황새공원</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_27.jpg" data-latitude="36.60573286566321" data-longtitude="127.35726776329525" data-description="2024년 다목적실로 보수 리모델링되어 학내 구성원뿐 아니라 지역민·연구원의 다양한 프로그램 운영에 적합한 개방형 소·중·대형 세미나실이 구축되어 있습니다." data-listtext="true" class="link">
+                                        <i class="number"><span>27</span></i>
+                                        <em class="b_c">51</em>
+                                        <span class="text">다락관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>중형 세미나실</li>
+                                            <li>체력단련실</li>
+                                            <li>발코니</li>
+                                            <li>소형 세미나실 1</li>
+                                            <li>소형 세미나실 2</li>
+                                            <li>멀티형 세미나실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_28.jpg" data-latitude="36.61194353699014" data-longtitude="127.35286997335676" data-description="교직원들이 주거용으로 사용하는 건물로, 교직원 주거안정을 위한 복지시설입니다." class="link">
+                                        <i class="number"><span>28</span></i>
+                                        <em class="b_c">52</em>
+                                        <span class="text">교직원주택</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_29.jpg" data-latitude="36.60598877574803" data-longtitude="127.36056336758253" data-description="학생 군사 교육과 훈련이 이루어지는 공간으로, 예비 장교들을 양성합니다." data-homepage="https://rotc.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>29</span></i>
+                                        <em class="b_c">14</em>
+                                        <span class="text">학군단</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>행정실</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="" data-latitude="36.60665537502572" data-longtitude="127.35614871853231" data-description="학교의 전력과 기계 설비를 관리하는 시설로, 안정적인 학교 운영을 지원합니다." class="link">
+                                        <i class="number"><span>30</span></i>
+                                        <em class="b_c">15</em>
+                                        <span class="text">중앙동력기계실</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_31.jpg" data-latitude="36.60676061044836" data-longtitude="127.35409820012583" data-description="학교의 주요 입구로, 대학의 상징적인 장소입니다." class="link">
+                                        <i class="number"><span>31</span></i>
+                                        <em class="b_c">Z01</em>
+                                        <span class="text">정문</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_32.jpg" data-latitude="36.615480965417994" data-longtitude="127.35649670941855" data-description="학교의 주요 출구로, 대학의 상징적인 장소입니다." class="link">
+                                        <i class="number"><span>32</span></i>
+                                        <em class="b_c">Z02</em>
+                                        <span class="text">후문</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_33.jpg" data-latitude="36.605481487622" data-longtitude="127.35770529881148" data-description="2012년에 준공된 건물로, 영유아 관련 연수가 진행되는 공간입니다. 5월 5일에는 유아교육과와 함께 꼬나꼬나 행사를 진행합니다." data-homepage="https://iece.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>33</span></i>
+                                        <em class="b_c">61</em>
+                                        <span class="text">영유아교육연수원</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>영유아교육연수원</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_34.jpg" data-latitude="36.60737144812546" data-longtitude="127.36223800198358" data-description="학교의 식물 연구와 교육을 위한 온실로, 다양한 식물들이 재배됩니다." class="link">
+                                        <i class="number"><span>34</span></i>
+                                        <em class="b_c">45</em>
+                                        <span class="text">온실(제3대학)</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_35.jpg" data-latitude="36.61327974320222" data-longtitude="127.35806547801243" data-description="1997년 준공된 건물로, 한국지질자원연구원과 연계하여 지진 관측을 위해 설치·운영되고 있습니다." data-listtext="true" class="link">
+                                        <i class="number"><span>35</span></i>
+                                        <em class="b_c">23</em>
+                                        <span class="text">지진관측소</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>자료분석실</li>
+                                            <li>관측실</li>
+                                        </ul>
+                                    </div>
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_36.jpg" data-latitude="36.60620134752107" data-longtitude="127.36252592768129" data-description="학생들과 교직원들이 테니스를 즐길 수 있는 시설로, 체육활동을 지원합니다." class="link">
+                                        <i class="number"><span>36</span></i>
+                                        <em class="b_c">71</em>
+                                        <span class="text">테니스장</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_37.jpg" data-latitude="36.60619325725668" data-longtitude="127.36073756346289" data-description="학교의 식물 연구와 교육을 위한 온실로, 다양한 식물들이 재배됩니다." class="link">
+                                        <i class="number"><span>37</span></i>
+                                        <em class="b_c">30</em>
+                                        <span class="text">온실(제1대학)</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_38.jpg" data-latitude="36.61348938443328" data-longtitude="127.35576655437116" data-description="2015년에 준공된 건물로, 종합교육연수원의 대강당으로 각종 연수에 활용됩니다." class="link">
+                                        <i class="number"><span>38</span></i>
+                                        <em class="b_c">67</em>
+                                        <span class="text">종합교육연수원 문화관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_39.jpg" data-latitude="36.615254792881515" data-longtitude="127.35528561188234" data-description="전국에서 각 연수과정에 들어오는 연수생들의 기숙사 역할을 하고 있습니다." class="link">
+                                        <i class="number"><span>39</span></i>
+                                        <em class="b_c">66</em>
+                                        <span class="text">함인당</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_40.jpg" data-latitude="36.605976518510374" data-longtitude="127.35639987446115" data-description="우리 대학의 부설 유치원으로, 유아 교육 관련 연구와 실습이 이루어지는 공간입니다." data-homepage="https://school.cbe.go.kr/knue-k/M01" class="link">
+                                        <i class="number"><span>40</span></i>
+                                        <em class="b_c">A02</em>
+                                        <span class="text">부설유치원</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="/campusmap/images/photo_41.jpg" data-latitude="36.60941150152343" data-longtitude="127.35885237543222" data-description="1988년 준공되어 30여 년간 도서관 전용 건물로 사용되었고, 도서관 신축 준공(2018년) 이후 공간의 재구조화 사업을 통해 다목적으로 운영되고 있습니다. 전체 4개층 중 1층과 2층에는 도서관 집중 열람실과 커뮤니티 공간인 청람 상상 마루, 그리고 첨단 에듀테크 체험 공간인 미래교육혁신원이 있습니다." data-homepage="https://lib.knue.ac.kr/" data-listtext="true" class="link">
+                                        <i class="number"><span>41</span></i>
+                                        <em class="b_c">5</em>
+                                        <span class="text">호연관</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>보존서고</li>
+                                            <li>집중열람실/열람학습지원실</li>
+                                            <li>커뮤니티홀</li>
+                                            <li>지구과학교육과사무실</li>
+                                            <li>미래교육혁신원</li>
+                                            <li>공통과학/영재협동과정사무실</li>
+                                            <li>기획전시실(로비</li>
+                                            <li>물리교육과사무실</li>
+                                            <li>화학교육과 사무실</li>
+                                            <li>제3대학 행정실</li>
+                                            <li>장애학생지원센터</li>
+                                            <li>KNUE인권센터</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                                <div class="info_item">
+                                    <button type="button" data-image="" data-latitude="36.611541809142395" data-longtitude="127.36138004777926" data-description="1985년 3월 11일에 착공하여, 그 해 2학기에 완공되었습니다. 제1회 청람 축전과 제2회 입학식이 성대히 열린 것을 비롯하여, 지금도 체육대회, 학교 및 학과의 행사 장소나 체육교육과의 강의실로 쓰여 언제나 북적이는 공간입니다. 방학이 끝난 뒤 학생들이 기숙사로 돌아온 직후에는 저녁 시간마다 운동장을 걷거나 뛰는 학생들, 그리고 줄넘기나 공으로 가벼운 운동을 하는 학생들이 많이 보입니다." class="link">
+                                        <i class="number"><span>42</span></i>
+                                        <em class="b_c">Z03</em>
+                                        <span class="text">대운동장</span>
+                                    </button>
+                                    <div class="list_text">
+                                        <ul>
+                                            <li>-</li>
+                                        </ul>
+                                    </div>    <!--//list_text-->
+                                </div>    <!--//info_item-->
+                            </div>    <!--//info_list-->
+                        </div>    <!--//info_box-->
+                    </fieldset>
+                </form>
+                <div class="side_open_box">
+                    <button type="button" title="사이드메뉴 닫기" class="btn">사이드 메뉴 버튼</button>
+                </div>    <!--//side_open_box-->
+            </div>    <!--//map_info_wrap-->
+            <div class="map_view_wrap">
+                <div class="mapbox">
+                    <div class="detail_layer">
+                        <button type="button" class="close in">닫기</button>
+                        <div class="overlaybox">
+                            <div class="titlebox"><div class="title"></div></div>
+                            <div class="conbox">
+                                <div class="scrollbox">
+                                    <div class="photobox">
+                                        <div class="roundbox">
+                                            <div class="photo"></div>
+                                            <div class="inner_photo"></div>
+                                        </div>
+                                    </div>
+                                    <div class="descriptionbox"></div>
+                                    <div class="listbox">
+                                        <div class="listitem homepage clearfix">
+                                            <div class="flexbox">
+                                                <em class="title">홈페이지 :</em>
+                                                <div class="textbox"><a href="" target="_blank" title="새창" rel="noopener noreferrer" class="link"></a></div>
+                                            </div>
+                                        </div>
+                                        <div class="listitem location clearfix">
+                                            <div class="flexbox">
+                                                <em class="title">위치 :</em>
+                                                <div class="textbox"><div class="text"></div></div>
+                                            </div>
+                                        </div>
+                                        <div class="listitem tel clearfix">
+                                            <div class="flexbox">
+                                                <em class="title">연락처 :</em>
+                                                <div class="textbox"><span class="phone"><i></i><span class="phonetext"></span></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="listitem listtext clearfix">
+                                            <div class="flexbox">
+                                                <em class="title">호실정보</em>
+                                                <div class="textbox"><div class="list_text"></div></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="close out">닫기</button>
+                    </div>
+                    <div id="map"></div>
+                </div>
+                <!--// 캠퍼스맵 지도영역-->
+                <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=00a35d5a5ccce2beae08ea43a7034924&libraries=services"></script>
+                <script src="./js/mapapi.js"></script>
+                <!--//
+                네이티브 앱 키 :  76442285bcaa134f2ac34f56f067a0bb
+                REST API 키 : 7cdcae29a98c712686d285f450cfb3b1
+                JavaScript 키 : 00a35d5a5ccce2beae08ea43a7034924
+                Admin 키 : 04adf47c8b99c019d425ad0b7d6e2712
+                -->
+            </div>    <!--//map_view_wrap-->
+        </div>    <!--//map_content_wrap-->
+    </div>    <!--//#container-->
+</div>    <!--//wrapper-->
+</body>
+</html>
