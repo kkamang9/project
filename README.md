@@ -1,6 +1,7 @@
 ![header](https://capsule-render.vercel.app/api?type=waving&color=30:bb99ff,76:eeaaff&height=200&section=header&text=Project%20info&fontSize=60&fontAlignY=40&stroke=eeaaff&animation=fadeIn)
 
-### 2024 프로젝트
+## 작업 목록
+### 2024
 + 한국교원대학교
   + 메인 레이아웃
     + <a href="" target="_blank"></a>
@@ -10,7 +11,7 @@
 + 영덕 사진 DB
   + 메인 레이아웃
     + <a href="https://kkamang9.github.io/project/2024YeongdeokPhotoDB/site/ydphoto/main.html" target="_blank">영덕 사진 DB</a>
-### 2023 프로젝트
+### 2023
 + 음성군청
   + 메인 레이아웃
     + <a href="https://kkamang9.github.io/project/2023Eumseong/site/yh/main.html" target="_blank">청소년수련원</a>
