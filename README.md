@@ -4,13 +4,13 @@
 ### 2024
 + 한국교원대학교
   + 메인 레이아웃
-    + <a href="" target="_blank"></a>
+    + <a href="https://kkamang9.github.io/project/2024KNUE/site/edupol/main.html" target="_blank"></a>
   + 프로그램
     + <a href="https://kkamang9.github.io/project/2024KNUE/campusmap/campusmap.html" target="_blank">캠퍼스 맵</a>
     + <a href="https://kkamang9.github.io/project/2024KNUE/site/public/program.html" target="_blank">종합 프로그램</a>
 + 영덕 사진 DB
-  + 메인 레이아웃
-    + <a href="https://kkamang9.github.io/project/2024YeongdeokPhotoDB/site/ydphoto/main.html" target="_blank">영덕 사진 DB</a>
+  + 서브 레이아웃
+    + <a href="https://kkamang9.github.io/project/2024YeongdeokPhotoDB/site/ydphoto/sub.html" target="_blank">영덕 사진 DB</a>
 ### 2023
 + 음성군청
   + 메인 레이아웃
