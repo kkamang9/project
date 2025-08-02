@@ -4,35 +4,35 @@
 @font-face{
     font-family : 'CJK';
     font-weight : 200;
-    src : url("../font/NotoSansCJKkr-Light.woff2") format('woff2'),
-    url("../font/NotoSansCJKkr-Light.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-Light.woff2") format('woff2'),
+    url("../../common/font/NotoSansCJKkr-Light.woff") format('woff');
 }
 @font-face{
     font-family : 'CJK';
     font-weight : 300;
-    src : url("../font/NotoSansCJKkr-DemiLight.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-DemiLight.woff") format('woff');
 }
 @font-face{
     font-family : 'CJK';
     font-weight : 400;
-    src : url("../font/NotoSansCJKkr-Regular.woff2") format('woff2'),
-    url("../font/NotoSansCJKkr-Regular.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-Regular.woff2") format('woff2'),
+    url("../../common/font/NotoSansCJKkr-Regular.woff") format('woff');
 }
 @font-face{
     font-family : 'CJK';
     font-weight : 500;
-    src : url("../font/NotoSansCJKkr-Medium.woff2") format('woff2'),
-    url("../font/NotoSansCJKkr-Medium.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-Medium.woff2") format('woff2'),
+    url("../../common/font/NotoSansCJKkr-Medium.woff") format('woff');
 }
 @font-face{
     font-family : 'CJK';
     font-weight : 600;
-    src : url("../font/NotoSansCJKkr-Bold.woff2") format('woff2'),
-    url("../font/NotoSansCJKkr-Bold.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-Bold.woff2") format('woff2'),
+    url("../../common/font/NotoSansCJKkr-Bold.woff") format('woff');
 }
 @font-face{
     font-family : 'CJK';
     font-weight : 800;
-    src : url("../font/NotoSansCJKkr-Black.woff2") format('woff2'),
-    url("../font/NotoSansCJKkr-Black.woff") format('woff');
+    src : url("../../common/font/NotoSansCJKkr-Black.woff2") format('woff2'),
+    url("../../common/font/NotoSansCJKkr-Black.woff") format('woff');
 }

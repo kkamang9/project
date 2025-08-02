@@ -34,7 +34,7 @@
     + <a href="https://kkamang9.github.io/project/2023Suwon/sotong_2023/main.html" target="_blank">소통포털</a>
 + TTA 아카데미 통합
   + 프로그램
-    + <a href="https://kkamang9.github.io/project/2023TTALogin/login1.html" target="_blank">로그인 페이지</a> - login1.html ~ login9.html
+    + 로그인페이지(<a href="https://kkamang9.github.io/project/2023TTALogin/login1.html" target="_blank">1</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login1_1.html" target="_blank">1_1</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login2.html" target="_blank">2</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login2_1.html" target="_blank">2_1</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login3.html" target="_blank">3</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login4.html" target="_blank">4</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login5.html" target="_blank">5</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login6.html" target="_blank">6</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login6_1.html" target="_blank">6_1</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login7.html" target="_blank">7</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login8.html" target="_blank">8</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login8_1.html" target="_blank">8_1</a>,<a href="https://kkamang9.github.io/project/2023TTALogin/login9.html" target="_blank">9</a>)
 + 청주대학교
   + 메인 레이아웃
     + <a href="https://kkamang9.github.io/project/2023ChungjuUniversity/site/HumanRightsCenter/main.html" target="_blank">인권센터</a>
