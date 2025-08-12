@@ -4,7 +4,7 @@
 @font-face{
     font-family:'LaundryGothic';
     font-weight:400;
-    src:url('../font/LaundryGothic-Regular.woff') format('woff');
+    src:url('../../../../common/font/LaundryGothic-Regular.woff') format('woff');
 }
 
 /* 홍보대사 > 청람누리 소개 */

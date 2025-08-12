@@ -6,17 +6,17 @@
 @font-face{
     font-family:'Trirong';
     font-weight:400;
-    src:url('../font/Trirong-Regular.woff') format('woff');
+    src:url('../../../../common/font/Trirong-Regular.woff') format('woff');
 }
 @font-face{
     font-family:'Wavve';
     font-weight:400;
-    src:url('../font/WavvePADO-Regular.woff') format('woff');
+    src:url('../../../../common/font/WavvePADO-Regular.woff') format('woff');
 }
 @font-face{
     font-family:'Marcellus';
     font-weight:400;
-    src:url('../font/Marcellus-Regular.woff') format('woff');
+    src:url('../../../../common/font/Marcellus-Regular.woff') format('woff');
 }
 
 /* header fix - S */

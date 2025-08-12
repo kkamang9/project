@@ -7,13 +7,13 @@
 @font-face{
     font-family:'Haven';
     font-weight:600;
-    src:url("../font/Warhaven-Bold.woff") format('woff');
+    src:url("../../../../common/font/Warhaven-Bold.woff") format('woff');
 }
 /* PADO */
 @font-face{
     font-family:'PADO';
     font-weight:400;
-    src:url("../font/WavvePADO-Regular.woff") format('woff');
+    src:url("../../../../common/font/WavvePADO-Regular.woff") format('woff');
 }
 /* --------------- 대표 메인 전용 폰트 끝 --------------- */
 

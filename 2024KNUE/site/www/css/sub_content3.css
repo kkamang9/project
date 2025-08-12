@@ -4,13 +4,13 @@
 @font-face{
     font-family:'Notosans';
     font-weight:600;
-    src:url("../font/NotoSansSC-Bold.woff") format('woff');
+    src:url("../../../../common/font/NotoSansSC-Bold.woff") format('woff');
 }
 /* 런드리고딕 */
 @font-face{
     font-family:'Laund';
     font-weight:600;
-    src:url("../font/LaundryGothicR.woff") format('woff');
+    src:url("../../../../common/font/LaundryGothicR.woff") format('woff');
 }
 
 .cts567_wrap .class_movie_list{display:block;position:relative;box-sizing:border-box;font-size:0;line-height:0;}
