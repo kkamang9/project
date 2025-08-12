@@ -291,7 +291,7 @@ body{font-family:'WantedSans','Malgun Gothic','맑은 고딕',Dotum,'돋움',Hel
 }
 /* side - E */
 /* map - S */
-.map_content_wrap .map_view_wrap{display:inline-block;width:calc(100% - 402px);height:100%;background-color:#fad;vertical-align:top;transition:width 0.3s;}
+.map_content_wrap .map_view_wrap{display:inline-block;width:calc(100% - 402px);height:100%;background-color:#fff;vertical-align:top;transition:width 0.3s;}
 @media all and (max-width:1470px) {
     .map_content_wrap .map_view_wrap{width:calc(100% - 352px);}
 }
